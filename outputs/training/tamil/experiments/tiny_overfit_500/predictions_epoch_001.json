@@ -1,0 +1,122 @@
+[
+    {
+        "sample_index": 0,
+        "ground_truth": "போராட்டங்கள்தாம்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 1,
+        "ground_truth": "சேரனுக்கு",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 2,
+        "ground_truth": "நடத்துகிற",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 3,
+        "ground_truth": "பிட்டும்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 4,
+        "ground_truth": "பாடலாசிரியர்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 5,
+        "ground_truth": "தத்துவத்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 6,
+        "ground_truth": "தெய்வங்களைப்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 7,
+        "ground_truth": "சட்டையைத்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 8,
+        "ground_truth": "செய்தனர்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 9,
+        "ground_truth": "கீழாக",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 10,
+        "ground_truth": "அன்பைச்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 11,
+        "ground_truth": "கரடியார்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 12,
+        "ground_truth": "ஒற்றுமையாய்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 13,
+        "ground_truth": "செவிகளில்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 14,
+        "ground_truth": "மருந்தின்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 15,
+        "ground_truth": "நவீனத்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 16,
+        "ground_truth": "இருப்பவர்களது",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 17,
+        "ground_truth": "முன்னும்",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 18,
+        "ground_truth": "குறியீட்டு",
+        "prediction": "",
+        "cer": 1.0
+    },
+    {
+        "sample_index": 19,
+        "ground_truth": "கபில்தேவ்",
+        "prediction": "",
+        "cer": 1.0
+    }
+]

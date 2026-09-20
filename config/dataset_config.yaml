@@ -1,0 +1,46 @@
+datasets:
+
+  ocr:
+    languages:
+      - tamil
+      - arabic
+    train_split: 0.80
+    validation_split: 0.10
+    test_split: 0.10
+    manifests:
+      train: data/manifests/ocr_train.jsonl
+      validation: data/manifests/ocr_validation.jsonl
+      test: data/manifests/ocr_test.jsonl
+
+  tamil_language_model:
+    path: data/tamil_corpus
+    train_split: 0.80
+    validation_split: 0.10
+    test_split: 0.10
+    manifests:
+      train: data/manifests/tamil_lm_train.jsonl
+      validation: data/manifests/tamil_lm_validation.jsonl
+      test: data/manifests/tamil_lm_test.jsonl
+
+  arabic_language_model:
+    path: data/arabic_corpus
+    train_split: 0.80
+    validation_split: 0.10
+    test_split: 0.10
+    manifests:
+      train: data/manifests/arabic_lm_train.jsonl
+      validation: data/manifests/arabic_lm_validation.jsonl
+      test: data/manifests/arabic_lm_test.jsonl
+
+  reconstruction:
+    path: data/reconstruction
+    train_split: 0.80
+    validation_split: 0.10
+    test_split: 0.10
+    manifests:
+      all: data/manifests/reconstruction.jsonl
+
+settings:
+  random_seed: 42
+  min_text_length: 1
+  max_text_length: 256

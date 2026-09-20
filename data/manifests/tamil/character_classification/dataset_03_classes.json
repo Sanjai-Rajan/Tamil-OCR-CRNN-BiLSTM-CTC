@@ -1,0 +1,182 @@
+[
+  {
+    "class_id": 0,
+    "class_label": "ஐ",
+    "original_label": "ai",
+    "mapped_label": "ஐ",
+    "unicode_hex": "U+0B90",
+    "image_count": 110,
+    "is_oov": false
+  },
+  {
+    "class_id": 1,
+    "class_label": "ச",
+    "original_label": "cha",
+    "mapped_label": "ச",
+    "unicode_hex": "U+0B9A",
+    "image_count": 109,
+    "is_oov": false
+  },
+  {
+    "class_id": 2,
+    "class_label": "ஈ",
+    "original_label": "ee",
+    "mapped_label": "ஈ",
+    "unicode_hex": "U+0B88",
+    "image_count": 235,
+    "is_oov": false
+  },
+  {
+    "class_id": 3,
+    "class_label": "ல",
+    "original_label": "la",
+    "mapped_label": "ல",
+    "unicode_hex": "U+0BB2",
+    "image_count": 119,
+    "is_oov": false
+  },
+  {
+    "class_id": 4,
+    "class_label": "ம",
+    "original_label": "ma",
+    "mapped_label": "ம",
+    "unicode_hex": "U+0BAE",
+    "image_count": 136,
+    "is_oov": false
+  },
+  {
+    "class_id": 5,
+    "class_label": "மூ",
+    "original_label": "moo",
+    "mapped_label": "மூ",
+    "unicode_hex": "U+0BAE U+0BC2",
+    "image_count": 151,
+    "is_oov": false
+  },
+  {
+    "class_id": 6,
+    "class_label": "nna",
+    "original_label": "nna",
+    "mapped_label": "REQUIRES_REVIEW",
+    "unicode_hex": "U+006E U+006E U+0061",
+    "image_count": 143,
+    "is_oov": true
+  },
+  {
+    "class_id": 7,
+    "class_label": "nnna",
+    "original_label": "nnna",
+    "mapped_label": "REQUIRES_REVIEW",
+    "unicode_hex": "U+006E U+006E U+006E U+0061",
+    "image_count": 104,
+    "is_oov": true
+  },
+  {
+    "class_id": 8,
+    "class_label": "nu",
+    "original_label": "nu",
+    "mapped_label": "REQUIRES_REVIEW",
+    "unicode_hex": "U+006E U+0075",
+    "image_count": 112,
+    "is_oov": true
+  },
+  {
+    "class_id": 9,
+    "class_label": "nuu",
+    "original_label": "nuu",
+    "mapped_label": "REQUIRES_REVIEW",
+    "unicode_hex": "U+006E U+0075 U+0075",
+    "image_count": 130,
+    "is_oov": true
+  },
+  {
+    "class_id": 10,
+    "class_label": "oo",
+    "original_label": "oo",
+    "mapped_label": "REQUIRES_REVIEW",
+    "unicode_hex": "U+006F U+006F",
+    "image_count": 126,
+    "is_oov": true
+  },
+  {
+    "class_id": 11,
+    "class_label": "ப",
+    "original_label": "pa",
+    "mapped_label": "ப",
+    "unicode_hex": "U+0BAA",
+    "image_count": 120,
+    "is_oov": false
+  },
+  {
+    "class_id": 12,
+    "class_label": "ra",
+    "original_label": "ra",
+    "mapped_label": "REQUIRES_REVIEW",
+    "unicode_hex": "U+0072 U+0061",
+    "image_count": 119,
+    "is_oov": true
+  },
+  {
+    "class_id": 13,
+    "class_label": "த",
+    "original_label": "tha",
+    "mapped_label": "த",
+    "unicode_hex": "U+0BA4",
+    "image_count": 106,
+    "is_oov": false
+  },
+  {
+    "class_id": 14,
+    "class_label": "வ",
+    "original_label": "va",
+    "mapped_label": "வ",
+    "unicode_hex": "U+0BB5",
+    "image_count": 128,
+    "is_oov": false
+  },
+  {
+    "class_id": 15,
+    "class_label": "வீ",
+    "original_label": "vee",
+    "mapped_label": "வீ",
+    "unicode_hex": "U+0BB5 U+0BC0",
+    "image_count": 108,
+    "is_oov": false
+  },
+  {
+    "class_id": 16,
+    "class_label": "வு",
+    "original_label": "vu",
+    "mapped_label": "வு",
+    "unicode_hex": "U+0BB5 U+0BC1",
+    "image_count": 85,
+    "is_oov": false
+  },
+  {
+    "class_id": 17,
+    "class_label": "ய்",
+    "original_label": "y",
+    "mapped_label": "ய்",
+    "unicode_hex": "U+0BAF U+0BCD",
+    "image_count": 135,
+    "is_oov": false
+  },
+  {
+    "class_id": 18,
+    "class_label": "ய",
+    "original_label": "ya",
+    "mapped_label": "ய",
+    "unicode_hex": "U+0BAF",
+    "image_count": 120,
+    "is_oov": false
+  },
+  {
+    "class_id": 19,
+    "class_label": "ழ",
+    "original_label": "zha",
+    "mapped_label": "ழ",
+    "unicode_hex": "U+0BB4",
+    "image_count": 154,
+    "is_oov": false
+  }
+]

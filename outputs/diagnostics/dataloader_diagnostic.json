@@ -1,0 +1,26 @@
+[
+    {
+        "batch_index": 0,
+        "expected": "போராட்டங்கள்தாம்",
+        "actual_decoded": "போராட்டங்கள்தாம்",
+        "match": true
+    },
+    {
+        "batch_index": 1,
+        "expected": "சேரனுக்கு",
+        "actual_decoded": "சேரனுக்கு",
+        "match": true
+    },
+    {
+        "batch_index": 2,
+        "expected": "நடத்துகிற",
+        "actual_decoded": "நடத்துகிற",
+        "match": true
+    },
+    {
+        "batch_index": 3,
+        "expected": "பிட்டும்",
+        "actual_decoded": "பிட்டும்",
+        "match": true
+    }
+]

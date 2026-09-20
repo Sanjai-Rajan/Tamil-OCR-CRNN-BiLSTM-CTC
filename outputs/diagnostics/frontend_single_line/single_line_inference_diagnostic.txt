@@ -1,0 +1,13 @@
+Ground truth target: தமிழ் எங்கள் உயிர் மொழி.
+Original image dimensions: 300x50
+Preprocessed image dimensions: 192x32
+Normalized pixel statistics: Mean=0.9691, Std=0.1631
+CNN feature-map dimensions: [1, 512, 4, 48]
+CRNN sequence length: 48
+CTC logits dimensions: [1, 48, 78]
+Blank timestep percentage: 89.58%
+Average blank probability: 0.8762
+Prediction length: 5
+Ground-truth length: 24
+Final prediction: காலன்
+Checkpoint stored epoch: 78

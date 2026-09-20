@@ -1,0 +1,20 @@
+{
+    "original_dimensions": [
+        1896,
+        247
+    ],
+    "processed_dimensions": [
+        128,
+        32
+    ],
+    "tensor_shape": [
+        1,
+        32,
+        128
+    ],
+    "dtype": "torch.float32",
+    "min_pixel": -0.29411762952804565,
+    "max_pixel": 0.37254905700683594,
+    "mean": 0.30736640095710754,
+    "std": 0.11513601988554001
+}

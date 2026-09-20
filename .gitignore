@@ -1,0 +1,33 @@
+# Environments and Caches
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+*.tmp
+
+# AI Caches
+.huggingface/
+.transformers/
+transformers/
+
+# Checkpoints and Model Weights
+checkpoints/
+*.pth
+*.pt
+*.safetensors
+*.ckpt
+*.onnx
+*.bin
+
+# Datasets
+data/train_ready/
+data/TamilNet_old/
+data/tamil_ocr_dataset/imported/
+data/tamil_ocr_dataset/lmdb/
+data/tamil_ocr_dataset/mappings/
+
+# Oversized manifests
+data/manifests/tamil/sequence_ocr/combined/combined_train.jsonl
+
+.git_backup_before_history_cleanup

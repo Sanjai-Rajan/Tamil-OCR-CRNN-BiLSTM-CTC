@@ -1,0 +1,34 @@
+[
+    {
+        "global_epoch": 2,
+        "packet": "packet_001",
+        "train_loss": 3.2691008260074894,
+        "val_loss": 3.162637405121288,
+        "cer": 0.8569776371010628,
+        "wer": 1.0,
+        "char_accuracy": 0.14302236289893722,
+        "word_accuracy": 0,
+        "duration": 462.2194423675537,
+        "samples_per_sec": 10.834680545561458,
+        "unique_chars": 2,
+        "unique_words": 1,
+        "dominant_char": "க",
+        "dominance_pct": 50.0
+    },
+    {
+        "global_epoch": 3,
+        "packet": "packet_001",
+        "train_loss": 3.2373814788489295,
+        "val_loss": 3.140314189009011,
+        "cer": 0.8734228980317861,
+        "wer": 1.0,
+        "char_accuracy": 0.12657710196821392,
+        "word_accuracy": 0,
+        "duration": 760.427175283432,
+        "samples_per_sec": 6.585772001287804,
+        "unique_chars": 2,
+        "unique_words": 1,
+        "dominant_char": "ப",
+        "dominance_pct": 50.0
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "epoch": 1,
+        "packet": "packet_001",
+        "samples": 5000,
+        "train_loss": 4.599629025550405,
+        "validation_loss": 3.410822061796162,
+        "CER": 1.0,
+        "WER": 1.0,
+        "character_accuracy": 0,
+        "word_accuracy": 0,
+        "blank_percentage": 100.0,
+        "unique_predicted_characters": 0,
+        "unique_predicted_sequences": 1,
+        "learning_rate": 0.0001,
+        "training_time": 34.73476195335388
+    }
+]

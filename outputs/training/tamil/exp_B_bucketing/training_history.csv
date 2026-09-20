@@ -1,0 +1,2 @@
+epoch,samples,train_loss,validation_loss,CER,WER,character_accuracy,word_accuracy,blank_percentage,unique_predicted_characters,unique_predicted_sequences,average_prediction_length,learning_rate,training_time
+1,126419,15.990032196044922,15.219826698303223,1.0,1.0,0,0,0.0,1,1,1.0,0.0003,1.1474642753601074

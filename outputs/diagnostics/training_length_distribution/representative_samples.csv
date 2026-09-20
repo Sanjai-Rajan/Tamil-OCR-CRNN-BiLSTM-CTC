@@ -1,0 +1,7 @@
+category,path,label,length
+shortest,data\tamil_ocr_dataset\imported\tamil\train\packet_tamilnet\images\tamilnet_train_usr_37_027t10.tiff,ள,1
+1-5,data\tamil_ocr_dataset\imported\tamil\train\packet_004\images\tamil_train_019602.jpg,ஆரம்ப,5
+6-10,data\tamil_ocr_dataset\imported\tamil\train\packet_001\images\tamil_train_003175.jpg,துர்கை,6
+11-15,data\tamil_ocr_dataset\imported\tamil\train\packet_006\images\tamil_train_029761.jpg,அருவிக்கரையை,12
+16+,data\tamil_ocr_dataset\imported\tamil\train\packet_007\images\tamil_train_034502.jpg,நினைவோட்டங்களினூடாக,19
+longest,data\tamil_ocr_dataset\imported\tamil\train\packet_006\images\tamil_train_025705.jpg,ஆற்றங்கரைப்பகுதிகளில்,21

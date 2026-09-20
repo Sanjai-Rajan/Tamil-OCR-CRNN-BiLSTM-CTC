@@ -1,0 +1,1751 @@
+﻿
+  models\digitalization\tokenizer.p
+y:38:                raise 
+ValueError(f"Unknown character 
+'{c}' found in text: {text}")
+  models\digitalization\tokenizer.p
+y:39:        return encoded
+  models\digitalization\tokenizer.p
+y:40:
+> models\digitalization\tokenizer.p
+y:41:    def decode(self, indices):
+  models\digitalization\tokenizer.p
+y:42:        """
+> models\digitalization\tokenizer.p
+y:43:        Decodes a list of 
+integers back into a UTF-8 string.
+  models\digitalization\tokenizer.p
+y:44:        """
+  models\digitalization\tokenizer.p
+y:45:        return 
+"".join([self.idx_map.get(idx, "") 
+for idx in indices if idx != 0])
+  models\digitalization\tokenizer.p
+y:46:
+  models\language_understanding\tam
+il_language_model.py:73:        
+  models\language_understanding\tam
+il_language_model.py:74:        
+candidates = []
+  models\language_understanding\tam
+il_language_model.py:75:        
+for prob, token_id in 
+zip(top_k_probs, top_k_indices):
+> models\language_understanding\tam
+il_language_model.py:76:           
+ word = self.tokenizer.decode([toke
+n_id]).strip()
+  models\language_understanding\tam
+il_language_model.py:77:           
+ # Clean up potential special 
+tokens
+  models\language_understanding\tam
+il_language_model.py:78:           
+ word = word.replace(' ', 
+'').replace('##', '') # Depending 
+on tokenizer
+  models\language_understanding\tam
+il_language_model.py:79:           
+ if word:
+  models\recognition\decoder.py:1:i
+mport torch
+  models\recognition\decoder.py:2:
+  models\recognition\decoder.py:3:
+> models\recognition\decoder.py:4:d
+ef ctc_decode(predictions):
+  models\recognition\decoder.py:5:
+> models\recognition\decoder.py:6: 
+   predictions = torch.argmax(
+  models\recognition\decoder.py:7: 
+       predictions,
+  models\recognition\decoder.py:8: 
+       dim=2
+  models\recognition\decoder.py:9: 
+   )
+  models\recognition\loss.py:1:impo
+rt torch.nn as nn
+  models\recognition\loss.py:2:
+> models\recognition\loss.py:3:crit
+erion = nn.CTCLoss(
+> models\recognition\loss.py:4:    
+blank=0,
+  models\recognition\loss.py:5:    
+reduction="mean",
+  models\recognition\loss.py:6:    
+zero_infinity=True,
+  models\recognition\loss.py:7:)
+  scripts\component_isolation_diagn
+ostic.py:13:sys.path.append(str(Pat
+h(__file__).resolve().parent.parent
+))
+  scripts\component_isolation_diagn
+ostic.py:14:
+  scripts\component_isolation_diagn
+ostic.py:15:from 
+models.recognition.crnn import CRNN
+> scripts\component_isolation_diagn
+ostic.py:16:from 
+models.recognition.decoder import 
+ctc_decode
+  scripts\component_isolation_diagn
+ostic.py:17:from 
+scripts.dataset_loader import 
+PacketOCRDataset, crnn_collate_fn, 
+AspectRatioPreservingResize
+  scripts\component_isolation_diagn
+ostic.py:18:from 
+models.digitalization.tokenizer 
+import Tokenizer
+  scripts\component_isolation_diagn
+ostic.py:19:from utils.metrics 
+import calculate_cer
+  scripts\component_isolation_diagn
+ostic.py:81:        
+  scripts\component_isolation_diagn
+ostic.py:82:        outputs = 
+model(images)
+  scripts\component_isolation_diagn
+ostic.py:83:        outputs_perm = 
+outputs.permute(1, 0, 2)
+> scripts\component_isolation_diagn
+ostic.py:84:        
+outputs_log_probs = 
+outputs_perm.log_softmax(2)
+  scripts\component_isolation_diagn
+ostic.py:85:        
+  scripts\component_isolation_diagn
+ostic.py:86:        input_lengths 
+= (actual_widths // 
+4).to(torch.long)
+  scripts\component_isolation_diagn
+ostic.py:87:        input_lengths 
+= torch.clamp(input_lengths, 
+max=outputs_perm.size(0))
+  scripts\component_isolation_diagn
+ostic.py:92:        
+  scripts\component_isolation_diagn
+ostic.py:93:        if epoch % 50 
+== 0 or epoch == 1:
+  scripts\component_isolation_diagn
+ostic.py:94:            with 
+torch.no_grad():
+> scripts\component_isolation_diagn
+ostic.py:95:                preds 
+= ctc_decode(outputs)
+  scripts\component_isolation_diagn
+ostic.py:96:                cer = 0
+  scripts\component_isolation_diagn
+ostic.py:97:                offset 
+= 0
+  scripts\component_isolation_diagn
+ostic.py:98:                for i 
+in range(images.size(0)):
+  scripts\component_isolation_diagn
+ostic.py:99:                    
+t_len = target_lengths[i].item()
+  scripts\component_isolation_diagn
+ostic.py:100:                    
+t_seq = targets[offset:offset+t_len
+].cpu().tolist()
+  scripts\component_isolation_diagn
+ostic.py:101:                    
+offset += t_len
+> scripts\component_isolation_diagn
+ostic.py:102:                    
+try: ref_text = 
+tokenizer.decode(t_seq)
+  scripts\component_isolation_diagn
+ostic.py:103:                    
+except: ref_text = str(t_seq)
+  scripts\component_isolation_diagn
+ostic.py:104:                    
+  scripts\component_isolation_diagn
+ostic.py:105:                    
+p_seq = preds[i].cpu().tolist()
+  scripts\component_isolation_diagn
+ostic.py:106:                    
+clean_p = [p for i, p in 
+enumerate(p_seq) if p != 0 and (i 
+== 0 or p != p_seq[i-1])]
+> scripts\component_isolation_diagn
+ostic.py:107:                    
+try: pred_text = 
+tokenizer.decode(clean_p)
+  scripts\component_isolation_diagn
+ostic.py:108:                    
+except: pred_text = str(clean_p)
+  scripts\component_isolation_diagn
+ostic.py:109:                    
+  scripts\component_isolation_diagn
+ostic.py:110:                    
+cer += calculate_cer(ref_text, 
+pred_text)
+  scripts\component_isolation_diagn
+ostic.py:159:    loader_synth = 
+DataLoader(synth_dataset, 
+batch_size=4, 
+collate_fn=crnn_collate_fn)
+  scripts\component_isolation_diagn
+ostic.py:160:    
+  scripts\component_isolation_diagn
+ostic.py:161:    model = 
+CRNN(tokenizer.num_classes, 
+feature_size=2048).to(device)
+> scripts\component_isolation_diagn
+ostic.py:162:    criterion = 
+torch.nn.CTCLoss(blank=0, 
+zero_infinity=True).to(device)
+  scripts\component_isolation_diagn
+ostic.py:163:    
+  scripts\component_isolation_diagn
+ostic.py:164:    images, targets, 
+target_lengths, actual_widths = 
+next(iter(loader_4))
+  scripts\component_isolation_diagn
+ostic.py:165:    images, targets, 
+actual_widths = images.to(device), 
+targets.to(device), 
+actual_widths.to(device)
+  scripts\component_isolation_diagn
+ostic.py:236:    
+  scripts\component_isolation_diagn
+ostic.py:237:    outputs = 
+model(images)
+  scripts\component_isolation_diagn
+ostic.py:238:    outputs_perm = 
+outputs.permute(1, 0, 2)
+> scripts\component_isolation_diagn
+ostic.py:239:    loss = criterion(o
+utputs_perm.log_softmax(2), 
+targets, input_lengths, 
+target_lengths)
+  scripts\component_isolation_diagn
+ostic.py:240:    loss.backward()
+  scripts\component_isolation_diagn
+ostic.py:241:    
+  scripts\component_isolation_diagn
+ostic.py:242:    grad_stats = {}
+  scripts\diagnose_ctc.py:43:    
+print("2. CTC BLANK INDEX")
+  scripts\diagnose_ctc.py:44:    pr
+int("==============================
+==============================")
+  scripts\diagnose_ctc.py:45:    
+tokenizer = 
+Tokenizer(vocab_path=vocab_path)
+> scripts\diagnose_ctc.py:46:    
+ctc_loss = nn.CTCLoss(blank=0, 
+zero_infinity=True)
+  scripts\diagnose_ctc.py:47:    
+print(f"Vocabulary blank index: {to
+kenizer.char_map.get('<blank>')}")
+> scripts\diagnose_ctc.py:48:    
+print(f"nn.CTCLoss blank index: 
+{ctc_loss.blank}")
+> scripts\diagnose_ctc.py:49:    
+print(f"Decoder blank index logic: 
+(if p != 0)")
+  scripts\diagnose_ctc.py:50:    
+  scripts\diagnose_ctc.py:51:    pr
+int("\n============================
+================================")
+  scripts\diagnose_ctc.py:52:    
+print("3. TARGET ENCODING")
+  scripts\diagnose_ctc.py:54:    
+words = ["ஆச்சரியப்படுவதற்கில்லை", 
+"கூட்டு", "இச்சைப்பொருளாக", 
+"யூனிட்டை", "வரப்பிரசாதம்"]
+  scripts\diagnose_ctc.py:55:    
+for w in words:
+  scripts\diagnose_ctc.py:56:      
+  encoded = tokenizer.encode(w)
+> scripts\diagnose_ctc.py:57:      
+  decoded = 
+tokenizer.decode(encoded)
+  scripts\diagnose_ctc.py:58:      
+  hex_str = " ".join([hex(ord(c)) 
+for c in w])
+  scripts\diagnose_ctc.py:59:      
+  print(f"\nWord: {w}")
+  scripts\diagnose_ctc.py:60:      
+  print(f"Unicode codepoints: 
+{hex_str}")
+  scripts\diagnose_ctc.py:61:      
+  print(f"Target indices: 
+{encoded}")
+  scripts\diagnose_ctc.py:62:      
+  print(f"Target length: 
+{len(encoded)}")
+> scripts\diagnose_ctc.py:63:      
+  print(f"Decoded round-trip: 
+{decoded}")
+> scripts\diagnose_ctc.py:64:      
+  assert decoded == w, "Round-trip 
+failed!"
+  scripts\diagnose_ctc.py:65:      
+  
+  scripts\diagnose_ctc.py:66:    
+print("\nRound-trip correctness 
+verified.")
+  scripts\diagnose_ctc.py:67:
+  scripts\diagnose_ctc.py:102:     
+   
+  scripts\diagnose_ctc.py:103:     
+   # Distribution
+  scripts\diagnose_ctc.py:104:     
+   probs = outputs.softmax(dim=2)  
+# [16, 32, 78]
+> scripts\diagnose_ctc.py:105:     
+   argmax_preds = outputs.argmax(di
+m=2).view(-1).tolist()  # 16 * 32 
+= 512 predictions
+  scripts\diagnose_ctc.py:106:     
+   
+> scripts\diagnose_ctc.py:107:     
+   total_preds = len(argmax_preds)
+> scripts\diagnose_ctc.py:108:     
+   counts = Counter(argmax_preds)
+  scripts\diagnose_ctc.py:109:     
+   
+  scripts\diagnose_ctc.py:110:     
+   blanks = counts.get(0, 0)
+  scripts\diagnose_ctc.py:111:     
+   blank_pct = (blanks / 
+total_preds) * 100
+  scripts\diagnose_ctc.py:127:     
+       print(f"  Class {cls_id} 
+('{char_repr}'): {c} 
+({c/total_preds*100:.2f}%)")
+  scripts\diagnose_ctc.py:128:
+  scripts\diagnose_ctc.py:129:    p
+rint("\n===========================
+=================================")
+> scripts\diagnose_ctc.py:130:    
+print("6. GREEDY DECODER TEST")
+  scripts\diagnose_ctc.py:131:    p
+rint("=============================
+===============================")
+  scripts\diagnose_ctc.py:132:    
+> scripts\diagnose_ctc.py:133:    
+def manual_decode(pred_seq):
+  scripts\diagnose_ctc.py:134:     
+   clean_pred = []
+  scripts\diagnose_ctc.py:135:     
+   prev = -1
+  scripts\diagnose_ctc.py:136:     
+   for p in pred_seq:
+  scripts\diagnose_ctc.py:138:     
+           clean_pred.append(p)
+  scripts\diagnose_ctc.py:139:     
+       prev = p
+  scripts\diagnose_ctc.py:140:     
+   try:
+> scripts\diagnose_ctc.py:141:     
+       return 
+tokenizer.decode(clean_pred)
+  scripts\diagnose_ctc.py:142:     
+   except AttributeError:
+  scripts\diagnose_ctc.py:143:     
+       return "".join([str(c) for 
+c in clean_pred])
+  scripts\diagnose_ctc.py:144:     
+       
+  scripts\diagnose_ctc.py:145:    
+test_1 = [0, 15, 15, 0, 15]
+> scripts\diagnose_ctc.py:146:    
+res_1 = manual_decode(test_1)
+  scripts\diagnose_ctc.py:147:    
+  scripts\diagnose_ctc.py:148:    
+test_2 = [0, 15, 0, 15]
+> scripts\diagnose_ctc.py:149:    
+res_2 = manual_decode(test_2)
+  scripts\diagnose_ctc.py:150:    
+  scripts\diagnose_ctc.py:151:    
+print(f"Test 1: {test_1} (blank, 
+{tokenizer.idx_map.get(15)}, 
+{tokenizer.idx_map.get(15)}, 
+blank, 
+{tokenizer.idx_map.get(15)})")
+  scripts\diagnose_ctc.py:152:    
+print(f"Result: {res_1}")
+  scripts\diagnose_ctc.py:158:    p
+rint("=============================
+===============================")
+  scripts\diagnose_ctc.py:159:    
+  scripts\diagnose_ctc.py:160:    
+offset = 0
+> scripts\diagnose_ctc.py:161:    
+preds = outputs.argmax(dim=2)  # 
+[B, T]
+  scripts\diagnose_ctc.py:162:    
+unique_words = set()
+  scripts\diagnose_ctc.py:163:    
+all_chars = []
+  scripts\diagnose_ctc.py:164:    
+  scripts\diagnose_ctc.py:166:     
+   length = 
+target_lengths[i].item()
+  scripts\diagnose_ctc.py:167:     
+   target_seq = targets[offset:offs
+et+length].cpu().tolist()
+  scripts\diagnose_ctc.py:168:     
+   offset += length
+> scripts\diagnose_ctc.py:169:     
+   gt = 
+tokenizer.decode(target_seq)
+  scripts\diagnose_ctc.py:170:     
+   
+  scripts\diagnose_ctc.py:171:     
+   raw_pred = preds[i].tolist()
+> scripts\diagnose_ctc.py:172:     
+   pred_text = 
+manual_decode(raw_pred)
+  scripts\diagnose_ctc.py:173:     
+   
+  scripts\diagnose_ctc.py:174:     
+   for c in pred_text:
+  scripts\diagnose_ctc.py:175:     
+       all_chars.append(c)
+  scripts\diagnose_ctc.py:178:     
+   print(f"[{i+1}]")
+  scripts\diagnose_ctc.py:179:     
+   print(f"Ground truth: {gt}")
+  scripts\diagnose_ctc.py:180:     
+   print(f"Raw indices:  
+{raw_pred}")
+> scripts\diagnose_ctc.py:181:     
+   print(f"Decoded pred: 
+{pred_text}")
+  scripts\diagnose_ctc.py:182:     
+   print("-" * 40)
+  scripts\diagnose_ctc.py:183:     
+   
+  scripts\diagnose_ctc.py:184:    
+print(f"\nUnique predicted 
+sequences: {len(unique_words)}")
+  scripts\evaluate_crnn.py:18:sys.p
+ath.append(str(Path(__file__).resol
+ve().parent.parent))
+  scripts\evaluate_crnn.py:19:
+  scripts\evaluate_crnn.py:20:from 
+models.recognition.crnn import CRNN
+> scripts\evaluate_crnn.py:21:from 
+models.recognition.decoder import 
+ctc_decode
+  scripts\evaluate_crnn.py:22:from 
+scripts.dataset_loader import 
+get_dataloader
+  scripts\evaluate_crnn.py:23:from 
+models.digitalization.tokenizer 
+import Tokenizer
+  scripts\evaluate_crnn.py:24:from 
+utils.device import get_device
+  scripts\evaluate_crnn.py:128:    
+  scripts\evaluate_crnn.py:129:    
+print("Initializing CRNN 
+architecture...")
+  scripts\evaluate_crnn.py:130:    
+model = 
+CRNN(tokenizer.num_classes, 
+feature_size=2048).to(device)
+> scripts\evaluate_crnn.py:131:    
+criterion = nn.CTCLoss(blank=0, 
+zero_infinity=True)
+  scripts\evaluate_crnn.py:132:    
+  scripts\evaluate_crnn.py:133:    
+# Verify and load checkpoint
+  scripts\evaluate_crnn.py:134:    
+print("Loading checkpoint 
+weights...")
+  scripts\evaluate_crnn.py:198:    
+        
+  scripts\evaluate_crnn.py:199:    
+        outputs = model(images)
+  scripts\evaluate_crnn.py:200:    
+        outputs_perm = 
+outputs.permute(1, 0, 2)
+> scripts\evaluate_crnn.py:201:    
+        outputs_log_probs = 
+outputs_perm.log_softmax(2)
+  scripts\evaluate_crnn.py:202:    
+        
+  scripts\evaluate_crnn.py:203:    
+        input_lengths = 
+(actual_widths // 4).to(torch.long)
+  scripts\evaluate_crnn.py:204:    
+        input_lengths = 
+torch.clamp(input_lengths, 
+max=outputs_perm.size(0))
+  scripts\evaluate_crnn.py:206:    
+        loss = 
+criterion(outputs_log_probs, 
+targets, input_lengths, 
+target_lengths)
+  scripts\evaluate_crnn.py:207:    
+        val_loss += loss.item()
+  scripts\evaluate_crnn.py:208:    
+        
+> scripts\evaluate_crnn.py:209:    
+        preds = ctc_decode(outputs)
+  scripts\evaluate_crnn.py:210:    
+        
+  scripts\evaluate_crnn.py:211:    
+        total_raw_preds += 
+preds.numel()
+  scripts\evaluate_crnn.py:212:    
+        blank_preds += (preds == 
+0).sum().item()
+  scripts\evaluate_crnn.py:218:    
+            offset += length
+  scripts\evaluate_crnn.py:219:    
+            
+  scripts\evaluate_crnn.py:220:    
+            try:
+> scripts\evaluate_crnn.py:221:    
+                ref_text = 
+tokenizer.decode(target_seq)
+  scripts\evaluate_crnn.py:222:    
+            except AttributeError:
+  scripts\evaluate_crnn.py:223:    
+                ref_text = 
+"".join([str(c) for c in 
+target_seq])
+  scripts\evaluate_crnn.py:224:    
+                
+  scripts\evaluate_crnn.py:230:    
+                    
+clean_pred.append(p)
+  scripts\evaluate_crnn.py:231:    
+                prev = p
+  scripts\evaluate_crnn.py:232:    
+            try:
+> scripts\evaluate_crnn.py:233:    
+                hyp_text = 
+tokenizer.decode(clean_pred)
+  scripts\evaluate_crnn.py:234:    
+            except AttributeError:
+  scripts\evaluate_crnn.py:235:    
+                hyp_text = 
+"".join([str(c) for c in 
+clean_pred])
+  scripts\evaluate_crnn.py:236:    
+                
+  scripts\evaluate_crnn.py:275:    
+char_counts = 
+Counter(all_predicted_chars)
+  scripts\evaluate_crnn.py:276:    
+total_chars_predicted = 
+sum(char_counts.values())
+  scripts\evaluate_crnn.py:277:    
+> scripts\evaluate_crnn.py:278:    
+blank_percentage = (blank_preds / 
+total_raw_preds * 100) if 
+total_raw_preds > 0 else 100.0
+  scripts\evaluate_crnn.py:279:    
+avg_pred_length = 
+(total_chars_predicted / 
+num_samples) if num_samples > 0 
+else 0.0
+  scripts\evaluate_crnn.py:280:    
+  scripts\evaluate_crnn.py:281:    
+metrics = {
+  scripts\evaluate_crnn.py:285:    
+    "character_accuracy": char_acc,
+  scripts\evaluate_crnn.py:286:    
+    "word_accuracy": word_acc,
+  scripts\evaluate_crnn.py:287:    
+    "exact_match_accuracy": 
+exact_matches / num_samples if 
+num_samples > 0 else 0,
+> scripts\evaluate_crnn.py:288:    
+    "blank_percentage": 
+blank_percentage,
+  scripts\evaluate_crnn.py:289:    
+    "unique_predicted_characters": 
+len(char_counts),
+  scripts\evaluate_crnn.py:290:    
+    "unique_predicted_sequences": 
+len(unique_words),
+  scripts\evaluate_crnn.py:291:    
+    "average_prediction_length": 
+avg_pred_length,
+  scripts\evaluate_crnn.py:319:    
+    f.write(f"- WER: 
+{avg_wer:.4f}\n")
+  scripts\evaluate_crnn.py:320:    
+    f.write(f"- Character 
+Accuracy: {char_acc:.4f}\n")
+  scripts\evaluate_crnn.py:321:    
+    f.write(f"- Word/Exact Match 
+Accuracy: {metrics['exact_match_acc
+uracy']:.4f}\n")
+> scripts\evaluate_crnn.py:322:    
+    f.write(f"- Blank Prediction 
+%: {blank_percentage:.2f}%\n")
+  scripts\evaluate_crnn.py:323:    
+    f.write(f"- Unique Predicted 
+Characters: {len(char_counts)}\n")
+  scripts\evaluate_crnn.py:324:    
+    f.write(f"- Unique Predicted 
+Sequences: {len(unique_words)}\n")
+  scripts\evaluate_crnn.py:325:    
+    f.write(f"- Average Prediction 
+Length: {avg_pred_length:.2f}\n")
+  scripts\evaluate_crnn.py:340:    
+print(f"Character Accuracy:      
+{char_acc:.4f}")
+  scripts\evaluate_crnn.py:341:    
+print(f"Word Accuracy:           
+{word_acc:.4f}")
+  scripts\evaluate_crnn.py:342:    
+print(f"Exact Match Accuracy:    {m
+etrics['exact_match_accuracy']:.4f}
+")
+> scripts\evaluate_crnn.py:343:    
+print(f"Blank Percentage:        
+{blank_percentage:.2f}%")
+  scripts\evaluate_crnn.py:344:    
+print(f"Unique Chars Predicted:  
+{len(char_counts)}")
+  scripts\evaluate_crnn.py:345:    
+print(f"Unique Seqs Predicted:   
+{len(unique_words)}")
+  scripts\evaluate_crnn.py:346:    
+print(f"Average Pred Length:     
+{avg_pred_length:.2f}")
+  scripts\evaluate_custom.py:21:sys
+.path.append(project_root)
+  scripts\evaluate_custom.py:22:
+  
+scripts\evaluate_custom.py:23:from 
+models.recognition.crnn import CRNN
+> 
+scripts\evaluate_custom.py:24:from 
+models.recognition.decoder import 
+ctc_decode
+  
+scripts\evaluate_custom.py:25:from 
+scripts.dataset_loader import 
+AspectRatioPreservingResize
+  
+scripts\evaluate_custom.py:26:from 
+models.digitalization.tokenizer 
+import Tokenizer
+  
+scripts\evaluate_custom.py:27:from 
+utils.device import get_device
+  scripts\evaluate_custom.py:145:  
+          
+  scripts\evaluate_custom.py:146:  
+      with torch.no_grad():
+  scripts\evaluate_custom.py:147:  
+          outputs = 
+model(input_tensor)
+> scripts\evaluate_custom.py:148:  
+          preds = 
+ctc_decode(outputs)
+  scripts\evaluate_custom.py:149:  
+          
+  scripts\evaluate_custom.py:150:  
+          pred_seq = 
+preds[0].cpu().tolist()
+  scripts\evaluate_custom.py:151:  
+          clean_pred = []
+  scripts\evaluate_custom.py:156:  
+              prev = p
+  scripts\evaluate_custom.py:157:  
+          
+  scripts\evaluate_custom.py:158:  
+          try:
+> scripts\evaluate_custom.py:159:  
+              pred_text = 
+tokenizer.decode(clean_pred)
+  scripts\evaluate_custom.py:160:  
+          except AttributeError:
+  scripts\evaluate_custom.py:161:  
+              pred_text = 
+"".join([str(c) for c in 
+clean_pred])
+  scripts\evaluate_custom.py:162:  
+              
+  scripts\root_cause_diagnostic.py:
+68:        
+  scripts\root_cause_diagnostic.py:
+69:        # Verify decoding
+  scripts\root_cause_diagnostic.py:
+70:        try:
+> scripts\root_cause_diagnostic.py:
+71:            decoded_text = 
+tokenizer.decode(target_tokens)
+  scripts\root_cause_diagnostic.py:
+72:        except AttributeError:
+> scripts\root_cause_diagnostic.py:
+73:            decoded_text = 
+"".join([str(c) for c in 
+target_tokens])
+  scripts\root_cause_diagnostic.py:
+74:            
+> scripts\root_cause_diagnostic.py:
+75:        match = (label == 
+decoded_text)
+  scripts\root_cause_diagnostic.py:
+76:        
+  scripts\root_cause_diagnostic.py:
+77:        pairing_results.append({
+  scripts\root_cause_diagnostic.py:
+78:            "index": idx,
+  scripts\root_cause_diagnostic.py:
+82:            "image_height": h,
+  scripts\root_cause_diagnostic.py:
+83:            
+"target_character_length": 
+len(label),
+  scripts\root_cause_diagnostic.py:
+84:            "target_token_ids": 
+target_tokens,
+> scripts\root_cause_diagnostic.py:
+85:            "decoded_text": 
+decoded_text,
+  scripts\root_cause_diagnostic.py:
+86:            "encoding_match": 
+match
+  scripts\root_cause_diagnostic.py:
+87:        })
+  scripts\root_cause_diagnostic.py:
+88:        
+  scripts\root_cause_diagnostic.py:
+165:    probs_pre = 
+outputs_pre.softmax(2)
+  scripts\root_cause_diagnostic.py:
+166:    
+  scripts\root_cause_diagnostic.py:
+167:    optimizer = torch.optim.Ada
+m(model.parameters(), lr=0.0003)
+> scripts\root_cause_diagnostic.py:
+168:    criterion = 
+nn.CTCLoss(blank=0, 
+zero_infinity=True)
+  scripts\root_cause_diagnostic.py:
+169:    
+  scripts\root_cause_diagnostic.py:
+170:    optimizer.zero_grad()
+  scripts\root_cause_diagnostic.py:
+171:    outputs = model(images)
+  scripts\root_cause_diagnostic.py:
+172:    outputs_perm = 
+outputs.permute(1, 0, 2)
+> scripts\root_cause_diagnostic.py:
+173:    outputs_log_probs = 
+outputs_perm.log_softmax(2)
+  scripts\root_cause_diagnostic.py:
+174:    input_lengths = torch.full(
+size=(outputs_perm.size(1),), 
+fill_value=outputs_perm.size(0), 
+dtype=torch.long)
+  scripts\root_cause_diagnostic.py:
+175:    
+  scripts\root_cause_diagnostic.py:
+176:    loss = 
+criterion(outputs_log_probs, 
+targets, input_lengths, 
+target_lengths)
+  scripts\root_cause_diagnostic_ext
+ended.py:73:            
+  scripts\root_cause_diagnostic_ext
+ended.py:74:        target_tokens 
+= tokenizer.encode(label)
+  scripts\root_cause_diagnostic_ext
+ended.py:75:        try:
+> scripts\root_cause_diagnostic_ext
+ended.py:76:            
+decoded_text = 
+tokenizer.decode(target_tokens)
+  scripts\root_cause_diagnostic_ext
+ended.py:77:        except 
+AttributeError:
+> scripts\root_cause_diagnostic_ext
+ended.py:78:            
+decoded_text = "".join([str(c) for 
+c in target_tokens])
+  scripts\root_cause_diagnostic_ext
+ended.py:79:            
+> scripts\root_cause_diagnostic_ext
+ended.py:80:        match = (label 
+== decoded_text)
+  scripts\root_cause_diagnostic_ext
+ended.py:81:        
+  scripts\root_cause_diagnostic_ext
+ended.py:82:        
+pairing_results.append({
+  scripts\root_cause_diagnostic_ext
+ended.py:83:            "index": 
+idx,
+  scripts\root_cause_diagnostic_ext
+ended.py:87:            
+"image_height": h,
+  scripts\root_cause_diagnostic_ext
+ended.py:88:            
+"target_character_length": 
+len(label),
+  scripts\root_cause_diagnostic_ext
+ended.py:89:            
+"target_token_ids": target_tokens,
+> scripts\root_cause_diagnostic_ext
+ended.py:90:            
+"decoded_text": decoded_text,
+  scripts\root_cause_diagnostic_ext
+ended.py:91:            
+"encoding_match": match
+  scripts\root_cause_diagnostic_ext
+ended.py:92:        })
+  scripts\root_cause_diagnostic_ext
+ended.py:93:        
+  scripts\root_cause_diagnostic_ext
+ended.py:179:        l = 
+target_lengths[i].item()
+  scripts\root_cause_diagnostic_ext
+ended.py:180:        t = targets[of
+fset:offset+l].cpu().tolist()
+  scripts\root_cause_diagnostic_ext
+ended.py:181:        offset += l
+> scripts\root_cause_diagnostic_ext
+ended.py:182:        dec = 
+tokenizer.decode(t)
+  scripts\root_cause_diagnostic_ext
+ended.py:183:        match = (dec 
+== 
+pairing_results[i]["ground_truth"])
+  scripts\root_cause_diagnostic_ext
+ended.py:184:        
+batch_integrity.append({
+  scripts\root_cause_diagnostic_ext
+ended.py:185:            
+"batch_index": i,
+  scripts\root_cause_diagnostic_ext
+ended.py:186:            
+"expected": 
+pairing_results[i]["ground_truth"],
+> scripts\root_cause_diagnostic_ext
+ended.py:187:            
+"actual_decoded": dec,
+  scripts\root_cause_diagnostic_ext
+ended.py:188:            "match": 
+match
+  scripts\root_cause_diagnostic_ext
+ended.py:189:        })
+  scripts\root_cause_diagnostic_ext
+ended.py:190:    with open(out_dir 
+/ "dataloader_diagnostic.json", 
+"w", encoding="utf-8") as f:
+  scripts\root_cause_diagnostic_ext
+ended.py:192:        
+  scripts\root_cause_diagnostic_ext
+ended.py:193:    print("\n--- 
+PHASE 9: TRAINING CONFIGURATION 
+---")
+  scripts\root_cause_diagnostic_ext
+ended.py:194:    optimizer = torch.
+optim.Adam(model.parameters(), 
+lr=0.0003)
+> scripts\root_cause_diagnostic_ext
+ended.py:195:    criterion = 
+nn.CTCLoss(blank=0, 
+zero_infinity=True)
+  scripts\root_cause_diagnostic_ext
+ended.py:196:    config_info = {
+  scripts\root_cause_diagnostic_ext
+ended.py:197:        
+"learning_rate": 
+optimizer.param_groups[0]['lr'],
+  scripts\root_cause_diagnostic_ext
+ended.py:198:        "optimizer": 
+type(optimizer).__name__,
+  scripts\root_cause_diagnostic_ext
+ended.py:210:        probs = 
+logits.softmax(2)
+  scripts\root_cause_diagnostic_ext
+ended.py:211:        blank_probs = 
+probs[:, :, 0].mean().item()
+  scripts\root_cause_diagnostic_ext
+ended.py:212:        
+non_blank_probs = probs[:, :, 
+1:].max(dim=2)[0].mean().item()
+> scripts\root_cause_diagnostic_ext
+ended.py:213:        argmaxes = 
+probs.argmax(dim=2)
+> scripts\root_cause_diagnostic_ext
+ended.py:214:        
+blank_timesteps = (argmaxes == 
+0).sum().item()
+> scripts\root_cause_diagnostic_ext
+ended.py:215:        
+non_blank_timesteps = (argmaxes != 
+0).sum().item()
+  scripts\root_cause_diagnostic_ext
+ended.py:216:        return {
+  scripts\root_cause_diagnostic_ext
+ended.py:217:            
+"mean_blank_prob": blank_probs,
+  scripts\root_cause_diagnostic_ext
+ended.py:218:            
+"mean_max_non_blank_prob": 
+non_blank_probs,
+  scripts\root_cause_diagnostic_ext
+ended.py:227:    ctc_stats_pre = 
+get_ctc_stats(outputs_pre)
+  scripts\root_cause_diagnostic_ext
+ended.py:228:    
+  scripts\root_cause_diagnostic_ext
+ended.py:229:    outputs_perm = 
+outputs_pre.permute(1, 0, 2)
+> scripts\root_cause_diagnostic_ext
+ended.py:230:    outputs_log_probs 
+= outputs_perm.log_softmax(2)
+  scripts\root_cause_diagnostic_ext
+ended.py:231:    input_lengths = to
+rch.full(size=(outputs_perm.size(1)
+,), 
+fill_value=outputs_perm.size(0), 
+dtype=torch.long)
+  scripts\root_cause_diagnostic_ext
+ended.py:232:    loss = 
+criterion(outputs_log_probs, 
+targets, input_lengths, 
+target_lengths)
+  scripts\root_cause_diagnostic_ext
+ended.py:233:    loss.backward()
+  scripts\sanity_check.py:33:      
+      samples.append(entry)
+  scripts\sanity_check.py:34:      
+      
+  scripts\sanity_check.py:35:    
+print("\n--- 20 Sample Label 
+Validations ---")
+> scripts\sanity_check.py:36:    
+valid_decodes = 0
+  scripts\sanity_check.py:37:    
+empty_labels = 0
+  scripts\sanity_check.py:38:    
+for i, sample in 
+enumerate(samples):
+  scripts\sanity_check.py:39:      
+  label = sample.get("label", "")
+  scripts\sanity_check.py:41:      
+      empty_labels += 1
+  scripts\sanity_check.py:42:      
+      
+  scripts\sanity_check.py:43:      
+  encoded = tokenizer.encode(label)
+> scripts\sanity_check.py:44:      
+  decoded = 
+tokenizer.decode(encoded)
+  scripts\sanity_check.py:45:      
+  
+  scripts\sanity_check.py:46:      
+  print(f"\nSample {i+1}:")
+  scripts\sanity_check.py:47:      
+  print(f"Ground Truth: '{label}'")
+  scripts\sanity_check.py:48:      
+  print(f"Encoded IDs:  {encoded}")
+> scripts\sanity_check.py:49:      
+  print(f"Decoded:      
+'{decoded}'")
+  scripts\sanity_check.py:50:      
+  
+> scripts\sanity_check.py:51:      
+  if decoded == label:
+> scripts\sanity_check.py:52:      
+      valid_decodes += 1
+  scripts\sanity_check.py:53:      
+      
+> scripts\sanity_check.py:54:    
+print(f"\nValidation Summary: 
+{valid_decodes}/20 matches. Empty 
+labels: {empty_labels}")
+  scripts\sanity_check.py:55:    
+  scripts\sanity_check.py:56:    # 
+3. Model & CTC Sanity Check
+  scripts\sanity_check.py:57:    pr
+int("\n============================
+================================")
+  scripts\sanity_check.py:62:    
+model = 
+CRNN(tokenizer.num_classes, 
+feature_size=2048).to(device)
+  scripts\sanity_check.py:63:    
+model.eval()
+  scripts\sanity_check.py:64:    
+> scripts\sanity_check.py:65:    
+criterion = nn.CTCLoss(blank=0, 
+zero_infinity=True)
+  scripts\sanity_check.py:66:    
+  scripts\sanity_check.py:67:    # 
+Load 1 real image
+  scripts\sanity_check.py:68:    
+img_path = working_root / 
+"imported" / "tamil" / "train" / 
+"packet_001" / samples[0]["image"]
+  scripts\sanity_check.py:90:      
+  logits_perm = logits.permute(1, 
+0, 2) # [T, B, C]
+  scripts\sanity_check.py:91:      
+  print(f"Permuted shape: 
+{list(logits_perm.shape)}")
+  scripts\sanity_check.py:92:      
+  
+> scripts\sanity_check.py:93:      
+  log_probs = 
+logits_perm.log_softmax(2)
+> scripts\sanity_check.py:94:      
+  print(f"After log_softmax: 
+{list(log_probs.shape)}")
+  scripts\sanity_check.py:95:      
+  
+  scripts\sanity_check.py:96:      
+  input_lengths = torch.full(size=(
+log_probs.size(1),), 
+fill_value=log_probs.size(0), 
+dtype=torch.long)
+  scripts\sanity_check.py:97:      
+  
+  scripts\single_batch_diagnostic.p
+y:12:sys.path.append(str(Path(__fil
+e__).resolve().parent.parent))
+  scripts\single_batch_diagnostic.p
+y:13:
+  scripts\single_batch_diagnostic.p
+y:14:from models.recognition.crnn 
+import CRNN
+> scripts\single_batch_diagnostic.p
+y:15:from 
+models.recognition.decoder import 
+ctc_decode
+  scripts\single_batch_diagnostic.p
+y:16:from scripts.dataset_loader 
+import PacketOCRDataset, 
+get_dataloader, crnn_collate_fn, 
+AspectRatioPreservingResize
+  scripts\single_batch_diagnostic.p
+y:17:from 
+models.digitalization.tokenizer 
+import Tokenizer
+  scripts\single_batch_diagnostic.p
+y:18:from utils.metrics import 
+calculate_cer, calculate_wer
+  scripts\single_batch_diagnostic.p
+y:122:    
+  scripts\single_batch_diagnostic.p
+y:123:    device = 
+torch.device('cuda' if 
+torch.cuda.is_available() else 
+'cpu')
+  scripts\single_batch_diagnostic.p
+y:124:    model = 
+CRNN(tokenizer.num_classes, 
+feature_size=2048).to(device)
+> scripts\single_batch_diagnostic.p
+y:125:    criterion = 
+torch.nn.CTCLoss(blank=0, 
+zero_infinity=True).to(device)
+  scripts\single_batch_diagnostic.p
+y:126:    optimizer = torch.optim.A
+dam(model.parameters(), lr=0.0003)
+  scripts\single_batch_diagnostic.p
+y:127:    
+  scripts\single_batch_diagnostic.p
+y:128:    images = 
+images.to(device)
+  scripts\single_batch_diagnostic.p
+y:180:        input_lengths = 
+(actual_widths // 4).to(torch.long)
+  scripts\single_batch_diagnostic.p
+y:181:        input_lengths = 
+torch.clamp(input_lengths, 
+max=cnn_out.size(3))
+  scripts\single_batch_diagnostic.p
+y:182:        print("CTC 
+input_lengths calculated:", 
+input_lengths.tolist())
+> scripts\single_batch_diagnostic.p
+y:183:        print("Note: The 
+CTCLoss receives exactly these 
+input_lengths, which successfully 
+masks out the padded regions.")
+  scripts\single_batch_diagnostic.p
+y:184:    
+  scripts\single_batch_diagnostic.p
+y:185:    print("\n================
+=================================="
+)
+  scripts\single_batch_diagnostic.p
+y:186:    print("TEST 10 — CTC 
+LOGIT AUDIT (Step 0)")
+  scripts\single_batch_diagnostic.p
+y:188:    with torch.no_grad():
+  scripts\single_batch_diagnostic.p
+y:189:        outputs = 
+model(images)
+  scripts\single_batch_diagnostic.p
+y:190:        outputs_perm = 
+outputs.permute(1, 0, 2)
+> scripts\single_batch_diagnostic.p
+y:191:        outputs_log_probs = 
+outputs_perm.log_softmax(2)
+  scripts\single_batch_diagnostic.p
+y:192:        seq_probs = 
+outputs_perm.softmax(2)
+  scripts\single_batch_diagnostic.p
+y:193:        
+  scripts\single_batch_diagnostic.p
+y:194:        print("Logits (Step 
+0):")
+  scripts\single_batch_diagnostic.p
+y:221:            
+  scripts\single_batch_diagnostic.p
+y:222:        outputs = 
+model(images)
+  scripts\single_batch_diagnostic.p
+y:223:        outputs_perm = 
+outputs.permute(1, 0, 2)
+> scripts\single_batch_diagnostic.p
+y:224:        outputs_log_probs = 
+outputs_perm.log_softmax(2)
+  scripts\single_batch_diagnostic.p
+y:225:        
+  scripts\single_batch_diagnostic.p
+y:226:        input_lengths = 
+(actual_widths // 4).to(torch.long)
+  scripts\single_batch_diagnostic.p
+y:227:        input_lengths = 
+torch.clamp(input_lengths, 
+max=outputs_perm.size(0))
+  scripts\single_batch_diagnostic.p
+y:245:                
+  scripts\single_batch_diagnostic.p
+y:246:        # Calculate metrics
+  scripts\single_batch_diagnostic.p
+y:247:        with torch.no_grad():
+> scripts\single_batch_diagnostic.p
+y:248:            preds = 
+ctc_decode(outputs)
+  scripts\single_batch_diagnostic.p
+y:249:            
+  scripts\single_batch_diagnostic.p
+y:250:            total_cer, 
+exact_matches, total_len = 0, 0, 0
+  scripts\single_batch_diagnostic.p
+y:251:            blank_count = 
+(preds == 0).sum().item()
+  scripts\single_batch_diagnostic.p
+y:261:                offset += 
+t_len
+  scripts\single_batch_diagnostic.p
+y:262:                
+  scripts\single_batch_diagnostic.p
+y:263:                try:
+> scripts\single_batch_diagnostic.p
+y:264:                    ref_text 
+= tokenizer.decode(t_seq)
+  scripts\single_batch_diagnostic.p
+y:265:                except:
+  scripts\single_batch_diagnostic.p
+y:266:                    ref_text 
+= str(t_seq)
+  scripts\single_batch_diagnostic.p
+y:267:                    
+  scripts\single_batch_diagnostic.p
+y:274:                    prev = p
+  scripts\single_batch_diagnostic.p
+y:275:                    
+  scripts\single_batch_diagnostic.p
+y:276:                try:
+> scripts\single_batch_diagnostic.p
+y:277:                    
+pred_text = 
+tokenizer.decode(clean_p)
+  scripts\single_batch_diagnostic.p
+y:278:                except:
+  scripts\single_batch_diagnostic.p
+y:279:                    
+pred_text = str(clean_p)
+  scripts\single_batch_diagnostic.p
+y:280:                    
+  scripts\tiny_overfit_diagnostic.p
+y:22:sys.path.append(str(Path(__fil
+e__).resolve().parent.parent))
+  scripts\tiny_overfit_diagnostic.p
+y:23:
+  scripts\tiny_overfit_diagnostic.p
+y:24:from models.recognition.crnn 
+import CRNN
+> scripts\tiny_overfit_diagnostic.p
+y:25:from 
+models.recognition.decoder import 
+ctc_decode
+  scripts\tiny_overfit_diagnostic.p
+y:26:from scripts.dataset_loader 
+import PacketOCRDataset, 
+get_dataloader, crnn_collate_fn, 
+AspectRatioPreservingResize
+  scripts\tiny_overfit_diagnostic.p
+y:27:from 
+models.digitalization.tokenizer 
+import Tokenizer
+  scripts\tiny_overfit_diagnostic.p
+y:28:from utils.device import 
+get_device
+  scripts\tiny_overfit_diagnostic.p
+y:87:    
+  scripts\tiny_overfit_diagnostic.p
+y:88:    model = 
+CRNN(tokenizer.num_classes, 
+feature_size=2048).to(device)
+  scripts\tiny_overfit_diagnostic.p
+y:89:    optimizer = 
+Adam(model.parameters(), lr=0.0003)
+> scripts\tiny_overfit_diagnostic.p
+y:90:    criterion = 
+nn.CTCLoss(blank=0, 
+zero_infinity=True)
+  scripts\tiny_overfit_diagnostic.p
+y:91:    
+  scripts\tiny_overfit_diagnostic.p
+y:92:    out_dir = Path("outputs/tr
+aining/tamil/experiments/tiny_overf
+it_500")
+  scripts\tiny_overfit_diagnostic.p
+y:93:    ckpt_dir = Path("checkpoin
+ts/recognition/tamil/experiments/ti
+ny_overfit_500")
+  scripts\tiny_overfit_diagnostic.p
+y:119:            
+  scripts\tiny_overfit_diagnostic.p
+y:120:            outputs = 
+model(images)
+  scripts\tiny_overfit_diagnostic.p
+y:121:            outputs = 
+outputs.permute(1, 0, 2)
+> scripts\tiny_overfit_diagnostic.p
+y:122:            
+outputs_log_probs = 
+outputs.log_softmax(2)
+  scripts\tiny_overfit_diagnostic.p
+y:123:            
+  scripts\tiny_overfit_diagnostic.p
+y:124:            input_lengths = 
+(actual_widths // 4).to(torch.long)
+  scripts\tiny_overfit_diagnostic.p
+y:125:            input_lengths = 
+torch.clamp(input_lengths, 
+max=outputs.size(0))
+  scripts\tiny_overfit_diagnostic.p
+y:163:                
+  scripts\tiny_overfit_diagnostic.p
+y:164:                outputs = 
+model(images)
+  scripts\tiny_overfit_diagnostic.p
+y:165:                outputs_perm 
+= outputs.permute(1, 0, 2)
+> scripts\tiny_overfit_diagnostic.p
+y:166:                
+outputs_log_probs = 
+outputs_perm.log_softmax(2)
+  scripts\tiny_overfit_diagnostic.p
+y:167:                
+  scripts\tiny_overfit_diagnostic.p
+y:168:                
+input_lengths = (actual_widths // 
+4).to(torch.long)
+  scripts\tiny_overfit_diagnostic.p
+y:169:                
+input_lengths = 
+torch.clamp(input_lengths, 
+max=outputs_perm.size(0))
+  scripts\tiny_overfit_diagnostic.p
+y:172:                eval_loss += 
+loss.item()
+  scripts\tiny_overfit_diagnostic.p
+y:173:                eval_batches 
++= 1
+  scripts\tiny_overfit_diagnostic.p
+y:174:                
+> scripts\tiny_overfit_diagnostic.p
+y:175:                preds = 
+ctc_decode(outputs)
+  scripts\tiny_overfit_diagnostic.p
+y:176:                
+total_raw_preds += preds.numel()
+  scripts\tiny_overfit_diagnostic.p
+y:177:                blank_preds 
++= (preds == 0).sum().item()
+  scripts\tiny_overfit_diagnostic.p
+y:178:                
+  scripts\tiny_overfit_diagnostic.p
+y:179:                if batch_idx 
+== 0 and epoch in [1, 5, 10, 20, 
+30]:
+  scripts\tiny_overfit_diagnostic.p
+y:180:                    for i in 
+range(min(5, images.size(0))):
+  scripts\tiny_overfit_diagnostic.p
+y:181:                        
+seq_output = outputs[i]
+> scripts\tiny_overfit_diagnostic.p
+y:182:                        
+seq_log_probs = 
+seq_output.log_softmax(1)
+  scripts\tiny_overfit_diagnostic.p
+y:183:                        
+seq_probs = seq_output.softmax(1)
+  scripts\tiny_overfit_diagnostic.p
+y:184:                        
+  scripts\tiny_overfit_diagnostic.p
+y:185:                        
+mean_blank_log_prob = 
+seq_log_probs[:, 0].mean().item()
+  scripts\tiny_overfit_diagnostic.p
+y:186:                        
+max_non_blank_probs = seq_probs[:, 
+1:].max(dim=1)[0]
+  scripts\tiny_overfit_diagnostic.p
+y:187:                        
+mean_max_non_blank = 
+max_non_blank_probs.mean().item()
+  scripts\tiny_overfit_diagnostic.p
+y:188:                        
+> scripts\tiny_overfit_diagnostic.p
+y:189:                        
+argmaxes = seq_probs.argmax(dim=1)
+> scripts\tiny_overfit_diagnostic.p
+y:190:                        
+is_blank = (argmaxes == 0)
+> scripts\tiny_overfit_diagnostic.p
+y:191:                        
+pct_blank_argmax = 
+is_blank.float().mean().item() * 
+100
+  scripts\tiny_overfit_diagnostic.p
+y:192:                        
+num_non_blank = 
+(~is_blank).sum().item()
+  scripts\tiny_overfit_diagnostic.p
+y:193:                        
+  scripts\tiny_overfit_diagnostic.p
+y:194:                        
+ctc_5_results.append({
+  scripts\tiny_overfit_diagnostic.p
+y:198:                            
+"input_sequence_length": 
+seq_output.size(0),
+  scripts\tiny_overfit_diagnostic.p
+y:199:                            
+"mean_blank_log_prob": 
+mean_blank_log_prob,
+  scripts\tiny_overfit_diagnostic.p
+y:200:                            
+"mean_max_non_blank_prob": 
+mean_max_non_blank,
+> scripts\tiny_overfit_diagnostic.p
+y:201:                            
+"percentage_blank_argmax": 
+pct_blank_argmax,
+  scripts\tiny_overfit_diagnostic.p
+y:202:                            
+"number_non_blank_timesteps": 
+num_non_blank
+  scripts\tiny_overfit_diagnostic.p
+y:203:                        })
+  scripts\tiny_overfit_diagnostic.p
+y:204:                
+  scripts\tiny_overfit_diagnostic.p
+y:211:                    
+avg_target_len += length
+  scripts\tiny_overfit_diagnostic.p
+y:212:                    
+  scripts\tiny_overfit_diagnostic.p
+y:213:                    try:
+> scripts\tiny_overfit_diagnostic.p
+y:214:                        
+ref_text = 
+tokenizer.decode(target_seq)
+  scripts\tiny_overfit_diagnostic.p
+y:215:                    except 
+AttributeError:
+  scripts\tiny_overfit_diagnostic.p
+y:216:                        
+ref_text = "".join([str(c) for c 
+in target_seq])
+  scripts\tiny_overfit_diagnostic.p
+y:217:                        
+  scripts\tiny_overfit_diagnostic.p
+y:226:                    
+avg_pred_len += len(clean_pred)
+  scripts\tiny_overfit_diagnostic.p
+y:227:                    
+  scripts\tiny_overfit_diagnostic.p
+y:228:                    try:
+> scripts\tiny_overfit_diagnostic.p
+y:229:                        
+hyp_text = 
+tokenizer.decode(clean_pred)
+  scripts\tiny_overfit_diagnostic.p
+y:230:                    except 
+AttributeError:
+  scripts\tiny_overfit_diagnostic.p
+y:231:                        
+hyp_text = "".join([str(c) for c 
+in clean_pred])
+  scripts\tiny_overfit_diagnostic.p
+y:232:                        
+  scripts\tiny_overfit_diagnostic.p
+y:285:            "wer": avg_wer,
+  scripts\tiny_overfit_diagnostic.p
+y:286:            
+"character_accuracy": char_acc,
+  scripts\tiny_overfit_diagnostic.p
+y:287:            "word_accuracy": 
+word_acc,
+> scripts\tiny_overfit_diagnostic.p
+y:288:            
+"blank_percentage": blank_pct,
+  scripts\tiny_overfit_diagnostic.p
+y:289:            
+"unique_predicted_characters": 
+len(char_counts),
+  scripts\tiny_overfit_diagnostic.p
+y:290:            
+"unique_predicted_sequences": 
+len(unique_seqs),
+  scripts\tiny_overfit_diagnostic.p
+y:291:            
+"average_prediction_length": 
+avg_pred_len,
+  scripts\train_crnn.py:19:sys.path
+.append(str(Path(__file__).resolve(
+).parent.parent))
+  scripts\train_crnn.py:20:
+  scripts\train_crnn.py:21:from 
+models.recognition.crnn import CRNN
+> scripts\train_crnn.py:22:from 
+models.recognition.decoder import 
+ctc_decode
+  scripts\train_crnn.py:23:from 
+scripts.dataset_loader import 
+get_dataloader
+  scripts\train_crnn.py:24:from 
+models.digitalization.tokenizer 
+import Tokenizer
+  scripts\train_crnn.py:25:from 
+utils.device import get_device
+  scripts\train_crnn.py:82:        
+    
+  scripts\train_crnn.py:83:        
+    outputs = model(images)
+  scripts\train_crnn.py:84:        
+    outputs_perm = 
+outputs.permute(1, 0, 2)
+> scripts\train_crnn.py:85:        
+    outputs_log_probs = 
+outputs_perm.log_softmax(2)
+  scripts\train_crnn.py:86:        
+    
+  scripts\train_crnn.py:87:        
+    input_lengths = (actual_widths 
+// 4).to(torch.long)
+  scripts\train_crnn.py:88:        
+    input_lengths = 
+torch.clamp(input_lengths, 
+max=outputs_perm.size(0))
+  scripts\train_crnn.py:90:        
+    loss = 
+criterion(outputs_log_probs, 
+targets, input_lengths, 
+target_lengths)
+  scripts\train_crnn.py:91:        
+    val_loss += loss.item()
+  scripts\train_crnn.py:92:        
+    
+> scripts\train_crnn.py:93:        
+    preds = ctc_decode(outputs)
+  scripts\train_crnn.py:94:        
+    
+  scripts\train_crnn.py:95:        
+    total_raw_preds += 
+preds.numel()
+  scripts\train_crnn.py:96:        
+    blank_preds += (preds == 
+0).sum().item()
+  scripts\train_crnn.py:102:       
+         offset += length
+  scripts\train_crnn.py:103:       
+         
+  scripts\train_crnn.py:104:       
+         try:
+> scripts\train_crnn.py:105:       
+             ref_text = 
+tokenizer.decode(target_seq)
+  scripts\train_crnn.py:106:       
+         except AttributeError:
+  scripts\train_crnn.py:107:       
+             ref_text = 
+"".join([str(c) for c in 
+target_seq])
+  scripts\train_crnn.py:108:       
+             
+  scripts\train_crnn.py:114:       
+                 
+clean_pred.append(p)
+  scripts\train_crnn.py:115:       
+             prev = p
+  scripts\train_crnn.py:116:       
+         try:
+> scripts\train_crnn.py:117:       
+             hyp_text = 
+tokenizer.decode(clean_pred)
+  scripts\train_crnn.py:118:       
+         except AttributeError:
+  scripts\train_crnn.py:119:       
+             hyp_text = 
+"".join([str(c) for c in 
+clean_pred])
+  scripts\train_crnn.py:120:       
+             
+  scripts\train_crnn.py:155:       
+ "unique_words": len(unique_words),
+  scripts\train_crnn.py:156:       
+ "most_common_char": 
+most_common_char,
+  scripts\train_crnn.py:157:       
+ "dominance_percentage": 
+dom_percentage,
+> scripts\train_crnn.py:158:       
+ "blank_percentage": (blank_preds 
+/ total_raw_preds * 100) if 
+total_raw_preds > 0 else 100.0,
+  scripts\train_crnn.py:159:       
+ "avg_pred_length": 
+(total_chars_predicted / 
+num_samples) if num_samples > 0 
+else 0.0
+  scripts\train_crnn.py:160:    }
+  scripts\train_crnn.py:161:       
+ 
+  scripts\train_crnn.py:200:    
+print(f"Outputs shape: 
+{outputs.shape}")
+  scripts\train_crnn.py:201:    
+  scripts\train_crnn.py:202:    
+outputs_perm = outputs.permute(1, 
+0, 2)
+> scripts\train_crnn.py:203:    
+outputs_log_probs = 
+outputs_perm.float().log_softmax(2)
+  scripts\train_crnn.py:204:    
+  scripts\train_crnn.py:205:    
+input_lengths = (actual_widths // 
+4).to(torch.long)
+  scripts\train_crnn.py:206:    
+input_lengths = 
+torch.clamp(input_lengths, min=1, 
+max=outputs_perm.size(0))
+  scripts\train_crnn.py:213:       
+ sys.exit(1)
+  scripts\train_crnn.py:214:       
+ 
+  scripts\train_crnn.py:215:    if 
+loss.item() < 0:
+> scripts\train_crnn.py:216:       
+ print("ERROR: CTC Loss is 
+negative. Log_softmax might be 
+failing.")
+  scripts\train_crnn.py:217:       
+ sys.exit(1)
+  scripts\train_crnn.py:218:       
+ 
+  scripts\train_crnn.py:219:    
+first_target_len = 
+target_lengths[0].item()
+  scripts\train_crnn.py:220:    
+first_target_seq = targets[:first_t
+arget_len].cpu().tolist()
+> scripts\train_crnn.py:221:    
+decoded = 
+tokenizer.decode(first_target_seq)
+> scripts\train_crnn.py:222:    
+print(f"First label decoded: 
+'{decoded}'")
+  scripts\train_crnn.py:223:    
+> scripts\train_crnn.py:224:    if 
+not decoded:
+  scripts\train_crnn.py:225:       
+ print("ERROR: First label is 
+empty after decoding. Tokenizer 
+failed.")
+  scripts\train_crnn.py:226:       
+ sys.exit(1)
+  scripts\train_crnn.py:227:       
+ 
+  scripts\train_crnn.py:261:    
+  scripts\train_crnn.py:262:    
+model = 
+CRNN(tokenizer.num_classes, 
+feature_size=2048).to(device)
+  scripts\train_crnn.py:263:    
+optimizer = 
+Adam(model.parameters(), lr=lr, wei
+ght_decay=config["training"].get("w
+eight_decay", 0.0001))
+> scripts\train_crnn.py:264:    
+criterion = nn.CTCLoss(blank=0, 
+zero_infinity=True)
+  scripts\train_crnn.py:265:    
+  scripts\train_crnn.py:266:    if 
+args.experiment:
+  scripts\train_crnn.py:267:       
+ outputs_dir = Path("outputs") / 
+"training" / args.language / 
+args.experiment
+  scripts\train_crnn.py:364:       
+ with open(history_json, 'r', 
+encoding='utf-8') as f:
+  scripts\train_crnn.py:365:       
+     try:
+  scripts\train_crnn.py:366:       
+         history_records = 
+json.load(f)
+> scripts\train_crnn.py:367:       
+     except json.JSONDecodeError:
+  scripts\train_crnn.py:368:       
+         pass
+  scripts\train_crnn.py:369:       
+         
+  scripts\train_crnn.py:370:    
+scaler = 
+torch.cuda.amp.GradScaler() if (con
+fig["training"].get("mixed_precisio
+n", True) and device.type == 
+'cuda') else None
+  scripts\train_crnn.py:451:       
+             with 
+torch.cuda.amp.autocast():
+  scripts\train_crnn.py:452:       
+                 outputs = 
+model(images)
+  scripts\train_crnn.py:453:       
+                 outputs = 
+outputs.permute(1, 0, 2)
+> scripts\train_crnn.py:454:       
+                 outputs_log_probs 
+= outputs.float().log_softmax(2)
+  scripts\train_crnn.py:455:       
+                 
+  scripts\train_crnn.py:456:       
+                 input_lengths = 
+(actual_widths // 4).to(torch.long)
+  scripts\train_crnn.py:457:       
+                 input_lengths = 
+torch.clamp(input_lengths, min=1, 
+max=outputs.size(0))
+  scripts\train_crnn.py:471:       
+         else:
+  scripts\train_crnn.py:472:       
+             outputs = 
+model(images)
+  scripts\train_crnn.py:473:       
+             outputs = 
+outputs.permute(1, 0, 2)
+> scripts\train_crnn.py:474:       
+             outputs_log_probs = 
+outputs.float().log_softmax(2)
+  scripts\train_crnn.py:475:       
+             
+  scripts\train_crnn.py:476:       
+             input_lengths = 
+(actual_widths // 4).to(torch.long)
+  scripts\train_crnn.py:477:       
+             input_lengths = 
+torch.clamp(input_lengths, min=1, 
+max=outputs.size(0))
+  scripts\train_crnn.py:529:       
+     print(f"Word Accuracy: 
+{word_acc:.4f}")
+  scripts\train_crnn.py:530:       
+     
+  scripts\train_crnn.py:531:       
+     print(f"\n--- Mode Collapse 
+Analysis ---")
+> scripts\train_crnn.py:532:       
+     print(f"Blank Prediction %:   
+       
+{mc_stats.get('blank_percentage', 
+100):.2f}%")
+  scripts\train_crnn.py:533:       
+     print(f"Unique Predicted 
+Characters: 
+{mc_stats.get('unique_characters', 
+0)}")
+  scripts\train_crnn.py:534:       
+     print(f"Unique Predicted 
+Sequences:  
+{mc_stats.get('unique_words', 0)}")
+  scripts\train_crnn.py:535:       
+     print(f"Dominant Character:   
+       
+'{mc_stats.get('most_common_char', 
+'')}' ({mc_stats.get('dominance_per
+centage', 0):.2f}%)")
+  scripts\train_crnn.py:581:       
+         f.write(f"- WER: 
+{wer:.4f}\n")
+  scripts\train_crnn.py:582:       
+         f.write(f"- Character 
+Accuracy: {char_acc:.4f}\n")
+  scripts\train_crnn.py:583:       
+         f.write(f"- Word 
+Accuracy: {word_acc:.4f}\n")
+> scripts\train_crnn.py:584:       
+         f.write(f"- Blank 
+Prediction %: 
+{mc_stats.get('blank_percentage', 
+100):.2f}%\n")
+  scripts\train_crnn.py:585:       
+         f.write(f"- Unique 
+Predicted Characters: 
+{mc_stats.get('unique_characters', 
+0)}\n")
+  scripts\train_crnn.py:586:       
+         f.write(f"- Unique 
+Predicted Sequences: 
+{mc_stats.get('unique_words', 
+0)}\n")
+  scripts\train_crnn.py:587:       
+         f.write(f"- Average 
+Prediction Length: 
+{mc_stats.get('avg_pred_length', 
+0):.2f}\n")
+  scripts\train_crnn.py:602:       
+         "WER": wer,
+  scripts\train_crnn.py:603:       
+         "character_accuracy": 
+char_acc,
+  scripts\train_crnn.py:604:       
+         "word_accuracy": word_acc,
+> scripts\train_crnn.py:605:       
+         "blank_percentage": 
+mc_stats.get('blank_percentage', 
+100),
+  scripts\train_crnn.py:606:       
+         
+"unique_predicted_characters": 
+mc_stats.get('unique_characters', 
+0),
+  scripts\train_crnn.py:607:       
+         
+"unique_predicted_sequences": 
+mc_stats.get('unique_words', 0),
+  scripts\train_crnn.py:608:       
+         
+"average_prediction_length": 
+mc_stats.get('avg_pred_length', 0),
+
+

@@ -1,0 +1,38 @@
+{
+    "num_samples": 11598,
+    "num_classes_total": 78,
+    "metrics": {
+        "CER": 0.3584050204124284,
+        "WER": 0.8144507673736852,
+        "char_accuracy": 0.6610889331154145,
+        "word_accuracy": 0.18554923262631487
+    },
+    "character_stats": {
+        "gt_unique_characters": 57,
+        "pred_unique_characters": 56,
+        "num_missing_characters": 4,
+        "missing_characters_list": [
+            "-",
+            "௫",
+            "ஶ",
+            "ௗ"
+        ]
+    },
+    "ctc_blank_stats": {
+        "raw_timestep_blank_percentage": 75.2188080335649,
+        "empty_decoded_prediction_percentage": 0.0,
+        "avg_blank_prob_overall": 0.7221206952749483,
+        "avg_blank_prob_correct_samples": 0.767864449228399,
+        "avg_blank_prob_incorrect_samples": 0.7116992937814245
+    },
+    "sequence_lengths": {
+        "avg_gt_length": 9.848077254699087,
+        "avg_pred_length": 8.539144680117262,
+        "ratio_pred_to_gt": 0.8670874993433609
+    },
+    "width_stats": {
+        "avg_actual_width": 161.9638730815658,
+        "avg_padded_width": 297.2110708742887,
+        "avg_actual_to_padded_ratio": 0.5546349508904315
+    }
+}

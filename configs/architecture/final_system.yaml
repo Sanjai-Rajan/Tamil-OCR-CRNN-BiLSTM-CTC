@@ -1,0 +1,35 @@
+ocr:
+  model: "crnn"
+  checkpoint: "checkpoints/recognition/tamil/global_shuffle_lr_1e-4/best.pth"
+  vocabulary: "data/tamil_ocr_dataset/vocabulary/tamil_vocab.json"
+
+mlm:
+  model_dir: "models/indic_bert"
+  tokenizer: "models/indic_bert"
+  max_length: 128
+
+restoration:
+  model_dir: "models/mt5_small_restoration/base"
+  tokenizer: "models/mt5_small_restoration/base"
+  max_input_length: 128
+  max_output_length: 128
+
+ranking:
+  # STATUS: INITIAL / TO BE CALIBRATED
+  ocr_weight: 0.2
+  generation_weight: 0.2
+  context_weight: 0.4
+  edit_penalty: 0.2
+
+decision:
+  # STATUS: INITIAL / TO BE CALIBRATED
+  keep_ocr_threshold: 0.9
+  review_threshold: 0.4
+
+evaluation:
+  normalization: "NFC"
+  metrics:
+    - "CER"
+    - "WER"
+    - "word_accuracy"
+    - "exact_match"

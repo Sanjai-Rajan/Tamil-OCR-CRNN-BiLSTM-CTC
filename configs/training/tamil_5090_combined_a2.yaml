@@ -1,0 +1,14 @@
+# Tamil OCR 5090 Benchmark Configuration (Combined A2)
+dataset: "data/manifests/tamil/sequence_ocr/combined/"
+architecture: "crnn"
+vocabulary: "data/tamil_ocr_dataset/vocabulary/tamil_vocab.json"
+checkpoint: "checkpoints/recognition/tamil/tamil_full_40epoch/best.pth"
+batch_size: AUTO-BENCHMARK-ON-5090
+workers: AUTO-BENCHMARK-ON-5090
+learning_rate: 0.0001
+epochs: 40
+bucketing: true
+a2_augmentation: true
+multiscale: false
+seed: 42
+output_dir: "outputs/5090_combined_a2_run/"

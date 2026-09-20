@@ -1,0 +1,1 @@
+t	Argmax_Idx	Char	Max_Prob	Blank_Prob

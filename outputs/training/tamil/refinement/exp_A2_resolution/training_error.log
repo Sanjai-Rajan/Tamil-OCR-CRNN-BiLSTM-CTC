@@ -1,0 +1,4 @@
+C:\Users\prsan\Desktop\CDAC\1_Draft\scripts\train_refinement.py:376: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler() if (config["training"].get("mixed_precision", True) and device.type == 'cuda') else None
+C:\Users\prsan\Desktop\CDAC\1_Draft\scripts\train_refinement.py:478: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():

@@ -1,0 +1,14 @@
+{
+  "total_samples": 200,
+  "avg_raw_components": 22.805,
+  "median_raw_components": 15,
+  "avg_candidate_regions": 1.825,
+  "single_component_words": 169,
+  "fragmented_component_words": 79,
+  "length_groups": {
+    "short (1-5)": 15,
+    "medium (6-10)": 114,
+    "long (11-15)": 59,
+    "very long (16+)": 12
+  }
+}

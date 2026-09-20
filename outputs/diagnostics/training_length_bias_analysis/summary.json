@@ -1,0 +1,37 @@
+{
+    "total_train_samples": 127854,
+    "total_test_samples": 43110,
+    "max_train_length": 32,
+    "train_ge_20": 1271,
+    "train_ge_25": 147,
+    "buckets": [
+        {
+            "bucket": "1-5",
+            "train_samples": 58322,
+            "train_pct": 46.13388810226311,
+            "test_samples": 33674,
+            "test_pct": 78.1118070053352
+        },
+        {
+            "bucket": "6-10",
+            "train_samples": 39723,
+            "train_pct": 31.421700851928904,
+            "test_samples": 7358,
+            "test_pct": 17.067965669218278
+        },
+        {
+            "bucket": "11-15",
+            "train_samples": 22649,
+            "train_pct": 17.91581961572232,
+            "test_samples": 1745,
+            "test_pct": 4.047784736720018
+        },
+        {
+            "bucket": "16+",
+            "train_samples": 5725,
+            "train_pct": 4.528591430085668,
+            "test_samples": 333,
+            "test_pct": 0.7724425887265135
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "total_samples": 43110,
+    "cer": 0.2176,
+    "wer": 0.4199,
+    "character_accuracy": 78.24,
+    "word_accuracy": 58.01,
+    "exact_matches": 25007,
+    "blank_percentage": 92.97,
+    "average_target_length": 4.79,
+    "average_prediction_length": 3.26
+}

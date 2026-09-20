@@ -1,0 +1,27 @@
+{
+    "input_shape": [
+        1,
+        1,
+        32,
+        128
+    ],
+    "cnn_output_shape": [
+        1,
+        512,
+        4,
+        32
+    ],
+    "sequence_length_T": 32,
+    "feature_size": 2048,
+    "lstm_input_size": 2048,
+    "lstm_output_shape": [
+        1,
+        32,
+        512
+    ],
+    "ctc_output_shape": [
+        1,
+        32,
+        78
+    ]
+}

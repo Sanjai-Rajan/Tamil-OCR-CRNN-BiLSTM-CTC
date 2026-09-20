@@ -1,0 +1,18 @@
+[
+    {
+        "epoch": 1,
+        "samples": 126419,
+        "train_loss": 15.990032196044922,
+        "validation_loss": 15.219826698303223,
+        "CER": 1.0,
+        "WER": 1.0,
+        "character_accuracy": 0,
+        "word_accuracy": 0,
+        "blank_percentage": 0.0,
+        "unique_predicted_characters": 1,
+        "unique_predicted_sequences": 1,
+        "average_prediction_length": 1.0,
+        "learning_rate": 0.0003,
+        "training_time": 1.1474642753601074
+    }
+]

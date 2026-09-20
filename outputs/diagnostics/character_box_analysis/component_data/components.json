@@ -1,0 +1,1802 @@
+[
+  {
+    "index": 0,
+    "image": "images/tamil_test_000913.jpg",
+    "label": "\u0b8e\u0baa\u0bcd\u0baa\u0bb5\u0bbe\u0bb5\u0ba4\u0bc1",
+    "gt_tokens": 9,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 1,
+    "image": "images/tamil_test_000205.jpg",
+    "label": "\u0ba8\u0bc7\u0bb1\u0bcd\u0bb1\u0bc1\u0ba8\u0b9f\u0bc8\u0baa\u0bc6\u0bb1\u0bcd\u0bb1",
+    "gt_tokens": 14,
+    "raw_components": 30,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 2,
+    "image": "images/tamil_test_002254.jpg",
+    "label": "\u0b9a\u0ba8\u0bcd\u0ba4\u0bbf\u0bb0\u0bae\u0ba4\u0bbf\u0baf\u0bbe\u0b95",
+    "gt_tokens": 12,
+    "raw_components": 19,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 3,
+    "image": "images/tamil_test_002007.jpg",
+    "label": "\u0bae\u0bc1\u0ba9\u0bcd\u0ba9\u0bbe\u0bb3\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 5,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 4,
+    "image": "images/tamil_test_001829.jpg",
+    "label": "\u0b85\u0b9f\u0bbf\u0baf\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 13,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 5,
+    "image": "images/tamil_test_001144.jpg",
+    "label": "\u0b99\u0bc2\u0ba9\u0bbf\u0baf\u0b95\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 10,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 6,
+    "image": "images/tamil_test_000840.jpg",
+    "label": "\u0b9c\u0bc6\u0baf\u0b95\u0bb0\u0ba9\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 17,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 7,
+    "image": "images/tamil_test_004468.jpg",
+    "label": "\u0b8e\u0ba4\u0bbe\u0b9a\u0bcd\u0b9a\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 17,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 8,
+    "image": "images/tamil_test_000713.jpg",
+    "label": "\u0b95\u0bbe\u0ba8\u0bcd\u0ba4\u0bbe\u0bb0",
+    "gt_tokens": 7,
+    "raw_components": 10,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 9,
+    "image": "images/tamil_test_004838.jpg",
+    "label": "\u0baa\u0bbf\u0ba9\u0bcd\u0baa\u0bc1",
+    "gt_tokens": 6,
+    "raw_components": 14,
+    "candidate_regions": 5,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 10,
+    "image": "images/tamil_test_003457.jpg",
+    "label": "\u0baa\u0bbf\u0bb0\u0bbf\u0bb5\u0bc1\u0b95\u0bcd\u0b95\u0bc1",
+    "gt_tokens": 10,
+    "raw_components": 19,
+    "candidate_regions": 2,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 11,
+    "image": "images/tamil_test_000261.jpg",
+    "label": "\u0b95\u0bae\u0bcd\u0baa\u0bc6\u0ba9\u0bbf\u0b95\u0bb3\u0bbf\u0b9f\u0bae\u0bbf\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1",
+    "gt_tokens": 19,
+    "raw_components": 23,
+    "candidate_regions": 1,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 12,
+    "image": "images/tamil_test_000245.jpg",
+    "label": "\u0bb5\u0bc8\u0ba4\u0bcd\u0ba4\u0bbf\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bbe\u0bb2\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 16,
+    "raw_components": 23,
+    "candidate_regions": 1,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 13,
+    "image": "images/tamil_test_000768.jpg",
+    "label": "\u0b9a\u0bca\u0bb2\u0bcd\u0bb2\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 27,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 14,
+    "image": "images/tamil_test_001792.jpg",
+    "label": "\u0bb5\u0bbe\u0bb4\u0bcd\u0ba4\u0bcd\u0ba4\u0bc1",
+    "gt_tokens": 8,
+    "raw_components": 54,
+    "candidate_regions": 13,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 15,
+    "image": "images/tamil_test_001906.jpg",
+    "label": "\u0b85\u0ba3\u0bbf\u0ba8\u0bcd\u0ba4\u0bbe\u0bb2\u0bcd\u0ba4\u0bbe\u0ba9\u0bcd",
+    "gt_tokens": 13,
+    "raw_components": 10,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 16,
+    "image": "images/tamil_test_004140.jpg",
+    "label": "\u0b9a\u0bcb\u0bae\u0ba9\u0bc2\u0bb0\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 17,
+    "image": "images/tamil_test_004932.jpg",
+    "label": "\u0baa\u0bc2\u0b9c\u0bc8",
+    "gt_tokens": 4,
+    "raw_components": 7,
+    "candidate_regions": 1,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 18,
+    "image": "images/tamil_test_000218.jpg",
+    "label": "\u0ba8\u0bb0\u0b95\u0bbe\u0b9a\u0bc2\u0bb0\u0ba9\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 31,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 19,
+    "image": "images/tamil_test_004598.jpg",
+    "label": "\u0b9a\u0bca\u0ba4\u0bcd\u0ba4\u0bc1\u0b95\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 33,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 20,
+    "image": "images/tamil_test_001629.jpg",
+    "label": "\u0b92\u0bb0\u0bc7\u0b9a\u0bae\u0baf\u0bae\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 16,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 21,
+    "image": "images/tamil_test_004465.jpg",
+    "label": "\u0b9a\u0bbe\u0ba9\u0bcd\u0b9f\u0bcd\u0bb0\u0bcb",
+    "gt_tokens": 8,
+    "raw_components": 26,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 22,
+    "image": "images/tamil_test_003437.jpg",
+    "label": "\u0b85\u0bb5\u0bb0\u0bcd\u0b95\u0bb3\u0bbf\u0bb2\u0bbf\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1",
+    "gt_tokens": 15,
+    "raw_components": 24,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 23,
+    "image": "images/tamil_test_001806.jpg",
+    "label": "\u0b9a\u0bc7\u0b95\u0bb0\u0bcd",
+    "gt_tokens": 5,
+    "raw_components": 22,
+    "candidate_regions": 1,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 24,
+    "image": "images/tamil_test_003680.jpg",
+    "label": "\u0bb5\u0bc6\u0bb1\u0bcd\u0bb1\u0bbf\u0b95\u0bb0\u0bae\u0bbe\u0ba9",
+    "gt_tokens": 11,
+    "raw_components": 11,
+    "candidate_regions": 3,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 25,
+    "image": "images/tamil_test_004828.jpg",
+    "label": "\u0bb5\u0bb4\u0bbf\u0ba8\u0b9f\u0ba4\u0bcd\u0ba4\u0bbf",
+    "gt_tokens": 9,
+    "raw_components": 9,
+    "candidate_regions": 4,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 26,
+    "image": "images/tamil_test_002279.jpg",
+    "label": "\u0baa\u0bbf\u0bb0\u0bb5\u0bc7\u0b9a\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 13,
+    "raw_components": 53,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 27,
+    "image": "images/tamil_test_000054.jpg",
+    "label": "\u0baa\u0bc1\u0ba4\u0bbf\u0ba4\u0bbe\u0b95\u0b95\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 39,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 28,
+    "image": "images/tamil_test_001308.jpg",
+    "label": "\u0b85\u0ba9\u0bcd\u0baa\u0bbe\u0bb2\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 10,
+    "candidate_regions": 2,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 29,
+    "image": "images/tamil_test_003463.jpg",
+    "label": "\u0b9a\u0bc1\u0b9a\u0bbf",
+    "gt_tokens": 4,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 30,
+    "image": "images/tamil_test_002788.jpg",
+    "label": "\u0b85\u0b99\u0bcd\u0b95\u0bc7\u0baf\u0bc7",
+    "gt_tokens": 7,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 31,
+    "image": "images/tamil_test_002277.jpg",
+    "label": "\u0ba4\u0bc6\u0ba9\u0bcd\u0ba9\u0b95",
+    "gt_tokens": 6,
+    "raw_components": 131,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 32,
+    "image": "images/tamil_test_001274.jpg",
+    "label": "\u0baa\u0bbf\u0b95\u0bcd\u0b95\u0bbf\u0ba9\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 21,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 33,
+    "image": "images/tamil_test_001764.jpg",
+    "label": "\u0bb5\u0ba4\u0ba8\u0bcd\u0ba4\u0bbf",
+    "gt_tokens": 6,
+    "raw_components": 8,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 34,
+    "image": "images/tamil_test_002758.jpg",
+    "label": "\u0baa\u0bbe\u0bb2\u0bb8\u0bcd\u0ba4\u0bc0\u0ba9\u0bb0\u0bcd\u0b95\u0bb3\u0bbf\u0ba9\u0bcd",
+    "gt_tokens": 15,
+    "raw_components": 41,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 35,
+    "image": "images/tamil_test_000838.jpg",
+    "label": "\u0baa\u0bc6\u0bb0\u0bbf\u0baf\u0b95\u0bcb\u0baf\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 11,
+    "raw_components": 33,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 36,
+    "image": "images/tamil_test_000760.jpg",
+    "label": "\u0bae\u0bc1\u0b9f\u0bbf\u0bb5\u0bc1\u0b95\u0bb3\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 23,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 37,
+    "image": "images/tamil_test_003113.jpg",
+    "label": "\u0baa\u0bc6\u0ba3\u0bcd\u0ba3\u0bbe\u0ba9",
+    "gt_tokens": 7,
+    "raw_components": 20,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 38,
+    "image": "images/tamil_test_000793.jpg",
+    "label": "\u0b9a\u0bc6\u0ba9\u0bcd\u0bb1\u0bc1",
+    "gt_tokens": 6,
+    "raw_components": 27,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 39,
+    "image": "images/tamil_test_002941.jpg",
+    "label": "\u0b95\u0bc1\u0bb1\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 40,
+    "image": "images/tamil_test_002818.jpg",
+    "label": "\u0b95\u0bcb\u0b9f\u0bcd\u0baa\u0bbe\u0b9f\u0bbe\u0b95\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 29,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 41,
+    "image": "images/tamil_test_004946.jpg",
+    "label": "\u0ba4\u0bc1\u0bb0\u0bbf\u0ba4\u0bae\u0bbe\u0ba9",
+    "gt_tokens": 8,
+    "raw_components": 18,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 42,
+    "image": "images/tamil_test_002167.jpg",
+    "label": "\u0b85\u0b99\u0bcd\u0b95\u0bbf\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc7\u0bb2\u0bcd\u0bb2",
+    "gt_tokens": 14,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 43,
+    "image": "images/tamil_test_000356.jpg",
+    "label": "\u0ba4\u0bb0\u0bc1\u0bb5\u0bbe\u0baf\u0bbf\u0bb2\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 11,
+    "raw_components": 21,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 44,
+    "image": "images/tamil_test_003764.jpg",
+    "label": "\u0ba4\u0baf\u0bbe\u0bb0\u0bbf\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0ba4\u0bcd",
+    "gt_tokens": 15,
+    "raw_components": 17,
+    "candidate_regions": 2,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 45,
+    "image": "images/tamil_test_004393.jpg",
+    "label": "\u0ba4\u0bb0\u0bae\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 6,
+    "raw_components": 5,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 46,
+    "image": "images/tamil_test_001023.jpg",
+    "label": "\u0baa\u0bc6\u0bb0\u0bbf\u0baf\u0b95\u0bcb\u0baf\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 11,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 47,
+    "image": "images/tamil_test_003101.jpg",
+    "label": "\u0b9a\u0bca\u0bb1\u0bcd\u0b95\u0bb3\u0bc8",
+    "gt_tokens": 7,
+    "raw_components": 27,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 48,
+    "image": "images/tamil_test_000646.jpg",
+    "label": "\u0ba4\u0b95\u0baa\u0bcd\u0baa\u0ba9\u0bbe\u0bb0\u0bbf\u0ba9\u0bcd",
+    "gt_tokens": 11,
+    "raw_components": 10,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 49,
+    "image": "images/tamil_test_004523.jpg",
+    "label": "\u0b95\u0bbe\u0b9f\u0bcd\u0b9f\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 17,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 50,
+    "image": "images/tamil_test_002402.jpg",
+    "label": "\u0b85\u0ba4\u0bbf\u0b95\u0bb3\u0bb5\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 51,
+    "image": "images/tamil_test_002963.jpg",
+    "label": "\u0b87\u0b9a\u0bc8",
+    "gt_tokens": 3,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 52,
+    "image": "images/tamil_test_004730.jpg",
+    "label": "\u0b92\u0ba9\u0bcd\u0bb1\u0bb2\u0bcd\u0bb2",
+    "gt_tokens": 7,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 53,
+    "image": "images/tamil_test_001576.jpg",
+    "label": "\u0b95\u0bcb\u0b9f\u0bcd",
+    "gt_tokens": 4,
+    "raw_components": 20,
+    "candidate_regions": 1,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 54,
+    "image": "images/tamil_test_000570.jpg",
+    "label": "\u0b87\u0b99\u0bcd\u0b95\u0bbf\u0bb2\u0bbe\u0ba8\u0bcd\u0ba4\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 13,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 55,
+    "image": "images/tamil_test_000376.jpg",
+    "label": "\u0b85\u0b9f\u0bc8\u0ba8\u0bcd\u0ba4\u0bbe\u0bb0\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 15,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 56,
+    "image": "images/tamil_test_001867.jpg",
+    "label": "\u0b9c\u0ba9\u0bbe\u0ba4\u0bbf\u0baa\u0ba4\u0bbf\u0baf\u0bbe\u0b95",
+    "gt_tokens": 11,
+    "raw_components": 13,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 57,
+    "image": "images/tamil_test_002371.jpg",
+    "label": "\u0baa\u0bb1\u0bbf\u0b95\u0bcd\u0b95\u0baa\u0bcd\u0baa\u0b9f\u0bcd\u0b9f\u0bc1\u0baa\u0bcd",
+    "gt_tokens": 15,
+    "raw_components": 32,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 58,
+    "image": "images/tamil_test_000654.jpg",
+    "label": "\u0b95\u0bb2\u0bb5\u0bb0\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 18,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 59,
+    "image": "images/tamil_test_001908.jpg",
+    "label": "\u0bb5\u0bc6\u0bb3\u0bbf\u0baf\u0bbf\u0b9f\u0bcd\u0b9f\u0bbe\u0bb0\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 15,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 60,
+    "image": "images/tamil_test_000828.jpg",
+    "label": "\u0baa\u0bbe\u0ba4\u0bcd\u0ba4\u0bbf\u0bb0\u0b99\u0bcd\u0b95\u0bb3\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 28,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 61,
+    "image": "images/tamil_test_003114.jpg",
+    "label": "\u0b85\u0b9a\u0bcd\u0b9a\u0bae\u0bc8\u0baa\u0bcd\u0baa\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 17,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 62,
+    "image": "images/tamil_test_002278.jpg",
+    "label": "\u0b89\u0bb2\u0b95\u0b9a\u0bcd",
+    "gt_tokens": 5,
+    "raw_components": 19,
+    "candidate_regions": 2,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 63,
+    "image": "images/tamil_test_003715.jpg",
+    "label": "\u0baa\u0bbf\u0bb1\u0baa\u0bcd\u0baa\u0bc1",
+    "gt_tokens": 7,
+    "raw_components": 28,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 64,
+    "image": "images/tamil_test_002989.jpg",
+    "label": "\u0baa\u0bbf\u0ba9\u0bcd\u0b85\u0bae\u0bc8\u0baa\u0bcd\u0baa\u0bbf\u0baf\u0bb2\u0bcd",
+    "gt_tokens": 14,
+    "raw_components": 33,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 65,
+    "image": "images/tamil_test_001333.jpg",
+    "label": "\u0b8e\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bca\u0bb3\u0bcd\u0bb3\u0bc1\u0bae\u0bcd\u0baa\u0bcb\u0ba4\u0bc1",
+    "gt_tokens": 21,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 66,
+    "image": "images/tamil_test_003033.jpg",
+    "label": "\u0ba8\u0bb2\u0bcd\u0bb2\u0bbe\u0bb5\u0bc7",
+    "gt_tokens": 7,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 67,
+    "image": "images/tamil_test_002911.jpg",
+    "label": "\u0b87\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0ba4\u0bc8\u0baa\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 68,
+    "image": "images/tamil_test_001717.jpg",
+    "label": "\u0b85\u0ba4\u0bbf\u0b95\u0bb3\u0bb5\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 6,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 69,
+    "image": "images/tamil_test_002188.jpg",
+    "label": "\u0b95\u0bb0\u0bcd\u0ba8\u0bbe\u0b9f\u0b95\u0ba4\u0bcd\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bc1",
+    "gt_tokens": 15,
+    "raw_components": 37,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 70,
+    "image": "images/tamil_test_000585.jpg",
+    "label": "\u0b87\u0bb0\u0bbe\u0bb5\u0ba3\u0ba9\u0bbf\u0ba9\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 109,
+    "candidate_regions": 5,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 71,
+    "image": "images/tamil_test_004991.jpg",
+    "label": "\u0bb5\u0bbe\u0bb0\u0bcd\u0b9f\u0bcd",
+    "gt_tokens": 6,
+    "raw_components": 15,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 72,
+    "image": "images/tamil_test_001402.jpg",
+    "label": "\u0b86\u0b9e\u0bcd\u0b9a\u0ba8\u0bc7\u0baf\u0bb0\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 4,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 73,
+    "image": "images/tamil_test_004376.jpg",
+    "label": "\u0b85\u0ba9\u0bc1\u0bae\u0ba4\u0bbf\u0ba4\u0bcd\u0ba4\u0bbf\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bbe\u0bb2\u0bcd",
+    "gt_tokens": 18,
+    "raw_components": 2,
+    "candidate_regions": 1,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 74,
+    "image": "images/tamil_test_002006.jpg",
+    "label": "\u0b9c\u0bc6\u0bb0\u0bcd\u0bb8\u0bbf",
+    "gt_tokens": 6,
+    "raw_components": 6,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 75,
+    "image": "images/tamil_test_001339.jpg",
+    "label": "\u0b85\u0bae\u0bcd\u0baa\u0ba4\u0bc1",
+    "gt_tokens": 6,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 76,
+    "image": "images/tamil_test_003787.jpg",
+    "label": "\u0b9a\u0bbf\u0b95\u0bcd\u0b95\u0bbf\u0baf\u0bbf\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 16,
+    "raw_components": 16,
+    "candidate_regions": 1,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 77,
+    "image": "images/tamil_test_003109.jpg",
+    "label": "\u0bb5\u0bbe\u0bb4\u0ba3\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 78,
+    "image": "images/tamil_test_002212.jpg",
+    "label": "\u0b8e\u0bb4\u0bc1\u0ba4\u0bbf\u0baf\u0ba4\u0bb1\u0bcd\u0b95\u0bbe\u0b95",
+    "gt_tokens": 12,
+    "raw_components": 24,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 79,
+    "image": "images/tamil_test_004563.jpg",
+    "label": "\u0b95\u0bca\u0bb3\u0bcd\u0bb3\u0bc8\u0baf\u0bb0\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 80,
+    "image": "images/tamil_test_001800.jpg",
+    "label": "\u0b9a\u0bbf\u0bb2\u0bae\u0bcd\u0baa\u0bbe\u0baf\u0bbf",
+    "gt_tokens": 9,
+    "raw_components": 7,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 81,
+    "image": "images/tamil_test_002657.jpg",
+    "label": "\u0b95\u0b99\u0bcd\u0b95\u0ba3\u0bae\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 25,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 82,
+    "image": "images/tamil_test_000459.jpg",
+    "label": "\u0bae\u0ba9\u0bcd\u0ba9\u0bbf",
+    "gt_tokens": 5,
+    "raw_components": 8,
+    "candidate_regions": 1,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 83,
+    "image": "images/tamil_test_001877.jpg",
+    "label": "\u0b95\u0bbe\u0bb0\u0ba3\u0bae\u0bbf\u0bb2\u0bcd\u0bb2\u0bc8",
+    "gt_tokens": 10,
+    "raw_components": 37,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 84,
+    "image": "images/tamil_test_000263.jpg",
+    "label": "\u0b8a\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1",
+    "gt_tokens": 7,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 85,
+    "image": "images/tamil_test_002585.jpg",
+    "label": "\u0baa\u0bcb\u0bb2\u0bcd\u0b9f\u0bc1",
+    "gt_tokens": 6,
+    "raw_components": 15,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 86,
+    "image": "images/tamil_test_003287.jpg",
+    "label": "\u0b9a\u0bbf\u0bb0\u0b9e\u0bcd\u0b9a\u0bc0\u0bb5\u0bbf\u0baf\u0bbe\u0b95",
+    "gt_tokens": 12,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 87,
+    "image": "images/tamil_test_002194.jpg",
+    "label": "\u0b95\u0bbe\u0b9a\u0ba8\u0bcb\u0baf\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0baa\u0bcd",
+    "gt_tokens": 13,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 88,
+    "image": "images/tamil_test_000543.jpg",
+    "label": "\u0baa\u0bc1\u0ba4\u0bbf\u0ba4\u0bbe\u0b95",
+    "gt_tokens": 7,
+    "raw_components": 8,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 89,
+    "image": "images/tamil_test_001729.jpg",
+    "label": "\u0ba8\u0b9f\u0ba4\u0bcd\u0ba4\u0bc1\u0bb5\u0ba4\u0bc1\u0bae\u0bcd--\u0b8e\u0ba8\u0bcd\u0ba4",
+    "gt_tokens": 17,
+    "raw_components": 51,
+    "candidate_regions": 1,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 90,
+    "image": "images/tamil_test_004647.jpg",
+    "label": "\u0ba8\u0bc6\u0bb2\u0ba4\u0bcd\u0ba4\u0bc8\u0baf\u0bc6\u0bb2\u0bcd\u0bb2\u0bbe\u0bae\u0bcd",
+    "gt_tokens": 15,
+    "raw_components": 7,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 91,
+    "image": "images/tamil_test_002578.jpg",
+    "label": "\u0b85\u0b9a\u0bbf\u0b99\u0bcd\u0b95\u0bae\u0bbe\u0b95",
+    "gt_tokens": 9,
+    "raw_components": 3,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 92,
+    "image": "images/tamil_test_001742.jpg",
+    "label": "\u0b9a\u0bc7\u0bb0\u0bcd\u0baa\u0bbf\u0baf\u0bbe\u0bb5\u0bbf\u0ba9\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 8,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 93,
+    "image": "images/tamil_test_004090.jpg",
+    "label": "\u0ba4\u0bbf\u0b9f\u0b95\u0bbe\u0ba4\u0bcd\u0ba4\u0bbf\u0bb0\u0bae\u0bbe\u0ba9",
+    "gt_tokens": 13,
+    "raw_components": 25,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 94,
+    "image": "images/tamil_test_003242.jpg",
+    "label": "\u0b9a\u0bbf\u0bb0\u0bbf\u0baa\u0bcd\u0baa\u0bcb",
+    "gt_tokens": 8,
+    "raw_components": 15,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 95,
+    "image": "images/tamil_test_003759.jpg",
+    "label": "\u0bae\u0ba3\u0bb2\u0bc8",
+    "gt_tokens": 4,
+    "raw_components": 29,
+    "candidate_regions": 5,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 96,
+    "image": "images/tamil_test_001171.jpg",
+    "label": "\u0bae\u0bc1\u0bb3\u0bc8\u0baf\u0bbf\u0bb2\u0bc7",
+    "gt_tokens": 8,
+    "raw_components": 5,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 97,
+    "image": "images/tamil_test_002170.jpg",
+    "label": "\u0baa\u0bca\u0bb2\u0bcd\u0bb2\u0bbe\u0ba4\u0bb5\u0bb0\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 11,
+    "candidate_regions": 5,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 98,
+    "image": "images/tamil_test_002021.jpg",
+    "label": "\u0bae\u0bb0\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0bb5\u0bb0\u0bbf\u0ba9\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 99,
+    "image": "images/tamil_test_004599.jpg",
+    "label": "\u0baa\u0bc1\u0bb3\u0bcd\u0bb3\u0bbf\u0b95\u0bb3\u0bc8",
+    "gt_tokens": 9,
+    "raw_components": 54,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 100,
+    "image": "images/tamil_test_004416.jpg",
+    "label": "\u0b86\u0bb1\u0bc1\u0ba4\u0bb2\u0bcd",
+    "gt_tokens": 6,
+    "raw_components": 8,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 101,
+    "image": "images/tamil_test_002153.jpg",
+    "label": "\u0b85\u0bb4\u0bc8\u0ba4\u0bcd\u0ba4\u0ba4\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 138,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 102,
+    "image": "images/tamil_test_004789.jpg",
+    "label": "\u0b87\u0ba8\u0bcd\u0ba4\u0bbf\u0baf\u0bbe\u0bb5\u0bbf\u0bb2\u0bc7\u0baf\u0bc7",
+    "gt_tokens": 13,
+    "raw_components": 62,
+    "candidate_regions": 9,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 103,
+    "image": "images/tamil_test_003510.jpg",
+    "label": "\u0bb5\u0bc6\u0bb3\u0bbf\u0ba8\u0bbe\u0b9f\u0bcd\u0b9f\u0bc1\u0b9a\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 88,
+    "candidate_regions": 2,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 104,
+    "image": "images/tamil_test_004781.jpg",
+    "label": "\u0bb5\u0bc7\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bc8\u0b95\u0bb3\u0bc8",
+    "gt_tokens": 11,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 105,
+    "image": "images/tamil_test_003272.jpg",
+    "label": "\u0baa\u0b9f\u0bc8\u0baa\u0bcd\u0baa\u0bbe\u0bb3\u0bbf\u0b95\u0bb3\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 18,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 106,
+    "image": "images/tamil_test_002966.jpg",
+    "label": "\u0bae\u0bb1\u0bc1\u0ba4\u0bcd\u0ba4\u0bbe\u0ba9\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 15,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 107,
+    "image": "images/tamil_test_001797.jpg",
+    "label": "\u0ba4\u0bc7\u0bb1\u0bcd\u0bb1",
+    "gt_tokens": 5,
+    "raw_components": 13,
+    "candidate_regions": 3,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 108,
+    "image": "images/tamil_test_001134.jpg",
+    "label": "\u0bb5\u0bb0\u0bcd\u0b95\u0bcd\u0b95",
+    "gt_tokens": 6,
+    "raw_components": 13,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 109,
+    "image": "images/tamil_test_004175.jpg",
+    "label": "\u0ba8\u0bbf\u0bb1\u0bc8\u0bb5\u0bc1\u0baa\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 42,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 110,
+    "image": "images/tamil_test_004043.jpg",
+    "label": "\u0b89\u0baf\u0bb0\u0bae\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 111,
+    "image": "images/tamil_test_000745.jpg",
+    "label": "\u0bb5\u0bb4\u0b99\u0bcd\u0b95\u0bc1\u0b95\u0bbf\u0ba9\u0bcd\u0bb1\u0ba9",
+    "gt_tokens": 12,
+    "raw_components": 29,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 112,
+    "image": "images/tamil_test_000386.jpg",
+    "label": "\u0b89\u0baf\u0bbf\u0bb0\u0bc1\u0bb3\u0bcd\u0bb3",
+    "gt_tokens": 8,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 113,
+    "image": "images/tamil_test_000899.jpg",
+    "label": "\u0b95\u0bc1\u0bb3\u0bbf\u0b95\u0bcd\u0b95",
+    "gt_tokens": 7,
+    "raw_components": 13,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 114,
+    "image": "images/tamil_test_001253.jpg",
+    "label": "\u0ba8\u0b9f\u0ba4\u0bcd\u0ba4\u0baa\u0bcd\u0baa\u0bcb\u0bb5\u0ba4\u0bbe\u0b95",
+    "gt_tokens": 13,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 115,
+    "image": "images/tamil_test_001311.jpg",
+    "label": "\u0bb9\u0bbf\u0b9f\u0bcd\u0bb2\u0bb0\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 35,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 116,
+    "image": "images/tamil_test_003459.jpg",
+    "label": "\u0ba4\u0bc6\u0bb0\u0bbf\u0bb5\u0bbf\u0b95\u0bcd\u0b95",
+    "gt_tokens": 9,
+    "raw_components": 18,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 117,
+    "image": "images/tamil_test_004886.jpg",
+    "label": "\u0b89\u0b9f\u0ba9\u0b9f\u0bbf",
+    "gt_tokens": 5,
+    "raw_components": 20,
+    "candidate_regions": 2,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 118,
+    "image": "images/tamil_test_000521.jpg",
+    "label": "\u0b89\u0bb1\u0bb5\u0bc1",
+    "gt_tokens": 4,
+    "raw_components": 45,
+    "candidate_regions": 1,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 119,
+    "image": "images/tamil_test_003153.jpg",
+    "label": "\u0b9a\u0ba8\u0bcd\u0ba4\u0bc8\u0baf\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 19,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 120,
+    "image": "images/tamil_test_003127.jpg",
+    "label": "\u0baa\u0bb0\u0baa\u0bb0\u0baa\u0bcd\u0baa\u0bc1",
+    "gt_tokens": 8,
+    "raw_components": 13,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 121,
+    "image": "images/tamil_test_004882.jpg",
+    "label": "\u0b9a\u0bae\u0bcd\u0baa\u0ba8\u0bcd\u0ba4\u0bb0\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 8,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 122,
+    "image": "images/tamil_test_003835.jpg",
+    "label": "\u0ba4\u0bc1\u0bb1\u0bb5\u0bbf\u0baf\u0bc8\u0baa\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 26,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 123,
+    "image": "images/tamil_test_004335.jpg",
+    "label": "\u0b87\u0ba9\u0ba4\u0bcd\u0ba4\u0bbf\u0bb1\u0bcd\u0b95\u0bcb",
+    "gt_tokens": 10,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 124,
+    "image": "images/tamil_test_002060.jpg",
+    "label": "\u0b87\u0baf\u0b95\u0bcd\u0b95\u0b99\u0bcd\u0b95\u0bb3\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 16,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 125,
+    "image": "images/tamil_test_004533.jpg",
+    "label": "\u0bb5\u0bb3\u0bb0\u0bcd\u0ba4\u0bcd\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bca\u0ba3\u0bcd\u0b9f\u0bc1",
+    "gt_tokens": 16,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 126,
+    "image": "images/tamil_test_000095.jpg",
+    "label": "\u0bb5\u0b9f\u0bbf\u0b95\u0b9f\u0bcd\u0b9f\u0bbf",
+    "gt_tokens": 8,
+    "raw_components": 138,
+    "candidate_regions": 61,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 127,
+    "image": "images/tamil_test_000939.jpg",
+    "label": "\u0b9a\u0bbe\u0baf\u0bb2\u0bcd",
+    "gt_tokens": 5,
+    "raw_components": 45,
+    "candidate_regions": 5,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 128,
+    "image": "images/tamil_test_004399.jpg",
+    "label": "\u0bb0\u0bbe\u0b9c\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 6,
+    "raw_components": 57,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 129,
+    "image": "images/tamil_test_002186.jpg",
+    "label": "\u0b87\u0bb2\u0bb5\u0b9a\u0bae\u0bbe\u0b95",
+    "gt_tokens": 7,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 130,
+    "image": "images/tamil_test_002787.jpg",
+    "label": "\u0b95\u0bb5\u0b9f\u0bcd\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bb3\u0bcd\u0bb3\u0bc7",
+    "gt_tokens": 14,
+    "raw_components": 72,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 131,
+    "image": "images/tamil_test_000914.jpg",
+    "label": "\u0b85\u0bae\u0bb0\u0bcd\u0ba8\u0bcd\u0ba4\u0bbe\u0bb0\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 19,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 132,
+    "image": "images/tamil_test_002405.jpg",
+    "label": "\u0ba4\u0baf\u0bbe\u0bb0\u0bbe\u0b95\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 18,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 133,
+    "image": "images/tamil_test_003562.jpg",
+    "label": "\u0b85\u0baa\u0bcd\u0bb3\u0bbf\u0b95\u0bcd\u0b95\u0bc7\u0bb7\u0ba9\u0bc8",
+    "gt_tokens": 12,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 134,
+    "image": "images/tamil_test_001296.jpg",
+    "label": "\u0b95\u0bc0\u0baf\u0bc1\u0b9f\u0ba9\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 27,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 135,
+    "image": "images/tamil_test_003717.jpg",
+    "label": "\u0b95\u0bb5\u0b9f\u0bcd\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bb3\u0bcd\u0bb3\u0bc7",
+    "gt_tokens": 14,
+    "raw_components": 39,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 136,
+    "image": "images/tamil_test_000027.jpg",
+    "label": "\u0bae\u0ba3\u0bae\u0bc1\u0b9f\u0bbf\u0ba4\u0bcd\u0ba4\u0bc1",
+    "gt_tokens": 10,
+    "raw_components": 18,
+    "candidate_regions": 3,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 137,
+    "image": "images/tamil_test_002158.jpg",
+    "label": "\u0b85\u0bb3\u0bbf\u0ba4\u0bcd\u0ba4\u0ba4\u0bc8\u0baf\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 138,
+    "image": "images/tamil_test_004101.jpg",
+    "label": "\u0b9a\u0bc6\u0baf\u0bcd\u0b95\u0bbf\u0bb1\u0bbe\u0baf\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 42,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 139,
+    "image": "images/tamil_test_001464.jpg",
+    "label": "\u0bb5\u0bbf\u0bb4\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1",
+    "gt_tokens": 8,
+    "raw_components": 23,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 140,
+    "image": "images/tamil_test_004159.jpg",
+    "label": "\u0bae\u0bc1\u0b9f\u0bbf\u0ba4\u0bcd\u0ba4\u0ba9\u0bb0\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 141,
+    "image": "images/tamil_test_000872.jpg",
+    "label": "\u0b95\u0bc7\u0b9f\u0bcd\u0b9f\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bbe\u0ba9\u0bcd",
+    "gt_tokens": 14,
+    "raw_components": 137,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 142,
+    "image": "images/tamil_test_002445.jpg",
+    "label": "\u0bae\u0ba4",
+    "gt_tokens": 2,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 143,
+    "image": "images/tamil_test_004989.jpg",
+    "label": "\u0b9a\u0bae\u0bcd\u0baa\u0ba8\u0bcd\u0ba4\u0bae\u0bbe\u0ba9",
+    "gt_tokens": 10,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 144,
+    "image": "images/tamil_test_001630.jpg",
+    "label": "\u0b95\u0bb5\u0bb0\u0bcd\u0ba8\u0bcd\u0ba4\u0bb5\u0bb0\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 10,
+    "candidate_regions": 8,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 145,
+    "image": "images/tamil_test_003064.jpg",
+    "label": "\u0b9a\u0bcb\u0bb4\u0ba9\u0bcd",
+    "gt_tokens": 5,
+    "raw_components": 28,
+    "candidate_regions": 1,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 146,
+    "image": "images/tamil_test_001324.jpg",
+    "label": "\u0b85\u0b9f\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 4,
+    "candidate_regions": 3,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 147,
+    "image": "images/tamil_test_004419.jpg",
+    "label": "\u0ba4\u0bb2\u0bc8\u0bb5\u0bb0\u0bbe\u0b95\u0bb5\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 11,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 148,
+    "image": "images/tamil_test_004345.jpg",
+    "label": "\u0bae\u0ba9\u0b9a\u0bbf\u0ba9\u0bcd",
+    "gt_tokens": 6,
+    "raw_components": 7,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 149,
+    "image": "images/tamil_test_000005.jpg",
+    "label": "\u0baf\u0bbf\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bbe\u0bb2\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 6,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 150,
+    "image": "images/tamil_test_004907.jpg",
+    "label": "\u0bb5\u0b95\u0bc1\u0b95\u0bcd\u0b95\u0baa\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 15,
+    "candidate_regions": 5,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 151,
+    "image": "images/tamil_test_002656.jpg",
+    "label": "\u0baa\u0bb1\u0bbf\u0b95\u0bcd\u0b95\u0baa\u0bcd\u0baa\u0b9f\u0bcd\u0b9f\u0bc1\u0baa\u0bcd",
+    "gt_tokens": 15,
+    "raw_components": 13,
+    "candidate_regions": 5,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 152,
+    "image": "images/tamil_test_004003.jpg",
+    "label": "\u0b86\u0b9f\u0bbf\u0baa\u0bcd\u0baa\u0bbe\u0b9f\u0bc1",
+    "gt_tokens": 9,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 153,
+    "image": "images/tamil_test_000160.jpg",
+    "label": "\u0b9a\u0bc6\u0baf\u0bcd\u0bb5\u0bbe\u0bb3\u0bcb",
+    "gt_tokens": 8,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 154,
+    "image": "images/tamil_test_000917.jpg",
+    "label": "\u0b87\u0bb4\u0ba8\u0bcd\u0ba4",
+    "gt_tokens": 5,
+    "raw_components": 135,
+    "candidate_regions": 1,
+    "length_group": "short (1-5)"
+  },
+  {
+    "index": 155,
+    "image": "images/tamil_test_002974.jpg",
+    "label": "\u0b86\u0b9c\u0bb0\u0bbe\u0b95\u0bbf\u0bb1\u0bbe\u0bb0\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 25,
+    "candidate_regions": 6,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 156,
+    "image": "images/tamil_test_002520.jpg",
+    "label": "\u0b95\u0bc2\u0b9f\u0bcd\u0b9f\u0bae\u0bca\u0ba9\u0bcd\u0bb1\u0bc1",
+    "gt_tokens": 11,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 157,
+    "image": "images/tamil_test_001962.jpg",
+    "label": "\u0ba4\u0bca\u0b9f\u0b99\u0bcd\u0b95\u0bbf\u0bb5\u0bbf\u0b9f\u0bcd\u0b9f\u0bbe\u0bb0\u0bcd\u0b95\u0bb3\u0bcd",
+    "gt_tokens": 18,
+    "raw_components": 10,
+    "candidate_regions": 1,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 158,
+    "image": "images/tamil_test_000475.jpg",
+    "label": "\u0b9a\u0bb0\u0ba4\u0bcd\u0b95\u0bc1\u0bae\u0bbe\u0bb0\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 4,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 159,
+    "image": "images/tamil_test_001974.jpg",
+    "label": "\u0bb5\u0bbe\u0bb0\u0bbf\u0b9a\u0bc1\u0b95\u0bcd\u0b95\u0bc1",
+    "gt_tokens": 10,
+    "raw_components": 8,
+    "candidate_regions": 3,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 160,
+    "image": "images/tamil_test_004648.jpg",
+    "label": "\u0ba4\u0bbf\u0b9f\u0bbe\u0bb0\u0bcd\u0ba9\u0bc1",
+    "gt_tokens": 8,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 161,
+    "image": "images/tamil_test_000702.jpg",
+    "label": "\u0b95\u0ba4\u0bc8\u0baf\u0bc1\u0bb2\u0b95\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 10,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 162,
+    "image": "images/tamil_test_003982.jpg",
+    "label": "\u0b9a\u0bbf\u0bb5\u0b9a\u0b95\u0bcd\u0bb0\u0ba4\u0bcd\u0ba4\u0bc8\u0baf\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 15,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 163,
+    "image": "images/tamil_test_000567.jpg",
+    "label": "\u0b92\u0ba4\u0bcd\u0ba4\u0bc1\u0b95\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 15,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 164,
+    "image": "images/tamil_test_004364.jpg",
+    "label": "\u0ba4\u0bca\u0b9f\u0b9a\u0bcd\u0b9a\u0bc1",
+    "gt_tokens": 7,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 165,
+    "image": "images/tamil_test_001031.jpg",
+    "label": "\u0b8e\u0bae\u0bcd\u0bae\u0ba4\u0bcd\u0ba4\u0bbf\u0baf\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 53,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 166,
+    "image": "images/tamil_test_001052.jpg",
+    "label": "\u0ba4\u0bbe\u0bb2\u0bbf\u0baa\u0ba9\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 15,
+    "candidate_regions": 8,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 167,
+    "image": "images/tamil_test_003894.jpg",
+    "label": "\u0baa\u0bc6\u0bb0\u0bc1\u0b95\u0bcd\u0b95",
+    "gt_tokens": 7,
+    "raw_components": 113,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 168,
+    "image": "images/tamil_test_004504.jpg",
+    "label": "\u0bae\u0bbe\u0ba4\u0bcd\u0ba4\u0bbf\u0bb0\u0bae\u0bb2\u0bcd\u0bb2",
+    "gt_tokens": 11,
+    "raw_components": 31,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 169,
+    "image": "images/tamil_test_001353.jpg",
+    "label": "\u0ba8\u0bae\u0bcd\u0baa\u0bb1\u0bc7\u0ba9\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 14,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 170,
+    "image": "images/tamil_test_002172.jpg",
+    "label": "\u0b9a\u0bc6\u0bb2\u0bcd\u0baa\u0bcb\u0ba9\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 37,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 171,
+    "image": "images/tamil_test_004323.jpg",
+    "label": "\u0baa\u0bc1\u0bb2\u0bae\u0bcd\u0baa\u0bc6\u0baf\u0bb0\u0bcd\u0ba8\u0bcd\u0ba4\u0bb5\u0bb0\u0bcd\u0b95\u0bb3\u0bcd",
+    "gt_tokens": 19,
+    "raw_components": 27,
+    "candidate_regions": 2,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 172,
+    "image": "images/tamil_test_004970.jpg",
+    "label": "\u0baa\u0b9f\u0bcd\u0b9f\u0baf\u0b99\u0bcd\u0b95\u0bb3\u0bc8\u0baa\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 35,
+    "candidate_regions": 8,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 173,
+    "image": "images/tamil_test_003467.jpg",
+    "label": "\u0baa\u0bcd\u0bb0\u0bbe\u0baa\u0bcd\u0baa\u0bb0\u0bcd\u0b9f\u0bcd\u0b9f\u0bc0\u0bb8\u0bcd",
+    "gt_tokens": 15,
+    "raw_components": 22,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 174,
+    "image": "images/tamil_test_001736.jpg",
+    "label": "\u0baa\u0bbf\u0bb0\u0bb5\u0bc7\u0b9a\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 13,
+    "raw_components": 29,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 175,
+    "image": "images/tamil_test_004418.jpg",
+    "label": "\u0ba4\u0ba3\u0bcd\u0b9f\u0bc8\u0baf\u0bbe\u0bb0\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 176,
+    "image": "images/tamil_test_001648.jpg",
+    "label": "\u0b9a\u0bbf\u0bb5\u0bb0\u0bbe\u0ba4\u0bcd\u0ba4\u0bbf\u0bb0\u0bbf",
+    "gt_tokens": 11,
+    "raw_components": 16,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 177,
+    "image": "images/tamil_test_002554.jpg",
+    "label": "\u0baa\u0bc6\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bbf\u0baf\u0bbf\u0bb2\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 14,
+    "raw_components": 10,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 178,
+    "image": "images/tamil_test_003269.jpg",
+    "label": "\u0b87\u0ba9\u0ba4\u0bcd\u0ba4\u0bbf\u0bb1\u0bcd\u0b95\u0bcb",
+    "gt_tokens": 10,
+    "raw_components": 13,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 179,
+    "image": "images/tamil_test_003060.jpg",
+    "label": "\u0b8e\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bca\u0bb3\u0bcd\u0bb3\u0bc1\u0bae\u0bcd\u0baa\u0bcb\u0ba4\u0bc1",
+    "gt_tokens": 21,
+    "raw_components": 49,
+    "candidate_regions": 1,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 180,
+    "image": "images/tamil_test_003589.jpg",
+    "label": "\u0b86\u0b95\u0bb5\u0bc7\u0ba3\u0bcd\u0b9f\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 17,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 181,
+    "image": "images/tamil_test_004240.jpg",
+    "label": "\u0b9a\u0bc1\u0bae\u0ba8\u0bcd\u0ba4",
+    "gt_tokens": 6,
+    "raw_components": 17,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 182,
+    "image": "images/tamil_test_003699.jpg",
+    "label": "\u0baa\u0bc1\u0bb2\u0bae\u0bcd\u0baa\u0bc6\u0baf\u0bb0\u0bcd\u0ba8\u0bcd\u0ba4\u0bb5\u0bb0\u0bcd\u0b95\u0bb3\u0bcd",
+    "gt_tokens": 19,
+    "raw_components": 10,
+    "candidate_regions": 5,
+    "length_group": "very long (16+)"
+  },
+  {
+    "index": 183,
+    "image": "images/tamil_test_000992.jpg",
+    "label": "\u0baa\u0bc1\u0ba3\u0bcd\u0ba3\u0bbf\u0baf\u0ba4\u0bcd",
+    "gt_tokens": 9,
+    "raw_components": 13,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 184,
+    "image": "images/tamil_test_002031.jpg",
+    "label": "\u0baa\u0bc6\u0b9e\u0bcd\u0b9a\u0bcd",
+    "gt_tokens": 6,
+    "raw_components": 12,
+    "candidate_regions": 5,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 185,
+    "image": "images/tamil_test_001841.jpg",
+    "label": "\u0ba4\u0b95\u0bc1\u0ba4\u0bbf\u0baf\u0bbf\u0bb2\u0bcd\u0bb2\u0bbe\u0ba4",
+    "gt_tokens": 12,
+    "raw_components": 11,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 186,
+    "image": "images/tamil_test_000525.jpg",
+    "label": "\u0ba8\u0bbf\u0bae\u0bbf\u0bb0\u0bcd\u0ba4\u0bcd\u0ba4\u0bbf",
+    "gt_tokens": 10,
+    "raw_components": 16,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 187,
+    "image": "images/tamil_test_002770.jpg",
+    "label": "\u0baa\u0bc1\u0bb0\u0bbf\u0bb5\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 8,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 188,
+    "image": "images/tamil_test_000173.jpg",
+    "label": "\u0ba8\u0bbe\u0ba9\u0bcd\u0b95\u0bc1",
+    "gt_tokens": 6,
+    "raw_components": 19,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 189,
+    "image": "images/tamil_test_004820.jpg",
+    "label": "\u0bae\u0bbf\u0bb0\u0bcd\u0bb0\u0bb0\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 19,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 190,
+    "image": "images/tamil_test_004538.jpg",
+    "label": "\u0b95\u0bca\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4\u0bc7\u0ba9\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 12,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 191,
+    "image": "images/tamil_test_001886.jpg",
+    "label": "\u0bae\u0bca\u0ba4\u0bb2\u0bcd\u0bb2\u0bc7\u0bb0\u0bcd\u0ba8\u0bcd\u0ba4\u0bc1",
+    "gt_tokens": 13,
+    "raw_components": 9,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 192,
+    "image": "images/tamil_test_004821.jpg",
+    "label": "\u0b9a\u0bc1\u0bae\u0ba8\u0bcd\u0ba4",
+    "gt_tokens": 6,
+    "raw_components": 24,
+    "candidate_regions": 3,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 193,
+    "image": "images/tamil_test_001805.jpg",
+    "label": "\u0b9a\u0bae\u0ba9\u0bcd\u0baa\u0bbe\u0b9f\u0bc1\u0b95\u0bb3\u0bc8",
+    "gt_tokens": 11,
+    "raw_components": 8,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 194,
+    "image": "images/tamil_test_000059.jpg",
+    "label": "\u0baa\u0baa\u0bcd\u0bb3\u0bbf\u0b95\u0bcd",
+    "gt_tokens": 7,
+    "raw_components": 16,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 195,
+    "image": "images/tamil_test_000582.jpg",
+    "label": "\u0b87\u0b99\u0bcd\u0b95\u0bbf\u0bb2\u0bbe\u0ba8\u0bcd\u0ba4\u0bc1\u0bae\u0bcd",
+    "gt_tokens": 13,
+    "raw_components": 15,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 196,
+    "image": "images/tamil_test_000483.jpg",
+    "label": "\u0b95\u0bae\u0bcd\u0baa\u0bcd\u0baf\u0bc2\u0b9f\u0bcd\u0b9f\u0bb0\u0bbf\u0bb2\u0bcd",
+    "gt_tokens": 14,
+    "raw_components": 10,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 197,
+    "image": "images/tamil_test_001876.jpg",
+    "label": "\u0b95\u0bbf\u0bb0\u0bc7\u0b95\u0bcd\u0b95\u0bb0\u0bcd\u0b95\u0bb3\u0bcd",
+    "gt_tokens": 12,
+    "raw_components": 23,
+    "candidate_regions": 2,
+    "length_group": "long (11-15)"
+  },
+  {
+    "index": 198,
+    "image": "images/tamil_test_000553.jpg",
+    "label": "\u0ba4\u0bc1\u0bb5\u0b99\u0bcd\u0b95\u0bbf\u0ba9\u0bb0\u0bcd",
+    "gt_tokens": 10,
+    "raw_components": 10,
+    "candidate_regions": 1,
+    "length_group": "medium (6-10)"
+  },
+  {
+    "index": 199,
+    "image": "images/tamil_test_000258.jpg",
+    "label": "\u0b87\u0bb5\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bb2\u0bcd\u0bb2\u0bb5\u0bbe",
+    "gt_tokens": 12,
+    "raw_components": 7,
+    "candidate_regions": 1,
+    "length_group": "long (11-15)"
+  }
+]

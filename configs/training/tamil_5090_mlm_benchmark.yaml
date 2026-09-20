@@ -1,0 +1,30 @@
+model:
+  name: "ai4bharat/indic-bert"
+  type: "MaskedLM"
+  tokenizer: "ai4bharat/indic-bert"
+
+dataset:
+  train_path: "data/text_corpus/tamil/training_views/language_model/combined_tamil_lm.txt"
+  # No validation path needed for pure throughput benchmark
+  max_length: 128
+  mlm_probability: 0.15
+
+training:
+  epochs: 1
+  # AUTO-BENCHMARK: script will scale up batch size until OOM or stable throughput
+  batch_size: "AUTO-BENCHMARK"  
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  mixed_precision: "bf16" # Recommended for RTX 5090
+  seed: 42
+  max_steps: 500 # Run only enough steps to calculate throughput
+  
+hardware:
+  target_gpu: "RTX 5090"
+  dataloader_num_workers: 8
+  pin_memory: true
+  gradient_accumulation_steps: 1 # Not needed for 33M parameter model on 32GB VRAM
+
+output:
+  dir: "checkpoints/benchmark_tamil_language_model"
+  logging_steps: 10

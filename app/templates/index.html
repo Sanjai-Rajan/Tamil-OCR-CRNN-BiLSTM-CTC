@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Historical Manuscript OCR</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="app-header">
+            <div class="header-content">
+                <h1>Tamil Historical Manuscript OCR</h1>
+                <p class="subtitle">An end-to-end deterministic digitalization pipeline performing document segmentation, Classical CV-driven word extraction, custom CRNN OCR, and deterministic post-OCR correction.</p>
+            </div>
+            <div class="header-status" id="system-status">
+                <span class="status-indicator loading"></span> Checking System Status...
+            </div>
+        </header>
+
+        <main class="app-main">
+            <!-- LEFT COLUMN: Input & Pipeline -->
+            <div class="left-column">
+                
+                <!-- IMAGE INPUT AREA -->
+                <section class="panel upload-section">
+                    <h2>Document Input</h2>
+                    <div class="upload-card" id="drop-zone">
+                        <input type="file" id="file-input" accept="image/jpeg, image/png, image/jpg" hidden>
+                        <div class="upload-placeholder" id="upload-placeholder">
+                            <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                            </svg>
+                            <p class="upload-text">Drag & drop your manuscript image here</p>
+                            <p class="upload-subtext">Supports JPG, JPEG, PNG</p>
+                        </div>
+                        <div class="image-preview-container hidden" id="preview-container">
+                            <img id="image-preview" src="" alt="Preview">
+                            <button class="btn-icon remove-btn" id="remove-btn" title="Remove Image">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="action-bar">
+                        <button id="recognize-btn" class="btn btn-primary" disabled>Run OCR</button>
+                        <button id="clear-btn" class="btn btn-secondary" disabled>Clear</button>
+                    </div>
+                </section>
+
+                <!-- PROCESSING PIPELINE VISUALIZATION -->
+                <section class="panel pipeline-section">
+                    <h2>Processing Pipeline</h2>
+                    <p class="pipeline-note" style="font-size: 0.8rem; color: #64748b; margin-bottom: 1rem;">✓ indicates successful execution of the processing stage, not recognition accuracy.</p>
+                    <ul class="stepper">
+                        <li class="step" id="step-upload">
+                            <div class="step-indicator"></div>
+                            <div class="step-content">Document Image</div>
+                        </li>
+                        <li class="step" id="step-lines">
+                            <div class="step-indicator"></div>
+                            <div class="step-content">Line Segmentation</div>
+                        </li>
+                        <li class="step" id="step-words">
+                            <div class="step-indicator"></div>
+                            <div class="step-content">Word Segmentation</div>
+                        </li>
+                        <li class="step" id="step-ocr">
+                            <div class="step-indicator"></div>
+                            <div class="step-content">CRNN + CTC Recognition</div>
+                        </li>
+                        <li class="step" id="step-correction">
+                            <div class="step-indicator"></div>
+                            <div class="step-content">Deterministic Correction</div>
+                        </li>
+                        <li class="step" id="step-done">
+                            <div class="step-indicator"></div>
+                            <div class="step-content">Tamil Text Reconstructed</div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- ERROR / LIMITATION DISPLAY -->
+                <section class="panel limitation-section hidden" id="limitation-panel">
+                    <div class="alert alert-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="alert-icon"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" /></svg>
+                        <p><strong>Note:</strong> Some historically touching or zero-gap text regions may remain merged because the system avoids forcing uncertain word boundaries.</p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- RIGHT COLUMN: Results & Info -->
+            <div class="right-column">
+                
+                <!-- RESULTS PANEL -->
+                <section class="panel results-section hidden" id="results-section">
+                    <div class="results-header">
+                        <h2>OCR Results</h2>
+                        <div class="results-meta">
+                            <span class="badge" id="lines-badge">0 Lines</span>
+                            <span class="badge" id="words-badge">0 Words</span>
+                            <span class="badge conf-badge" id="confidence-badge">Recognition confidence: --</span>
+                        </div>
+                    </div>
+                    
+                    <div class="results-comparison">
+                        <div class="result-box raw-box">
+                            <h3>Raw OCR Output</h3>
+                            <div class="text-output raw-text tamil-font" id="raw-text"></div>
+                        </div>
+                        <div class="result-box corrected-box">
+                            <h3>Post-Correction OCR Output</h3>
+                            <p class="correction-note" style="font-size: 0.75rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">Corpus-derived deterministic correction applied to OCR tokens.</p>
+                            <div class="text-output corrected-text tamil-font" id="corrected-text"></div>
+                        </div>
+                    </div>
+
+                    <!-- CORRECTION DETAILS -->
+                    <div class="corrections-container">
+                        <button class="accordion" id="corrections-accordion">Deterministic Corrections (<span id="corrections-count">0</span>)</button>
+                        <div class="accordion-panel" id="corrections-panel">
+                            <p class="corrections-desc">Vocabulary-based deterministic post-OCR correction using the project Tamil text corpus.</p>
+                            <ul class="corrections-list" id="corrections-list">
+                                <!-- Populated dynamically -->
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="info-grid">
+                    <!-- METRICS / PROJECT INFO PANEL -->
+                    <section class="panel metrics-panel">
+                        <h2>Controlled CRNN TEST Evaluation</h2>
+                        <div class="metric-row"><span>TEST Samples</span><strong>43,110</strong></div>
+                        <div class="metric-row"><span>Character Error Rate (CER)</span><strong>21.76%</strong></div>
+                        <div class="metric-row"><span>Word Error Rate (WER)</span><strong>41.99%</strong></div>
+                        <div class="metric-row"><span>Character Accuracy</span><strong>78.24%</strong></div>
+                        <div class="metric-row"><span>Word Accuracy</span><strong class="highlight">58.01%</strong></div>
+                        <p class="metric-disclaimer">Note: These metrics are from the controlled CRNN TEST evaluation and do not represent accuracy on the uploaded document.</p>
+                    </section>
+
+                    <!-- MODEL / METHOD INFORMATION -->
+                    <section class="panel method-panel">
+                        <h2>About the Model</h2>
+                        <ul class="method-list">
+                            <li>Custom CRNN Architecture</li>
+                            <li>CTC Decoding Algorithm</li>
+                            <li>Trained entirely from scratch</li>
+                            <li>Classical CV Segmentation (Morphology+CC)</li>
+                            <li>Deterministic string correction</li>
+                            <li class="negative">No Pretrained LLM</li>
+                            <li class="negative">No mT5 / BERT / GPT</li>
+                            <li class="negative">No external language models</li>
+                        </ul>
+                    </section>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

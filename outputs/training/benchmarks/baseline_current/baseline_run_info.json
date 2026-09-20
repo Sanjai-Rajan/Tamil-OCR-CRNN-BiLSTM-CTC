@@ -1,0 +1,11 @@
+{
+    "timestamp": "2026-09-20T09:51:35+05:30",
+    "python_version": "3.12.10",
+    "pytorch_version": "2.11.0+cu128",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "checkpoint_path": "checkpoints\\recognition\\tamil\\ocr_balanced_temporal\\best.pth",
+    "checkpoint_sha256": "07554040440E80E5EC2B1BD6EA1FA5BB6618E105AE3AD45F7590F21113E2F136",
+    "test_sample_count": 43110,
+    "batch_size": 128
+}

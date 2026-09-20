@@ -1,0 +1,2 @@
+epoch,packet,samples,train_loss,validation_loss,CER,WER,character_accuracy,word_accuracy,blank_percentage,unique_predicted_characters,unique_predicted_sequences,learning_rate,training_time
+1,packet_001,5000,4.599629025550405,3.410822061796162,1.0,1.0,0,0,100.0,0,1,0.0001,34.73476195335388

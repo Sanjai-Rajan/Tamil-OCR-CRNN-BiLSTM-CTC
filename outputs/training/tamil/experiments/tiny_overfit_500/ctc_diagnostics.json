@@ -1,0 +1,337 @@
+{
+    "epoch_1": [
+        {
+            "sample_index": 0,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 16,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.28333961963653564,
+            "mean_max_non_blank_prob": 0.027790682390332222,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 1,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 9,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.28310421109199524,
+            "mean_max_non_blank_prob": 0.027752462774515152,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 2,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 9,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.2829459607601166,
+            "mean_max_non_blank_prob": 0.02772005833685398,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 3,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 8,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.2839212417602539,
+            "mean_max_non_blank_prob": 0.027809400111436844,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 4,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 12,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.28390270471572876,
+            "mean_max_non_blank_prob": 0.027767760679125786,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        }
+    ],
+    "epoch_5": [
+        {
+            "sample_index": 0,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 16,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.25592702627182007,
+            "mean_max_non_blank_prob": 0.03827761858701706,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 1,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 9,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.2559271454811096,
+            "mean_max_non_blank_prob": 0.03827763348817825,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 2,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 9,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.255927175283432,
+            "mean_max_non_blank_prob": 0.03827763348817825,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 3,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 8,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.2559271454811096,
+            "mean_max_non_blank_prob": 0.03827763348817825,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 4,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 12,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.255927175283432,
+            "mean_max_non_blank_prob": 0.03827763348817825,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        }
+    ],
+    "epoch_10": [
+        {
+            "sample_index": 0,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 16,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.2049793303012848,
+            "mean_max_non_blank_prob": 0.034913625568151474,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 1,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 9,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.20497967302799225,
+            "mean_max_non_blank_prob": 0.03491365164518356,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 2,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 9,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.20497989654541016,
+            "mean_max_non_blank_prob": 0.03491365164518356,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 3,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 8,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.20497973263263702,
+            "mean_max_non_blank_prob": 0.034913644194602966,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 4,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 12,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.20497989654541016,
+            "mean_max_non_blank_prob": 0.03491365164518356,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        }
+    ],
+    "epoch_20": [
+        {
+            "sample_index": 0,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 16,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.21313683688640594,
+            "mean_max_non_blank_prob": 0.03584569692611694,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 1,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 9,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.21313683688640594,
+            "mean_max_non_blank_prob": 0.03584570065140724,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 2,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 9,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.21313683688640594,
+            "mean_max_non_blank_prob": 0.03584570437669754,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 3,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 8,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.21313685178756714,
+            "mean_max_non_blank_prob": 0.03584570065140724,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        },
+        {
+            "sample_index": 4,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 12,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.21313683688640594,
+            "mean_max_non_blank_prob": 0.03584570437669754,
+            "percentage_blank_argmax": 100.0,
+            "number_non_blank_timesteps": 0
+        }
+    ],
+    "epoch_30": [
+        {
+            "sample_index": 0,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 16,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.23762986063957214,
+            "mean_max_non_blank_prob": 0.0380028560757637,
+            "percentage_blank_argmax": 98.52941036224365,
+            "number_non_blank_timesteps": 1
+        },
+        {
+            "sample_index": 1,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 9,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.23763002455234528,
+            "mean_max_non_blank_prob": 0.03800288215279579,
+            "percentage_blank_argmax": 98.52941036224365,
+            "number_non_blank_timesteps": 1
+        },
+        {
+            "sample_index": 2,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 9,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.23763005435466766,
+            "mean_max_non_blank_prob": 0.03800288215279579,
+            "percentage_blank_argmax": 98.52941036224365,
+            "number_non_blank_timesteps": 1
+        },
+        {
+            "sample_index": 3,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 8,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.23763000965118408,
+            "mean_max_non_blank_prob": 0.03800288215279579,
+            "percentage_blank_argmax": 98.52941036224365,
+            "number_non_blank_timesteps": 1
+        },
+        {
+            "sample_index": 4,
+            "output_tensor_shape": [
+                68,
+                78
+            ],
+            "target_length": 12,
+            "input_sequence_length": 68,
+            "mean_blank_log_prob": -0.23763005435466766,
+            "mean_max_non_blank_prob": 0.03800288215279579,
+            "percentage_blank_argmax": 98.52941036224365,
+            "number_non_blank_timesteps": 1
+        }
+    ]
+}

@@ -1,0 +1,179 @@
+{
+  "sample.jpg": [
+    {
+      "num_words": 1,
+      "word_widths": [
+        512
+      ],
+      "word_heights": [
+        128
+      ],
+      "line_width": 512,
+      "line_height": 128
+    }
+  ],
+  "sample_test.png": [
+    {
+      "num_words": 1,
+      "word_widths": [
+        110
+      ],
+      "word_heights": [
+        19
+      ],
+      "line_width": 110,
+      "line_height": 20
+    }
+  ],
+  "sample_10lines.png": [
+    {
+      "num_words": 1,
+      "word_widths": [
+        552
+      ],
+      "word_heights": [
+        19
+      ],
+      "line_width": 552,
+      "line_height": 19
+    },
+    {
+      "num_words": 2,
+      "word_widths": [
+        19,
+        589
+      ],
+      "word_heights": [
+        235,
+        228
+      ],
+      "line_width": 750,
+      "line_height": 236
+    },
+    {
+      "num_words": 1,
+      "word_widths": [
+        1664
+      ],
+      "word_heights": [
+        432
+      ],
+      "line_width": 1664,
+      "line_height": 432
+    },
+    {
+      "num_words": 1,
+      "word_widths": [
+        1393
+      ],
+      "word_heights": [
+        332
+      ],
+      "line_width": 1393,
+      "line_height": 332
+    },
+    {
+      "num_words": 1,
+      "word_widths": [
+        1762
+      ],
+      "word_heights": [
+        313
+      ],
+      "line_width": 1762,
+      "line_height": 313
+    },
+    {
+      "num_words": 1,
+      "word_widths": [
+        517
+      ],
+      "word_heights": [
+        17
+      ],
+      "line_width": 517,
+      "line_height": 17
+    },
+    {
+      "num_words": 2,
+      "word_widths": [
+        18,
+        720
+      ],
+      "word_heights": [
+        266,
+        266
+      ],
+      "line_width": 1211,
+      "line_height": 267
+    },
+    {
+      "num_words": 1,
+      "word_widths": [
+        1623
+      ],
+      "word_heights": [
+        379
+      ],
+      "line_width": 1623,
+      "line_height": 379
+    },
+    {
+      "num_words": 1,
+      "word_widths": [
+        707
+      ],
+      "word_heights": [
+        21
+      ],
+      "line_width": 707,
+      "line_height": 21
+    },
+    {
+      "num_words": 2,
+      "word_widths": [
+        17,
+        1594
+      ],
+      "word_heights": [
+        216,
+        216
+      ],
+      "line_width": 1814,
+      "line_height": 217
+    },
+    {
+      "num_words": 1,
+      "word_widths": [
+        1909
+      ],
+      "word_heights": [
+        389
+      ],
+      "line_width": 1909,
+      "line_height": 389
+    },
+    {
+      "num_words": 1,
+      "word_widths": [
+        1609
+      ],
+      "word_heights": [
+        270
+      ],
+      "line_width": 1609,
+      "line_height": 270
+    },
+    {
+      "num_words": 1,
+      "word_widths": [
+        1284
+      ],
+      "word_heights": [
+        413
+      ],
+      "line_width": 1284,
+      "line_height": 413
+    }
+  ]
+}

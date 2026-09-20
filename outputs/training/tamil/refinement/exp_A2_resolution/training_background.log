@@ -1,0 +1,1380 @@
+============================================================
+HARDWARE DETECTED
+Device: cuda
+GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+PyTorch version: 2.6.0+cu126
+============================================================
+
+Found existing training_state.json in outputs\training\tamil\exp_A2_resolution. Loading state...
+Auto-resuming weights from checkpoints\recognition\tamil\exp_A2_resolution\latest.pth...
+
+============================================================
+Epoch 42/81 | Global Shuffling Experiment
+============================================================
+[TRAIN] Loaded 17 packets containing 126419 total samples.
+[VALIDATION] Loaded 3 packets containing 11598 total samples.
+Total Packets: 17
+Total Training Samples: 126419
+Batch Size: 32
+Number of Batches: 3951
+Shuffle: True
+Experiment Name: exp_A2_resolution
+============================================================
+
+
+Verifying model forward/backward pass...
+============================================================
+VERIFYING ONE BATCH BEFORE TRAINING
+============================================================
+Images shape: torch.Size([32, 1, 32, 219])
+Targets shape: torch.Size([216])
+Target lengths shape: torch.Size([32])
+Actual widths shape: torch.Size([32])
+Number of unique packets in this batch: 14
+Outputs shape: torch.Size([32, 54, 78])
+CTC Loss: 0.5359
+First label decoded: 'தீ'
+Verification PASSED. Starting training loop...
+
+Verification successful. Starting training...
+
+  Batch 1/3951 | Loss: 0.6344 | Samples: 32 | Time: 0.7s | Speed: 46.9 samples/s
+  Batch 11/3951 | Loss: 0.5519 | Samples: 352 | Time: 5.2s | Speed: 68.2 samples/s
+  Batch 21/3951 | Loss: 0.4507 | Samples: 672 | Time: 9.5s | Speed: 71.0 samples/s
+  Batch 31/3951 | Loss: 0.4303 | Samples: 992 | Time: 13.9s | Speed: 71.3 samples/s
+  Batch 41/3951 | Loss: 0.5735 | Samples: 1312 | Time: 18.5s | Speed: 71.1 samples/s
+  Batch 51/3951 | Loss: 0.7220 | Samples: 1632 | Time: 22.8s | Speed: 71.7 samples/s
+  Batch 61/3951 | Loss: 0.5798 | Samples: 1952 | Time: 27.4s | Speed: 71.4 samples/s
+  Batch 71/3951 | Loss: 0.4960 | Samples: 2272 | Time: 32.4s | Speed: 70.2 samples/s
+  Batch 81/3951 | Loss: 0.3442 | Samples: 2592 | Time: 37.2s | Speed: 69.7 samples/s
+  Batch 91/3951 | Loss: 0.5088 | Samples: 2912 | Time: 41.3s | Speed: 70.6 samples/s
+  Batch 101/3951 | Loss: 0.4907 | Samples: 3232 | Time: 45.7s | Speed: 70.7 samples/s
+  Batch 111/3951 | Loss: 0.4787 | Samples: 3552 | Time: 50.4s | Speed: 70.5 samples/s
+  Batch 121/3951 | Loss: 0.3983 | Samples: 3872 | Time: 54.8s | Speed: 70.6 samples/s
+  Batch 131/3951 | Loss: 0.6262 | Samples: 4192 | Time: 59.4s | Speed: 70.6 samples/s
+  Batch 141/3951 | Loss: 0.5395 | Samples: 4512 | Time: 64.2s | Speed: 70.2 samples/s
+  Batch 151/3951 | Loss: 0.3725 | Samples: 4832 | Time: 68.7s | Speed: 70.3 samples/s
+  Batch 161/3951 | Loss: 0.4224 | Samples: 5152 | Time: 73.2s | Speed: 70.4 samples/s
+  Batch 171/3951 | Loss: 0.4754 | Samples: 5472 | Time: 78.0s | Speed: 70.1 samples/s
+  Batch 181/3951 | Loss: 0.4548 | Samples: 5792 | Time: 82.9s | Speed: 69.9 samples/s
+  Batch 191/3951 | Loss: 0.5302 | Samples: 6112 | Time: 87.4s | Speed: 69.9 samples/s
+  Batch 201/3951 | Loss: 0.5420 | Samples: 6432 | Time: 91.4s | Speed: 70.4 samples/s
+  Batch 211/3951 | Loss: 0.6681 | Samples: 6752 | Time: 96.2s | Speed: 70.2 samples/s
+  Batch 221/3951 | Loss: 0.4767 | Samples: 7072 | Time: 100.5s | Speed: 70.4 samples/s
+  Batch 231/3951 | Loss: 0.6398 | Samples: 7392 | Time: 104.7s | Speed: 70.6 samples/s
+  Batch 241/3951 | Loss: 0.6291 | Samples: 7712 | Time: 109.2s | Speed: 70.6 samples/s
+  Batch 251/3951 | Loss: 0.5371 | Samples: 8032 | Time: 113.6s | Speed: 70.7 samples/s
+  Batch 261/3951 | Loss: 0.5141 | Samples: 8352 | Time: 118.5s | Speed: 70.5 samples/s
+  Batch 271/3951 | Loss: 0.5300 | Samples: 8672 | Time: 122.9s | Speed: 70.6 samples/s
+  Batch 281/3951 | Loss: 0.4888 | Samples: 8992 | Time: 127.3s | Speed: 70.6 samples/s
+  Batch 291/3951 | Loss: 0.3580 | Samples: 9312 | Time: 131.4s | Speed: 70.9 samples/s
+  Batch 301/3951 | Loss: 0.5620 | Samples: 9632 | Time: 136.0s | Speed: 70.8 samples/s
+  Batch 311/3951 | Loss: 0.5119 | Samples: 9952 | Time: 140.4s | Speed: 70.9 samples/s
+  Batch 321/3951 | Loss: 0.6420 | Samples: 10272 | Time: 145.1s | Speed: 70.8 samples/s
+  Batch 331/3951 | Loss: 0.5449 | Samples: 10592 | Time: 149.8s | Speed: 70.7 samples/s
+  Batch 341/3951 | Loss: 0.8748 | Samples: 10912 | Time: 154.4s | Speed: 70.7 samples/s
+  Batch 351/3951 | Loss: 0.5551 | Samples: 11232 | Time: 158.8s | Speed: 70.7 samples/s
+  Batch 361/3951 | Loss: 0.8172 | Samples: 11552 | Time: 163.1s | Speed: 70.8 samples/s
+  Batch 371/3951 | Loss: 0.5766 | Samples: 11872 | Time: 167.5s | Speed: 70.9 samples/s
+  Batch 381/3951 | Loss: 0.5554 | Samples: 12192 | Time: 172.1s | Speed: 70.9 samples/s
+  Batch 391/3951 | Loss: 0.6657 | Samples: 12512 | Time: 176.2s | Speed: 71.0 samples/s
+  Batch 401/3951 | Loss: 0.5597 | Samples: 12832 | Time: 180.8s | Speed: 71.0 samples/s
+  Batch 411/3951 | Loss: 0.5883 | Samples: 13152 | Time: 185.0s | Speed: 71.1 samples/s
+  Batch 421/3951 | Loss: 0.5992 | Samples: 13472 | Time: 189.1s | Speed: 71.3 samples/s
+  Batch 431/3951 | Loss: 0.4907 | Samples: 13792 | Time: 193.5s | Speed: 71.3 samples/s
+  Batch 441/3951 | Loss: 0.5092 | Samples: 14112 | Time: 197.6s | Speed: 71.4 samples/s
+  Batch 451/3951 | Loss: 0.6318 | Samples: 14432 | Time: 202.4s | Speed: 71.3 samples/s
+  Batch 461/3951 | Loss: 0.4503 | Samples: 14752 | Time: 211.0s | Speed: 69.9 samples/s
+  Batch 471/3951 | Loss: 0.6434 | Samples: 15072 | Time: 222.6s | Speed: 67.7 samples/s
+  Batch 481/3951 | Loss: 0.8013 | Samples: 15392 | Time: 234.1s | Speed: 65.7 samples/s
+  Batch 491/3951 | Loss: 0.6055 | Samples: 15712 | Time: 246.1s | Speed: 63.8 samples/s
+  Batch 501/3951 | Loss: 0.4404 | Samples: 16032 | Time: 258.0s | Speed: 62.1 samples/s
+  Batch 511/3951 | Loss: 0.7176 | Samples: 16352 | Time: 269.5s | Speed: 60.7 samples/s
+  Batch 521/3951 | Loss: 0.6859 | Samples: 16672 | Time: 281.2s | Speed: 59.3 samples/s
+  Batch 531/3951 | Loss: 0.6337 | Samples: 16992 | Time: 293.8s | Speed: 57.8 samples/s
+  Batch 541/3951 | Loss: 0.4777 | Samples: 17312 | Time: 305.7s | Speed: 56.6 samples/s
+  Batch 551/3951 | Loss: 0.5667 | Samples: 17632 | Time: 317.8s | Speed: 55.5 samples/s
+  Batch 561/3951 | Loss: 0.6770 | Samples: 17952 | Time: 329.6s | Speed: 54.5 samples/s
+  Batch 571/3951 | Loss: 0.4382 | Samples: 18272 | Time: 341.4s | Speed: 53.5 samples/s
+  Batch 581/3951 | Loss: 0.4445 | Samples: 18592 | Time: 353.4s | Speed: 52.6 samples/s
+  Batch 591/3951 | Loss: 0.6282 | Samples: 18912 | Time: 365.4s | Speed: 51.8 samples/s
+  Batch 601/3951 | Loss: 0.5048 | Samples: 19232 | Time: 377.1s | Speed: 51.0 samples/s
+  Batch 611/3951 | Loss: 0.5082 | Samples: 19552 | Time: 389.4s | Speed: 50.2 samples/s
+  Batch 621/3951 | Loss: 0.7201 | Samples: 19872 | Time: 401.3s | Speed: 49.5 samples/s
+  Batch 631/3951 | Loss: 0.4425 | Samples: 20192 | Time: 412.9s | Speed: 48.9 samples/s
+  Batch 641/3951 | Loss: 0.8177 | Samples: 20512 | Time: 424.2s | Speed: 48.4 samples/s
+  Batch 651/3951 | Loss: 0.4732 | Samples: 20832 | Time: 436.6s | Speed: 47.7 samples/s
+  Batch 661/3951 | Loss: 0.6616 | Samples: 21152 | Time: 448.8s | Speed: 47.1 samples/s
+  Batch 671/3951 | Loss: 0.5906 | Samples: 21472 | Time: 460.3s | Speed: 46.7 samples/s
+  Batch 681/3951 | Loss: 0.4706 | Samples: 21792 | Time: 471.6s | Speed: 46.2 samples/s
+  Batch 691/3951 | Loss: 0.7031 | Samples: 22112 | Time: 481.3s | Speed: 45.9 samples/s
+  Batch 701/3951 | Loss: 0.7622 | Samples: 22432 | Time: 490.1s | Speed: 45.8 samples/s
+  Batch 711/3951 | Loss: 0.4841 | Samples: 22752 | Time: 502.4s | Speed: 45.3 samples/s
+  Batch 721/3951 | Loss: 0.5537 | Samples: 23072 | Time: 514.7s | Speed: 44.8 samples/s
+  Batch 731/3951 | Loss: 0.6856 | Samples: 23392 | Time: 527.5s | Speed: 44.3 samples/s
+  Batch 741/3951 | Loss: 0.5112 | Samples: 23712 | Time: 539.2s | Speed: 44.0 samples/s
+  Batch 751/3951 | Loss: 0.5355 | Samples: 24032 | Time: 551.5s | Speed: 43.6 samples/s
+  Batch 761/3951 | Loss: 0.6674 | Samples: 24352 | Time: 563.4s | Speed: 43.2 samples/s
+  Batch 771/3951 | Loss: 0.6540 | Samples: 24672 | Time: 575.8s | Speed: 42.8 samples/s
+  Batch 781/3951 | Loss: 0.7571 | Samples: 24992 | Time: 588.3s | Speed: 42.5 samples/s
+  Batch 791/3951 | Loss: 0.8160 | Samples: 25312 | Time: 600.4s | Speed: 42.2 samples/s
+  Batch 801/3951 | Loss: 0.4965 | Samples: 25632 | Time: 612.3s | Speed: 41.9 samples/s
+  Batch 811/3951 | Loss: 0.4356 | Samples: 25952 | Time: 624.7s | Speed: 41.5 samples/s
+  Batch 821/3951 | Loss: 0.6522 | Samples: 26272 | Time: 636.6s | Speed: 41.3 samples/s
+  Batch 831/3951 | Loss: 0.5799 | Samples: 26592 | Time: 648.6s | Speed: 41.0 samples/s
+  Batch 841/3951 | Loss: 0.6481 | Samples: 26912 | Time: 656.6s | Speed: 41.0 samples/s
+  Batch 851/3951 | Loss: 0.5472 | Samples: 27232 | Time: 663.6s | Speed: 41.0 samples/s
+  Batch 861/3951 | Loss: 0.5210 | Samples: 27552 | Time: 673.4s | Speed: 40.9 samples/s
+  Batch 871/3951 | Loss: 0.6604 | Samples: 27872 | Time: 682.2s | Speed: 40.9 samples/s
+  Batch 881/3951 | Loss: 0.6305 | Samples: 28192 | Time: 693.5s | Speed: 40.6 samples/s
+  Batch 891/3951 | Loss: 0.2748 | Samples: 28512 | Time: 705.3s | Speed: 40.4 samples/s
+  Batch 901/3951 | Loss: 0.5786 | Samples: 28832 | Time: 711.7s | Speed: 40.5 samples/s
+  Batch 911/3951 | Loss: 0.5443 | Samples: 29152 | Time: 714.5s | Speed: 40.8 samples/s
+  Batch 921/3951 | Loss: 0.4462 | Samples: 29472 | Time: 719.8s | Speed: 40.9 samples/s
+  Batch 931/3951 | Loss: 0.4528 | Samples: 29792 | Time: 730.5s | Speed: 40.8 samples/s
+  Batch 941/3951 | Loss: 0.6061 | Samples: 30112 | Time: 742.9s | Speed: 40.5 samples/s
+  Batch 951/3951 | Loss: 0.5804 | Samples: 30432 | Time: 755.0s | Speed: 40.3 samples/s
+  Batch 961/3951 | Loss: 0.5702 | Samples: 30752 | Time: 766.3s | Speed: 40.1 samples/s
+  Batch 971/3951 | Loss: 0.6440 | Samples: 31072 | Time: 775.7s | Speed: 40.1 samples/s
+  Batch 981/3951 | Loss: 0.6285 | Samples: 31392 | Time: 780.4s | Speed: 40.2 samples/s
+  Batch 991/3951 | Loss: 0.4182 | Samples: 31712 | Time: 789.0s | Speed: 40.2 samples/s
+  Batch 1001/3951 | Loss: 0.5228 | Samples: 32032 | Time: 800.0s | Speed: 40.0 samples/s
+  Batch 1011/3951 | Loss: 0.5423 | Samples: 32352 | Time: 811.1s | Speed: 39.9 samples/s
+  Batch 1021/3951 | Loss: 0.5779 | Samples: 32672 | Time: 822.4s | Speed: 39.7 samples/s
+  Batch 1031/3951 | Loss: 0.4877 | Samples: 32992 | Time: 834.0s | Speed: 39.6 samples/s
+  Batch 1041/3951 | Loss: 0.6377 | Samples: 33312 | Time: 844.9s | Speed: 39.4 samples/s
+  Batch 1051/3951 | Loss: 0.8485 | Samples: 33632 | Time: 856.3s | Speed: 39.3 samples/s
+  Batch 1061/3951 | Loss: 0.5145 | Samples: 33952 | Time: 866.2s | Speed: 39.2 samples/s
+  Batch 1071/3951 | Loss: 0.5882 | Samples: 34272 | Time: 870.7s | Speed: 39.4 samples/s
+  Batch 1081/3951 | Loss: 0.6165 | Samples: 34592 | Time: 874.9s | Speed: 39.5 samples/s
+  Batch 1091/3951 | Loss: 0.6597 | Samples: 34912 | Time: 878.9s | Speed: 39.7 samples/s
+  Batch 1101/3951 | Loss: 0.4551 | Samples: 35232 | Time: 883.5s | Speed: 39.9 samples/s
+  Batch 1111/3951 | Loss: 0.4986 | Samples: 35552 | Time: 891.9s | Speed: 39.9 samples/s
+  Batch 1121/3951 | Loss: 0.5881 | Samples: 35872 | Time: 902.7s | Speed: 39.7 samples/s
+  Batch 1131/3951 | Loss: 0.5021 | Samples: 36192 | Time: 908.9s | Speed: 39.8 samples/s
+  Batch 1141/3951 | Loss: 0.5537 | Samples: 36512 | Time: 911.2s | Speed: 40.1 samples/s
+  Batch 1151/3951 | Loss: 0.5220 | Samples: 36832 | Time: 913.7s | Speed: 40.3 samples/s
+  Batch 1161/3951 | Loss: 0.7864 | Samples: 37152 | Time: 918.2s | Speed: 40.5 samples/s
+  Batch 1171/3951 | Loss: 0.8743 | Samples: 37472 | Time: 930.7s | Speed: 40.3 samples/s
+  Batch 1181/3951 | Loss: 0.4976 | Samples: 37792 | Time: 942.5s | Speed: 40.1 samples/s
+  Batch 1191/3951 | Loss: 0.5311 | Samples: 38112 | Time: 953.0s | Speed: 40.0 samples/s
+  Batch 1201/3951 | Loss: 0.6940 | Samples: 38432 | Time: 956.7s | Speed: 40.2 samples/s
+  Batch 1211/3951 | Loss: 0.6004 | Samples: 38752 | Time: 959.7s | Speed: 40.4 samples/s
+  Batch 1221/3951 | Loss: 0.8026 | Samples: 39072 | Time: 970.5s | Speed: 40.3 samples/s
+  Batch 1231/3951 | Loss: 0.5115 | Samples: 39392 | Time: 978.7s | Speed: 40.3 samples/s
+  Batch 1241/3951 | Loss: 0.5313 | Samples: 39712 | Time: 985.1s | Speed: 40.3 samples/s
+  Batch 1251/3951 | Loss: 0.5853 | Samples: 40032 | Time: 988.1s | Speed: 40.5 samples/s
+  Batch 1261/3951 | Loss: 0.5408 | Samples: 40352 | Time: 998.1s | Speed: 40.4 samples/s
+  Batch 1271/3951 | Loss: 0.6193 | Samples: 40672 | Time: 1011.3s | Speed: 40.2 samples/s
+  Batch 1281/3951 | Loss: 0.6365 | Samples: 40992 | Time: 1023.5s | Speed: 40.1 samples/s
+  Batch 1291/3951 | Loss: 0.4254 | Samples: 41312 | Time: 1032.8s | Speed: 40.0 samples/s
+  Batch 1301/3951 | Loss: 0.3637 | Samples: 41632 | Time: 1040.1s | Speed: 40.0 samples/s
+  Batch 1311/3951 | Loss: 0.4794 | Samples: 41952 | Time: 1052.1s | Speed: 39.9 samples/s
+  Batch 1321/3951 | Loss: 0.5617 | Samples: 42272 | Time: 1064.1s | Speed: 39.7 samples/s
+  Batch 1331/3951 | Loss: 0.5924 | Samples: 42592 | Time: 1076.3s | Speed: 39.6 samples/s
+  Batch 1341/3951 | Loss: 0.6645 | Samples: 42912 | Time: 1087.9s | Speed: 39.4 samples/s
+  Batch 1351/3951 | Loss: 0.6718 | Samples: 43232 | Time: 1098.5s | Speed: 39.4 samples/s
+  Batch 1361/3951 | Loss: 0.5206 | Samples: 43552 | Time: 1103.1s | Speed: 39.5 samples/s
+  Batch 1371/3951 | Loss: 0.6085 | Samples: 43872 | Time: 1107.2s | Speed: 39.6 samples/s
+  Batch 1381/3951 | Loss: 0.4609 | Samples: 44192 | Time: 1111.5s | Speed: 39.8 samples/s
+  Batch 1391/3951 | Loss: 0.5781 | Samples: 44512 | Time: 1115.7s | Speed: 39.9 samples/s
+  Batch 1401/3951 | Loss: 0.5677 | Samples: 44832 | Time: 1119.9s | Speed: 40.0 samples/s
+  Batch 1411/3951 | Loss: 0.5246 | Samples: 45152 | Time: 1123.9s | Speed: 40.2 samples/s
+  Batch 1421/3951 | Loss: 0.5010 | Samples: 45472 | Time: 1128.2s | Speed: 40.3 samples/s
+  Batch 1431/3951 | Loss: 0.7080 | Samples: 45792 | Time: 1132.7s | Speed: 40.4 samples/s
+  Batch 1441/3951 | Loss: 0.8002 | Samples: 46112 | Time: 1137.1s | Speed: 40.6 samples/s
+  Batch 1451/3951 | Loss: 0.7055 | Samples: 46432 | Time: 1141.6s | Speed: 40.7 samples/s
+  Batch 1461/3951 | Loss: 0.5566 | Samples: 46752 | Time: 1145.9s | Speed: 40.8 samples/s
+  Batch 1471/3951 | Loss: 0.5873 | Samples: 47072 | Time: 1150.8s | Speed: 40.9 samples/s
+  Batch 1481/3951 | Loss: 0.5774 | Samples: 47392 | Time: 1155.2s | Speed: 41.0 samples/s
+  Batch 1491/3951 | Loss: 0.4300 | Samples: 47712 | Time: 1159.1s | Speed: 41.2 samples/s
+  Batch 1501/3951 | Loss: 0.5968 | Samples: 48032 | Time: 1163.5s | Speed: 41.3 samples/s
+  Batch 1511/3951 | Loss: 0.5455 | Samples: 48352 | Time: 1167.7s | Speed: 41.4 samples/s
+  Batch 1521/3951 | Loss: 0.3183 | Samples: 48672 | Time: 1172.8s | Speed: 41.5 samples/s
+  Batch 1531/3951 | Loss: 0.5666 | Samples: 48992 | Time: 1177.6s | Speed: 41.6 samples/s
+  Batch 1541/3951 | Loss: 0.6616 | Samples: 49312 | Time: 1182.1s | Speed: 41.7 samples/s
+  Batch 1551/3951 | Loss: 0.7021 | Samples: 49632 | Time: 1186.1s | Speed: 41.8 samples/s
+  Batch 1561/3951 | Loss: 0.7670 | Samples: 49952 | Time: 1190.8s | Speed: 41.9 samples/s
+  Batch 1571/3951 | Loss: 0.5578 | Samples: 50272 | Time: 1196.2s | Speed: 42.0 samples/s
+  Batch 1581/3951 | Loss: 0.5517 | Samples: 50592 | Time: 1201.6s | Speed: 42.1 samples/s
+  Batch 1591/3951 | Loss: 0.4603 | Samples: 50912 | Time: 1208.0s | Speed: 42.1 samples/s
+  Batch 1601/3951 | Loss: 0.5864 | Samples: 51232 | Time: 1213.7s | Speed: 42.2 samples/s
+  Batch 1611/3951 | Loss: 0.5112 | Samples: 51552 | Time: 1219.1s | Speed: 42.3 samples/s
+  Batch 1621/3951 | Loss: 0.4248 | Samples: 51872 | Time: 1224.7s | Speed: 42.4 samples/s
+  Batch 1631/3951 | Loss: 0.5085 | Samples: 52192 | Time: 1230.6s | Speed: 42.4 samples/s
+  Batch 1641/3951 | Loss: 0.4327 | Samples: 52512 | Time: 1236.2s | Speed: 42.5 samples/s
+  Batch 1651/3951 | Loss: 0.5244 | Samples: 52832 | Time: 1240.5s | Speed: 42.6 samples/s
+  Batch 1661/3951 | Loss: 0.6342 | Samples: 53152 | Time: 1246.3s | Speed: 42.6 samples/s
+  Batch 1671/3951 | Loss: 0.7664 | Samples: 53472 | Time: 1251.9s | Speed: 42.7 samples/s
+  Batch 1681/3951 | Loss: 0.6798 | Samples: 53792 | Time: 1257.0s | Speed: 42.8 samples/s
+  Batch 1691/3951 | Loss: 0.6770 | Samples: 54112 | Time: 1263.1s | Speed: 42.8 samples/s
+  Batch 1701/3951 | Loss: 0.6633 | Samples: 54432 | Time: 1268.9s | Speed: 42.9 samples/s
+  Batch 1711/3951 | Loss: 0.5931 | Samples: 54752 | Time: 1274.6s | Speed: 43.0 samples/s
+  Batch 1721/3951 | Loss: 0.5160 | Samples: 55072 | Time: 1282.7s | Speed: 42.9 samples/s
+  Batch 1731/3951 | Loss: 0.6755 | Samples: 55392 | Time: 1293.2s | Speed: 42.8 samples/s
+  Batch 1741/3951 | Loss: 0.7122 | Samples: 55712 | Time: 1305.5s | Speed: 42.7 samples/s
+  Batch 1751/3951 | Loss: 0.5985 | Samples: 56032 | Time: 1316.4s | Speed: 42.6 samples/s
+  Batch 1761/3951 | Loss: 0.7382 | Samples: 56352 | Time: 1326.9s | Speed: 42.5 samples/s
+  Batch 1771/3951 | Loss: 0.4469 | Samples: 56672 | Time: 1337.6s | Speed: 42.4 samples/s
+  Batch 1781/3951 | Loss: 0.5480 | Samples: 56992 | Time: 1348.3s | Speed: 42.3 samples/s
+  Batch 1791/3951 | Loss: 0.4716 | Samples: 57312 | Time: 1359.0s | Speed: 42.2 samples/s
+  Batch 1801/3951 | Loss: 0.4914 | Samples: 57632 | Time: 1369.5s | Speed: 42.1 samples/s
+  Batch 1811/3951 | Loss: 0.6081 | Samples: 57952 | Time: 1380.8s | Speed: 42.0 samples/s
+  Batch 1821/3951 | Loss: 0.5727 | Samples: 58272 | Time: 1391.0s | Speed: 41.9 samples/s
+  Batch 1831/3951 | Loss: 0.6034 | Samples: 58592 | Time: 1401.2s | Speed: 41.8 samples/s
+  Batch 1841/3951 | Loss: 0.4837 | Samples: 58912 | Time: 1411.3s | Speed: 41.7 samples/s
+  Batch 1851/3951 | Loss: 0.8029 | Samples: 59232 | Time: 1422.2s | Speed: 41.6 samples/s
+  Batch 1861/3951 | Loss: 0.4984 | Samples: 59552 | Time: 1432.6s | Speed: 41.6 samples/s
+  Batch 1871/3951 | Loss: 0.5025 | Samples: 59872 | Time: 1443.4s | Speed: 41.5 samples/s
+  Batch 1881/3951 | Loss: 0.4566 | Samples: 60192 | Time: 1454.2s | Speed: 41.4 samples/s
+  Batch 1891/3951 | Loss: 0.5161 | Samples: 60512 | Time: 1464.4s | Speed: 41.3 samples/s
+  Batch 1901/3951 | Loss: 0.7383 | Samples: 60832 | Time: 1475.2s | Speed: 41.2 samples/s
+  Batch 1911/3951 | Loss: 0.5185 | Samples: 61152 | Time: 1486.0s | Speed: 41.2 samples/s
+  Batch 1921/3951 | Loss: 0.6209 | Samples: 61472 | Time: 1496.4s | Speed: 41.1 samples/s
+  Batch 1931/3951 | Loss: 0.4302 | Samples: 61792 | Time: 1506.3s | Speed: 41.0 samples/s
+  Batch 1941/3951 | Loss: 0.4717 | Samples: 62112 | Time: 1516.8s | Speed: 40.9 samples/s
+  Batch 1951/3951 | Loss: 0.8097 | Samples: 62432 | Time: 1526.7s | Speed: 40.9 samples/s
+  Batch 1961/3951 | Loss: 0.7235 | Samples: 62752 | Time: 1540.5s | Speed: 40.7 samples/s
+  Batch 1971/3951 | Loss: 0.4508 | Samples: 63072 | Time: 1565.8s | Speed: 40.3 samples/s
+  Batch 1981/3951 | Loss: 0.7170 | Samples: 63392 | Time: 1574.9s | Speed: 40.3 samples/s
+  Batch 1991/3951 | Loss: 0.4542 | Samples: 63712 | Time: 1583.6s | Speed: 40.2 samples/s
+  Batch 2001/3951 | Loss: 0.5874 | Samples: 64032 | Time: 1591.5s | Speed: 40.2 samples/s
+  Batch 2011/3951 | Loss: 0.5781 | Samples: 64352 | Time: 1599.2s | Speed: 40.2 samples/s
+  Batch 2021/3951 | Loss: 0.5531 | Samples: 64672 | Time: 1607.2s | Speed: 40.2 samples/s
+  Batch 2031/3951 | Loss: 0.6125 | Samples: 64992 | Time: 1615.1s | Speed: 40.2 samples/s
+  Batch 2041/3951 | Loss: 0.7228 | Samples: 65312 | Time: 1622.8s | Speed: 40.2 samples/s
+  Batch 2051/3951 | Loss: 0.6205 | Samples: 65632 | Time: 1631.1s | Speed: 40.2 samples/s
+  Batch 2061/3951 | Loss: 0.7443 | Samples: 65952 | Time: 1639.9s | Speed: 40.2 samples/s
+  Batch 2071/3951 | Loss: 0.6750 | Samples: 66272 | Time: 1648.0s | Speed: 40.2 samples/s
+  Batch 2081/3951 | Loss: 0.5330 | Samples: 66592 | Time: 1656.7s | Speed: 40.2 samples/s
+  Batch 2091/3951 | Loss: 0.4654 | Samples: 66912 | Time: 1664.9s | Speed: 40.2 samples/s
+  Batch 2101/3951 | Loss: 0.3974 | Samples: 67232 | Time: 1672.9s | Speed: 40.2 samples/s
+  Batch 2111/3951 | Loss: 0.7572 | Samples: 67552 | Time: 1681.2s | Speed: 40.2 samples/s
+  Batch 2121/3951 | Loss: 0.3670 | Samples: 67872 | Time: 1690.1s | Speed: 40.2 samples/s
+  Batch 2131/3951 | Loss: 0.5098 | Samples: 68192 | Time: 1699.2s | Speed: 40.1 samples/s
+  Batch 2141/3951 | Loss: 0.6436 | Samples: 68512 | Time: 1708.4s | Speed: 40.1 samples/s
+  Batch 2151/3951 | Loss: 0.7944 | Samples: 68832 | Time: 1716.8s | Speed: 40.1 samples/s
+  Batch 2161/3951 | Loss: 0.5787 | Samples: 69152 | Time: 1725.5s | Speed: 40.1 samples/s
+  Batch 2171/3951 | Loss: 0.6488 | Samples: 69472 | Time: 1734.1s | Speed: 40.1 samples/s
+  Batch 2181/3951 | Loss: 0.3269 | Samples: 69792 | Time: 1743.2s | Speed: 40.0 samples/s
+  Batch 2191/3951 | Loss: 0.4116 | Samples: 70112 | Time: 1752.5s | Speed: 40.0 samples/s
+  Batch 2201/3951 | Loss: 0.7641 | Samples: 70432 | Time: 1760.5s | Speed: 40.0 samples/s
+  Batch 2211/3951 | Loss: 0.6529 | Samples: 70752 | Time: 1769.3s | Speed: 40.0 samples/s
+  Batch 2221/3951 | Loss: 0.5081 | Samples: 71072 | Time: 1778.0s | Speed: 40.0 samples/s
+  Batch 2231/3951 | Loss: 0.6308 | Samples: 71392 | Time: 1786.0s | Speed: 40.0 samples/s
+  Batch 2241/3951 | Loss: 0.4262 | Samples: 71712 | Time: 1794.4s | Speed: 40.0 samples/s
+  Batch 2251/3951 | Loss: 0.7689 | Samples: 72032 | Time: 1802.5s | Speed: 40.0 samples/s
+  Batch 2261/3951 | Loss: 0.8632 | Samples: 72352 | Time: 1811.1s | Speed: 39.9 samples/s
+  Batch 2271/3951 | Loss: 0.5297 | Samples: 72672 | Time: 1819.8s | Speed: 39.9 samples/s
+  Batch 2281/3951 | Loss: 0.5890 | Samples: 72992 | Time: 1828.1s | Speed: 39.9 samples/s
+  Batch 2291/3951 | Loss: 0.6749 | Samples: 73312 | Time: 1836.1s | Speed: 39.9 samples/s
+  Batch 2301/3951 | Loss: 0.5815 | Samples: 73632 | Time: 1844.2s | Speed: 39.9 samples/s
+  Batch 2311/3951 | Loss: 0.5836 | Samples: 73952 | Time: 1852.5s | Speed: 39.9 samples/s
+  Batch 2321/3951 | Loss: 0.3571 | Samples: 74272 | Time: 1859.7s | Speed: 39.9 samples/s
+  Batch 2331/3951 | Loss: 0.6553 | Samples: 74592 | Time: 1864.8s | Speed: 40.0 samples/s
+  Batch 2341/3951 | Loss: 0.3791 | Samples: 74912 | Time: 1870.2s | Speed: 40.1 samples/s
+  Batch 2351/3951 | Loss: 0.6958 | Samples: 75232 | Time: 1876.2s | Speed: 40.1 samples/s
+  Batch 2361/3951 | Loss: 0.5023 | Samples: 75552 | Time: 1884.1s | Speed: 40.1 samples/s
+  Batch 2371/3951 | Loss: 0.7019 | Samples: 75872 | Time: 1891.5s | Speed: 40.1 samples/s
+  Batch 2381/3951 | Loss: 0.5550 | Samples: 76192 | Time: 1899.0s | Speed: 40.1 samples/s
+  Batch 2391/3951 | Loss: 0.6411 | Samples: 76512 | Time: 1906.4s | Speed: 40.1 samples/s
+  Batch 2401/3951 | Loss: 0.5252 | Samples: 76832 | Time: 1914.2s | Speed: 40.1 samples/s
+  Batch 2411/3951 | Loss: 0.4630 | Samples: 77152 | Time: 1921.9s | Speed: 40.1 samples/s
+  Batch 2421/3951 | Loss: 0.7153 | Samples: 77472 | Time: 1929.1s | Speed: 40.2 samples/s
+  Batch 2431/3951 | Loss: 0.5979 | Samples: 77792 | Time: 1937.2s | Speed: 40.2 samples/s
+  Batch 2441/3951 | Loss: 0.6879 | Samples: 78112 | Time: 1944.9s | Speed: 40.2 samples/s
+  Batch 2451/3951 | Loss: 0.5028 | Samples: 78432 | Time: 1952.9s | Speed: 40.2 samples/s
+  Batch 2461/3951 | Loss: 0.5231 | Samples: 78752 | Time: 1960.3s | Speed: 40.2 samples/s
+  Batch 2471/3951 | Loss: 0.4230 | Samples: 79072 | Time: 1967.8s | Speed: 40.2 samples/s
+  Batch 2481/3951 | Loss: 0.7557 | Samples: 79392 | Time: 1975.7s | Speed: 40.2 samples/s
+  Batch 2491/3951 | Loss: 0.8035 | Samples: 79712 | Time: 1983.3s | Speed: 40.2 samples/s
+  Batch 2501/3951 | Loss: 0.5538 | Samples: 80032 | Time: 1991.6s | Speed: 40.2 samples/s
+  Batch 2511/3951 | Loss: 0.7091 | Samples: 80352 | Time: 1999.1s | Speed: 40.2 samples/s
+  Batch 2521/3951 | Loss: 0.5121 | Samples: 80672 | Time: 2006.7s | Speed: 40.2 samples/s
+  Batch 2531/3951 | Loss: 0.4097 | Samples: 80992 | Time: 2014.6s | Speed: 40.2 samples/s
+  Batch 2541/3951 | Loss: 0.6284 | Samples: 81312 | Time: 2022.0s | Speed: 40.2 samples/s
+  Batch 2551/3951 | Loss: 0.6983 | Samples: 81632 | Time: 2029.9s | Speed: 40.2 samples/s
+  Batch 2561/3951 | Loss: 0.4973 | Samples: 81952 | Time: 2037.6s | Speed: 40.2 samples/s
+  Batch 2571/3951 | Loss: 0.7154 | Samples: 82272 | Time: 2044.6s | Speed: 40.2 samples/s
+  Batch 2581/3951 | Loss: 0.4280 | Samples: 82592 | Time: 2051.7s | Speed: 40.3 samples/s
+  Batch 2591/3951 | Loss: 0.7616 | Samples: 82912 | Time: 2058.5s | Speed: 40.3 samples/s
+  Batch 2601/3951 | Loss: 0.4715 | Samples: 83232 | Time: 2065.4s | Speed: 40.3 samples/s
+  Batch 2611/3951 | Loss: 0.6346 | Samples: 83552 | Time: 2072.4s | Speed: 40.3 samples/s
+  Batch 2621/3951 | Loss: 0.5357 | Samples: 83872 | Time: 2079.1s | Speed: 40.3 samples/s
+  Batch 2631/3951 | Loss: 0.5735 | Samples: 84192 | Time: 2086.3s | Speed: 40.4 samples/s
+  Batch 2641/3951 | Loss: 0.5023 | Samples: 84512 | Time: 2100.7s | Speed: 40.2 samples/s
+  Batch 2651/3951 | Loss: 0.7945 | Samples: 84832 | Time: 2108.1s | Speed: 40.2 samples/s
+  Batch 2661/3951 | Loss: 0.7983 | Samples: 85152 | Time: 2115.1s | Speed: 40.3 samples/s
+  Batch 2671/3951 | Loss: 0.8180 | Samples: 85472 | Time: 2123.4s | Speed: 40.3 samples/s
+  Batch 2681/3951 | Loss: 0.6535 | Samples: 85792 | Time: 2131.8s | Speed: 40.2 samples/s
+  Batch 2691/3951 | Loss: 0.5252 | Samples: 86112 | Time: 2140.0s | Speed: 40.2 samples/s
+  Batch 2701/3951 | Loss: 0.6343 | Samples: 86432 | Time: 2147.9s | Speed: 40.2 samples/s
+  Batch 2711/3951 | Loss: 0.7168 | Samples: 86752 | Time: 2156.0s | Speed: 40.2 samples/s
+  Batch 2721/3951 | Loss: 0.6813 | Samples: 87072 | Time: 2163.6s | Speed: 40.2 samples/s
+  Batch 2731/3951 | Loss: 0.5114 | Samples: 87392 | Time: 2171.8s | Speed: 40.2 samples/s
+  Batch 2741/3951 | Loss: 0.6957 | Samples: 87712 | Time: 2180.1s | Speed: 40.2 samples/s
+  Batch 2751/3951 | Loss: 0.6940 | Samples: 88032 | Time: 2188.1s | Speed: 40.2 samples/s
+  Batch 2761/3951 | Loss: 0.4211 | Samples: 88352 | Time: 2197.3s | Speed: 40.2 samples/s
+  Batch 2771/3951 | Loss: 0.3850 | Samples: 88672 | Time: 2205.3s | Speed: 40.2 samples/s
+  Batch 2781/3951 | Loss: 0.4012 | Samples: 88992 | Time: 2212.5s | Speed: 40.2 samples/s
+  Batch 2791/3951 | Loss: 0.4025 | Samples: 89312 | Time: 2219.9s | Speed: 40.2 samples/s
+  Batch 2801/3951 | Loss: 0.7255 | Samples: 89632 | Time: 2228.1s | Speed: 40.2 samples/s
+  Batch 2811/3951 | Loss: 0.6400 | Samples: 89952 | Time: 2236.3s | Speed: 40.2 samples/s
+  Batch 2821/3951 | Loss: 0.6620 | Samples: 90272 | Time: 2244.4s | Speed: 40.2 samples/s
+  Batch 2831/3951 | Loss: 0.6368 | Samples: 90592 | Time: 2252.0s | Speed: 40.2 samples/s
+  Batch 2841/3951 | Loss: 0.3779 | Samples: 90912 | Time: 2260.3s | Speed: 40.2 samples/s
+  Batch 2851/3951 | Loss: 0.6472 | Samples: 91232 | Time: 2268.5s | Speed: 40.2 samples/s
+  Batch 2861/3951 | Loss: 0.8599 | Samples: 91552 | Time: 2276.5s | Speed: 40.2 samples/s
+  Batch 2871/3951 | Loss: 0.4320 | Samples: 91872 | Time: 2284.4s | Speed: 40.2 samples/s
+  Batch 2881/3951 | Loss: 0.6304 | Samples: 92192 | Time: 2292.6s | Speed: 40.2 samples/s
+  Batch 2891/3951 | Loss: 0.5746 | Samples: 92512 | Time: 2301.0s | Speed: 40.2 samples/s
+  Batch 2901/3951 | Loss: 0.7230 | Samples: 92832 | Time: 2309.6s | Speed: 40.2 samples/s
+  Batch 2911/3951 | Loss: 0.5601 | Samples: 93152 | Time: 2317.8s | Speed: 40.2 samples/s
+  Batch 2921/3951 | Loss: 0.5397 | Samples: 93472 | Time: 2327.3s | Speed: 40.2 samples/s
+  Batch 2931/3951 | Loss: 0.6079 | Samples: 93792 | Time: 2335.4s | Speed: 40.2 samples/s
+  Batch 2941/3951 | Loss: 0.6864 | Samples: 94112 | Time: 2343.4s | Speed: 40.2 samples/s
+  Batch 2951/3951 | Loss: 0.8943 | Samples: 94432 | Time: 2351.0s | Speed: 40.2 samples/s
+  Batch 2961/3951 | Loss: 0.7520 | Samples: 94752 | Time: 2359.3s | Speed: 40.2 samples/s
+  Batch 2971/3951 | Loss: 0.6248 | Samples: 95072 | Time: 2367.2s | Speed: 40.2 samples/s
+  Batch 2981/3951 | Loss: 0.6671 | Samples: 95392 | Time: 2374.7s | Speed: 40.2 samples/s
+  Batch 2991/3951 | Loss: 0.4365 | Samples: 95712 | Time: 2382.6s | Speed: 40.2 samples/s
+  Batch 3001/3951 | Loss: 0.6195 | Samples: 96032 | Time: 2394.4s | Speed: 40.1 samples/s
+  Batch 3011/3951 | Loss: 0.4951 | Samples: 96352 | Time: 2401.8s | Speed: 40.1 samples/s
+  Batch 3021/3951 | Loss: 0.5863 | Samples: 96672 | Time: 2410.4s | Speed: 40.1 samples/s
+  Batch 3031/3951 | Loss: 0.5469 | Samples: 96992 | Time: 2418.2s | Speed: 40.1 samples/s
+  Batch 3041/3951 | Loss: 0.8677 | Samples: 97312 | Time: 2426.5s | Speed: 40.1 samples/s
+  Batch 3051/3951 | Loss: 0.7581 | Samples: 97632 | Time: 2434.6s | Speed: 40.1 samples/s
+  Batch 3061/3951 | Loss: 0.6455 | Samples: 97952 | Time: 2441.9s | Speed: 40.1 samples/s
+  Batch 3071/3951 | Loss: 0.6423 | Samples: 98272 | Time: 2449.7s | Speed: 40.1 samples/s
+  Batch 3081/3951 | Loss: 0.4055 | Samples: 98592 | Time: 2458.1s | Speed: 40.1 samples/s
+  Batch 3091/3951 | Loss: 0.7199 | Samples: 98912 | Time: 2467.6s | Speed: 40.1 samples/s
+  Batch 3101/3951 | Loss: 0.6093 | Samples: 99232 | Time: 2476.7s | Speed: 40.1 samples/s
+  Batch 3111/3951 | Loss: 0.6500 | Samples: 99552 | Time: 2486.2s | Speed: 40.0 samples/s
+  Batch 3121/3951 | Loss: 0.5393 | Samples: 99872 | Time: 2497.0s | Speed: 40.0 samples/s
+  Batch 3131/3951 | Loss: 0.5391 | Samples: 100192 | Time: 2503.0s | Speed: 40.0 samples/s
+  Batch 3141/3951 | Loss: 0.6734 | Samples: 100512 | Time: 2506.9s | Speed: 40.1 samples/s
+  Batch 3151/3951 | Loss: 0.4922 | Samples: 100832 | Time: 2515.4s | Speed: 40.1 samples/s
+  Batch 3161/3951 | Loss: 0.6060 | Samples: 101152 | Time: 2519.4s | Speed: 40.1 samples/s
+  Batch 3171/3951 | Loss: 0.5843 | Samples: 101472 | Time: 2529.1s | Speed: 40.1 samples/s
+  Batch 3181/3951 | Loss: 0.6701 | Samples: 101792 | Time: 2538.0s | Speed: 40.1 samples/s
+  Batch 3191/3951 | Loss: 0.5186 | Samples: 102112 | Time: 2546.2s | Speed: 40.1 samples/s
+  Batch 3201/3951 | Loss: 0.5946 | Samples: 102432 | Time: 2554.8s | Speed: 40.1 samples/s
+  Batch 3211/3951 | Loss: 0.5090 | Samples: 102752 | Time: 2563.8s | Speed: 40.1 samples/s
+  Batch 3221/3951 | Loss: 0.4801 | Samples: 103072 | Time: 2571.8s | Speed: 40.1 samples/s
+  Batch 3231/3951 | Loss: 0.7524 | Samples: 103392 | Time: 2579.8s | Speed: 40.1 samples/s
+  Batch 3241/3951 | Loss: 0.6420 | Samples: 103712 | Time: 2588.7s | Speed: 40.1 samples/s
+  Batch 3251/3951 | Loss: 0.6008 | Samples: 104032 | Time: 2599.5s | Speed: 40.0 samples/s
+  Batch 3261/3951 | Loss: 0.4483 | Samples: 104352 | Time: 2608.6s | Speed: 40.0 samples/s
+  Batch 3271/3951 | Loss: 0.4797 | Samples: 104672 | Time: 2616.7s | Speed: 40.0 samples/s
+  Batch 3281/3951 | Loss: 0.5718 | Samples: 104992 | Time: 2625.4s | Speed: 40.0 samples/s
+  Batch 3291/3951 | Loss: 0.6608 | Samples: 105312 | Time: 2634.3s | Speed: 40.0 samples/s
+  Batch 3301/3951 | Loss: 0.5422 | Samples: 105632 | Time: 2642.9s | Speed: 40.0 samples/s
+  Batch 3311/3951 | Loss: 0.5743 | Samples: 105952 | Time: 2651.7s | Speed: 40.0 samples/s
+  Batch 3321/3951 | Loss: 0.5658 | Samples: 106272 | Time: 2660.5s | Speed: 39.9 samples/s
+  Batch 3331/3951 | Loss: 0.5158 | Samples: 106592 | Time: 2669.0s | Speed: 39.9 samples/s
+  Batch 3341/3951 | Loss: 0.5111 | Samples: 106912 | Time: 2677.7s | Speed: 39.9 samples/s
+  Batch 3351/3951 | Loss: 0.4976 | Samples: 107232 | Time: 2685.8s | Speed: 39.9 samples/s
+  Batch 3361/3951 | Loss: 0.5394 | Samples: 107552 | Time: 2699.8s | Speed: 39.8 samples/s
+  Batch 3371/3951 | Loss: 0.6423 | Samples: 107872 | Time: 2707.7s | Speed: 39.8 samples/s
+  Batch 3381/3951 | Loss: 0.4473 | Samples: 108192 | Time: 2715.9s | Speed: 39.8 samples/s
+  Batch 3391/3951 | Loss: 0.5245 | Samples: 108512 | Time: 2724.3s | Speed: 39.8 samples/s
+  Batch 3401/3951 | Loss: 0.7834 | Samples: 108832 | Time: 2727.7s | Speed: 39.9 samples/s
+  Batch 3411/3951 | Loss: 0.5873 | Samples: 109152 | Time: 2733.4s | Speed: 39.9 samples/s
+  Batch 3421/3951 | Loss: 0.6060 | Samples: 109472 | Time: 2741.3s | Speed: 39.9 samples/s
+  Batch 3431/3951 | Loss: 0.5262 | Samples: 109792 | Time: 2749.5s | Speed: 39.9 samples/s
+  Batch 3441/3951 | Loss: 0.7053 | Samples: 110112 | Time: 2757.3s | Speed: 39.9 samples/s
+  Batch 3451/3951 | Loss: 0.8324 | Samples: 110432 | Time: 2765.4s | Speed: 39.9 samples/s
+  Batch 3461/3951 | Loss: 0.6193 | Samples: 110752 | Time: 2773.3s | Speed: 39.9 samples/s
+  Batch 3471/3951 | Loss: 0.3663 | Samples: 111072 | Time: 2781.9s | Speed: 39.9 samples/s
+  Batch 3481/3951 | Loss: 0.4812 | Samples: 111392 | Time: 2790.4s | Speed: 39.9 samples/s
+  Batch 3491/3951 | Loss: 0.5614 | Samples: 111712 | Time: 2798.8s | Speed: 39.9 samples/s
+  Batch 3501/3951 | Loss: 0.5262 | Samples: 112032 | Time: 2807.1s | Speed: 39.9 samples/s
+  Batch 3511/3951 | Loss: 0.6106 | Samples: 112352 | Time: 2815.9s | Speed: 39.9 samples/s
+  Batch 3521/3951 | Loss: 0.6911 | Samples: 112672 | Time: 2820.3s | Speed: 39.9 samples/s
+  Batch 3531/3951 | Loss: 0.5906 | Samples: 112992 | Time: 2826.2s | Speed: 40.0 samples/s
+  Batch 3541/3951 | Loss: 0.4728 | Samples: 113312 | Time: 2834.7s | Speed: 40.0 samples/s
+  Batch 3551/3951 | Loss: 0.5452 | Samples: 113632 | Time: 2843.4s | Speed: 40.0 samples/s
+  Batch 3561/3951 | Loss: 0.6035 | Samples: 113952 | Time: 2850.0s | Speed: 40.0 samples/s
+  Batch 3571/3951 | Loss: 0.6555 | Samples: 114272 | Time: 2854.7s | Speed: 40.0 samples/s
+  Batch 3581/3951 | Loss: 0.5172 | Samples: 114592 | Time: 2862.9s | Speed: 40.0 samples/s
+  Batch 3591/3951 | Loss: 0.6229 | Samples: 114912 | Time: 2870.5s | Speed: 40.0 samples/s
+  Batch 3601/3951 | Loss: 0.5447 | Samples: 115232 | Time: 2878.8s | Speed: 40.0 samples/s
+  Batch 3611/3951 | Loss: 0.5956 | Samples: 115552 | Time: 2887.3s | Speed: 40.0 samples/s
+  Batch 3621/3951 | Loss: 0.6419 | Samples: 115872 | Time: 2895.8s | Speed: 40.0 samples/s
+  Batch 3631/3951 | Loss: 0.4527 | Samples: 116192 | Time: 2904.5s | Speed: 40.0 samples/s
+  Batch 3641/3951 | Loss: 0.5584 | Samples: 116512 | Time: 2913.0s | Speed: 40.0 samples/s
+  Batch 3651/3951 | Loss: 0.7096 | Samples: 116832 | Time: 2921.3s | Speed: 40.0 samples/s
+  Batch 3661/3951 | Loss: 0.5682 | Samples: 117152 | Time: 2931.2s | Speed: 40.0 samples/s
+  Batch 3671/3951 | Loss: 0.5548 | Samples: 117472 | Time: 2939.8s | Speed: 40.0 samples/s
+  Batch 3681/3951 | Loss: 0.6527 | Samples: 117792 | Time: 2948.5s | Speed: 40.0 samples/s
+  Batch 3691/3951 | Loss: 0.4090 | Samples: 118112 | Time: 2957.0s | Speed: 39.9 samples/s
+  Batch 3701/3951 | Loss: 0.5277 | Samples: 118432 | Time: 2965.8s | Speed: 39.9 samples/s
+  Batch 3711/3951 | Loss: 0.5791 | Samples: 118752 | Time: 2970.5s | Speed: 40.0 samples/s
+  Batch 3721/3951 | Loss: 0.5766 | Samples: 119072 | Time: 2979.1s | Speed: 40.0 samples/s
+  Batch 3731/3951 | Loss: 0.6701 | Samples: 119392 | Time: 2988.1s | Speed: 40.0 samples/s
+  Batch 3741/3951 | Loss: 0.4604 | Samples: 119712 | Time: 2996.9s | Speed: 39.9 samples/s
+  Batch 3751/3951 | Loss: 0.8453 | Samples: 120032 | Time: 3005.2s | Speed: 39.9 samples/s
+  Batch 3761/3951 | Loss: 0.5560 | Samples: 120352 | Time: 3014.3s | Speed: 39.9 samples/s
+  Batch 3771/3951 | Loss: 0.6097 | Samples: 120672 | Time: 3023.6s | Speed: 39.9 samples/s
+  Batch 3781/3951 | Loss: 0.5753 | Samples: 120992 | Time: 3032.7s | Speed: 39.9 samples/s
+  Batch 3791/3951 | Loss: 0.8327 | Samples: 121312 | Time: 3041.5s | Speed: 39.9 samples/s
+  Batch 3801/3951 | Loss: 0.6899 | Samples: 121632 | Time: 3049.7s | Speed: 39.9 samples/s
+  Batch 3811/3951 | Loss: 0.8296 | Samples: 121952 | Time: 3058.2s | Speed: 39.9 samples/s
+  Batch 3821/3951 | Loss: 0.7751 | Samples: 122272 | Time: 3066.7s | Speed: 39.9 samples/s
+  Batch 3831/3951 | Loss: 0.7610 | Samples: 122592 | Time: 3075.2s | Speed: 39.9 samples/s
+  Batch 3841/3951 | Loss: 0.5766 | Samples: 122912 | Time: 3083.3s | Speed: 39.9 samples/s
+  Batch 3851/3951 | Loss: 0.5892 | Samples: 123232 | Time: 3091.4s | Speed: 39.9 samples/s
+  Batch 3861/3951 | Loss: 0.6693 | Samples: 123552 | Time: 3100.3s | Speed: 39.9 samples/s
+  Batch 3871/3951 | Loss: 0.7220 | Samples: 123872 | Time: 3108.8s | Speed: 39.8 samples/s
+  Batch 3881/3951 | Loss: 0.5648 | Samples: 124192 | Time: 3117.3s | Speed: 39.8 samples/s
+  Batch 3891/3951 | Loss: 0.3099 | Samples: 124512 | Time: 3125.8s | Speed: 39.8 samples/s
+  Batch 3901/3951 | Loss: 0.6710 | Samples: 124832 | Time: 3134.7s | Speed: 39.8 samples/s
+  Batch 3911/3951 | Loss: 0.6028 | Samples: 125152 | Time: 3143.8s | Speed: 39.8 samples/s
+  Batch 3921/3951 | Loss: 0.6369 | Samples: 125472 | Time: 3152.3s | Speed: 39.8 samples/s
+  Batch 3931/3951 | Loss: 0.5236 | Samples: 125792 | Time: 3160.8s | Speed: 39.8 samples/s
+  Batch 3941/3951 | Loss: 0.6801 | Samples: 126112 | Time: 3168.9s | Speed: 39.8 samples/s
+  Batch 3951/3951 | Loss: 0.7769 | Samples: 126432 | Time: 3177.2s | Speed: 39.8 samples/s
+
+[SAVE] Saving pre-validation checkpoint for epoch 42...
+[SAVE] Pre-validation checkpoint saved to checkpoints\recognition\tamil\exp_A2_resolution\epoch_042_pre_validation.pth
+
+--- Epoch 42 Metrics ---
+Total Batches Processed: 3951
+Skipped NaN/Inf Batches: 0
+Train Loss: 0.5859
+Validation Loss: 1.7700
+CER: 0.4391
+WER: 0.9368
+Character Accuracy: 0.5609
+Word Accuracy: 0.0632
+
+--- Mode Collapse Analysis ---
+Blank Prediction %:          88.67%
+Unique Predicted Characters: 53
+Unique Predicted Sequences:  10483
+Dominant Character:          '்' (21.67%)
+Average Prediction Length:   7.75
+Training Time:               3177.2s
+Samples/sec:                 39.8
+GPU/Device:                  cuda
+
+--- Validation Predictions ---
+GT: ஆச்சரியப்படுவதற்கில்லை | Pred: அச்சியா
+GT: கூட்டு | Pred: கூட்டுதற்
+GT: இச்சைப்பொருளாக | Pred: இச்சின்
+GT: யூனிட்டை | Pred: ஆூவா்
+GT: வரப்பிரசாதம் | Pred: வரிப்ு்
+GT: தேடப்படுகின்றன | Pred: தேதல்க
+GT: காய்ச்சுதல் | Pred: காய்ததி்
+GT: நுரையுமாக | Pred: சுழைகா்
+GT: சலஞ்சர்ஸ் | Pred: கூபரம்
+GT: அறிந்தது | Pred: அறிந்ததுதும்ாடட்
+[SAVE] New best CER (0.4391), saved to best.pth
+
+============================================================
+Epoch 43/81 | Global Shuffling Experiment
+============================================================
+[TRAIN] Loaded 17 packets containing 126419 total samples.
+[VALIDATION] Loaded 3 packets containing 11598 total samples.
+Total Packets: 17
+Total Training Samples: 126419
+Batch Size: 32
+Number of Batches: 3951
+Shuffle: True
+Experiment Name: exp_A2_resolution
+============================================================
+
+  Batch 1/3951 | Loss: 0.4205 | Samples: 32 | Time: 0.6s | Speed: 50.8 samples/s
+  Batch 11/3951 | Loss: 0.4043 | Samples: 352 | Time: 7.1s | Speed: 49.3 samples/s
+  Batch 21/3951 | Loss: 0.7118 | Samples: 672 | Time: 14.4s | Speed: 46.7 samples/s
+  Batch 31/3951 | Loss: 0.5264 | Samples: 992 | Time: 20.9s | Speed: 47.4 samples/s
+  Batch 41/3951 | Loss: 0.4691 | Samples: 1312 | Time: 27.1s | Speed: 48.4 samples/s
+  Batch 51/3951 | Loss: 0.4662 | Samples: 1632 | Time: 33.6s | Speed: 48.5 samples/s
+  Batch 61/3951 | Loss: 0.4475 | Samples: 1952 | Time: 40.5s | Speed: 48.2 samples/s
+  Batch 71/3951 | Loss: 0.5496 | Samples: 2272 | Time: 46.7s | Speed: 48.6 samples/s
+  Batch 81/3951 | Loss: 0.8223 | Samples: 2592 | Time: 53.3s | Speed: 48.6 samples/s
+  Batch 91/3951 | Loss: 0.5509 | Samples: 2912 | Time: 59.7s | Speed: 48.8 samples/s
+  Batch 101/3951 | Loss: 0.5045 | Samples: 3232 | Time: 65.9s | Speed: 49.0 samples/s
+  Batch 111/3951 | Loss: 0.4684 | Samples: 3552 | Time: 71.9s | Speed: 49.4 samples/s
+  Batch 121/3951 | Loss: 0.3756 | Samples: 3872 | Time: 78.0s | Speed: 49.7 samples/s
+  Batch 131/3951 | Loss: 0.5294 | Samples: 4192 | Time: 83.7s | Speed: 50.1 samples/s
+  Batch 141/3951 | Loss: 0.4662 | Samples: 4512 | Time: 89.8s | Speed: 50.3 samples/s
+  Batch 151/3951 | Loss: 0.6062 | Samples: 4832 | Time: 96.0s | Speed: 50.3 samples/s
+  Batch 161/3951 | Loss: 0.5103 | Samples: 5152 | Time: 101.5s | Speed: 50.8 samples/s
+  Batch 171/3951 | Loss: 0.6300 | Samples: 5472 | Time: 107.2s | Speed: 51.1 samples/s
+  Batch 181/3951 | Loss: 0.4760 | Samples: 5792 | Time: 113.1s | Speed: 51.2 samples/s
+  Batch 191/3951 | Loss: 0.6717 | Samples: 6112 | Time: 119.3s | Speed: 51.2 samples/s
+  Batch 201/3951 | Loss: 0.6057 | Samples: 6432 | Time: 125.2s | Speed: 51.4 samples/s
+  Batch 211/3951 | Loss: 0.4850 | Samples: 6752 | Time: 131.9s | Speed: 51.2 samples/s
+  Batch 221/3951 | Loss: 0.5737 | Samples: 7072 | Time: 139.3s | Speed: 50.8 samples/s
+  Batch 231/3951 | Loss: 0.4553 | Samples: 7392 | Time: 146.0s | Speed: 50.6 samples/s
+  Batch 241/3951 | Loss: 0.6093 | Samples: 7712 | Time: 150.7s | Speed: 51.2 samples/s
+  Batch 251/3951 | Loss: 0.7438 | Samples: 8032 | Time: 153.7s | Speed: 52.2 samples/s
+  Batch 261/3951 | Loss: 0.6398 | Samples: 8352 | Time: 160.0s | Speed: 52.2 samples/s
+  Batch 271/3951 | Loss: 0.4011 | Samples: 8672 | Time: 165.9s | Speed: 52.3 samples/s
+  Batch 281/3951 | Loss: 0.4675 | Samples: 8992 | Time: 172.5s | Speed: 52.1 samples/s
+  Batch 291/3951 | Loss: 0.6911 | Samples: 9312 | Time: 178.7s | Speed: 52.1 samples/s
+  Batch 301/3951 | Loss: 0.5599 | Samples: 9632 | Time: 185.1s | Speed: 52.0 samples/s
+  Batch 311/3951 | Loss: 0.5300 | Samples: 9952 | Time: 191.6s | Speed: 51.9 samples/s
+  Batch 321/3951 | Loss: 0.4295 | Samples: 10272 | Time: 198.8s | Speed: 51.7 samples/s
+  Batch 331/3951 | Loss: 0.7018 | Samples: 10592 | Time: 205.0s | Speed: 51.7 samples/s
+  Batch 341/3951 | Loss: 0.4783 | Samples: 10912 | Time: 211.4s | Speed: 51.6 samples/s
+  Batch 351/3951 | Loss: 0.5548 | Samples: 11232 | Time: 218.2s | Speed: 51.5 samples/s
+  Batch 361/3951 | Loss: 0.5631 | Samples: 11552 | Time: 224.3s | Speed: 51.5 samples/s
+  Batch 371/3951 | Loss: 0.5653 | Samples: 11872 | Time: 231.3s | Speed: 51.3 samples/s
+  Batch 381/3951 | Loss: 0.8020 | Samples: 12192 | Time: 237.5s | Speed: 51.3 samples/s
+  Batch 391/3951 | Loss: 0.4601 | Samples: 12512 | Time: 243.1s | Speed: 51.5 samples/s
+  Batch 401/3951 | Loss: 0.5399 | Samples: 12832 | Time: 249.3s | Speed: 51.5 samples/s
+  Batch 411/3951 | Loss: 0.5487 | Samples: 13152 | Time: 256.1s | Speed: 51.4 samples/s
+  Batch 421/3951 | Loss: 0.6240 | Samples: 13472 | Time: 262.3s | Speed: 51.4 samples/s
+  Batch 431/3951 | Loss: 0.4466 | Samples: 13792 | Time: 268.7s | Speed: 51.3 samples/s
+  Batch 441/3951 | Loss: 0.5041 | Samples: 14112 | Time: 274.9s | Speed: 51.3 samples/s
+  Batch 451/3951 | Loss: 0.6081 | Samples: 14432 | Time: 281.0s | Speed: 51.4 samples/s
+  Batch 461/3951 | Loss: 0.5628 | Samples: 14752 | Time: 287.0s | Speed: 51.4 samples/s
+  Batch 471/3951 | Loss: 0.5004 | Samples: 15072 | Time: 293.1s | Speed: 51.4 samples/s
+  Batch 481/3951 | Loss: 0.5142 | Samples: 15392 | Time: 299.3s | Speed: 51.4 samples/s
+  Batch 491/3951 | Loss: 0.6495 | Samples: 15712 | Time: 305.3s | Speed: 51.5 samples/s
+  Batch 501/3951 | Loss: 0.4735 | Samples: 16032 | Time: 312.2s | Speed: 51.4 samples/s
+  Batch 511/3951 | Loss: 0.6521 | Samples: 16352 | Time: 318.7s | Speed: 51.3 samples/s
+  Batch 521/3951 | Loss: 0.7712 | Samples: 16672 | Time: 324.7s | Speed: 51.4 samples/s
+  Batch 531/3951 | Loss: 0.4630 | Samples: 16992 | Time: 331.1s | Speed: 51.3 samples/s
+  Batch 541/3951 | Loss: 0.6366 | Samples: 17312 | Time: 337.8s | Speed: 51.3 samples/s
+  Batch 551/3951 | Loss: 0.6053 | Samples: 17632 | Time: 344.0s | Speed: 51.3 samples/s
+  Batch 561/3951 | Loss: 0.3769 | Samples: 17952 | Time: 350.8s | Speed: 51.2 samples/s
+  Batch 571/3951 | Loss: 0.4204 | Samples: 18272 | Time: 356.8s | Speed: 51.2 samples/s
+  Batch 581/3951 | Loss: 0.4128 | Samples: 18592 | Time: 362.8s | Speed: 51.3 samples/s
+  Batch 591/3951 | Loss: 0.4005 | Samples: 18912 | Time: 368.7s | Speed: 51.3 samples/s
+  Batch 601/3951 | Loss: 0.5669 | Samples: 19232 | Time: 375.2s | Speed: 51.3 samples/s
+  Batch 611/3951 | Loss: 0.7646 | Samples: 19552 | Time: 382.1s | Speed: 51.2 samples/s
+  Batch 621/3951 | Loss: 0.6420 | Samples: 19872 | Time: 388.5s | Speed: 51.1 samples/s
+  Batch 631/3951 | Loss: 0.4451 | Samples: 20192 | Time: 395.3s | Speed: 51.1 samples/s
+  Batch 641/3951 | Loss: 0.4064 | Samples: 20512 | Time: 401.5s | Speed: 51.1 samples/s
+  Batch 651/3951 | Loss: 0.4921 | Samples: 20832 | Time: 408.0s | Speed: 51.1 samples/s
+  Batch 661/3951 | Loss: 0.5791 | Samples: 21152 | Time: 414.3s | Speed: 51.1 samples/s
+  Batch 671/3951 | Loss: 0.6343 | Samples: 21472 | Time: 419.9s | Speed: 51.1 samples/s
+  Batch 681/3951 | Loss: 0.4153 | Samples: 21792 | Time: 425.8s | Speed: 51.2 samples/s
+  Batch 691/3951 | Loss: 0.5751 | Samples: 22112 | Time: 432.4s | Speed: 51.1 samples/s
+  Batch 701/3951 | Loss: 0.4227 | Samples: 22432 | Time: 438.2s | Speed: 51.2 samples/s
+  Batch 711/3951 | Loss: 0.3997 | Samples: 22752 | Time: 444.1s | Speed: 51.2 samples/s
+  Batch 721/3951 | Loss: 0.7551 | Samples: 23072 | Time: 450.1s | Speed: 51.3 samples/s
+  Batch 731/3951 | Loss: 0.4475 | Samples: 23392 | Time: 455.6s | Speed: 51.3 samples/s
+  Batch 741/3951 | Loss: 0.5005 | Samples: 23712 | Time: 461.8s | Speed: 51.3 samples/s
+  Batch 751/3951 | Loss: 0.5680 | Samples: 24032 | Time: 467.9s | Speed: 51.4 samples/s
+  Batch 761/3951 | Loss: 0.4250 | Samples: 24352 | Time: 473.9s | Speed: 51.4 samples/s
+  Batch 771/3951 | Loss: 0.3239 | Samples: 24672 | Time: 479.9s | Speed: 51.4 samples/s
+  Batch 781/3951 | Loss: 0.6438 | Samples: 24992 | Time: 485.8s | Speed: 51.4 samples/s
+  Batch 791/3951 | Loss: 0.4899 | Samples: 25312 | Time: 491.9s | Speed: 51.5 samples/s
+  Batch 801/3951 | Loss: 0.6039 | Samples: 25632 | Time: 498.1s | Speed: 51.5 samples/s
+  Batch 811/3951 | Loss: 0.4831 | Samples: 25952 | Time: 504.6s | Speed: 51.4 samples/s
+  Batch 821/3951 | Loss: 0.3676 | Samples: 26272 | Time: 510.7s | Speed: 51.4 samples/s
+  Batch 831/3951 | Loss: 0.6783 | Samples: 26592 | Time: 517.0s | Speed: 51.4 samples/s
+  Batch 841/3951 | Loss: 0.5586 | Samples: 26912 | Time: 523.4s | Speed: 51.4 samples/s
+  Batch 851/3951 | Loss: 0.5640 | Samples: 27232 | Time: 529.2s | Speed: 51.5 samples/s
+  Batch 861/3951 | Loss: 0.7152 | Samples: 27552 | Time: 541.6s | Speed: 50.9 samples/s
+  Batch 871/3951 | Loss: 0.5220 | Samples: 27872 | Time: 547.8s | Speed: 50.9 samples/s
+  Batch 881/3951 | Loss: 0.5390 | Samples: 28192 | Time: 554.1s | Speed: 50.9 samples/s
+  Batch 891/3951 | Loss: 0.5690 | Samples: 28512 | Time: 560.7s | Speed: 50.8 samples/s
+  Batch 901/3951 | Loss: 0.4610 | Samples: 28832 | Time: 567.5s | Speed: 50.8 samples/s
+  Batch 911/3951 | Loss: 0.4544 | Samples: 29152 | Time: 573.7s | Speed: 50.8 samples/s
+  Batch 921/3951 | Loss: 0.5622 | Samples: 29472 | Time: 579.8s | Speed: 50.8 samples/s
+  Batch 931/3951 | Loss: 0.5187 | Samples: 29792 | Time: 585.7s | Speed: 50.9 samples/s
+  Batch 941/3951 | Loss: 0.6316 | Samples: 30112 | Time: 591.9s | Speed: 50.9 samples/s
+  Batch 951/3951 | Loss: 0.6354 | Samples: 30432 | Time: 598.4s | Speed: 50.9 samples/s
+  Batch 961/3951 | Loss: 0.4365 | Samples: 30752 | Time: 602.6s | Speed: 51.0 samples/s
+  Batch 971/3951 | Loss: 0.6151 | Samples: 31072 | Time: 604.8s | Speed: 51.4 samples/s
+  Batch 981/3951 | Loss: 0.4336 | Samples: 31392 | Time: 609.5s | Speed: 51.5 samples/s
+  Batch 991/3951 | Loss: 0.7591 | Samples: 31712 | Time: 615.3s | Speed: 51.5 samples/s
+  Batch 1001/3951 | Loss: 0.5849 | Samples: 32032 | Time: 621.8s | Speed: 51.5 samples/s
+  Batch 1011/3951 | Loss: 0.6906 | Samples: 32352 | Time: 628.2s | Speed: 51.5 samples/s
+  Batch 1021/3951 | Loss: 0.6600 | Samples: 32672 | Time: 634.7s | Speed: 51.5 samples/s
+  Batch 1031/3951 | Loss: 0.6127 | Samples: 32992 | Time: 640.9s | Speed: 51.5 samples/s
+  Batch 1041/3951 | Loss: 0.6994 | Samples: 33312 | Time: 647.1s | Speed: 51.5 samples/s
+  Batch 1051/3951 | Loss: 0.5605 | Samples: 33632 | Time: 653.1s | Speed: 51.5 samples/s
+  Batch 1061/3951 | Loss: 0.5534 | Samples: 33952 | Time: 659.3s | Speed: 51.5 samples/s
+  Batch 1071/3951 | Loss: 0.4792 | Samples: 34272 | Time: 663.7s | Speed: 51.6 samples/s
+  Batch 1081/3951 | Loss: 0.5920 | Samples: 34592 | Time: 669.8s | Speed: 51.6 samples/s
+  Batch 1091/3951 | Loss: 0.5114 | Samples: 34912 | Time: 676.1s | Speed: 51.6 samples/s
+  Batch 1101/3951 | Loss: 0.6582 | Samples: 35232 | Time: 682.2s | Speed: 51.6 samples/s
+  Batch 1111/3951 | Loss: 0.6163 | Samples: 35552 | Time: 688.6s | Speed: 51.6 samples/s
+  Batch 1121/3951 | Loss: 0.5715 | Samples: 35872 | Time: 694.7s | Speed: 51.6 samples/s
+  Batch 1131/3951 | Loss: 0.4370 | Samples: 36192 | Time: 700.6s | Speed: 51.7 samples/s
+  Batch 1141/3951 | Loss: 0.4588 | Samples: 36512 | Time: 706.7s | Speed: 51.7 samples/s
+  Batch 1151/3951 | Loss: 0.6405 | Samples: 36832 | Time: 713.1s | Speed: 51.6 samples/s
+  Batch 1161/3951 | Loss: 0.6420 | Samples: 37152 | Time: 719.5s | Speed: 51.6 samples/s
+  Batch 1171/3951 | Loss: 0.4387 | Samples: 37472 | Time: 725.5s | Speed: 51.7 samples/s
+  Batch 1181/3951 | Loss: 0.4976 | Samples: 37792 | Time: 732.4s | Speed: 51.6 samples/s
+  Batch 1191/3951 | Loss: 0.4901 | Samples: 38112 | Time: 738.7s | Speed: 51.6 samples/s
+  Batch 1201/3951 | Loss: 0.4927 | Samples: 38432 | Time: 745.1s | Speed: 51.6 samples/s
+  Batch 1211/3951 | Loss: 0.5211 | Samples: 38752 | Time: 751.8s | Speed: 51.5 samples/s
+  Batch 1221/3951 | Loss: 0.5114 | Samples: 39072 | Time: 758.2s | Speed: 51.5 samples/s
+  Batch 1231/3951 | Loss: 0.3695 | Samples: 39392 | Time: 764.2s | Speed: 51.5 samples/s
+  Batch 1241/3951 | Loss: 0.6064 | Samples: 39712 | Time: 770.6s | Speed: 51.5 samples/s
+  Batch 1251/3951 | Loss: 0.8096 | Samples: 40032 | Time: 777.1s | Speed: 51.5 samples/s
+  Batch 1261/3951 | Loss: 0.6795 | Samples: 40352 | Time: 783.1s | Speed: 51.5 samples/s
+  Batch 1271/3951 | Loss: 0.5293 | Samples: 40672 | Time: 789.3s | Speed: 51.5 samples/s
+  Batch 1281/3951 | Loss: 0.6687 | Samples: 40992 | Time: 792.3s | Speed: 51.7 samples/s
+  Batch 1291/3951 | Loss: 0.5039 | Samples: 41312 | Time: 794.4s | Speed: 52.0 samples/s
+  Batch 1301/3951 | Loss: 0.5016 | Samples: 41632 | Time: 800.1s | Speed: 52.0 samples/s
+  Batch 1311/3951 | Loss: 0.5440 | Samples: 41952 | Time: 806.1s | Speed: 52.0 samples/s
+  Batch 1321/3951 | Loss: 0.6701 | Samples: 42272 | Time: 812.5s | Speed: 52.0 samples/s
+  Batch 1331/3951 | Loss: 0.5567 | Samples: 42592 | Time: 817.9s | Speed: 52.1 samples/s
+  Batch 1341/3951 | Loss: 0.6543 | Samples: 42912 | Time: 824.2s | Speed: 52.1 samples/s
+  Batch 1351/3951 | Loss: 0.6839 | Samples: 43232 | Time: 830.3s | Speed: 52.1 samples/s
+  Batch 1361/3951 | Loss: 0.7448 | Samples: 43552 | Time: 836.7s | Speed: 52.1 samples/s
+  Batch 1371/3951 | Loss: 0.5159 | Samples: 43872 | Time: 842.7s | Speed: 52.1 samples/s
+  Batch 1381/3951 | Loss: 0.4878 | Samples: 44192 | Time: 848.9s | Speed: 52.1 samples/s
+  Batch 1391/3951 | Loss: 0.6003 | Samples: 44512 | Time: 855.3s | Speed: 52.0 samples/s
+  Batch 1401/3951 | Loss: 0.6129 | Samples: 44832 | Time: 861.9s | Speed: 52.0 samples/s
+  Batch 1411/3951 | Loss: 0.6308 | Samples: 45152 | Time: 868.4s | Speed: 52.0 samples/s
+  Batch 1421/3951 | Loss: 0.4860 | Samples: 45472 | Time: 874.9s | Speed: 52.0 samples/s
+  Batch 1431/3951 | Loss: 0.5595 | Samples: 45792 | Time: 881.5s | Speed: 52.0 samples/s
+  Batch 1441/3951 | Loss: 0.4463 | Samples: 46112 | Time: 887.9s | Speed: 51.9 samples/s
+  Batch 1451/3951 | Loss: 0.5291 | Samples: 46432 | Time: 891.4s | Speed: 52.1 samples/s
+  Batch 1461/3951 | Loss: 0.6793 | Samples: 46752 | Time: 893.8s | Speed: 52.3 samples/s
+  Batch 1471/3951 | Loss: 0.4400 | Samples: 47072 | Time: 899.9s | Speed: 52.3 samples/s
+  Batch 1481/3951 | Loss: 0.6343 | Samples: 47392 | Time: 906.1s | Speed: 52.3 samples/s
+  Batch 1491/3951 | Loss: 0.7416 | Samples: 47712 | Time: 911.1s | Speed: 52.4 samples/s
+  Batch 1501/3951 | Loss: 0.4998 | Samples: 48032 | Time: 913.6s | Speed: 52.6 samples/s
+  Batch 1511/3951 | Loss: 0.5088 | Samples: 48352 | Time: 917.1s | Speed: 52.7 samples/s
+  Batch 1521/3951 | Loss: 0.5571 | Samples: 48672 | Time: 923.4s | Speed: 52.7 samples/s
+  Batch 1531/3951 | Loss: 0.5866 | Samples: 48992 | Time: 929.9s | Speed: 52.7 samples/s
+  Batch 1541/3951 | Loss: 0.5238 | Samples: 49312 | Time: 935.8s | Speed: 52.7 samples/s
+  Batch 1551/3951 | Loss: 0.3528 | Samples: 49632 | Time: 941.8s | Speed: 52.7 samples/s
+  Batch 1561/3951 | Loss: 0.6577 | Samples: 49952 | Time: 948.0s | Speed: 52.7 samples/s
+  Batch 1571/3951 | Loss: 0.6580 | Samples: 50272 | Time: 954.1s | Speed: 52.7 samples/s
+  Batch 1581/3951 | Loss: 0.6797 | Samples: 50592 | Time: 960.5s | Speed: 52.7 samples/s
+  Batch 1591/3951 | Loss: 0.3378 | Samples: 50912 | Time: 966.5s | Speed: 52.7 samples/s
+  Batch 1601/3951 | Loss: 0.6565 | Samples: 51232 | Time: 972.1s | Speed: 52.7 samples/s
+  Batch 1611/3951 | Loss: 0.5141 | Samples: 51552 | Time: 978.5s | Speed: 52.7 samples/s
+  Batch 1621/3951 | Loss: 0.5166 | Samples: 51872 | Time: 984.3s | Speed: 52.7 samples/s
+  Batch 1631/3951 | Loss: 0.6957 | Samples: 52192 | Time: 990.0s | Speed: 52.7 samples/s
+  Batch 1641/3951 | Loss: 0.5864 | Samples: 52512 | Time: 995.7s | Speed: 52.7 samples/s
+  Batch 1651/3951 | Loss: 0.3685 | Samples: 52832 | Time: 1001.3s | Speed: 52.8 samples/s
+  Batch 1661/3951 | Loss: 0.3686 | Samples: 53152 | Time: 1006.8s | Speed: 52.8 samples/s
+  Batch 1671/3951 | Loss: 0.4928 | Samples: 53472 | Time: 1012.6s | Speed: 52.8 samples/s
+  Batch 1681/3951 | Loss: 0.5597 | Samples: 53792 | Time: 1018.5s | Speed: 52.8 samples/s
+  Batch 1691/3951 | Loss: 0.6549 | Samples: 54112 | Time: 1024.6s | Speed: 52.8 samples/s
+  Batch 1701/3951 | Loss: 0.6968 | Samples: 54432 | Time: 1030.5s | Speed: 52.8 samples/s
+  Batch 1711/3951 | Loss: 0.5931 | Samples: 54752 | Time: 1036.4s | Speed: 52.8 samples/s
+  Batch 1721/3951 | Loss: 0.3735 | Samples: 55072 | Time: 1042.5s | Speed: 52.8 samples/s
+  Batch 1731/3951 | Loss: 0.6286 | Samples: 55392 | Time: 1048.7s | Speed: 52.8 samples/s
+  Batch 1741/3951 | Loss: 0.4073 | Samples: 55712 | Time: 1054.9s | Speed: 52.8 samples/s
+  Batch 1751/3951 | Loss: 0.5636 | Samples: 56032 | Time: 1060.9s | Speed: 52.8 samples/s
+  Batch 1761/3951 | Loss: 0.5530 | Samples: 56352 | Time: 1067.2s | Speed: 52.8 samples/s
+  Batch 1771/3951 | Loss: 0.4723 | Samples: 56672 | Time: 1073.6s | Speed: 52.8 samples/s
+  Batch 1781/3951 | Loss: 0.4268 | Samples: 56992 | Time: 1079.4s | Speed: 52.8 samples/s
+  Batch 1791/3951 | Loss: 0.5487 | Samples: 57312 | Time: 1085.9s | Speed: 52.8 samples/s
+  Batch 1801/3951 | Loss: 0.6633 | Samples: 57632 | Time: 1092.0s | Speed: 52.8 samples/s
+  Batch 1811/3951 | Loss: 0.6996 | Samples: 57952 | Time: 1097.9s | Speed: 52.8 samples/s
+  Batch 1821/3951 | Loss: 0.4271 | Samples: 58272 | Time: 1104.1s | Speed: 52.8 samples/s
+  Batch 1831/3951 | Loss: 0.4873 | Samples: 58592 | Time: 1109.9s | Speed: 52.8 samples/s
+  Batch 1841/3951 | Loss: 0.6408 | Samples: 58912 | Time: 1115.8s | Speed: 52.8 samples/s
+  Batch 1851/3951 | Loss: 0.4693 | Samples: 59232 | Time: 1121.7s | Speed: 52.8 samples/s
+  Batch 1861/3951 | Loss: 0.5520 | Samples: 59552 | Time: 1128.0s | Speed: 52.8 samples/s
+  Batch 1871/3951 | Loss: 0.5654 | Samples: 59872 | Time: 1139.9s | Speed: 52.5 samples/s
+  Batch 1881/3951 | Loss: 0.5915 | Samples: 60192 | Time: 1146.0s | Speed: 52.5 samples/s
+  Batch 1891/3951 | Loss: 0.6126 | Samples: 60512 | Time: 9292.6s | Speed: 6.5 samples/s
+  Batch 1901/3951 | Loss: 0.4871 | Samples: 60832 | Time: 9296.3s | Speed: 6.5 samples/s
+  Batch 1911/3951 | Loss: 0.7450 | Samples: 61152 | Time: 9300.0s | Speed: 6.6 samples/s
+  Batch 1921/3951 | Loss: 0.5743 | Samples: 61472 | Time: 9303.9s | Speed: 6.6 samples/s
+  Batch 1931/3951 | Loss: 0.6040 | Samples: 61792 | Time: 9308.0s | Speed: 6.6 samples/s
+  Batch 1941/3951 | Loss: 0.4769 | Samples: 62112 | Time: 9311.5s | Speed: 6.7 samples/s
+  Batch 1951/3951 | Loss: 0.6779 | Samples: 62432 | Time: 9315.0s | Speed: 6.7 samples/s
+  Batch 1961/3951 | Loss: 0.6749 | Samples: 62752 | Time: 9318.5s | Speed: 6.7 samples/s
+  Batch 1971/3951 | Loss: 0.4983 | Samples: 63072 | Time: 9322.0s | Speed: 6.8 samples/s
+  Batch 1981/3951 | Loss: 0.4625 | Samples: 63392 | Time: 9325.9s | Speed: 6.8 samples/s
+  Batch 1991/3951 | Loss: 0.6333 | Samples: 63712 | Time: 9329.5s | Speed: 6.8 samples/s
+  Batch 2001/3951 | Loss: 0.4489 | Samples: 64032 | Time: 9332.4s | Speed: 6.9 samples/s
+  Batch 2011/3951 | Loss: 0.4955 | Samples: 64352 | Time: 9335.3s | Speed: 6.9 samples/s
+  Batch 2021/3951 | Loss: 0.5258 | Samples: 64672 | Time: 9338.7s | Speed: 6.9 samples/s
+  Batch 2031/3951 | Loss: 0.6724 | Samples: 64992 | Time: 9341.4s | Speed: 7.0 samples/s
+  Batch 2041/3951 | Loss: 0.6179 | Samples: 65312 | Time: 9344.6s | Speed: 7.0 samples/s
+  Batch 2051/3951 | Loss: 0.4955 | Samples: 65632 | Time: 9347.4s | Speed: 7.0 samples/s
+  Batch 2061/3951 | Loss: 0.6061 | Samples: 65952 | Time: 9350.3s | Speed: 7.1 samples/s
+  Batch 2071/3951 | Loss: 0.3155 | Samples: 66272 | Time: 9353.3s | Speed: 7.1 samples/s
+  Batch 2081/3951 | Loss: 0.3434 | Samples: 66592 | Time: 9356.2s | Speed: 7.1 samples/s
+  Batch 2091/3951 | Loss: 0.3391 | Samples: 66912 | Time: 9359.3s | Speed: 7.1 samples/s
+  Batch 2101/3951 | Loss: 0.6183 | Samples: 67232 | Time: 9362.0s | Speed: 7.2 samples/s
+  Batch 2111/3951 | Loss: 0.6648 | Samples: 67552 | Time: 9364.7s | Speed: 7.2 samples/s
+  Batch 2121/3951 | Loss: 0.6264 | Samples: 67872 | Time: 9367.2s | Speed: 7.2 samples/s
+  Batch 2131/3951 | Loss: 0.3892 | Samples: 68192 | Time: 9370.3s | Speed: 7.3 samples/s
+  Batch 2141/3951 | Loss: 0.2299 | Samples: 68512 | Time: 9373.0s | Speed: 7.3 samples/s
+  Batch 2151/3951 | Loss: 0.5482 | Samples: 68832 | Time: 9375.6s | Speed: 7.3 samples/s
+  Batch 2161/3951 | Loss: 0.6474 | Samples: 69152 | Time: 9378.3s | Speed: 7.4 samples/s
+  Batch 2171/3951 | Loss: 0.5730 | Samples: 69472 | Time: 9381.0s | Speed: 7.4 samples/s
+  Batch 2181/3951 | Loss: 0.3518 | Samples: 69792 | Time: 9390.1s | Speed: 7.4 samples/s
+  Batch 2191/3951 | Loss: 0.6286 | Samples: 70112 | Time: 9401.2s | Speed: 7.5 samples/s
+  Batch 2201/3951 | Loss: 0.4701 | Samples: 70432 | Time: 9413.2s | Speed: 7.5 samples/s
+  Batch 2211/3951 | Loss: 0.6042 | Samples: 70752 | Time: 9424.1s | Speed: 7.5 samples/s
+  Batch 2221/3951 | Loss: 0.4285 | Samples: 71072 | Time: 9434.8s | Speed: 7.5 samples/s
+  Batch 2231/3951 | Loss: 0.4978 | Samples: 71392 | Time: 9445.8s | Speed: 7.6 samples/s
+  Batch 2241/3951 | Loss: 0.3673 | Samples: 71712 | Time: 9456.3s | Speed: 7.6 samples/s
+  Batch 2251/3951 | Loss: 0.8214 | Samples: 72032 | Time: 9466.4s | Speed: 7.6 samples/s
+  Batch 2261/3951 | Loss: 0.6383 | Samples: 72352 | Time: 9476.8s | Speed: 7.6 samples/s
+  Batch 2271/3951 | Loss: 0.6370 | Samples: 72672 | Time: 9487.3s | Speed: 7.7 samples/s
+  Batch 2281/3951 | Loss: 0.4803 | Samples: 72992 | Time: 9498.2s | Speed: 7.7 samples/s
+  Batch 2291/3951 | Loss: 0.5449 | Samples: 73312 | Time: 9508.7s | Speed: 7.7 samples/s
+  Batch 2301/3951 | Loss: 0.6365 | Samples: 73632 | Time: 9518.4s | Speed: 7.7 samples/s
+  Batch 2311/3951 | Loss: 0.6721 | Samples: 73952 | Time: 9528.6s | Speed: 7.8 samples/s
+  Batch 2321/3951 | Loss: 0.5043 | Samples: 74272 | Time: 9539.3s | Speed: 7.8 samples/s
+  Batch 2331/3951 | Loss: 0.6972 | Samples: 74592 | Time: 9549.2s | Speed: 7.8 samples/s
+  Batch 2341/3951 | Loss: 0.7101 | Samples: 74912 | Time: 9559.0s | Speed: 7.8 samples/s
+  Batch 2351/3951 | Loss: 0.7365 | Samples: 75232 | Time: 9570.4s | Speed: 7.9 samples/s
+  Batch 2361/3951 | Loss: 0.5115 | Samples: 75552 | Time: 9580.3s | Speed: 7.9 samples/s
+  Batch 2371/3951 | Loss: 0.5861 | Samples: 75872 | Time: 9589.9s | Speed: 7.9 samples/s
+  Batch 2381/3951 | Loss: 0.7418 | Samples: 76192 | Time: 9601.5s | Speed: 7.9 samples/s
+  Batch 2391/3951 | Loss: 0.6840 | Samples: 76512 | Time: 9612.2s | Speed: 8.0 samples/s
+  Batch 2401/3951 | Loss: 0.6872 | Samples: 76832 | Time: 9623.4s | Speed: 8.0 samples/s
+  Batch 2411/3951 | Loss: 0.5859 | Samples: 77152 | Time: 9634.8s | Speed: 8.0 samples/s
+  Batch 2421/3951 | Loss: 0.4714 | Samples: 77472 | Time: 9647.0s | Speed: 8.0 samples/s
+  Batch 2431/3951 | Loss: 0.6929 | Samples: 77792 | Time: 9659.1s | Speed: 8.1 samples/s
+  Batch 2441/3951 | Loss: 0.4589 | Samples: 78112 | Time: 9671.6s | Speed: 8.1 samples/s
+  Batch 2451/3951 | Loss: 0.6702 | Samples: 78432 | Time: 9683.9s | Speed: 8.1 samples/s
+  Batch 2461/3951 | Loss: 0.7625 | Samples: 78752 | Time: 9696.7s | Speed: 8.1 samples/s
+  Batch 2471/3951 | Loss: 0.5617 | Samples: 79072 | Time: 9709.6s | Speed: 8.1 samples/s
+  Batch 2481/3951 | Loss: 0.5680 | Samples: 79392 | Time: 9722.5s | Speed: 8.2 samples/s
+  Batch 2491/3951 | Loss: 0.4848 | Samples: 79712 | Time: 9737.6s | Speed: 8.2 samples/s
+  Batch 2501/3951 | Loss: 0.8851 | Samples: 80032 | Time: 9751.3s | Speed: 8.2 samples/s
+  Batch 2511/3951 | Loss: 0.7583 | Samples: 80352 | Time: 9764.8s | Speed: 8.2 samples/s
+  Batch 2521/3951 | Loss: 0.4242 | Samples: 80672 | Time: 9777.5s | Speed: 8.3 samples/s
+  Batch 2531/3951 | Loss: 0.5474 | Samples: 80992 | Time: 9789.8s | Speed: 8.3 samples/s
+  Batch 2541/3951 | Loss: 0.5434 | Samples: 81312 | Time: 9802.0s | Speed: 8.3 samples/s
+  Batch 2551/3951 | Loss: 0.7135 | Samples: 81632 | Time: 9814.8s | Speed: 8.3 samples/s
+  Batch 2561/3951 | Loss: 0.5284 | Samples: 81952 | Time: 9827.2s | Speed: 8.3 samples/s
+  Batch 2571/3951 | Loss: 0.4559 | Samples: 82272 | Time: 9840.1s | Speed: 8.4 samples/s
+  Batch 2581/3951 | Loss: 0.7502 | Samples: 82592 | Time: 9852.4s | Speed: 8.4 samples/s
+  Batch 2591/3951 | Loss: 0.7317 | Samples: 82912 | Time: 9864.8s | Speed: 8.4 samples/s
+  Batch 2601/3951 | Loss: 0.5678 | Samples: 83232 | Time: 9877.0s | Speed: 8.4 samples/s
+  Batch 2611/3951 | Loss: 0.8097 | Samples: 83552 | Time: 9889.7s | Speed: 8.4 samples/s
+  Batch 2621/3951 | Loss: 0.6207 | Samples: 83872 | Time: 9902.2s | Speed: 8.5 samples/s
+  Batch 2631/3951 | Loss: 0.7894 | Samples: 84192 | Time: 9914.8s | Speed: 8.5 samples/s
+  Batch 2641/3951 | Loss: 0.4713 | Samples: 84512 | Time: 9926.5s | Speed: 8.5 samples/s
+  Batch 2651/3951 | Loss: 0.6781 | Samples: 84832 | Time: 9937.0s | Speed: 8.5 samples/s
+  Batch 2661/3951 | Loss: 0.7580 | Samples: 85152 | Time: 9947.1s | Speed: 8.6 samples/s
+  Batch 2671/3951 | Loss: 0.5348 | Samples: 85472 | Time: 9957.5s | Speed: 8.6 samples/s
+  Batch 2681/3951 | Loss: 0.6634 | Samples: 85792 | Time: 9967.9s | Speed: 8.6 samples/s
+  Batch 2691/3951 | Loss: 0.5518 | Samples: 86112 | Time: 9978.3s | Speed: 8.6 samples/s
+  Batch 2701/3951 | Loss: 0.7146 | Samples: 86432 | Time: 9989.5s | Speed: 8.7 samples/s
+  Batch 2711/3951 | Loss: 0.9558 | Samples: 86752 | Time: 9999.9s | Speed: 8.7 samples/s
+  Batch 2721/3951 | Loss: 0.4645 | Samples: 87072 | Time: 10010.1s | Speed: 8.7 samples/s
+  Batch 2731/3951 | Loss: 0.4665 | Samples: 87392 | Time: 10020.4s | Speed: 8.7 samples/s
+  Batch 2741/3951 | Loss: 0.4789 | Samples: 87712 | Time: 10030.3s | Speed: 8.7 samples/s
+  Batch 2751/3951 | Loss: 0.5197 | Samples: 88032 | Time: 10040.5s | Speed: 8.8 samples/s
+  Batch 2761/3951 | Loss: 0.4454 | Samples: 88352 | Time: 10051.1s | Speed: 8.8 samples/s
+  Batch 2771/3951 | Loss: 0.5902 | Samples: 88672 | Time: 10061.4s | Speed: 8.8 samples/s
+  Batch 2781/3951 | Loss: 0.6127 | Samples: 88992 | Time: 10071.5s | Speed: 8.8 samples/s
+  Batch 2791/3951 | Loss: 0.4649 | Samples: 89312 | Time: 10082.4s | Speed: 8.9 samples/s
+  Batch 2801/3951 | Loss: 0.7720 | Samples: 89632 | Time: 10092.5s | Speed: 8.9 samples/s
+  Batch 2811/3951 | Loss: 0.6695 | Samples: 89952 | Time: 10102.8s | Speed: 8.9 samples/s
+  Batch 2821/3951 | Loss: 0.6615 | Samples: 90272 | Time: 10113.3s | Speed: 8.9 samples/s
+  Batch 2831/3951 | Loss: 0.6717 | Samples: 90592 | Time: 10123.1s | Speed: 8.9 samples/s
+  Batch 2841/3951 | Loss: 0.4701 | Samples: 90912 | Time: 10133.9s | Speed: 9.0 samples/s
+  Batch 2851/3951 | Loss: 0.7761 | Samples: 91232 | Time: 10144.6s | Speed: 9.0 samples/s
+  Batch 2861/3951 | Loss: 0.6067 | Samples: 91552 | Time: 10155.1s | Speed: 9.0 samples/s
+  Batch 2871/3951 | Loss: 0.4670 | Samples: 91872 | Time: 10166.5s | Speed: 9.0 samples/s
+  Batch 2881/3951 | Loss: 0.5109 | Samples: 92192 | Time: 10176.4s | Speed: 9.1 samples/s
+  Batch 2891/3951 | Loss: 0.5951 | Samples: 92512 | Time: 10186.1s | Speed: 9.1 samples/s
+  Batch 2901/3951 | Loss: 0.4476 | Samples: 92832 | Time: 10197.2s | Speed: 9.1 samples/s
+  Batch 2911/3951 | Loss: 0.6266 | Samples: 93152 | Time: 10211.5s | Speed: 9.1 samples/s
+  Batch 2921/3951 | Loss: 0.4234 | Samples: 93472 | Time: 10222.0s | Speed: 9.1 samples/s
+  Batch 2931/3951 | Loss: 0.5699 | Samples: 93792 | Time: 10232.8s | Speed: 9.2 samples/s
+  Batch 2941/3951 | Loss: 0.5111 | Samples: 94112 | Time: 10243.5s | Speed: 9.2 samples/s
+  Batch 2951/3951 | Loss: 0.5746 | Samples: 94432 | Time: 10256.2s | Speed: 9.2 samples/s
+  Batch 2961/3951 | Loss: 0.4386 | Samples: 94752 | Time: 12028.8s | Speed: 7.9 samples/s
+  Batch 2971/3951 | Loss: 0.5532 | Samples: 95072 | Time: 12033.1s | Speed: 7.9 samples/s
+  Batch 2981/3951 | Loss: 0.3414 | Samples: 95392 | Time: 12037.4s | Speed: 7.9 samples/s
+  Batch 2991/3951 | Loss: 0.6621 | Samples: 95712 | Time: 12041.1s | Speed: 7.9 samples/s
+  Batch 3001/3951 | Loss: 0.6854 | Samples: 96032 | Time: 12044.4s | Speed: 8.0 samples/s
+  Batch 3011/3951 | Loss: 0.5315 | Samples: 96352 | Time: 12047.6s | Speed: 8.0 samples/s
+  Batch 3021/3951 | Loss: 0.4873 | Samples: 96672 | Time: 12050.7s | Speed: 8.0 samples/s
+  Batch 3031/3951 | Loss: 0.5973 | Samples: 96992 | Time: 12053.6s | Speed: 8.0 samples/s
+  Batch 3041/3951 | Loss: 0.5189 | Samples: 97312 | Time: 12056.6s | Speed: 8.1 samples/s
+  Batch 3051/3951 | Loss: 0.6587 | Samples: 97632 | Time: 12060.8s | Speed: 8.1 samples/s
+  Batch 3061/3951 | Loss: 0.5773 | Samples: 97952 | Time: 12063.7s | Speed: 8.1 samples/s
+  Batch 3071/3951 | Loss: 0.4565 | Samples: 98272 | Time: 12066.6s | Speed: 8.1 samples/s
+  Batch 3081/3951 | Loss: 0.6229 | Samples: 98592 | Time: 12069.7s | Speed: 8.2 samples/s
+  Batch 3091/3951 | Loss: 0.7469 | Samples: 98912 | Time: 12072.7s | Speed: 8.2 samples/s
+  Batch 3101/3951 | Loss: 0.5856 | Samples: 99232 | Time: 12075.9s | Speed: 8.2 samples/s
+  Batch 3111/3951 | Loss: 0.5177 | Samples: 99552 | Time: 12079.0s | Speed: 8.2 samples/s
+  Batch 3121/3951 | Loss: 0.3639 | Samples: 99872 | Time: 12082.5s | Speed: 8.3 samples/s
+  Batch 3131/3951 | Loss: 0.5266 | Samples: 100192 | Time: 12085.9s | Speed: 8.3 samples/s
+  Batch 3141/3951 | Loss: 0.4832 | Samples: 100512 | Time: 12090.0s | Speed: 8.3 samples/s
+  Batch 3151/3951 | Loss: 0.6233 | Samples: 100832 | Time: 12093.2s | Speed: 8.3 samples/s
+  Batch 3161/3951 | Loss: 0.4512 | Samples: 101152 | Time: 12096.2s | Speed: 8.4 samples/s
+  Batch 3171/3951 | Loss: 0.8107 | Samples: 101472 | Time: 12099.7s | Speed: 8.4 samples/s
+  Batch 3181/3951 | Loss: 0.6875 | Samples: 101792 | Time: 12102.3s | Speed: 8.4 samples/s
+  Batch 3191/3951 | Loss: 0.5276 | Samples: 102112 | Time: 12105.8s | Speed: 8.4 samples/s
+  Batch 3201/3951 | Loss: 0.5910 | Samples: 102432 | Time: 12109.1s | Speed: 8.5 samples/s
+  Batch 3211/3951 | Loss: 0.5164 | Samples: 102752 | Time: 12113.3s | Speed: 8.5 samples/s
+  Batch 3221/3951 | Loss: 0.4954 | Samples: 103072 | Time: 12131.3s | Speed: 8.5 samples/s
+  Batch 3231/3951 | Loss: 0.5680 | Samples: 103392 | Time: 12139.7s | Speed: 8.5 samples/s
+  Batch 3241/3951 | Loss: 0.5587 | Samples: 103712 | Time: 12148.2s | Speed: 8.5 samples/s
+  Batch 3251/3951 | Loss: 0.6074 | Samples: 104032 | Time: 12156.0s | Speed: 8.6 samples/s
+  Batch 3261/3951 | Loss: 0.6825 | Samples: 104352 | Time: 12163.5s | Speed: 8.6 samples/s
+  Batch 3271/3951 | Loss: 0.4297 | Samples: 104672 | Time: 12171.1s | Speed: 8.6 samples/s
+  Batch 3281/3951 | Loss: 0.6809 | Samples: 104992 | Time: 12179.2s | Speed: 8.6 samples/s
+  Batch 3291/3951 | Loss: 0.7778 | Samples: 105312 | Time: 12187.5s | Speed: 8.6 samples/s
+  Batch 3301/3951 | Loss: 0.6446 | Samples: 105632 | Time: 12196.2s | Speed: 8.7 samples/s
+  Batch 3311/3951 | Loss: 0.5978 | Samples: 105952 | Time: 12200.9s | Speed: 8.7 samples/s
+  Batch 3321/3951 | Loss: 0.4713 | Samples: 106272 | Time: 12212.8s | Speed: 8.7 samples/s
+  Batch 3331/3951 | Loss: 0.4485 | Samples: 106592 | Time: 12226.0s | Speed: 8.7 samples/s
+  Batch 3341/3951 | Loss: 0.4870 | Samples: 106912 | Time: 12238.4s | Speed: 8.7 samples/s
+  Batch 3351/3951 | Loss: 0.6225 | Samples: 107232 | Time: 12246.6s | Speed: 8.8 samples/s
+  Batch 3361/3951 | Loss: 0.5273 | Samples: 107552 | Time: 12256.5s | Speed: 8.8 samples/s
+  Batch 3371/3951 | Loss: 0.5412 | Samples: 107872 | Time: 12264.4s | Speed: 8.8 samples/s
+  Batch 3381/3951 | Loss: 0.5377 | Samples: 108192 | Time: 12272.3s | Speed: 8.8 samples/s
+  Batch 3391/3951 | Loss: 0.6091 | Samples: 108512 | Time: 12277.8s | Speed: 8.8 samples/s
+  Batch 3401/3951 | Loss: 0.6465 | Samples: 108832 | Time: 12285.2s | Speed: 8.9 samples/s
+  Batch 3411/3951 | Loss: 0.7239 | Samples: 109152 | Time: 12293.8s | Speed: 8.9 samples/s
+  Batch 3421/3951 | Loss: 0.6094 | Samples: 109472 | Time: 12302.0s | Speed: 8.9 samples/s
+  Batch 3431/3951 | Loss: 0.6630 | Samples: 109792 | Time: 12309.8s | Speed: 8.9 samples/s
+  Batch 3441/3951 | Loss: 0.4923 | Samples: 110112 | Time: 12318.3s | Speed: 8.9 samples/s
+  Batch 3451/3951 | Loss: 0.5802 | Samples: 110432 | Time: 12325.9s | Speed: 9.0 samples/s
+  Batch 3461/3951 | Loss: 0.6814 | Samples: 110752 | Time: 12333.4s | Speed: 9.0 samples/s
+  Batch 3471/3951 | Loss: 0.5063 | Samples: 111072 | Time: 12340.7s | Speed: 9.0 samples/s
+  Batch 3481/3951 | Loss: 0.6206 | Samples: 111392 | Time: 12348.2s | Speed: 9.0 samples/s
+  Batch 3491/3951 | Loss: 0.5903 | Samples: 111712 | Time: 12355.3s | Speed: 9.0 samples/s
+  Batch 3501/3951 | Loss: 0.9104 | Samples: 112032 | Time: 12363.5s | Speed: 9.1 samples/s
+  Batch 3511/3951 | Loss: 0.5724 | Samples: 112352 | Time: 12370.7s | Speed: 9.1 samples/s
+  Batch 3521/3951 | Loss: 0.4746 | Samples: 112672 | Time: 12378.4s | Speed: 9.1 samples/s
+  Batch 3531/3951 | Loss: 0.4312 | Samples: 112992 | Time: 12386.3s | Speed: 9.1 samples/s
+  Batch 3541/3951 | Loss: 0.4815 | Samples: 113312 | Time: 12394.0s | Speed: 9.1 samples/s
+  Batch 3551/3951 | Loss: 0.4347 | Samples: 113632 | Time: 14290.9s | Speed: 8.0 samples/s
+  Batch 3561/3951 | Loss: 0.3820 | Samples: 113952 | Time: 14294.3s | Speed: 8.0 samples/s
+  Batch 3571/3951 | Loss: 0.5426 | Samples: 114272 | Time: 14297.4s | Speed: 8.0 samples/s
+  Batch 3581/3951 | Loss: 0.4105 | Samples: 114592 | Time: 14300.1s | Speed: 8.0 samples/s
+  Batch 3591/3951 | Loss: 0.5534 | Samples: 114912 | Time: 14304.0s | Speed: 8.0 samples/s
+  Batch 3601/3951 | Loss: 0.5991 | Samples: 115232 | Time: 14307.5s | Speed: 8.1 samples/s
+  Batch 3611/3951 | Loss: 0.7631 | Samples: 115552 | Time: 14310.8s | Speed: 8.1 samples/s
+  Batch 3621/3951 | Loss: 0.6397 | Samples: 115872 | Time: 14313.8s | Speed: 8.1 samples/s
+  Batch 3631/3951 | Loss: 0.6396 | Samples: 116192 | Time: 14318.2s | Speed: 8.1 samples/s
+  Batch 3641/3951 | Loss: 0.5217 | Samples: 116512 | Time: 14322.2s | Speed: 8.1 samples/s
+  Batch 3651/3951 | Loss: 0.9122 | Samples: 116832 | Time: 14324.8s | Speed: 8.2 samples/s
+  Batch 3661/3951 | Loss: 0.5022 | Samples: 117152 | Time: 14327.8s | Speed: 8.2 samples/s
+  Batch 3671/3951 | Loss: 0.7895 | Samples: 117472 | Time: 14330.2s | Speed: 8.2 samples/s
+  Batch 3681/3951 | Loss: 0.4219 | Samples: 117792 | Time: 14333.0s | Speed: 8.2 samples/s
+  Batch 3691/3951 | Loss: 0.9275 | Samples: 118112 | Time: 14336.0s | Speed: 8.2 samples/s
+  Batch 3701/3951 | Loss: 0.4930 | Samples: 118432 | Time: 14338.6s | Speed: 8.3 samples/s
+  Batch 3711/3951 | Loss: 0.5187 | Samples: 118752 | Time: 14341.3s | Speed: 8.3 samples/s
+  Batch 3721/3951 | Loss: 0.5397 | Samples: 119072 | Time: 14344.0s | Speed: 8.3 samples/s
+  Batch 3731/3951 | Loss: 0.6933 | Samples: 119392 | Time: 14347.0s | Speed: 8.3 samples/s
+  Batch 3741/3951 | Loss: 0.6684 | Samples: 119712 | Time: 14349.7s | Speed: 8.3 samples/s
+  Batch 3751/3951 | Loss: 0.7044 | Samples: 120032 | Time: 14352.4s | Speed: 8.4 samples/s
+  Batch 3761/3951 | Loss: 0.5095 | Samples: 120352 | Time: 14354.9s | Speed: 8.4 samples/s
+  Batch 3771/3951 | Loss: 0.5090 | Samples: 120672 | Time: 14357.5s | Speed: 8.4 samples/s
+  Batch 3781/3951 | Loss: 0.6435 | Samples: 120992 | Time: 14360.0s | Speed: 8.4 samples/s
+  Batch 3791/3951 | Loss: 0.7856 | Samples: 121312 | Time: 14362.7s | Speed: 8.4 samples/s
+  Batch 3801/3951 | Loss: 0.5546 | Samples: 121632 | Time: 14365.1s | Speed: 8.5 samples/s
+  Batch 3811/3951 | Loss: 0.5297 | Samples: 121952 | Time: 14367.7s | Speed: 8.5 samples/s
+  Batch 3821/3951 | Loss: 0.4336 | Samples: 122272 | Time: 14370.1s | Speed: 8.5 samples/s
+  Batch 3831/3951 | Loss: 0.6555 | Samples: 122592 | Time: 14372.7s | Speed: 8.5 samples/s
+  Batch 3841/3951 | Loss: 0.5382 | Samples: 122912 | Time: 14375.2s | Speed: 8.6 samples/s
+  Batch 3851/3951 | Loss: 0.4492 | Samples: 123232 | Time: 14378.2s | Speed: 8.6 samples/s
+  Batch 3861/3951 | Loss: 0.7255 | Samples: 123552 | Time: 14385.2s | Speed: 8.6 samples/s
+  Batch 3871/3951 | Loss: 0.6074 | Samples: 123872 | Time: 14395.2s | Speed: 8.6 samples/s
+  Batch 3881/3951 | Loss: 0.5977 | Samples: 124192 | Time: 14406.8s | Speed: 8.6 samples/s
+  Batch 3891/3951 | Loss: 0.5255 | Samples: 124512 | Time: 14417.0s | Speed: 8.6 samples/s
+  Batch 3901/3951 | Loss: 0.5820 | Samples: 124832 | Time: 14426.5s | Speed: 8.7 samples/s
+  Batch 3911/3951 | Loss: 0.5909 | Samples: 125152 | Time: 14436.2s | Speed: 8.7 samples/s
+  Batch 3921/3951 | Loss: 0.6961 | Samples: 125472 | Time: 14446.3s | Speed: 8.7 samples/s
+  Batch 3931/3951 | Loss: 0.4452 | Samples: 125792 | Time: 14456.0s | Speed: 8.7 samples/s
+  Batch 3941/3951 | Loss: 0.5165 | Samples: 126112 | Time: 14465.8s | Speed: 8.7 samples/s
+  Batch 3951/3951 | Loss: 0.7126 | Samples: 126432 | Time: 14476.1s | Speed: 8.7 samples/s
+
+[SAVE] Saving pre-validation checkpoint for epoch 43...
+[SAVE] Pre-validation checkpoint saved to checkpoints\recognition\tamil\exp_A2_resolution\epoch_043_pre_validation.pth
+
+--- Epoch 43 Metrics ---
+Total Batches Processed: 3951
+Skipped NaN/Inf Batches: 0
+Train Loss: 0.5690
+Validation Loss: 1.7919
+CER: 0.4371
+WER: 0.9368
+Character Accuracy: 0.5629
+Word Accuracy: 0.0632
+
+--- Mode Collapse Analysis ---
+Blank Prediction %:          89.74%
+Unique Predicted Characters: 56
+Unique Predicted Sequences:  9910
+Dominant Character:          '்' (20.63%)
+Average Prediction Length:   7.07
+Training Time:               14476.1s
+Samples/sec:                 8.7
+GPU/Device:                  cuda
+
+--- Validation Predictions ---
+GT: ஆச்சரியப்படுவதற்கில்லை | Pred: அச்சரயான
+GT: கூட்டு | Pred: கூட்டு்
+GT: இச்சைப்பொருளாக | Pred: இஞ்சன்
+GT: யூனிட்டை | Pred: ஒணி்
+GT: வரப்பிரசாதம் | Pred: வரிப்ப்
+GT: தேடப்படுகின்றன | Pred: தேடற்
+GT: காய்ச்சுதல் | Pred: காய்த்திரி
+GT: நுரையுமாக | Pred: சுடைக்ா
+GT: சலஞ்சர்ஸ் | Pred: குப்தணான்
+GT: அறிந்தது | Pred: அறிந்தரு்ப்ட
+[SAVE] New best CER (0.4371), saved to best.pth
+
+============================================================
+Epoch 44/81 | Global Shuffling Experiment
+============================================================
+[TRAIN] Loaded 17 packets containing 126419 total samples.
+[VALIDATION] Loaded 3 packets containing 11598 total samples.
+Total Packets: 17
+Total Training Samples: 126419
+Batch Size: 32
+Number of Batches: 3951
+Shuffle: True
+Experiment Name: exp_A2_resolution
+============================================================
+
+  Batch 1/3951 | Loss: 0.6325 | Samples: 32 | Time: 0.5s | Speed: 61.7 samples/s
+  Batch 11/3951 | Loss: 0.4676 | Samples: 352 | Time: 5.0s | Speed: 71.1 samples/s
+  Batch 21/3951 | Loss: 0.5603 | Samples: 672 | Time: 7.2s | Speed: 92.9 samples/s
+  Batch 31/3951 | Loss: 0.3897 | Samples: 992 | Time: 10.9s | Speed: 91.2 samples/s
+  Batch 41/3951 | Loss: 0.5798 | Samples: 1312 | Time: 14.5s | Speed: 90.6 samples/s
+  Batch 51/3951 | Loss: 0.4645 | Samples: 1632 | Time: 18.1s | Speed: 90.3 samples/s
+  Batch 61/3951 | Loss: 0.5992 | Samples: 1952 | Time: 21.5s | Speed: 90.8 samples/s
+  Batch 71/3951 | Loss: 0.4748 | Samples: 2272 | Time: 25.1s | Speed: 90.4 samples/s
+  Batch 81/3951 | Loss: 0.3830 | Samples: 2592 | Time: 28.4s | Speed: 91.2 samples/s
+  Batch 91/3951 | Loss: 0.5882 | Samples: 2912 | Time: 32.1s | Speed: 90.8 samples/s
+  Batch 101/3951 | Loss: 0.5985 | Samples: 3232 | Time: 35.5s | Speed: 91.1 samples/s
+  Batch 111/3951 | Loss: 0.5202 | Samples: 3552 | Time: 39.2s | Speed: 90.6 samples/s
+  Batch 121/3951 | Loss: 0.3681 | Samples: 3872 | Time: 42.8s | Speed: 90.5 samples/s
+  Batch 131/3951 | Loss: 0.8137 | Samples: 4192 | Time: 46.9s | Speed: 89.4 samples/s
+  Batch 141/3951 | Loss: 0.3010 | Samples: 4512 | Time: 50.3s | Speed: 89.7 samples/s
+  Batch 151/3951 | Loss: 0.6426 | Samples: 4832 | Time: 54.0s | Speed: 89.5 samples/s
+  Batch 161/3951 | Loss: 0.4941 | Samples: 5152 | Time: 57.6s | Speed: 89.4 samples/s
+  Batch 171/3951 | Loss: 0.5933 | Samples: 5472 | Time: 61.1s | Speed: 89.5 samples/s
+  Batch 181/3951 | Loss: 0.4763 | Samples: 5792 | Time: 64.3s | Speed: 90.1 samples/s
+  Batch 191/3951 | Loss: 0.7067 | Samples: 6112 | Time: 67.5s | Speed: 90.6 samples/s
+  Batch 201/3951 | Loss: 0.5336 | Samples: 6432 | Time: 71.0s | Speed: 90.6 samples/s
+  Batch 211/3951 | Loss: 0.5898 | Samples: 6752 | Time: 72.8s | Speed: 92.7 samples/s
+  Batch 221/3951 | Loss: 0.5017 | Samples: 7072 | Time: 75.8s | Speed: 93.2 samples/s
+  Batch 231/3951 | Loss: 0.3693 | Samples: 7392 | Time: 79.2s | Speed: 93.3 samples/s
+  Batch 241/3951 | Loss: 0.4406 | Samples: 7712 | Time: 82.4s | Speed: 93.6 samples/s
+  Batch 251/3951 | Loss: 0.6589 | Samples: 8032 | Time: 85.8s | Speed: 93.6 samples/s
+  Batch 261/3951 | Loss: 0.4835 | Samples: 8352 | Time: 89.2s | Speed: 93.7 samples/s
+  Batch 271/3951 | Loss: 0.5254 | Samples: 8672 | Time: 91.3s | Speed: 95.0 samples/s
+  Batch 281/3951 | Loss: 0.3839 | Samples: 8992 | Time: 97.3s | Speed: 92.4 samples/s
+  Batch 291/3951 | Loss: 0.5105 | Samples: 9312 | Time: 105.2s | Speed: 88.5 samples/s
+  Batch 301/3951 | Loss: 0.5939 | Samples: 9632 | Time: 110.9s | Speed: 86.9 samples/s
+  Batch 311/3951 | Loss: 0.6042 | Samples: 9952 | Time: 116.5s | Speed: 85.5 samples/s
+  Batch 321/3951 | Loss: 0.5978 | Samples: 10272 | Time: 119.8s | Speed: 85.7 samples/s
+  Batch 331/3951 | Loss: 0.6610 | Samples: 10592 | Time: 123.7s | Speed: 85.6 samples/s
+  Batch 341/3951 | Loss: 0.5191 | Samples: 10912 | Time: 127.6s | Speed: 85.5 samples/s
+  Batch 351/3951 | Loss: 0.4458 | Samples: 11232 | Time: 131.0s | Speed: 85.8 samples/s
+  Batch 361/3951 | Loss: 0.5192 | Samples: 11552 | Time: 134.4s | Speed: 86.0 samples/s
+  Batch 371/3951 | Loss: 0.5555 | Samples: 11872 | Time: 137.9s | Speed: 86.1 samples/s
+  Batch 381/3951 | Loss: 0.4269 | Samples: 12192 | Time: 141.6s | Speed: 86.1 samples/s
+  Batch 391/3951 | Loss: 0.5358 | Samples: 12512 | Time: 145.2s | Speed: 86.2 samples/s
+  Batch 401/3951 | Loss: 0.7151 | Samples: 12832 | Time: 148.8s | Speed: 86.2 samples/s
+  Batch 411/3951 | Loss: 0.4915 | Samples: 13152 | Time: 152.3s | Speed: 86.4 samples/s
+  Batch 421/3951 | Loss: 0.4696 | Samples: 13472 | Time: 155.6s | Speed: 86.6 samples/s
+  Batch 431/3951 | Loss: 0.5184 | Samples: 13792 | Time: 159.0s | Speed: 86.8 samples/s
+  Batch 441/3951 | Loss: 0.5431 | Samples: 14112 | Time: 162.5s | Speed: 86.9 samples/s
+  Batch 451/3951 | Loss: 0.6387 | Samples: 14432 | Time: 165.9s | Speed: 87.0 samples/s
+  Batch 461/3951 | Loss: 0.4727 | Samples: 14752 | Time: 169.3s | Speed: 87.1 samples/s
+  Batch 471/3951 | Loss: 0.4819 | Samples: 15072 | Time: 173.2s | Speed: 87.0 samples/s
+  Batch 481/3951 | Loss: 0.6634 | Samples: 15392 | Time: 176.4s | Speed: 87.3 samples/s
+  Batch 491/3951 | Loss: 0.4840 | Samples: 15712 | Time: 179.6s | Speed: 87.5 samples/s
+  Batch 501/3951 | Loss: 0.4591 | Samples: 16032 | Time: 182.8s | Speed: 87.7 samples/s
+  Batch 511/3951 | Loss: 0.4674 | Samples: 16352 | Time: 186.0s | Speed: 87.9 samples/s
+  Batch 521/3951 | Loss: 0.5312 | Samples: 16672 | Time: 190.1s | Speed: 87.7 samples/s
+  Batch 531/3951 | Loss: 0.5972 | Samples: 16992 | Time: 193.9s | Speed: 87.6 samples/s
+  Batch 541/3951 | Loss: 0.4194 | Samples: 17312 | Time: 197.6s | Speed: 87.6 samples/s
+  Batch 551/3951 | Loss: 0.6106 | Samples: 17632 | Time: 201.3s | Speed: 87.6 samples/s
+  Batch 561/3951 | Loss: 0.5872 | Samples: 17952 | Time: 204.7s | Speed: 87.7 samples/s
+  Batch 571/3951 | Loss: 0.4690 | Samples: 18272 | Time: 208.2s | Speed: 87.8 samples/s
+  Batch 581/3951 | Loss: 0.5516 | Samples: 18592 | Time: 211.6s | Speed: 87.8 samples/s
+  Batch 591/3951 | Loss: 0.6142 | Samples: 18912 | Time: 215.0s | Speed: 88.0 samples/s
+  Batch 601/3951 | Loss: 0.3558 | Samples: 19232 | Time: 218.3s | Speed: 88.1 samples/s
+  Batch 611/3951 | Loss: 0.4164 | Samples: 19552 | Time: 221.6s | Speed: 88.2 samples/s
+  Batch 621/3951 | Loss: 0.4490 | Samples: 19872 | Time: 225.0s | Speed: 88.3 samples/s
+  Batch 631/3951 | Loss: 0.5312 | Samples: 20192 | Time: 228.3s | Speed: 88.4 samples/s
+  Batch 641/3951 | Loss: 0.4071 | Samples: 20512 | Time: 231.9s | Speed: 88.5 samples/s
+  Batch 651/3951 | Loss: 0.4664 | Samples: 20832 | Time: 235.1s | Speed: 88.6 samples/s
+  Batch 661/3951 | Loss: 0.5646 | Samples: 21152 | Time: 238.5s | Speed: 88.7 samples/s
+  Batch 671/3951 | Loss: 0.5416 | Samples: 21472 | Time: 241.9s | Speed: 88.8 samples/s
+  Batch 681/3951 | Loss: 0.4621 | Samples: 21792 | Time: 245.3s | Speed: 88.8 samples/s
+  Batch 691/3951 | Loss: 0.5427 | Samples: 22112 | Time: 248.8s | Speed: 88.9 samples/s
+  Batch 701/3951 | Loss: 0.4283 | Samples: 22432 | Time: 252.1s | Speed: 89.0 samples/s
+  Batch 711/3951 | Loss: 0.4220 | Samples: 22752 | Time: 255.4s | Speed: 89.1 samples/s
+  Batch 721/3951 | Loss: 0.5672 | Samples: 23072 | Time: 259.0s | Speed: 89.1 samples/s
+  Batch 731/3951 | Loss: 0.5790 | Samples: 23392 | Time: 262.3s | Speed: 89.2 samples/s
+  Batch 741/3951 | Loss: 0.3587 | Samples: 23712 | Time: 265.7s | Speed: 89.2 samples/s
+  Batch 751/3951 | Loss: 0.5619 | Samples: 24032 | Time: 269.0s | Speed: 89.3 samples/s
+  Batch 761/3951 | Loss: 0.5712 | Samples: 24352 | Time: 272.4s | Speed: 89.4 samples/s
+  Batch 771/3951 | Loss: 0.3957 | Samples: 24672 | Time: 275.8s | Speed: 89.5 samples/s
+  Batch 781/3951 | Loss: 0.7676 | Samples: 24992 | Time: 279.1s | Speed: 89.5 samples/s
+  Batch 791/3951 | Loss: 0.5846 | Samples: 25312 | Time: 282.5s | Speed: 89.6 samples/s
+  Batch 801/3951 | Loss: 0.4492 | Samples: 25632 | Time: 285.7s | Speed: 89.7 samples/s
+  Batch 811/3951 | Loss: 0.9065 | Samples: 25952 | Time: 289.0s | Speed: 89.8 samples/s
+  Batch 821/3951 | Loss: 0.4793 | Samples: 26272 | Time: 292.4s | Speed: 89.9 samples/s
+  Batch 831/3951 | Loss: 0.7224 | Samples: 26592 | Time: 295.5s | Speed: 90.0 samples/s
+  Batch 841/3951 | Loss: 0.5137 | Samples: 26912 | Time: 299.1s | Speed: 90.0 samples/s
+  Batch 851/3951 | Loss: 0.5012 | Samples: 27232 | Time: 302.5s | Speed: 90.0 samples/s
+  Batch 861/3951 | Loss: 0.5222 | Samples: 27552 | Time: 306.0s | Speed: 90.0 samples/s
+  Batch 871/3951 | Loss: 0.5074 | Samples: 27872 | Time: 309.5s | Speed: 90.0 samples/s
+  Batch 881/3951 | Loss: 0.3903 | Samples: 28192 | Time: 313.0s | Speed: 90.1 samples/s
+  Batch 891/3951 | Loss: 0.4222 | Samples: 28512 | Time: 316.4s | Speed: 90.1 samples/s
+  Batch 901/3951 | Loss: 0.4898 | Samples: 28832 | Time: 319.5s | Speed: 90.2 samples/s
+  Batch 911/3951 | Loss: 0.5409 | Samples: 29152 | Time: 322.9s | Speed: 90.3 samples/s
+  Batch 921/3951 | Loss: 0.2304 | Samples: 29472 | Time: 326.3s | Speed: 90.3 samples/s
+  Batch 931/3951 | Loss: 0.4976 | Samples: 29792 | Time: 329.8s | Speed: 90.3 samples/s
+  Batch 941/3951 | Loss: 0.4818 | Samples: 30112 | Time: 333.1s | Speed: 90.4 samples/s
+  Batch 951/3951 | Loss: 0.3118 | Samples: 30432 | Time: 336.4s | Speed: 90.5 samples/s
+  Batch 961/3951 | Loss: 0.5259 | Samples: 30752 | Time: 340.1s | Speed: 90.4 samples/s
+  Batch 971/3951 | Loss: 0.4938 | Samples: 31072 | Time: 343.3s | Speed: 90.5 samples/s
+  Batch 981/3951 | Loss: 0.4065 | Samples: 31392 | Time: 346.9s | Speed: 90.5 samples/s
+  Batch 991/3951 | Loss: 0.6150 | Samples: 31712 | Time: 350.4s | Speed: 90.5 samples/s
+  Batch 1001/3951 | Loss: 0.4487 | Samples: 32032 | Time: 353.6s | Speed: 90.6 samples/s
+  Batch 1011/3951 | Loss: 0.3872 | Samples: 32352 | Time: 357.3s | Speed: 90.6 samples/s
+  Batch 1021/3951 | Loss: 0.5698 | Samples: 32672 | Time: 360.8s | Speed: 90.6 samples/s
+  Batch 1031/3951 | Loss: 0.5585 | Samples: 32992 | Time: 364.1s | Speed: 90.6 samples/s
+  Batch 1041/3951 | Loss: 0.5264 | Samples: 33312 | Time: 367.3s | Speed: 90.7 samples/s
+  Batch 1051/3951 | Loss: 0.6744 | Samples: 33632 | Time: 370.5s | Speed: 90.8 samples/s
+  Batch 1061/3951 | Loss: 0.5671 | Samples: 33952 | Time: 373.6s | Speed: 90.9 samples/s
+  Batch 1071/3951 | Loss: 0.5011 | Samples: 34272 | Time: 376.9s | Speed: 90.9 samples/s
+  Batch 1081/3951 | Loss: 0.4859 | Samples: 34592 | Time: 380.3s | Speed: 91.0 samples/s
+  Batch 1091/3951 | Loss: 0.4934 | Samples: 34912 | Time: 383.5s | Speed: 91.0 samples/s
+  Batch 1101/3951 | Loss: 0.6212 | Samples: 35232 | Time: 386.6s | Speed: 91.1 samples/s
+  Batch 1111/3951 | Loss: 0.4154 | Samples: 35552 | Time: 390.0s | Speed: 91.1 samples/s
+  Batch 1121/3951 | Loss: 0.3686 | Samples: 35872 | Time: 393.5s | Speed: 91.2 samples/s
+  Batch 1131/3951 | Loss: 0.4780 | Samples: 36192 | Time: 396.8s | Speed: 91.2 samples/s
+  Batch 1141/3951 | Loss: 0.5561 | Samples: 36512 | Time: 400.1s | Speed: 91.3 samples/s
+  Batch 1151/3951 | Loss: 0.4898 | Samples: 36832 | Time: 403.4s | Speed: 91.3 samples/s
+  Batch 1161/3951 | Loss: 0.4721 | Samples: 37152 | Time: 406.9s | Speed: 91.3 samples/s
+  Batch 1171/3951 | Loss: 0.5597 | Samples: 37472 | Time: 410.1s | Speed: 91.4 samples/s
+  Batch 1181/3951 | Loss: 0.5424 | Samples: 37792 | Time: 413.7s | Speed: 91.4 samples/s
+  Batch 1191/3951 | Loss: 0.7009 | Samples: 38112 | Time: 417.0s | Speed: 91.4 samples/s
+  Batch 1201/3951 | Loss: 0.6899 | Samples: 38432 | Time: 420.4s | Speed: 91.4 samples/s
+  Batch 1211/3951 | Loss: 0.6096 | Samples: 38752 | Time: 423.7s | Speed: 91.5 samples/s
+  Batch 1221/3951 | Loss: 0.6610 | Samples: 39072 | Time: 427.1s | Speed: 91.5 samples/s
+  Batch 1231/3951 | Loss: 0.5703 | Samples: 39392 | Time: 430.6s | Speed: 91.5 samples/s
+  Batch 1241/3951 | Loss: 0.4433 | Samples: 39712 | Time: 434.0s | Speed: 91.5 samples/s
+  Batch 1251/3951 | Loss: 0.5744 | Samples: 40032 | Time: 437.5s | Speed: 91.5 samples/s
+  Batch 1261/3951 | Loss: 0.5167 | Samples: 40352 | Time: 441.0s | Speed: 91.5 samples/s
+  Batch 1271/3951 | Loss: 0.6874 | Samples: 40672 | Time: 444.4s | Speed: 91.5 samples/s
+  Batch 1281/3951 | Loss: 0.6299 | Samples: 40992 | Time: 448.1s | Speed: 91.5 samples/s
+  Batch 1291/3951 | Loss: 0.8739 | Samples: 41312 | Time: 451.5s | Speed: 91.5 samples/s
+  Batch 1301/3951 | Loss: 0.5377 | Samples: 41632 | Time: 454.8s | Speed: 91.5 samples/s
+  Batch 1311/3951 | Loss: 0.4727 | Samples: 41952 | Time: 458.2s | Speed: 91.6 samples/s
+  Batch 1321/3951 | Loss: 0.6665 | Samples: 42272 | Time: 461.6s | Speed: 91.6 samples/s
+  Batch 1331/3951 | Loss: 0.6906 | Samples: 42592 | Time: 465.1s | Speed: 91.6 samples/s
+  Batch 1341/3951 | Loss: 0.4572 | Samples: 42912 | Time: 468.7s | Speed: 91.6 samples/s
+  Batch 1351/3951 | Loss: 0.6626 | Samples: 43232 | Time: 472.2s | Speed: 91.5 samples/s
+  Batch 1361/3951 | Loss: 0.4530 | Samples: 43552 | Time: 475.4s | Speed: 91.6 samples/s
+  Batch 1371/3951 | Loss: 0.4952 | Samples: 43872 | Time: 480.2s | Speed: 91.4 samples/s
+  Batch 1381/3951 | Loss: 0.6451 | Samples: 44192 | Time: 483.6s | Speed: 91.4 samples/s
+  Batch 1391/3951 | Loss: 0.6857 | Samples: 44512 | Time: 486.9s | Speed: 91.4 samples/s
+  Batch 1401/3951 | Loss: 0.7323 | Samples: 44832 | Time: 490.2s | Speed: 91.5 samples/s
+  Batch 1411/3951 | Loss: 0.5977 | Samples: 45152 | Time: 493.7s | Speed: 91.5 samples/s
+  Batch 1421/3951 | Loss: 0.4556 | Samples: 45472 | Time: 497.2s | Speed: 91.5 samples/s
+  Batch 1431/3951 | Loss: 0.6539 | Samples: 45792 | Time: 500.5s | Speed: 91.5 samples/s
+  Batch 1441/3951 | Loss: 0.5882 | Samples: 46112 | Time: 504.2s | Speed: 91.5 samples/s
+  Batch 1451/3951 | Loss: 0.4441 | Samples: 46432 | Time: 507.6s | Speed: 91.5 samples/s
+  Batch 1461/3951 | Loss: 0.5459 | Samples: 46752 | Time: 511.5s | Speed: 91.4 samples/s
+  Batch 1471/3951 | Loss: 0.4945 | Samples: 47072 | Time: 514.9s | Speed: 91.4 samples/s
+  Batch 1481/3951 | Loss: 0.7889 | Samples: 47392 | Time: 518.4s | Speed: 91.4 samples/s
+  Batch 1491/3951 | Loss: 0.4941 | Samples: 47712 | Time: 521.8s | Speed: 91.4 samples/s
+  Batch 1501/3951 | Loss: 0.4229 | Samples: 48032 | Time: 525.2s | Speed: 91.5 samples/s
+  Batch 1511/3951 | Loss: 0.5281 | Samples: 48352 | Time: 529.0s | Speed: 91.4 samples/s
+  Batch 1521/3951 | Loss: 0.3367 | Samples: 48672 | Time: 532.8s | Speed: 91.4 samples/s
+  Batch 1531/3951 | Loss: 0.5907 | Samples: 48992 | Time: 536.4s | Speed: 91.3 samples/s
+  Batch 1541/3951 | Loss: 0.7969 | Samples: 49312 | Time: 539.9s | Speed: 91.3 samples/s
+  Batch 1551/3951 | Loss: 0.5663 | Samples: 49632 | Time: 543.3s | Speed: 91.4 samples/s
+  Batch 1561/3951 | Loss: 0.5695 | Samples: 49952 | Time: 547.0s | Speed: 91.3 samples/s
+  Batch 1571/3951 | Loss: 0.5750 | Samples: 50272 | Time: 550.8s | Speed: 91.3 samples/s
+  Batch 1581/3951 | Loss: 0.9548 | Samples: 50592 | Time: 554.4s | Speed: 91.3 samples/s
+  Batch 1591/3951 | Loss: 0.5417 | Samples: 50912 | Time: 557.7s | Speed: 91.3 samples/s
+  Batch 1601/3951 | Loss: 0.3785 | Samples: 51232 | Time: 560.9s | Speed: 91.3 samples/s
+  Batch 1611/3951 | Loss: 0.7316 | Samples: 51552 | Time: 564.2s | Speed: 91.4 samples/s
+  Batch 1621/3951 | Loss: 0.5848 | Samples: 51872 | Time: 567.3s | Speed: 91.4 samples/s
+  Batch 1631/3951 | Loss: 0.4431 | Samples: 52192 | Time: 570.7s | Speed: 91.5 samples/s
+  Batch 1641/3951 | Loss: 0.5889 | Samples: 52512 | Time: 574.3s | Speed: 91.4 samples/s
+  Batch 1651/3951 | Loss: 0.4910 | Samples: 52832 | Time: 577.2s | Speed: 91.5 samples/s
+  Batch 1661/3951 | Loss: 0.4091 | Samples: 53152 | Time: 580.0s | Speed: 91.6 samples/s
+  Batch 1671/3951 | Loss: 0.6965 | Samples: 53472 | Time: 583.3s | Speed: 91.7 samples/s
+  Batch 1681/3951 | Loss: 0.7800 | Samples: 53792 | Time: 587.1s | Speed: 91.6 samples/s
+  Batch 1691/3951 | Loss: 0.4379 | Samples: 54112 | Time: 590.6s | Speed: 91.6 samples/s
+  Batch 1701/3951 | Loss: 0.6059 | Samples: 54432 | Time: 594.3s | Speed: 91.6 samples/s
+  Batch 1711/3951 | Loss: 0.6048 | Samples: 54752 | Time: 597.8s | Speed: 91.6 samples/s
+  Batch 1721/3951 | Loss: 0.5195 | Samples: 55072 | Time: 601.8s | Speed: 91.5 samples/s
+  Batch 1731/3951 | Loss: 0.4419 | Samples: 55392 | Time: 605.9s | Speed: 91.4 samples/s
+  Batch 1741/3951 | Loss: 0.6616 | Samples: 55712 | Time: 609.8s | Speed: 91.4 samples/s
+  Batch 1751/3951 | Loss: 0.7829 | Samples: 56032 | Time: 613.6s | Speed: 91.3 samples/s
+  Batch 1761/3951 | Loss: 0.4170 | Samples: 56352 | Time: 617.0s | Speed: 91.3 samples/s
+  Batch 1771/3951 | Loss: 0.5751 | Samples: 56672 | Time: 620.7s | Speed: 91.3 samples/s
+  Batch 1781/3951 | Loss: 0.6580 | Samples: 56992 | Time: 624.8s | Speed: 91.2 samples/s
+  Batch 1791/3951 | Loss: 0.4481 | Samples: 57312 | Time: 629.2s | Speed: 91.1 samples/s
+  Batch 1801/3951 | Loss: 0.5937 | Samples: 57632 | Time: 633.3s | Speed: 91.0 samples/s
+  Batch 1811/3951 | Loss: 0.3401 | Samples: 57952 | Time: 637.8s | Speed: 90.9 samples/s
+  Batch 1821/3951 | Loss: 0.3876 | Samples: 58272 | Time: 642.1s | Speed: 90.8 samples/s
+  Batch 1831/3951 | Loss: 0.6035 | Samples: 58592 | Time: 646.5s | Speed: 90.6 samples/s
+  Batch 1841/3951 | Loss: 0.3786 | Samples: 58912 | Time: 650.5s | Speed: 90.6 samples/s
+  Batch 1851/3951 | Loss: 0.5458 | Samples: 59232 | Time: 654.7s | Speed: 90.5 samples/s
+  Batch 1861/3951 | Loss: 0.4983 | Samples: 59552 | Time: 658.6s | Speed: 90.4 samples/s
+  Batch 1871/3951 | Loss: 0.3342 | Samples: 59872 | Time: 662.9s | Speed: 90.3 samples/s
+  Batch 1881/3951 | Loss: 0.5330 | Samples: 60192 | Time: 666.8s | Speed: 90.3 samples/s
+  Batch 1891/3951 | Loss: 0.4526 | Samples: 60512 | Time: 671.4s | Speed: 90.1 samples/s
+  Batch 1901/3951 | Loss: 0.4467 | Samples: 60832 | Time: 675.5s | Speed: 90.0 samples/s
+  Batch 1911/3951 | Loss: 0.5985 | Samples: 61152 | Time: 679.5s | Speed: 90.0 samples/s
+  Batch 1921/3951 | Loss: 0.3589 | Samples: 61472 | Time: 683.3s | Speed: 90.0 samples/s
+  Batch 1931/3951 | Loss: 0.5647 | Samples: 61792 | Time: 687.3s | Speed: 89.9 samples/s
+  Batch 1941/3951 | Loss: 0.5144 | Samples: 62112 | Time: 691.1s | Speed: 89.9 samples/s
+  Batch 1951/3951 | Loss: 0.6708 | Samples: 62432 | Time: 694.9s | Speed: 89.8 samples/s
+  Batch 1961/3951 | Loss: 0.7443 | Samples: 62752 | Time: 698.6s | Speed: 89.8 samples/s
+  Batch 1971/3951 | Loss: 0.7813 | Samples: 63072 | Time: 701.8s | Speed: 89.9 samples/s
+  Batch 1981/3951 | Loss: 0.3956 | Samples: 63392 | Time: 705.1s | Speed: 89.9 samples/s
+  Batch 1991/3951 | Loss: 0.5149 | Samples: 63712 | Time: 708.7s | Speed: 89.9 samples/s
+  Batch 2001/3951 | Loss: 0.3965 | Samples: 64032 | Time: 712.3s | Speed: 89.9 samples/s
+  Batch 2011/3951 | Loss: 0.7599 | Samples: 64352 | Time: 715.7s | Speed: 89.9 samples/s
+  Batch 2021/3951 | Loss: 0.5136 | Samples: 64672 | Time: 719.3s | Speed: 89.9 samples/s
+  Batch 2031/3951 | Loss: 0.6152 | Samples: 64992 | Time: 722.9s | Speed: 89.9 samples/s
+  Batch 2041/3951 | Loss: 0.5738 | Samples: 65312 | Time: 726.6s | Speed: 89.9 samples/s
+  Batch 2051/3951 | Loss: 0.4060 | Samples: 65632 | Time: 730.4s | Speed: 89.9 samples/s
+  Batch 2061/3951 | Loss: 0.6743 | Samples: 65952 | Time: 734.1s | Speed: 89.8 samples/s
+  Batch 2071/3951 | Loss: 0.4377 | Samples: 66272 | Time: 737.8s | Speed: 89.8 samples/s
+  Batch 2081/3951 | Loss: 0.4301 | Samples: 66592 | Time: 741.7s | Speed: 89.8 samples/s
+  Batch 2091/3951 | Loss: 0.5134 | Samples: 66912 | Time: 745.5s | Speed: 89.8 samples/s
+  Batch 2101/3951 | Loss: 0.6427 | Samples: 67232 | Time: 749.2s | Speed: 89.7 samples/s
+  Batch 2111/3951 | Loss: 0.3964 | Samples: 67552 | Time: 752.9s | Speed: 89.7 samples/s
+  Batch 2121/3951 | Loss: 0.4391 | Samples: 67872 | Time: 756.9s | Speed: 89.7 samples/s
+  Batch 2131/3951 | Loss: 0.7137 | Samples: 68192 | Time: 760.3s | Speed: 89.7 samples/s
+  Batch 2141/3951 | Loss: 0.5741 | Samples: 68512 | Time: 763.6s | Speed: 89.7 samples/s
+  Batch 2151/3951 | Loss: 0.6300 | Samples: 68832 | Time: 767.6s | Speed: 89.7 samples/s
+  Batch 2161/3951 | Loss: 0.7982 | Samples: 69152 | Time: 771.3s | Speed: 89.7 samples/s
+  Batch 2171/3951 | Loss: 0.4956 | Samples: 69472 | Time: 775.2s | Speed: 89.6 samples/s
+  Batch 2181/3951 | Loss: 0.6756 | Samples: 69792 | Time: 778.8s | Speed: 89.6 samples/s
+  Batch 2191/3951 | Loss: 0.5812 | Samples: 70112 | Time: 782.5s | Speed: 89.6 samples/s
+  Batch 2201/3951 | Loss: 0.7413 | Samples: 70432 | Time: 786.2s | Speed: 89.6 samples/s
+  Batch 2211/3951 | Loss: 0.5124 | Samples: 70752 | Time: 790.2s | Speed: 89.5 samples/s
+  Batch 2221/3951 | Loss: 0.6100 | Samples: 71072 | Time: 793.9s | Speed: 89.5 samples/s
+  Batch 2231/3951 | Loss: 0.6851 | Samples: 71392 | Time: 798.0s | Speed: 89.5 samples/s
+  Batch 2241/3951 | Loss: 0.5393 | Samples: 71712 | Time: 802.6s | Speed: 89.4 samples/s
+  Batch 2251/3951 | Loss: 0.5843 | Samples: 72032 | Time: 806.6s | Speed: 89.3 samples/s
+  Batch 2261/3951 | Loss: 0.4410 | Samples: 72352 | Time: 810.5s | Speed: 89.3 samples/s
+  Batch 2271/3951 | Loss: 0.6138 | Samples: 72672 | Time: 815.1s | Speed: 89.2 samples/s
+  Batch 2281/3951 | Loss: 0.6278 | Samples: 72992 | Time: 818.9s | Speed: 89.1 samples/s
+  Batch 2291/3951 | Loss: 0.5437 | Samples: 73312 | Time: 822.9s | Speed: 89.1 samples/s
+  Batch 2301/3951 | Loss: 0.5420 | Samples: 73632 | Time: 826.6s | Speed: 89.1 samples/s
+  Batch 2311/3951 | Loss: 0.4378 | Samples: 73952 | Time: 830.7s | Speed: 89.0 samples/s
+  Batch 2321/3951 | Loss: 0.3867 | Samples: 74272 | Time: 834.7s | Speed: 89.0 samples/s
+  Batch 2331/3951 | Loss: 0.5302 | Samples: 74592 | Time: 838.6s | Speed: 88.9 samples/s
+  Batch 2341/3951 | Loss: 0.4968 | Samples: 74912 | Time: 842.6s | Speed: 88.9 samples/s
+  Batch 2351/3951 | Loss: 0.7645 | Samples: 75232 | Time: 846.2s | Speed: 88.9 samples/s
+  Batch 2361/3951 | Loss: 0.3698 | Samples: 75552 | Time: 850.7s | Speed: 88.8 samples/s
+  Batch 2371/3951 | Loss: 0.6791 | Samples: 75872 | Time: 855.2s | Speed: 88.7 samples/s
+  Batch 2381/3951 | Loss: 0.5692 | Samples: 76192 | Time: 859.2s | Speed: 88.7 samples/s
+  Batch 2391/3951 | Loss: 0.5351 | Samples: 76512 | Time: 863.4s | Speed: 88.6 samples/s
+  Batch 2401/3951 | Loss: 0.7296 | Samples: 76832 | Time: 867.8s | Speed: 88.5 samples/s
+  Batch 2411/3951 | Loss: 0.3414 | Samples: 77152 | Time: 871.9s | Speed: 88.5 samples/s
+  Batch 2421/3951 | Loss: 0.3954 | Samples: 77472 | Time: 876.1s | Speed: 88.4 samples/s
+  Batch 2431/3951 | Loss: 0.3303 | Samples: 77792 | Time: 880.1s | Speed: 88.4 samples/s
+  Batch 2441/3951 | Loss: 0.6242 | Samples: 78112 | Time: 884.4s | Speed: 88.3 samples/s
+  Batch 2451/3951 | Loss: 0.4343 | Samples: 78432 | Time: 888.3s | Speed: 88.3 samples/s
+  Batch 2461/3951 | Loss: 0.6149 | Samples: 78752 | Time: 892.2s | Speed: 88.3 samples/s
+  Batch 2471/3951 | Loss: 0.4781 | Samples: 79072 | Time: 896.4s | Speed: 88.2 samples/s
+  Batch 2481/3951 | Loss: 0.5593 | Samples: 79392 | Time: 900.3s | Speed: 88.2 samples/s
+  Batch 2491/3951 | Loss: 0.7791 | Samples: 79712 | Time: 904.0s | Speed: 88.2 samples/s
+  Batch 2501/3951 | Loss: 0.5824 | Samples: 80032 | Time: 909.7s | Speed: 88.0 samples/s
+  Batch 2511/3951 | Loss: 0.4625 | Samples: 80352 | Time: 914.7s | Speed: 87.8 samples/s
+  Batch 2521/3951 | Loss: 0.6010 | Samples: 80672 | Time: 919.3s | Speed: 87.8 samples/s
+  Batch 2531/3951 | Loss: 0.4687 | Samples: 80992 | Time: 923.7s | Speed: 87.7 samples/s
+  Batch 2541/3951 | Loss: 0.6247 | Samples: 81312 | Time: 928.6s | Speed: 87.6 samples/s
+  Batch 2551/3951 | Loss: 0.5598 | Samples: 81632 | Time: 933.2s | Speed: 87.5 samples/s
+  Batch 2561/3951 | Loss: 0.5863 | Samples: 81952 | Time: 938.1s | Speed: 87.4 samples/s
+  Batch 2571/3951 | Loss: 0.5712 | Samples: 82272 | Time: 942.9s | Speed: 87.3 samples/s
+  Batch 2581/3951 | Loss: 0.6376 | Samples: 82592 | Time: 947.7s | Speed: 87.2 samples/s
+  Batch 2591/3951 | Loss: 0.5666 | Samples: 82912 | Time: 952.4s | Speed: 87.1 samples/s
+  Batch 2601/3951 | Loss: 0.4089 | Samples: 83232 | Time: 957.3s | Speed: 86.9 samples/s
+  Batch 2611/3951 | Loss: 0.6979 | Samples: 83552 | Time: 962.0s | Speed: 86.8 samples/s
+  Batch 2621/3951 | Loss: 0.6150 | Samples: 83872 | Time: 966.7s | Speed: 86.8 samples/s
+  Batch 2631/3951 | Loss: 0.8153 | Samples: 84192 | Time: 971.5s | Speed: 86.7 samples/s
+  Batch 2641/3951 | Loss: 0.5234 | Samples: 84512 | Time: 976.5s | Speed: 86.5 samples/s
+  Batch 2651/3951 | Loss: 0.4327 | Samples: 84832 | Time: 981.1s | Speed: 86.5 samples/s
+  Batch 2661/3951 | Loss: 0.4854 | Samples: 85152 | Time: 985.8s | Speed: 86.4 samples/s
+  Batch 2671/3951 | Loss: 0.6143 | Samples: 85472 | Time: 990.3s | Speed: 86.3 samples/s
+  Batch 2681/3951 | Loss: 0.7794 | Samples: 85792 | Time: 995.1s | Speed: 86.2 samples/s
+  Batch 2691/3951 | Loss: 0.7270 | Samples: 86112 | Time: 999.9s | Speed: 86.1 samples/s
+  Batch 2701/3951 | Loss: 0.5074 | Samples: 86432 | Time: 1004.4s | Speed: 86.1 samples/s
+  Batch 2711/3951 | Loss: 0.5832 | Samples: 86752 | Time: 1008.9s | Speed: 86.0 samples/s
+  Batch 2721/3951 | Loss: 0.4832 | Samples: 87072 | Time: 1013.8s | Speed: 85.9 samples/s
+  Batch 2731/3951 | Loss: 0.5528 | Samples: 87392 | Time: 1018.4s | Speed: 85.8 samples/s
+  Batch 2741/3951 | Loss: 0.4693 | Samples: 87712 | Time: 1023.0s | Speed: 85.7 samples/s
+  Batch 2751/3951 | Loss: 0.7584 | Samples: 88032 | Time: 1027.7s | Speed: 85.7 samples/s
+  Batch 2761/3951 | Loss: 0.4293 | Samples: 88352 | Time: 1032.4s | Speed: 85.6 samples/s
+  Batch 2771/3951 | Loss: 0.4781 | Samples: 88672 | Time: 1037.3s | Speed: 85.5 samples/s
+  Batch 2781/3951 | Loss: 0.6110 | Samples: 88992 | Time: 1041.9s | Speed: 85.4 samples/s
+  Batch 2791/3951 | Loss: 0.5233 | Samples: 89312 | Time: 1046.7s | Speed: 85.3 samples/s
+  Batch 2801/3951 | Loss: 0.7688 | Samples: 89632 | Time: 1051.4s | Speed: 85.3 samples/s
+  Batch 2811/3951 | Loss: 0.5798 | Samples: 89952 | Time: 1056.1s | Speed: 85.2 samples/s
+  Batch 2821/3951 | Loss: 0.4764 | Samples: 90272 | Time: 1060.4s | Speed: 85.1 samples/s
+  Batch 2831/3951 | Loss: 0.5601 | Samples: 90592 | Time: 1065.2s | Speed: 85.0 samples/s
+  Batch 2841/3951 | Loss: 0.6901 | Samples: 90912 | Time: 1069.9s | Speed: 85.0 samples/s
+  Batch 2851/3951 | Loss: 0.6108 | Samples: 91232 | Time: 1074.7s | Speed: 84.9 samples/s
+  Batch 2861/3951 | Loss: 0.5620 | Samples: 91552 | Time: 1078.8s | Speed: 84.9 samples/s
+  Batch 2871/3951 | Loss: 0.6478 | Samples: 91872 | Time: 1082.8s | Speed: 84.8 samples/s
+  Batch 2881/3951 | Loss: 0.5540 | Samples: 92192 | Time: 1086.8s | Speed: 84.8 samples/s
+  Batch 2891/3951 | Loss: 0.6205 | Samples: 92512 | Time: 1090.9s | Speed: 84.8 samples/s
+  Batch 2901/3951 | Loss: 0.4798 | Samples: 92832 | Time: 1095.0s | Speed: 84.8 samples/s
+  Batch 2911/3951 | Loss: 0.7199 | Samples: 93152 | Time: 1099.0s | Speed: 84.8 samples/s
+  Batch 2921/3951 | Loss: 0.5203 | Samples: 93472 | Time: 1103.1s | Speed: 84.7 samples/s
+  Batch 2931/3951 | Loss: 0.3157 | Samples: 93792 | Time: 1107.3s | Speed: 84.7 samples/s
+  Batch 2941/3951 | Loss: 0.7437 | Samples: 94112 | Time: 1111.1s | Speed: 84.7 samples/s
+  Batch 2951/3951 | Loss: 0.5999 | Samples: 94432 | Time: 1115.2s | Speed: 84.7 samples/s
+  Batch 2961/3951 | Loss: 0.4429 | Samples: 94752 | Time: 1120.2s | Speed: 84.6 samples/s
+  Batch 2971/3951 | Loss: 0.5168 | Samples: 95072 | Time: 1124.6s | Speed: 84.5 samples/s
+  Batch 2981/3951 | Loss: 0.6361 | Samples: 95392 | Time: 1129.1s | Speed: 84.5 samples/s
+  Batch 2991/3951 | Loss: 0.7298 | Samples: 95712 | Time: 1133.6s | Speed: 84.4 samples/s
+  Batch 3001/3951 | Loss: 0.5227 | Samples: 96032 | Time: 1137.9s | Speed: 84.4 samples/s
+  Batch 3011/3951 | Loss: 0.5826 | Samples: 96352 | Time: 1142.1s | Speed: 84.4 samples/s
+  Batch 3021/3951 | Loss: 0.5709 | Samples: 96672 | Time: 1146.3s | Speed: 84.3 samples/s
+  Batch 3031/3951 | Loss: 0.4339 | Samples: 96992 | Time: 1150.5s | Speed: 84.3 samples/s
+  Batch 3041/3951 | Loss: 0.5491 | Samples: 97312 | Time: 1154.9s | Speed: 84.3 samples/s
+  Batch 3051/3951 | Loss: 0.3813 | Samples: 97632 | Time: 1159.4s | Speed: 84.2 samples/s
+  Batch 3061/3951 | Loss: 0.6252 | Samples: 97952 | Time: 1163.3s | Speed: 84.2 samples/s
+  Batch 3071/3951 | Loss: 0.6909 | Samples: 98272 | Time: 1167.6s | Speed: 84.2 samples/s
+  Batch 3081/3951 | Loss: 0.5118 | Samples: 98592 | Time: 1171.6s | Speed: 84.2 samples/s
+  Batch 3091/3951 | Loss: 0.5655 | Samples: 98912 | Time: 1175.9s | Speed: 84.1 samples/s
+  Batch 3101/3951 | Loss: 0.4483 | Samples: 99232 | Time: 1179.8s | Speed: 84.1 samples/s
+  Batch 3111/3951 | Loss: 0.6850 | Samples: 99552 | Time: 1183.8s | Speed: 84.1 samples/s
+  Batch 3121/3951 | Loss: 0.6796 | Samples: 99872 | Time: 1187.7s | Speed: 84.1 samples/s
+  Batch 3131/3951 | Loss: 0.5368 | Samples: 100192 | Time: 1192.0s | Speed: 84.1 samples/s
+  Batch 3141/3951 | Loss: 0.7792 | Samples: 100512 | Time: 1196.4s | Speed: 84.0 samples/s
+  Batch 3151/3951 | Loss: 0.6784 | Samples: 100832 | Time: 1200.2s | Speed: 84.0 samples/s
+  Batch 3161/3951 | Loss: 0.5741 | Samples: 101152 | Time: 1203.9s | Speed: 84.0 samples/s
+  Batch 3171/3951 | Loss: 0.6166 | Samples: 101472 | Time: 1207.7s | Speed: 84.0 samples/s
+  Batch 3181/3951 | Loss: 0.6978 | Samples: 101792 | Time: 1211.8s | Speed: 84.0 samples/s
+  Batch 3191/3951 | Loss: 0.5584 | Samples: 102112 | Time: 1215.7s | Speed: 84.0 samples/s
+  Batch 3201/3951 | Loss: 0.6042 | Samples: 102432 | Time: 1219.4s | Speed: 84.0 samples/s
+  Batch 3211/3951 | Loss: 0.4354 | Samples: 102752 | Time: 1223.9s | Speed: 84.0 samples/s
+  Batch 3221/3951 | Loss: 0.5009 | Samples: 103072 | Time: 1228.0s | Speed: 83.9 samples/s
+  Batch 3231/3951 | Loss: 0.6603 | Samples: 103392 | Time: 1232.0s | Speed: 83.9 samples/s
+  Batch 3241/3951 | Loss: 0.5795 | Samples: 103712 | Time: 1235.6s | Speed: 83.9 samples/s
+  Batch 3251/3951 | Loss: 0.7440 | Samples: 104032 | Time: 1239.6s | Speed: 83.9 samples/s
+  Batch 3261/3951 | Loss: 0.6212 | Samples: 104352 | Time: 1243.6s | Speed: 83.9 samples/s
+  Batch 3271/3951 | Loss: 0.5830 | Samples: 104672 | Time: 1247.6s | Speed: 83.9 samples/s
+  Batch 3281/3951 | Loss: 0.5095 | Samples: 104992 | Time: 1251.6s | Speed: 83.9 samples/s
+  Batch 3291/3951 | Loss: 0.5697 | Samples: 105312 | Time: 1255.4s | Speed: 83.9 samples/s
+  Batch 3301/3951 | Loss: 0.5483 | Samples: 105632 | Time: 1259.2s | Speed: 83.9 samples/s
+  Batch 3311/3951 | Loss: 0.7497 | Samples: 105952 | Time: 1262.6s | Speed: 83.9 samples/s
+  Batch 3321/3951 | Loss: 0.3863 | Samples: 106272 | Time: 1265.8s | Speed: 84.0 samples/s
+  Batch 3331/3951 | Loss: 0.6149 | Samples: 106592 | Time: 1269.1s | Speed: 84.0 samples/s
+  Batch 3341/3951 | Loss: 0.4950 | Samples: 106912 | Time: 1272.8s | Speed: 84.0 samples/s
+  Batch 3351/3951 | Loss: 0.5174 | Samples: 107232 | Time: 1276.5s | Speed: 84.0 samples/s
+  Batch 3361/3951 | Loss: 0.5206 | Samples: 107552 | Time: 1280.4s | Speed: 84.0 samples/s
+  Batch 3371/3951 | Loss: 0.6434 | Samples: 107872 | Time: 1284.4s | Speed: 84.0 samples/s
+  Batch 3381/3951 | Loss: 0.7363 | Samples: 108192 | Time: 1289.2s | Speed: 83.9 samples/s
+  Batch 3391/3951 | Loss: 0.4515 | Samples: 108512 | Time: 1293.8s | Speed: 83.9 samples/s
+  Batch 3401/3951 | Loss: 0.9450 | Samples: 108832 | Time: 1298.1s | Speed: 83.8 samples/s
+  Batch 3411/3951 | Loss: 0.5642 | Samples: 109152 | Time: 1302.4s | Speed: 83.8 samples/s
+  Batch 3421/3951 | Loss: 0.6100 | Samples: 109472 | Time: 1307.4s | Speed: 83.7 samples/s
+  Batch 3431/3951 | Loss: 0.5507 | Samples: 109792 | Time: 1312.2s | Speed: 83.7 samples/s
+  Batch 3441/3951 | Loss: 0.6291 | Samples: 110112 | Time: 1316.2s | Speed: 83.7 samples/s
+  Batch 3451/3951 | Loss: 0.3348 | Samples: 110432 | Time: 1320.6s | Speed: 83.6 samples/s
+  Batch 3461/3951 | Loss: 0.5819 | Samples: 110752 | Time: 1324.9s | Speed: 83.6 samples/s
+  Batch 3471/3951 | Loss: 0.4376 | Samples: 111072 | Time: 1329.2s | Speed: 83.6 samples/s
+  Batch 3481/3951 | Loss: 0.5968 | Samples: 111392 | Time: 1333.4s | Speed: 83.5 samples/s
+  Batch 3491/3951 | Loss: 0.7204 | Samples: 111712 | Time: 1338.0s | Speed: 83.5 samples/s
+  Batch 3501/3951 | Loss: 0.6342 | Samples: 112032 | Time: 1342.7s | Speed: 83.4 samples/s
+  Batch 3511/3951 | Loss: 0.3424 | Samples: 112352 | Time: 1347.0s | Speed: 83.4 samples/s
+  Batch 3521/3951 | Loss: 0.5266 | Samples: 112672 | Time: 1351.6s | Speed: 83.4 samples/s
+  Batch 3531/3951 | Loss: 0.6172 | Samples: 112992 | Time: 1355.7s | Speed: 83.3 samples/s
+  Batch 3541/3951 | Loss: 0.5473 | Samples: 113312 | Time: 1359.9s | Speed: 83.3 samples/s
+  Batch 3551/3951 | Loss: 0.6252 | Samples: 113632 | Time: 1364.4s | Speed: 83.3 samples/s
+  Batch 3561/3951 | Loss: 0.4461 | Samples: 113952 | Time: 1368.7s | Speed: 83.3 samples/s
+  Batch 3571/3951 | Loss: 0.7496 | Samples: 114272 | Time: 1373.0s | Speed: 83.2 samples/s
+  Batch 3581/3951 | Loss: 0.6349 | Samples: 114592 | Time: 1377.1s | Speed: 83.2 samples/s
+  Batch 3591/3951 | Loss: 0.5806 | Samples: 114912 | Time: 1381.2s | Speed: 83.2 samples/s
+  Batch 3601/3951 | Loss: 0.5348 | Samples: 115232 | Time: 1385.9s | Speed: 83.1 samples/s
+  Batch 3611/3951 | Loss: 0.6045 | Samples: 115552 | Time: 1390.4s | Speed: 83.1 samples/s
+  Batch 3621/3951 | Loss: 0.4464 | Samples: 115872 | Time: 1394.9s | Speed: 83.1 samples/s
+  Batch 3631/3951 | Loss: 0.4156 | Samples: 116192 | Time: 1399.3s | Speed: 83.0 samples/s
+  Batch 3641/3951 | Loss: 0.5696 | Samples: 116512 | Time: 1404.1s | Speed: 83.0 samples/s
+  Batch 3651/3951 | Loss: 0.6147 | Samples: 116832 | Time: 1408.2s | Speed: 83.0 samples/s
+  Batch 3661/3951 | Loss: 0.4850 | Samples: 117152 | Time: 1412.4s | Speed: 82.9 samples/s
+  Batch 3671/3951 | Loss: 0.5069 | Samples: 117472 | Time: 1416.4s | Speed: 82.9 samples/s
+  Batch 3681/3951 | Loss: 0.7265 | Samples: 117792 | Time: 1420.4s | Speed: 82.9 samples/s
+  Batch 3691/3951 | Loss: 0.5280 | Samples: 118112 | Time: 1424.2s | Speed: 82.9 samples/s
+  Batch 3701/3951 | Loss: 0.5584 | Samples: 118432 | Time: 1428.0s | Speed: 82.9 samples/s
+  Batch 3711/3951 | Loss: 0.6737 | Samples: 118752 | Time: 1431.8s | Speed: 82.9 samples/s
+  Batch 3721/3951 | Loss: 0.4939 | Samples: 119072 | Time: 1436.0s | Speed: 82.9 samples/s
+  Batch 3731/3951 | Loss: 0.7081 | Samples: 119392 | Time: 1439.9s | Speed: 82.9 samples/s
+  Batch 3741/3951 | Loss: 0.5637 | Samples: 119712 | Time: 1443.7s | Speed: 82.9 samples/s
+  Batch 3751/3951 | Loss: 0.6445 | Samples: 120032 | Time: 1447.7s | Speed: 82.9 samples/s
+  Batch 3761/3951 | Loss: 0.4250 | Samples: 120352 | Time: 1451.4s | Speed: 82.9 samples/s
+  Batch 3771/3951 | Loss: 0.8019 | Samples: 120672 | Time: 1455.0s | Speed: 82.9 samples/s
+  Batch 3781/3951 | Loss: 0.5844 | Samples: 120992 | Time: 1459.3s | Speed: 82.9 samples/s
+  Batch 3791/3951 | Loss: 0.4358 | Samples: 121312 | Time: 1463.3s | Speed: 82.9 samples/s
+  Batch 3801/3951 | Loss: 0.7120 | Samples: 121632 | Time: 1467.2s | Speed: 82.9 samples/s
+  Batch 3811/3951 | Loss: 0.6159 | Samples: 121952 | Time: 1470.7s | Speed: 82.9 samples/s
+  Batch 3821/3951 | Loss: 0.6287 | Samples: 122272 | Time: 1474.5s | Speed: 82.9 samples/s
+  Batch 3831/3951 | Loss: 0.4957 | Samples: 122592 | Time: 1478.1s | Speed: 82.9 samples/s
+  Batch 3841/3951 | Loss: 0.6939 | Samples: 122912 | Time: 1482.0s | Speed: 82.9 samples/s
+  Batch 3851/3951 | Loss: 0.6612 | Samples: 123232 | Time: 1485.9s | Speed: 82.9 samples/s
+  Batch 3861/3951 | Loss: 0.5637 | Samples: 123552 | Time: 1489.7s | Speed: 82.9 samples/s
+  Batch 3871/3951 | Loss: 0.6640 | Samples: 123872 | Time: 1493.4s | Speed: 82.9 samples/s
+  Batch 3881/3951 | Loss: 0.6945 | Samples: 124192 | Time: 1496.9s | Speed: 83.0 samples/s
+  Batch 3891/3951 | Loss: 0.4573 | Samples: 124512 | Time: 1500.4s | Speed: 83.0 samples/s
+  Batch 3901/3951 | Loss: 0.4101 | Samples: 124832 | Time: 1504.0s | Speed: 83.0 samples/s
+  Batch 3911/3951 | Loss: 0.3998 | Samples: 125152 | Time: 1507.4s | Speed: 83.0 samples/s
+  Batch 3921/3951 | Loss: 0.3635 | Samples: 125472 | Time: 1511.1s | Speed: 83.0 samples/s
+  Batch 3931/3951 | Loss: 0.3827 | Samples: 125792 | Time: 1514.7s | Speed: 83.0 samples/s
+  Batch 3941/3951 | Loss: 0.7316 | Samples: 126112 | Time: 1518.3s | Speed: 83.1 samples/s
+  Batch 3951/3951 | Loss: 0.8294 | Samples: 126432 | Time: 1521.6s | Speed: 83.1 samples/s
+
+[SAVE] Saving pre-validation checkpoint for epoch 44...
+[SAVE] Pre-validation checkpoint saved to checkpoints\recognition\tamil\exp_A2_resolution\epoch_044_pre_validation.pth
+
+--- Epoch 44 Metrics ---
+Total Batches Processed: 3951
+Skipped NaN/Inf Batches: 0
+Train Loss: 0.5534
+Validation Loss: 1.7498
+CER: 0.4256
+WER: 0.9283
+Character Accuracy: 0.5744
+Word Accuracy: 0.0717
+
+--- Mode Collapse Analysis ---
+Blank Prediction %:          88.66%
+Unique Predicted Characters: 58
+Unique Predicted Sequences:  10320
+Dominant Character:          '்' (21.43%)
+Average Prediction Length:   7.74
+Training Time:               1521.6s
+Samples/sec:                 83.1
+GPU/Device:                  cuda
+
+--- Validation Predictions ---
+GT: ஆச்சரியப்படுவதற்கில்லை | Pred: அச்சியான
+GT: கூட்டு | Pred: கூட்டுதிற்ை
+GT: இச்சைப்பொருளாக | Pred: இச்சினர்
+GT: யூனிட்டை | Pred: ஆவி்
+GT: வரப்பிரசாதம் | Pred: வரன்பு
+GT: தேடப்படுகின்றன | Pred: தேதவ்்ல்
+GT: காய்ச்சுதல் | Pred: காய்திி்
+GT: நுரையுமாக | Pred: சழைகிடா்
+GT: சலஞ்சர்ஸ் | Pred: குபரணாம்
+GT: அறிந்தது | Pred: அறிந்ததுக்்க்ட்ு
+[SAVE] New best CER (0.4256), saved to best.pth
+
+============================================================
+Epoch 45/81 | Global Shuffling Experiment
+============================================================
+[TRAIN] Loaded 17 packets containing 126419 total samples.
+[VALIDATION] Loaded 3 packets containing 11598 total samples.
+Total Packets: 17
+Total Training Samples: 126419
+Batch Size: 32
+Number of Batches: 3951
+Shuffle: True
+Experiment Name: exp_A2_resolution
+============================================================
+
+  Batch 1/3951 | Loss: 0.5780 | Samples: 32 | Time: 0.2s | Speed: 135.2 samples/s
+  Batch 11/3951 | Loss: 0.3918 | Samples: 352 | Time: 2.7s | Speed: 128.5 samples/s

@@ -1,0 +1,2 @@
+global_epoch,packet,train_loss,val_loss,cer,wer,char_accuracy,word_accuracy,duration,samples_per_sec,unique_chars,unique_words,dominant_char,dominance_pct
+1,packet_001,4.416281469308647,3.372665040811915,1.0,1.0,0,0,222.41503500938416,22.588401003502426,0,1,,0.0

@@ -1,0 +1,20 @@
+{
+    "before_training": {
+        "mean_blank_prob": 0.013024693354964256,
+        "mean_max_non_blank_prob": 0.013564549386501312,
+        "num_blank_timesteps": 0,
+        "num_non_blank_timesteps": 128
+    },
+    "after_1_step": {
+        "mean_blank_prob": 0.013911578804254532,
+        "mean_max_non_blank_prob": 0.013764511793851852,
+        "num_blank_timesteps": 120,
+        "num_non_blank_timesteps": 8
+    },
+    "after_30_epochs": {
+        "mean_blank_prob": 0.7322339415550232,
+        "mean_max_non_blank_prob": 0.05063919350504875,
+        "num_blank_timesteps": 120,
+        "num_non_blank_timesteps": 8
+    }
+}

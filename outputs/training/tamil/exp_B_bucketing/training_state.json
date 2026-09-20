@@ -1,0 +1,8 @@
+{
+    "language": "tamil",
+    "global_epoch": 1,
+    "last_completed_packet": null,
+    "best_validation_loss": 15.219826698303223,
+    "best_cer": 1.0,
+    "best_wer": 1.0
+}

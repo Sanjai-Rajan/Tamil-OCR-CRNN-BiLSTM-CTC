@@ -1,0 +1,9 @@
+{
+    "learning_rate": 0.0003,
+    "optimizer": "Adam",
+    "weight_decay": 0,
+    "model_training_mode": true,
+    "ctc_reduction": "mean",
+    "ctc_zero_infinity": true,
+    "blank_index": 0
+}

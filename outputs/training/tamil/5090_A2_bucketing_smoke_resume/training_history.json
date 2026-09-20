@@ -1,0 +1,34 @@
+[
+    {
+        "epoch": 79,
+        "samples": 126419,
+        "train_loss": 0.24032986880353602,
+        "validation_loss": 1.8034327986476186,
+        "CER": 0.3327879378489,
+        "WER": 0.7449560269011899,
+        "character_accuracy": 0.6672120621511,
+        "word_accuracy": 0.2550439730988101,
+        "blank_percentage": 87.52780848176184,
+        "unique_predicted_characters": 55,
+        "unique_predicted_sequences": 10329,
+        "average_prediction_length": 8.931626142438352,
+        "learning_rate": 0.0003,
+        "training_time": 41333.033427238464
+    },
+    {
+        "epoch": 80,
+        "samples": 126419,
+        "train_loss": 0.19195446678105485,
+        "validation_loss": 1.81587199817647,
+        "CER": 0.3295288906198559,
+        "WER": 0.750215554405932,
+        "character_accuracy": 0.6704711093801441,
+        "word_accuracy": 0.24978444559406798,
+        "blank_percentage": 87.9836377191948,
+        "unique_predicted_characters": 55,
+        "unique_predicted_sequences": 10220,
+        "average_prediction_length": 8.625021555440593,
+        "learning_rate": 0.0003,
+        "training_time": 1223.8544948101044
+    }
+]

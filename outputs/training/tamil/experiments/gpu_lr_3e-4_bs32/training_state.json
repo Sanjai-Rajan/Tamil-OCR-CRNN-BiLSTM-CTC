@@ -1,0 +1,8 @@
+{
+    "language": "tamil",
+    "global_epoch": 5,
+    "last_completed_packet": "packet_001",
+    "best_validation_loss": Infinity,
+    "best_cer": Infinity,
+    "best_wer": Infinity
+}

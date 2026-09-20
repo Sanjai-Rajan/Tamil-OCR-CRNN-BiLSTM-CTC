@@ -1,0 +1,23 @@
+dataset:
+  source_root: "C:/Users/prsan/Desktop/Dataset - Arranged/Large Data set"
+  working_root: "data/tamil_ocr_dataset"
+  packet_size: 5000
+
+training:
+  packet_training_mode: "staged"
+  replay_previous_packets: true
+  replay_count: 1
+  epochs: 20
+  batch_size: 32
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  num_workers: 0
+  mixed_precision: true
+
+checkpoint:
+  directory: "checkpoints/recognition/tamil"
+  save_every_epoch: true
+
+metrics:
+  calculate_cer: true
+  calculate_wer: true

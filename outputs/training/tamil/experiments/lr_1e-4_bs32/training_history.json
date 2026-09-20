@@ -1,0 +1,18 @@
+[
+    {
+        "global_epoch": 1,
+        "packet": "packet_001",
+        "train_loss": 4.416281469308647,
+        "val_loss": 3.372665040811915,
+        "cer": 1.0,
+        "wer": 1.0,
+        "char_accuracy": 0,
+        "word_accuracy": 0,
+        "duration": 222.41503500938416,
+        "samples_per_sec": 22.588401003502426,
+        "unique_chars": 0,
+        "unique_words": 1,
+        "dominant_char": "",
+        "dominance_pct": 0.0
+    }
+]
