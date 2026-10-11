@@ -1,0 +1,17 @@
+# Byte-exact checkout for every file: no line-ending conversion.
+# Several files are verified by SHA-256 (configs pinned by tests/test_pretrain_check.py, pageocr/protected_manifest.json,
+# data/manifests/datasets.json, the experiment records); converting LF <-> CRLF on checkout would break those checks.
+* -text
+
+# Binary assets (no diff, no merge)
+*.ttf binary
+*.otf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tif binary
+*.tiff binary
+
+# Trained checkpoints are NOT in this repository (.gitignore). If the owner decides to publish one with Git LFS
+# (DEPLOYMENT.md, step 1), `git lfs track "runs/experiment_002a/best.pth"` adds the matching rule here, and
+# `git add -f runs/experiment_002a/best.pth` stages it while every other weight file stays ignored.

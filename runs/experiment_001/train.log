@@ -1,0 +1,817 @@
+[2026-09-23 21:48:48] source iiit_hw          type=manifest weight=0.5 size=75736
+[2026-09-23 21:48:48] source synth_print      type=synth    weight=0.5 size=1000000
+[2026-09-23 21:48:48] val    iiit_hw_val      size=11598
+[2026-09-23 21:48:48] val    synth_val_modern size=3000
+[2026-09-23 21:48:48] val    synth_val_old    size=3000
+[2026-09-23 21:48:49] model CRNNv2  params=11,038,277  classes=101  device=cuda  amp=True  fused_adamw=True  channels_last=False  cudnn_benchmark=False
+[2026-09-23 21:50:34] width bucketing: 2935 batches in epoch 0 (plain: 2367), max_batch_columns=32768, planned in 105 s
+[2026-09-23 21:50:54] first batch ready after 9.9 s (DataLoader worker start-up)
+[2026-09-23 21:50:56] first step done in 11.8 s total (includes CUDA/cuDNN initialisation)
+[2026-09-23 21:51:46] ep 0 step 200/2935 loss 3.3772 lr 4.28e-05 198 img/s  (waiting for data 0% of the time)  GPU mem peak 5.8 GB, alloc retries 0
+[2026-09-23 21:52:36] ep 0 step 400/2935 loss 3.3189 lr 5.10e-05 202 img/s  (waiting for data 0% of the time)  GPU mem peak 6.6 GB, alloc retries 0
+[2026-09-23 21:53:27] ep 0 step 600/2935 loss 3.1633 lr 6.46e-05 205 img/s  (waiting for data 0% of the time)  GPU mem peak 6.6 GB, alloc retries 0
+[2026-09-23 21:54:19] ep 0 step 800/2935 loss 2.8630 lr 8.34e-05 198 img/s  (waiting for data 0% of the time)  GPU mem peak 6.6 GB, alloc retries 0
+[2026-09-23 21:55:11] ep 0 step 1000/2935 loss 1.8683 lr 1.07e-04 199 img/s  (waiting for data 0% of the time)  GPU mem peak 7.1 GB, alloc retries 0
+[2026-09-23 21:56:01] ep 0 step 1200/2935 loss 1.1415 lr 1.36e-04 207 img/s  (waiting for data 0% of the time)  GPU mem peak 7.1 GB, alloc retries 0
+[2026-09-23 21:57:17] ep 0 step 1400/2935 loss 0.4948 lr 1.69e-04 138 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 21:58:19] ep 0 step 1600/2935 loss 0.4062 lr 2.06e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 21:59:20] ep 0 step 1800/2935 loss 0.5203 lr 2.46e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:00:23] ep 0 step 2000/2935 loss 0.3991 lr 2.90e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:01:23] ep 0 step 2200/2935 loss 0.1280 lr 3.36e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:02:26] ep 0 step 2400/2935 loss 0.2216 lr 3.85e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:03:25] ep 0 step 2600/2935 loss 0.1188 lr 4.35e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:04:28] ep 0 step 2800/2935 loss 0.1219 lr 4.86e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:05:39] val iiit_hw_val      CER   9.64%  WER  46.96%  len-ratio 0.97
+[2026-09-23 22:05:54] val synth_val_modern CER   2.92%  WER  17.30%  len-ratio 0.99
+[2026-09-23 22:06:07] val synth_val_old    CER   6.05%  WER  29.03%  len-ratio 0.98
+[2026-09-23 22:06:07] new best (mean primary CER 9.64%) -> best.pth
+[2026-09-23 22:06:07] epoch 0 done in 14.4 min  train_loss 1.7126
+[2026-09-23 22:06:19] first batch ready after 9.6 s (DataLoader worker start-up)
+[2026-09-23 22:06:20] first step done in 10.2 s total (includes CUDA/cuDNN initialisation)
+[2026-09-23 22:07:21] ep 1 step 200/2933 loss 0.1866 lr 5.72e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:08:21] ep 1 step 400/2933 loss 0.2415 lr 6.22e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:09:20] ep 1 step 600/2933 loss 0.0849 lr 6.72e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:10:22] ep 1 step 800/2933 loss 0.0518 lr 7.20e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:11:23] ep 1 step 1000/2933 loss 0.0544 lr 7.65e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:12:22] ep 1 step 1200/2933 loss 0.0690 lr 8.08e-04 176 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:13:25] ep 1 step 1400/2933 loss 0.2181 lr 8.47e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:14:27] ep 1 step 1600/2933 loss 0.1251 lr 8.83e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:15:32] ep 1 step 1800/2933 loss 0.1604 lr 9.14e-04 160 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:16:33] ep 1 step 2000/2933 loss 0.2570 lr 9.41e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:17:36] ep 1 step 2200/2933 loss 0.2128 lr 9.64e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:18:42] ep 1 step 2400/2933 loss 0.1123 lr 9.81e-04 153 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:19:43] ep 1 step 2600/2933 loss 0.0615 lr 9.92e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:20:43] ep 1 step 2800/2933 loss 0.1758 lr 9.99e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:21:56] val iiit_hw_val      CER   5.01%  WER  28.70%  len-ratio 0.98
+[2026-09-23 22:22:09] val synth_val_modern CER   0.83%  WER   5.70%  len-ratio 1.00
+[2026-09-23 22:22:22] val synth_val_old    CER   2.10%  WER  12.23%  len-ratio 0.99
+[2026-09-23 22:22:22] new best (mean primary CER 5.01%) -> best.pth
+[2026-09-23 22:22:22] epoch 1 done in 15.3 min  train_loss 0.1638
+[2026-09-23 22:22:34] first batch ready after 9.7 s (DataLoader worker start-up)
+[2026-09-23 22:22:35] first step done in 10.5 s total (includes CUDA/cuDNN initialisation)
+[2026-09-23 22:23:39] ep 2 step 200/2935 loss 0.1657 lr 1.00e-03 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:24:54] ep 2 step 400/2935 loss 0.1506 lr 1.00e-03 137 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:25:54] ep 2 step 600/2935 loss 0.1654 lr 1.00e-03 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:26:53] ep 2 step 800/2935 loss 0.2042 lr 1.00e-03 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:27:55] ep 2 step 1000/2935 loss 0.1531 lr 1.00e-03 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:28:53] ep 2 step 1200/2935 loss 0.2184 lr 1.00e-03 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:29:51] ep 2 step 1400/2935 loss 0.1539 lr 1.00e-03 179 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:30:49] ep 2 step 1600/2935 loss 0.0594 lr 9.99e-04 176 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:31:46] ep 2 step 1800/2935 loss 0.0189 lr 9.99e-04 182 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:32:46] ep 2 step 2000/2935 loss 0.0521 lr 9.99e-04 172 img/s  (waiting for data 1% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:34:01] ep 2 step 2200/2935 loss 0.0416 lr 9.99e-04 140 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:35:03] ep 2 step 2400/2935 loss 0.0508 lr 9.99e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:36:02] ep 2 step 2600/2935 loss 0.0382 lr 9.99e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:37:02] ep 2 step 2800/2935 loss 0.0308 lr 9.98e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:38:41] val iiit_hw_val      CER   5.62%  WER  30.79%  len-ratio 0.97
+[2026-09-23 22:38:55] val synth_val_modern CER   0.75%  WER   4.70%  len-ratio 1.00
+[2026-09-23 22:39:07] val synth_val_old    CER   2.23%  WER  12.70%  len-ratio 0.99
+[2026-09-23 22:39:07] epoch 2 done in 15.3 min  train_loss 0.1038
+[2026-09-23 22:39:20] first batch ready after 10.6 s (DataLoader worker start-up)
+[2026-09-23 22:39:21] first step done in 11.2 s total (includes CUDA/cuDNN initialisation)
+[2026-09-23 22:40:20] ep 3 step 200/2935 loss 0.0468 lr 9.98e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:41:21] ep 3 step 400/2935 loss 0.0583 lr 9.98e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:42:28] ep 3 step 600/2935 loss 0.0081 lr 9.98e-04 154 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:43:28] ep 3 step 800/2935 loss 0.1065 lr 9.97e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:44:27] ep 3 step 1000/2935 loss 0.0090 lr 9.97e-04 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:45:27] ep 3 step 1200/2935 loss 0.1967 lr 9.97e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:46:32] ep 3 step 1400/2935 loss 0.0194 lr 9.96e-04 160 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:47:33] ep 3 step 1600/2935 loss 0.0379 lr 9.96e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:48:34] ep 3 step 1800/2935 loss 0.0248 lr 9.96e-04 170 img/s  (waiting for data 2% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:49:36] ep 3 step 2000/2935 loss 0.0881 lr 9.95e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:50:36] ep 3 step 2200/2935 loss 0.0127 lr 9.95e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:51:37] ep 3 step 2400/2935 loss 0.0807 lr 9.94e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:52:48] ep 3 step 2600/2935 loss 0.1975 lr 9.94e-04 143 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:53:46] ep 3 step 2800/2935 loss 0.0736 lr 9.93e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:54:57] val iiit_hw_val      CER   2.83%  WER  19.30%  len-ratio 1.00
+[2026-09-23 22:55:11] val synth_val_modern CER   0.71%  WER   4.57%  len-ratio 1.00
+[2026-09-23 22:55:23] val synth_val_old    CER   2.26%  WER  13.10%  len-ratio 1.00
+[2026-09-23 22:55:23] new best (mean primary CER 2.83%) -> best.pth
+[2026-09-23 22:55:23] epoch 3 done in 15.3 min  train_loss 0.0844
+[2026-09-23 22:55:35] first batch ready after 9.1 s (DataLoader worker start-up)
+[2026-09-23 22:55:35] first step done in 9.7 s total (includes CUDA/cuDNN initialisation)
+[2026-09-23 22:56:34] ep 4 step 200/2934 loss 0.1156 lr 9.93e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:57:36] ep 4 step 400/2934 loss 0.0549 lr 9.92e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:58:34] ep 4 step 600/2934 loss 0.0077 lr 9.92e-04 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 22:59:36] ep 4 step 800/2934 loss 0.0729 lr 9.91e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:00:45] ep 4 step 1000/2934 loss 0.0165 lr 9.91e-04 155 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:01:47] ep 4 step 1200/2934 loss 0.0520 lr 9.90e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:02:52] ep 4 step 1400/2934 loss 0.0667 lr 9.90e-04 159 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:03:51] ep 4 step 1600/2934 loss 0.0589 lr 9.89e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:04:52] ep 4 step 1800/2934 loss 0.0853 lr 9.88e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:06:17] ep 4 step 2000/2934 loss 0.1165 lr 9.88e-04 123 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:07:17] ep 4 step 2200/2934 loss 0.0734 lr 9.87e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:08:19] ep 4 step 2400/2934 loss 0.0432 lr 9.86e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:09:22] ep 4 step 2600/2934 loss 0.0935 lr 9.86e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:10:22] ep 4 step 2800/2934 loss 0.0084 lr 9.85e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:11:31] val iiit_hw_val      CER   3.07%  WER  20.29%  len-ratio 0.99
+[2026-09-23 23:11:45] val synth_val_modern CER   0.45%  WER   3.40%  len-ratio 1.00
+[2026-09-23 23:11:58] val synth_val_old    CER   1.60%  WER   9.33%  len-ratio 1.00
+[2026-09-23 23:11:58] epoch 4 done in 15.6 min  train_loss 0.0703
+[2026-09-23 23:12:10] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-23 23:12:10] first step done in 10.2 s total (includes CUDA/cuDNN initialisation)
+[2026-09-23 23:13:08] ep 5 step 200/2935 loss 0.0894 lr 9.84e-04 179 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:14:09] ep 5 step 400/2935 loss 0.0315 lr 9.83e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:15:10] ep 5 step 600/2935 loss 0.0273 lr 9.83e-04 167 img/s  (waiting for data 1% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:16:12] ep 5 step 800/2935 loss 0.0804 lr 9.82e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:17:14] ep 5 step 1000/2935 loss 0.0434 lr 9.81e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:18:12] ep 5 step 1200/2935 loss 0.0169 lr 9.80e-04 176 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:19:12] ep 5 step 1400/2935 loss 0.0096 lr 9.79e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:20:09] ep 5 step 1600/2935 loss 0.0219 lr 9.79e-04 182 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:21:10] ep 5 step 1800/2935 loss 0.0607 lr 9.78e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:22:14] ep 5 step 2000/2935 loss 0.0464 lr 9.77e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:23:14] ep 5 step 2200/2935 loss 0.0179 lr 9.76e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:24:15] ep 5 step 2400/2935 loss 0.0565 lr 9.75e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:25:18] ep 5 step 2600/2935 loss 0.0506 lr 9.74e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:26:15] ep 5 step 2800/2935 loss 0.1783 lr 9.74e-04 185 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:27:25] val iiit_hw_val      CER   1.63%  WER  11.85%  len-ratio 1.00
+[2026-09-23 23:27:39] val synth_val_modern CER   0.40%  WER   2.77%  len-ratio 1.00
+[2026-09-23 23:27:51] val synth_val_old    CER   1.28%  WER   7.37%  len-ratio 1.00
+[2026-09-23 23:27:51] new best (mean primary CER 1.63%) -> best.pth
+[2026-09-23 23:27:51] epoch 5 done in 14.9 min  train_loss 0.0603
+[2026-09-23 23:28:03] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-23 23:28:04] first step done in 10.0 s total (includes CUDA/cuDNN initialisation)
+[2026-09-23 23:29:03] ep 6 step 200/2936 loss 0.0495 lr 9.72e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:30:05] ep 6 step 400/2936 loss 0.0528 lr 9.71e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:31:05] ep 6 step 600/2936 loss 0.0179 lr 9.70e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:32:08] ep 6 step 800/2936 loss 0.0934 lr 9.69e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:33:09] ep 6 step 1000/2936 loss 0.0398 lr 9.68e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:34:10] ep 6 step 1200/2936 loss 0.0737 lr 9.67e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:35:15] ep 6 step 1400/2936 loss 0.0491 lr 9.66e-04 158 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:36:18] ep 6 step 1600/2936 loss 0.0458 lr 9.65e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:37:20] ep 6 step 1800/2936 loss 0.0871 lr 9.64e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:38:37] ep 6 step 2000/2936 loss 0.2594 lr 9.63e-04 135 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:39:43] ep 6 step 2200/2936 loss 0.0022 lr 9.62e-04 159 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:40:48] ep 6 step 2400/2936 loss 0.0622 lr 9.61e-04 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:41:50] ep 6 step 2600/2936 loss 0.0686 lr 9.60e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:43:03] ep 6 step 2800/2936 loss 0.0723 lr 9.59e-04 142 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:44:14] val iiit_hw_val      CER   2.13%  WER  14.57%  len-ratio 1.00
+[2026-09-23 23:44:27] val synth_val_modern CER   0.27%  WER   1.87%  len-ratio 1.00
+[2026-09-23 23:44:40] val synth_val_old    CER   1.22%  WER   7.17%  len-ratio 1.00
+[2026-09-23 23:44:40] epoch 6 done in 15.8 min  train_loss 0.0550
+[2026-09-23 23:44:51] first batch ready after 9.3 s (DataLoader worker start-up)
+[2026-09-23 23:44:52] first step done in 10.2 s total (includes CUDA/cuDNN initialisation)
+[2026-09-23 23:45:54] ep 7 step 200/2935 loss 0.0574 lr 9.57e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:46:54] ep 7 step 400/2935 loss 0.0344 lr 9.56e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:47:52] ep 7 step 600/2935 loss 0.0136 lr 9.54e-04 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:48:52] ep 7 step 800/2935 loss 0.1308 lr 9.53e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:49:53] ep 7 step 1000/2935 loss 0.0806 lr 9.52e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:51:12] ep 7 step 1200/2935 loss 0.1112 lr 9.51e-04 133 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:52:15] ep 7 step 1400/2935 loss 0.0697 lr 9.50e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:53:13] ep 7 step 1600/2935 loss 0.0548 lr 9.48e-04 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:54:12] ep 7 step 1800/2935 loss 0.0105 lr 9.47e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:55:13] ep 7 step 2000/2935 loss 0.0387 lr 9.46e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:56:12] ep 7 step 2200/2935 loss 0.0673 lr 9.45e-04 176 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:57:10] ep 7 step 2400/2935 loss 0.0315 lr 9.43e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:58:12] ep 7 step 2600/2935 loss 0.0537 lr 9.42e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-23 23:59:11] ep 7 step 2800/2935 loss 0.0587 lr 9.41e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:00:19] val iiit_hw_val      CER   1.82%  WER  12.61%  len-ratio 1.00
+[2026-09-24 00:00:33] val synth_val_modern CER   0.19%  WER   1.43%  len-ratio 1.00
+[2026-09-24 00:00:45] val synth_val_old    CER   0.98%  WER   5.80%  len-ratio 1.00
+[2026-09-24 00:00:45] epoch 7 done in 15.1 min  train_loss 0.0507
+[2026-09-24 00:00:57] first batch ready after 9.3 s (DataLoader worker start-up)
+[2026-09-24 00:00:57] first step done in 9.8 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 00:01:57] ep 8 step 200/2935 loss 0.0331 lr 9.38e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:02:58] ep 8 step 400/2935 loss 0.0040 lr 9.37e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:03:59] ep 8 step 600/2935 loss 0.0041 lr 9.36e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:04:58] ep 8 step 800/2935 loss 0.0053 lr 9.34e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:06:04] ep 8 step 1000/2935 loss 0.0184 lr 9.33e-04 157 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:07:07] ep 8 step 1200/2935 loss 0.0552 lr 9.31e-04 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:08:09] ep 8 step 1400/2935 loss 0.0523 lr 9.30e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:09:10] ep 8 step 1600/2935 loss 0.0387 lr 9.29e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:10:10] ep 8 step 1800/2935 loss 0.0157 lr 9.27e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:11:10] ep 8 step 2000/2935 loss 0.0419 lr 9.26e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:12:10] ep 8 step 2200/2935 loss 0.0615 lr 9.24e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:13:11] ep 8 step 2400/2935 loss 0.0272 lr 9.23e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:14:12] ep 8 step 2600/2935 loss 0.0326 lr 9.21e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:15:17] ep 8 step 2800/2935 loss 0.0916 lr 9.20e-04 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:16:27] val iiit_hw_val      CER   3.02%  WER  21.06%  len-ratio 0.99
+[2026-09-24 00:16:41] val synth_val_modern CER   0.36%  WER   2.60%  len-ratio 1.00
+[2026-09-24 00:16:53] val synth_val_old    CER   1.22%  WER   6.97%  len-ratio 1.00
+[2026-09-24 00:16:53] epoch 8 done in 15.2 min  train_loss 0.0449
+[2026-09-24 00:17:05] first batch ready after 9.3 s (DataLoader worker start-up)
+[2026-09-24 00:17:05] first step done in 9.9 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 00:18:05] ep 9 step 200/2935 loss 0.0314 lr 9.17e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:19:05] ep 9 step 400/2935 loss 0.0032 lr 9.15e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:20:06] ep 9 step 600/2935 loss 0.0101 lr 9.14e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:21:07] ep 9 step 800/2935 loss 0.0221 lr 9.12e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:22:10] ep 9 step 1000/2935 loss 0.1601 lr 9.11e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:23:10] ep 9 step 1200/2935 loss 0.0232 lr 9.09e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:24:08] ep 9 step 1400/2935 loss 0.0876 lr 9.07e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:25:07] ep 9 step 1600/2935 loss 0.0133 lr 9.06e-04 177 img/s  (waiting for data 1% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:26:07] ep 9 step 1800/2935 loss 0.0030 lr 9.04e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:27:08] ep 9 step 2000/2935 loss 0.0104 lr 9.03e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:28:13] ep 9 step 2200/2935 loss 0.0502 lr 9.01e-04 158 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:29:14] ep 9 step 2400/2935 loss 0.0590 lr 8.99e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:30:13] ep 9 step 2600/2935 loss 0.0043 lr 8.97e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:31:13] ep 9 step 2800/2935 loss 0.0044 lr 8.96e-04 168 img/s  (waiting for data 1% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:32:26] val iiit_hw_val      CER   1.98%  WER  13.82%  len-ratio 1.00
+[2026-09-24 00:32:39] val synth_val_modern CER   0.20%  WER   1.50%  len-ratio 1.00
+[2026-09-24 00:32:52] val synth_val_old    CER   0.88%  WER   5.47%  len-ratio 1.00
+[2026-09-24 00:32:52] epoch 9 done in 15.0 min  train_loss 0.0432
+[2026-09-24 00:33:04] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-24 00:33:04] first step done in 10.0 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 00:34:04] ep 10 step 200/2934 loss 0.0918 lr 8.93e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:35:08] ep 10 step 400/2934 loss 0.0018 lr 8.91e-04 158 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:36:09] ep 10 step 600/2934 loss 0.0537 lr 8.89e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:37:11] ep 10 step 800/2934 loss 0.0432 lr 8.88e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:38:12] ep 10 step 1000/2934 loss 0.0119 lr 8.86e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:39:15] ep 10 step 1200/2934 loss 0.0675 lr 8.84e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:40:14] ep 10 step 1400/2934 loss 0.0604 lr 8.82e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:41:17] ep 10 step 1600/2934 loss 0.0181 lr 8.80e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:42:25] ep 10 step 1800/2934 loss 0.0383 lr 8.79e-04 153 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:43:38] ep 10 step 2000/2934 loss 0.0659 lr 8.77e-04 139 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:44:36] ep 10 step 2200/2934 loss 0.0095 lr 8.75e-04 183 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:45:35] ep 10 step 2400/2934 loss 0.0852 lr 8.73e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:46:43] ep 10 step 2600/2934 loss 0.0377 lr 8.71e-04 154 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:47:46] ep 10 step 2800/2934 loss 0.0247 lr 8.69e-04 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:49:08] val iiit_hw_val      CER   1.97%  WER  13.69%  len-ratio 1.00
+[2026-09-24 00:49:22] val synth_val_modern CER   0.26%  WER   1.93%  len-ratio 1.00
+[2026-09-24 00:49:34] val synth_val_old    CER   0.89%  WER   5.60%  len-ratio 1.00
+[2026-09-24 00:49:34] epoch 10 done in 15.8 min  train_loss 0.0412
+[2026-09-24 00:49:46] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-24 00:49:47] first step done in 10.3 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 00:50:48] ep 11 step 200/2934 loss 0.0050 lr 8.66e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:51:50] ep 11 step 400/2934 loss 0.0246 lr 8.64e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:52:53] ep 11 step 600/2934 loss 0.0165 lr 8.62e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:54:07] ep 11 step 800/2934 loss 0.0549 lr 8.60e-04 138 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:55:08] ep 11 step 1000/2934 loss 0.0062 lr 8.58e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:56:04] ep 11 step 1200/2934 loss 0.0798 lr 8.56e-04 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:57:05] ep 11 step 1400/2934 loss 0.1358 lr 8.54e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:58:08] ep 11 step 1600/2934 loss 0.0070 lr 8.52e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 00:59:07] ep 11 step 1800/2934 loss 0.0913 lr 8.50e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:00:10] ep 11 step 2000/2934 loss 0.0262 lr 8.48e-04 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:01:08] ep 11 step 2200/2934 loss 0.0119 lr 8.46e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:02:08] ep 11 step 2400/2934 loss 0.0796 lr 8.44e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:03:06] ep 11 step 2600/2934 loss 0.1305 lr 8.42e-04 176 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:04:22] ep 11 step 2800/2934 loss 0.0574 lr 8.40e-04 140 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:05:35] val iiit_hw_val      CER   1.30%  WER   9.27%  len-ratio 1.00
+[2026-09-24 01:05:49] val synth_val_modern CER   0.18%  WER   1.23%  len-ratio 1.00
+[2026-09-24 01:06:01] val synth_val_old    CER   0.73%  WER   4.37%  len-ratio 1.00
+[2026-09-24 01:06:01] new best (mean primary CER 1.30%) -> best.pth
+[2026-09-24 01:06:02] epoch 11 done in 15.5 min  train_loss 0.0374
+[2026-09-24 01:06:14] first batch ready after 9.6 s (DataLoader worker start-up)
+[2026-09-24 01:06:15] first step done in 10.6 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 01:07:16] ep 12 step 200/2936 loss 0.0255 lr 8.37e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:08:19] ep 12 step 400/2936 loss 0.0092 lr 8.35e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:09:20] ep 12 step 600/2936 loss 0.0886 lr 8.32e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:10:18] ep 12 step 800/2936 loss 0.0299 lr 8.30e-04 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:11:17] ep 12 step 1000/2936 loss 0.0346 lr 8.28e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:12:18] ep 12 step 1200/2936 loss 0.1352 lr 8.26e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:13:23] ep 12 step 1400/2936 loss 0.0270 lr 8.24e-04 160 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:14:26] ep 12 step 1600/2936 loss 0.0400 lr 8.22e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:15:29] ep 12 step 1800/2936 loss 0.0565 lr 8.20e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:16:29] ep 12 step 2000/2936 loss 0.0095 lr 8.17e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:17:30] ep 12 step 2200/2936 loss 0.0349 lr 8.15e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:18:30] ep 12 step 2400/2936 loss 0.1175 lr 8.13e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:19:32] ep 12 step 2600/2936 loss 0.0480 lr 8.11e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:20:32] ep 12 step 2800/2936 loss 0.0535 lr 8.09e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:21:43] val iiit_hw_val      CER   2.32%  WER  15.63%  len-ratio 1.00
+[2026-09-24 01:21:57] val synth_val_modern CER   0.14%  WER   1.03%  len-ratio 1.00
+[2026-09-24 01:22:09] val synth_val_old    CER   0.67%  WER   4.23%  len-ratio 1.00
+[2026-09-24 01:22:09] epoch 12 done in 15.2 min  train_loss 0.0337
+[2026-09-24 01:22:21] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-24 01:22:21] first step done in 10.0 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 01:23:37] ep 13 step 200/2935 loss 0.0033 lr 8.05e-04 136 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:24:44] ep 13 step 400/2935 loss 0.0358 lr 8.03e-04 155 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:25:45] ep 13 step 600/2935 loss 0.0200 lr 8.00e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:26:50] ep 13 step 800/2935 loss 0.0702 lr 7.98e-04 160 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:27:55] ep 13 step 1000/2935 loss 0.0212 lr 7.96e-04 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:29:02] ep 13 step 1200/2935 loss 0.0349 lr 7.94e-04 155 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:30:04] ep 13 step 1400/2935 loss 0.1213 lr 7.91e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:31:07] ep 13 step 1600/2935 loss 0.0981 lr 7.89e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:32:08] ep 13 step 1800/2935 loss 0.0216 lr 7.87e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:33:05] ep 13 step 2000/2935 loss 0.0086 lr 7.84e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:34:04] ep 13 step 2200/2935 loss 0.0073 lr 7.82e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:35:06] ep 13 step 2400/2935 loss 0.0339 lr 7.80e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:36:04] ep 13 step 2600/2935 loss 0.0184 lr 7.77e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:37:05] ep 13 step 2800/2935 loss 0.0248 lr 7.75e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:38:15] val iiit_hw_val      CER   1.47%  WER  10.67%  len-ratio 1.00
+[2026-09-24 01:38:28] val synth_val_modern CER   0.27%  WER   1.77%  len-ratio 1.00
+[2026-09-24 01:38:40] val synth_val_old    CER   1.10%  WER   6.00%  len-ratio 1.00
+[2026-09-24 01:38:40] epoch 13 done in 15.6 min  train_loss 0.0341
+[2026-09-24 01:38:52] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-24 01:38:53] first step done in 10.2 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 01:39:55] ep 14 step 200/2936 loss 0.1856 lr 7.71e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:41:03] ep 14 step 400/2936 loss 0.0844 lr 7.69e-04 154 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:42:02] ep 14 step 600/2936 loss 0.0274 lr 7.66e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:43:06] ep 14 step 800/2936 loss 0.0182 lr 7.64e-04 160 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:44:07] ep 14 step 1000/2936 loss 0.1075 lr 7.62e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:45:09] ep 14 step 1200/2936 loss 0.0174 lr 7.59e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:46:20] ep 14 step 1400/2936 loss 0.0013 lr 7.57e-04 145 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:47:20] ep 14 step 1600/2936 loss 0.0151 lr 7.54e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:48:24] ep 14 step 1800/2936 loss 0.0163 lr 7.52e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:49:25] ep 14 step 2000/2936 loss 0.0508 lr 7.49e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:50:26] ep 14 step 2200/2936 loss 0.0125 lr 7.47e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:51:27] ep 14 step 2400/2936 loss 0.0248 lr 7.45e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:52:28] ep 14 step 2600/2936 loss 0.0103 lr 7.42e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:53:32] ep 14 step 2800/2936 loss 0.0060 lr 7.40e-04 160 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:54:41] val iiit_hw_val      CER   2.02%  WER  13.92%  len-ratio 1.00
+[2026-09-24 01:54:54] val synth_val_modern CER   0.27%  WER   2.00%  len-ratio 1.00
+[2026-09-24 01:55:06] val synth_val_old    CER   0.92%  WER   5.70%  len-ratio 1.00
+[2026-09-24 01:55:07] epoch 14 done in 15.5 min  train_loss 0.0306
+[2026-09-24 01:55:18] first batch ready after 9.2 s (DataLoader worker start-up)
+[2026-09-24 01:55:19] first step done in 9.7 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 01:56:38] ep 15 step 200/2935 loss 0.0375 lr 7.36e-04 134 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:57:39] ep 15 step 400/2935 loss 0.1063 lr 7.33e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:58:40] ep 15 step 600/2935 loss 0.0184 lr 7.31e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 01:59:37] ep 15 step 800/2935 loss 0.0319 lr 7.28e-04 183 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:00:40] ep 15 step 1000/2935 loss 0.0201 lr 7.26e-04 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:01:42] ep 15 step 1200/2935 loss 0.0513 lr 7.23e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:02:44] ep 15 step 1400/2935 loss 0.0021 lr 7.20e-04 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:03:45] ep 15 step 1600/2935 loss 0.0184 lr 7.18e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:04:47] ep 15 step 1800/2935 loss 0.0264 lr 7.15e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:05:46] ep 15 step 2000/2935 loss 0.0330 lr 7.13e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:06:49] ep 15 step 2200/2935 loss 0.0682 lr 7.10e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:07:51] ep 15 step 2400/2935 loss 0.0348 lr 7.08e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:08:53] ep 15 step 2600/2935 loss 0.0188 lr 7.05e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:09:54] ep 15 step 2800/2935 loss 0.0141 lr 7.03e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:11:10] val iiit_hw_val      CER   0.93%  WER   6.91%  len-ratio 1.00
+[2026-09-24 02:11:24] val synth_val_modern CER   0.32%  WER   2.50%  len-ratio 1.00
+[2026-09-24 02:11:37] val synth_val_old    CER   1.03%  WER   6.50%  len-ratio 1.00
+[2026-09-24 02:11:37] new best (mean primary CER 0.93%) -> best.pth
+[2026-09-24 02:11:37] epoch 15 done in 15.4 min  train_loss 0.0305
+[2026-09-24 02:11:50] first batch ready after 10.4 s (DataLoader worker start-up)
+[2026-09-24 02:11:51] first step done in 11.3 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 02:12:59] ep 16 step 200/2936 loss 0.0018 lr 6.98e-04 154 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:14:02] ep 16 step 400/2936 loss 0.0014 lr 6.96e-04 160 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:15:04] ep 16 step 600/2936 loss 0.0529 lr 6.93e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:16:08] ep 16 step 800/2936 loss 0.0098 lr 6.90e-04 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:17:08] ep 16 step 1000/2936 loss 0.0346 lr 6.88e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:18:09] ep 16 step 1200/2936 loss 0.0200 lr 6.85e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:19:09] ep 16 step 1400/2936 loss 0.0341 lr 6.83e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:20:12] ep 16 step 1600/2936 loss 0.0063 lr 6.80e-04 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:21:16] ep 16 step 1800/2936 loss 0.0143 lr 6.77e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:22:18] ep 16 step 2000/2936 loss 0.0021 lr 6.75e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:23:17] ep 16 step 2200/2936 loss 0.0173 lr 6.72e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:24:16] ep 16 step 2400/2936 loss 0.0040 lr 6.69e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:25:18] ep 16 step 2600/2936 loss 0.0204 lr 6.67e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:26:18] ep 16 step 2800/2936 loss 0.0356 lr 6.64e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:27:29] val iiit_hw_val      CER   1.74%  WER  12.36%  len-ratio 1.00
+[2026-09-24 02:27:42] val synth_val_modern CER   0.13%  WER   1.03%  len-ratio 1.00
+[2026-09-24 02:27:55] val synth_val_old    CER   0.58%  WER   3.83%  len-ratio 1.00
+[2026-09-24 02:27:55] epoch 16 done in 15.3 min  train_loss 0.0285
+[2026-09-24 02:28:07] first batch ready after 9.3 s (DataLoader worker start-up)
+[2026-09-24 02:28:07] first step done in 9.7 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 02:29:05] ep 17 step 200/2935 loss 0.0086 lr 6.60e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:30:05] ep 17 step 400/2935 loss 0.0005 lr 6.57e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:31:02] ep 17 step 600/2935 loss 0.1087 lr 6.54e-04 183 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:32:04] ep 17 step 800/2935 loss 0.1042 lr 6.52e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:33:05] ep 17 step 1000/2935 loss 0.0460 lr 6.49e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:34:06] ep 17 step 1200/2935 loss 0.0071 lr 6.46e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:35:06] ep 17 step 1400/2935 loss 0.0167 lr 6.44e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:36:08] ep 17 step 1600/2935 loss 0.0119 lr 6.41e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:37:14] ep 17 step 1800/2935 loss 0.0176 lr 6.38e-04 158 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:38:13] ep 17 step 2000/2935 loss 0.0007 lr 6.35e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:39:11] ep 17 step 2200/2935 loss 0.0610 lr 6.33e-04 176 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:40:09] ep 17 step 2400/2935 loss 0.0375 lr 6.30e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:41:13] ep 17 step 2600/2935 loss 0.0354 lr 6.27e-04 158 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:42:16] ep 17 step 2800/2935 loss 0.0141 lr 6.25e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:43:26] val iiit_hw_val      CER   1.34%  WER   9.62%  len-ratio 1.00
+[2026-09-24 02:43:40] val synth_val_modern CER   0.16%  WER   1.20%  len-ratio 1.00
+[2026-09-24 02:43:52] val synth_val_old    CER   0.80%  WER   4.73%  len-ratio 1.00
+[2026-09-24 02:43:52] epoch 17 done in 15.0 min  train_loss 0.0273
+[2026-09-24 02:44:04] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-24 02:44:04] first step done in 10.2 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 02:45:06] ep 18 step 200/2933 loss 0.0031 lr 6.20e-04 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:46:07] ep 18 step 400/2933 loss 0.0009 lr 6.17e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:47:09] ep 18 step 600/2933 loss 0.0378 lr 6.15e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:48:11] ep 18 step 800/2933 loss 0.0008 lr 6.12e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:49:09] ep 18 step 1000/2933 loss 0.0393 lr 6.09e-04 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:50:11] ep 18 step 1200/2933 loss 0.0366 lr 6.06e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:51:12] ep 18 step 1400/2933 loss 0.0164 lr 6.04e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:52:16] ep 18 step 1600/2933 loss 0.0089 lr 6.01e-04 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:53:21] ep 18 step 1800/2933 loss 0.0273 lr 5.98e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:54:21] ep 18 step 2000/2933 loss 0.0190 lr 5.95e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:55:20] ep 18 step 2200/2933 loss 0.0114 lr 5.92e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:56:22] ep 18 step 2400/2933 loss 0.0082 lr 5.90e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:57:22] ep 18 step 2600/2933 loss 0.0099 lr 5.87e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:58:34] ep 18 step 2800/2933 loss 0.0221 lr 5.84e-04 144 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 02:59:36] val iiit_hw_val      CER   1.31%  WER   9.33%  len-ratio 1.00
+[2026-09-24 02:59:48] val synth_val_modern CER   0.16%  WER   1.17%  len-ratio 1.00
+[2026-09-24 03:00:00] val synth_val_old    CER   0.66%  WER   4.17%  len-ratio 1.00
+[2026-09-24 03:00:01] epoch 18 done in 15.3 min  train_loss 0.0257
+[2026-09-24 03:00:13] first batch ready after 9.9 s (DataLoader worker start-up)
+[2026-09-24 03:00:13] first step done in 10.5 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 03:01:15] ep 19 step 200/2934 loss 0.0338 lr 5.80e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:02:17] ep 19 step 400/2934 loss 0.0079 lr 5.77e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:03:18] ep 19 step 600/2934 loss 0.0182 lr 5.74e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:04:18] ep 19 step 800/2934 loss 0.0313 lr 5.71e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:05:15] ep 19 step 1000/2934 loss 0.0214 lr 5.68e-04 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:06:17] ep 19 step 1200/2934 loss 0.0115 lr 5.66e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:07:17] ep 19 step 1400/2934 loss 0.0014 lr 5.63e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:08:19] ep 19 step 1600/2934 loss 0.0036 lr 5.60e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:09:20] ep 19 step 1800/2934 loss 0.0131 lr 5.57e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:10:22] ep 19 step 2000/2934 loss 0.0032 lr 5.54e-04 166 img/s  (waiting for data 1% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:11:22] ep 19 step 2200/2934 loss 0.0109 lr 5.52e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:12:26] ep 19 step 2400/2934 loss 0.0022 lr 5.49e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:13:26] ep 19 step 2600/2934 loss 0.0787 lr 5.46e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:14:26] ep 19 step 2800/2934 loss 0.0025 lr 5.43e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:15:33] val iiit_hw_val      CER   0.97%  WER   7.11%  len-ratio 1.00
+[2026-09-24 03:15:47] val synth_val_modern CER   0.28%  WER   2.07%  len-ratio 1.00
+[2026-09-24 03:15:59] val synth_val_old    CER   0.74%  WER   4.67%  len-ratio 1.00
+[2026-09-24 03:15:59] epoch 19 done in 15.0 min  train_loss 0.0246
+[2026-09-24 03:16:11] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-24 03:16:12] first step done in 10.0 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 03:17:11] ep 20 step 200/2936 loss 0.0042 lr 5.39e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:18:12] ep 20 step 400/2936 loss 0.0486 lr 5.36e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:19:13] ep 20 step 600/2936 loss 0.0265 lr 5.33e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:20:15] ep 20 step 800/2936 loss 0.0126 lr 5.30e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:21:18] ep 20 step 1000/2936 loss 0.0501 lr 5.27e-04 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:22:18] ep 20 step 1200/2936 loss 0.0149 lr 5.24e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:23:20] ep 20 step 1400/2936 loss 0.0407 lr 5.22e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:24:21] ep 20 step 1600/2936 loss 0.1225 lr 5.19e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:25:25] ep 20 step 1800/2936 loss 0.0076 lr 5.16e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:26:28] ep 20 step 2000/2936 loss 0.0004 lr 5.13e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:27:31] ep 20 step 2200/2936 loss 0.0466 lr 5.10e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:28:28] ep 20 step 2400/2936 loss 0.0117 lr 5.08e-04 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:29:31] ep 20 step 2600/2936 loss 0.0223 lr 5.05e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:30:34] ep 20 step 2800/2936 loss 0.0145 lr 5.02e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:31:47] val iiit_hw_val      CER   1.17%  WER   8.42%  len-ratio 1.00
+[2026-09-24 03:32:01] val synth_val_modern CER   0.14%  WER   1.07%  len-ratio 1.00
+[2026-09-24 03:32:13] val synth_val_old    CER   0.55%  WER   3.57%  len-ratio 1.00
+[2026-09-24 03:32:13] epoch 20 done in 15.3 min  train_loss 0.0216
+[2026-09-24 03:32:25] first batch ready after 9.5 s (DataLoader worker start-up)
+[2026-09-24 03:32:26] first step done in 10.1 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 03:33:31] ep 21 step 200/2936 loss 0.0886 lr 4.97e-04 159 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:34:43] ep 21 step 400/2936 loss 0.0287 lr 4.94e-04 143 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:35:46] ep 21 step 600/2936 loss 0.0187 lr 4.92e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:36:46] ep 21 step 800/2936 loss 0.0012 lr 4.89e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:37:50] ep 21 step 1000/2936 loss 0.0022 lr 4.86e-04 160 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:38:49] ep 21 step 1200/2936 loss 0.0203 lr 4.83e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:39:54] ep 21 step 1400/2936 loss 0.1644 lr 4.80e-04 160 img/s  (waiting for data 1% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:41:08] ep 21 step 1600/2936 loss 0.0153 lr 4.78e-04 138 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:42:06] ep 21 step 1800/2936 loss 0.0359 lr 4.75e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:43:08] ep 21 step 2000/2936 loss 0.0015 lr 4.72e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:44:21] ep 21 step 2200/2936 loss 0.0647 lr 4.69e-04 140 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:45:19] ep 21 step 2400/2936 loss 0.0056 lr 4.66e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:46:25] ep 21 step 2600/2936 loss 0.0039 lr 4.63e-04 157 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:47:25] ep 21 step 2800/2936 loss 0.0094 lr 4.61e-04 182 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:48:46] val iiit_hw_val      CER   1.40%  WER  10.17%  len-ratio 1.00
+[2026-09-24 03:49:00] val synth_val_modern CER   0.16%  WER   1.13%  len-ratio 1.00
+[2026-09-24 03:49:12] val synth_val_old    CER   0.63%  WER   3.70%  len-ratio 1.00
+[2026-09-24 03:49:12] epoch 21 done in 16.0 min  train_loss 0.0220
+[2026-09-24 03:49:24] first batch ready after 9.2 s (DataLoader worker start-up)
+[2026-09-24 03:49:24] first step done in 9.8 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 03:50:25] ep 22 step 200/2936 loss 0.0024 lr 4.56e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:51:26] ep 22 step 400/2936 loss 0.0127 lr 4.53e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:52:24] ep 22 step 600/2936 loss 0.0012 lr 4.50e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:53:26] ep 22 step 800/2936 loss 0.0022 lr 4.48e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:54:27] ep 22 step 1000/2936 loss 0.0289 lr 4.45e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:55:32] ep 22 step 1200/2936 loss 0.0206 lr 4.42e-04 158 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:56:36] ep 22 step 1400/2936 loss 0.0155 lr 4.39e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:57:38] ep 22 step 1600/2936 loss 0.0296 lr 4.36e-04 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:58:36] ep 22 step 1800/2936 loss 0.0221 lr 4.34e-04 184 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 03:59:33] ep 22 step 2000/2936 loss 0.0332 lr 4.31e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:00:32] ep 22 step 2200/2936 loss 0.0008 lr 4.28e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:01:30] ep 22 step 2400/2936 loss 0.0232 lr 4.25e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:02:33] ep 22 step 2600/2936 loss 0.0047 lr 4.22e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:03:33] ep 22 step 2800/2936 loss 0.0141 lr 4.20e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:04:47] val iiit_hw_val      CER   0.94%  WER   6.96%  len-ratio 1.00
+[2026-09-24 04:05:01] val synth_val_modern CER   0.14%  WER   1.07%  len-ratio 1.00
+[2026-09-24 04:05:13] val synth_val_old    CER   0.50%  WER   3.07%  len-ratio 1.00
+[2026-09-24 04:05:13] epoch 22 done in 15.1 min  train_loss 0.0199
+[2026-09-24 04:05:26] first batch ready after 10.4 s (DataLoader worker start-up)
+[2026-09-24 04:05:27] first step done in 11.1 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 04:06:26] ep 23 step 200/2936 loss 0.0011 lr 4.15e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:07:26] ep 23 step 400/2936 loss 0.0164 lr 4.12e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:08:27] ep 23 step 600/2936 loss 0.0073 lr 4.09e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:09:29] ep 23 step 800/2936 loss 0.0156 lr 4.07e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:10:27] ep 23 step 1000/2936 loss 0.0261 lr 4.04e-04 177 img/s  (waiting for data 1% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:11:29] ep 23 step 1200/2936 loss 0.0155 lr 4.01e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:12:30] ep 23 step 1400/2936 loss 0.0177 lr 3.98e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:13:29] ep 23 step 1600/2936 loss 0.0009 lr 3.96e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:14:31] ep 23 step 1800/2936 loss 0.0015 lr 3.93e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:15:31] ep 23 step 2000/2936 loss 0.0037 lr 3.90e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:16:34] ep 23 step 2200/2936 loss 0.0755 lr 3.87e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:17:38] ep 23 step 2400/2936 loss 0.0377 lr 3.85e-04 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:18:41] ep 23 step 2600/2936 loss 0.0061 lr 3.82e-04 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:19:41] ep 23 step 2800/2936 loss 0.0017 lr 3.79e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:20:51] val iiit_hw_val      CER   0.95%  WER   6.99%  len-ratio 1.00
+[2026-09-24 04:21:05] val synth_val_modern CER   0.10%  WER   0.70%  len-ratio 1.00
+[2026-09-24 04:21:17] val synth_val_old    CER   0.51%  WER   3.27%  len-ratio 1.00
+[2026-09-24 04:21:18] epoch 23 done in 15.1 min  train_loss 0.0170
+[2026-09-24 04:21:29] first batch ready after 9.3 s (DataLoader worker start-up)
+[2026-09-24 04:21:30] first step done in 10.0 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 04:22:32] ep 24 step 200/2935 loss 0.0008 lr 3.75e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:23:30] ep 24 step 400/2935 loss 0.0363 lr 3.72e-04 176 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:24:35] ep 24 step 600/2935 loss 0.0456 lr 3.69e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:25:34] ep 24 step 800/2935 loss 0.0075 lr 3.66e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:26:33] ep 24 step 1000/2935 loss 0.0080 lr 3.64e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:27:34] ep 24 step 1200/2935 loss 0.0116 lr 3.61e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:28:36] ep 24 step 1400/2935 loss 0.0266 lr 3.58e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:29:36] ep 24 step 1600/2935 loss 0.0449 lr 3.56e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:30:42] ep 24 step 1800/2935 loss 0.0245 lr 3.53e-04 156 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:31:41] ep 24 step 2000/2935 loss 0.0035 lr 3.50e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:32:47] ep 24 step 2200/2935 loss 0.0038 lr 3.47e-04 158 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:33:53] ep 24 step 2400/2935 loss 0.0009 lr 3.45e-04 156 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:35:02] ep 24 step 2600/2935 loss 0.0450 lr 3.42e-04 151 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:36:02] ep 24 step 2800/2935 loss 0.0045 lr 3.39e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:37:13] val iiit_hw_val      CER   1.01%  WER   7.53%  len-ratio 1.00
+[2026-09-24 04:37:27] val synth_val_modern CER   0.12%  WER   0.83%  len-ratio 1.00
+[2026-09-24 04:37:39] val synth_val_old    CER   0.55%  WER   3.63%  len-ratio 1.00
+[2026-09-24 04:37:39] epoch 24 done in 15.4 min  train_loss 0.0166
+[2026-09-24 04:37:51] first batch ready after 9.3 s (DataLoader worker start-up)
+[2026-09-24 04:37:51] first step done in 9.8 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 04:38:53] ep 25 step 200/2935 loss 0.0382 lr 3.35e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:39:55] ep 25 step 400/2935 loss 0.0003 lr 3.32e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:40:55] ep 25 step 600/2935 loss 0.0029 lr 3.30e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:42:00] ep 25 step 800/2935 loss 0.0245 lr 3.27e-04 156 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:42:59] ep 25 step 1000/2935 loss 0.0095 lr 3.24e-04 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:44:00] ep 25 step 1200/2935 loss 0.0108 lr 3.22e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:45:01] ep 25 step 1400/2935 loss 0.0067 lr 3.19e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:46:05] ep 25 step 1600/2935 loss 0.0138 lr 3.17e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:47:08] ep 25 step 1800/2935 loss 0.0007 lr 3.14e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:48:09] ep 25 step 2000/2935 loss 0.0020 lr 3.11e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:49:08] ep 25 step 2200/2935 loss 0.0003 lr 3.09e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:50:12] ep 25 step 2400/2935 loss 0.0222 lr 3.06e-04 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:51:10] ep 25 step 2600/2935 loss 0.0029 lr 3.03e-04 178 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:52:12] ep 25 step 2800/2935 loss 0.0126 lr 3.01e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:53:21] val iiit_hw_val      CER   1.24%  WER   9.33%  len-ratio 1.00
+[2026-09-24 04:53:35] val synth_val_modern CER   0.09%  WER   0.60%  len-ratio 1.00
+[2026-09-24 04:53:48] val synth_val_old    CER   0.42%  WER   2.63%  len-ratio 1.00
+[2026-09-24 04:53:48] epoch 25 done in 15.2 min  train_loss 0.0153
+[2026-09-24 04:54:00] first batch ready after 10.2 s (DataLoader worker start-up)
+[2026-09-24 04:54:01] first step done in 10.9 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 04:55:01] ep 26 step 200/2933 loss 0.0107 lr 2.97e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:56:05] ep 26 step 400/2933 loss 0.0117 lr 2.94e-04 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:57:07] ep 26 step 600/2933 loss 0.0058 lr 2.91e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:58:06] ep 26 step 800/2933 loss 0.0186 lr 2.89e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 04:59:07] ep 26 step 1000/2933 loss 0.0096 lr 2.86e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:00:14] ep 26 step 1200/2933 loss 0.0072 lr 2.84e-04 154 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:01:15] ep 26 step 1400/2933 loss 0.0012 lr 2.81e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:02:14] ep 26 step 1600/2933 loss 0.0120 lr 2.79e-04 176 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:03:13] ep 26 step 1800/2933 loss 0.0071 lr 2.76e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:04:14] ep 26 step 2000/2933 loss 0.0003 lr 2.74e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:05:17] ep 26 step 2200/2933 loss 0.0387 lr 2.71e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:06:17] ep 26 step 2400/2933 loss 0.0214 lr 2.69e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:07:18] ep 26 step 2600/2933 loss 0.0094 lr 2.66e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:08:36] ep 26 step 2800/2933 loss 0.0023 lr 2.64e-04 133 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:09:39] val iiit_hw_val      CER   0.81%  WER   5.98%  len-ratio 1.00
+[2026-09-24 05:09:51] val synth_val_modern CER   0.13%  WER   0.87%  len-ratio 1.00
+[2026-09-24 05:10:03] val synth_val_old    CER   0.45%  WER   2.83%  len-ratio 1.00
+[2026-09-24 05:10:03] new best (mean primary CER 0.81%) -> best.pth
+[2026-09-24 05:10:03] epoch 26 done in 15.4 min  train_loss 0.0150
+[2026-09-24 05:10:15] first batch ready after 9.6 s (DataLoader worker start-up)
+[2026-09-24 05:10:16] first step done in 10.2 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 05:11:13] ep 27 step 200/2935 loss 0.0004 lr 2.60e-04 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:12:17] ep 27 step 400/2935 loss 0.0004 lr 2.57e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:13:19] ep 27 step 600/2935 loss 0.0119 lr 2.55e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:14:20] ep 27 step 800/2935 loss 0.0157 lr 2.52e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:15:23] ep 27 step 1000/2935 loss 0.0013 lr 2.50e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:16:27] ep 27 step 1200/2935 loss 0.0041 lr 2.47e-04 158 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:17:27] ep 27 step 1400/2935 loss 0.0241 lr 2.45e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:18:32] ep 27 step 1600/2935 loss 0.0357 lr 2.42e-04 159 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:19:32] ep 27 step 1800/2935 loss 0.0263 lr 2.40e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:20:33] ep 27 step 2000/2935 loss 0.1460 lr 2.38e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:21:38] ep 27 step 2200/2935 loss 0.0133 lr 2.35e-04 158 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:22:38] ep 27 step 2400/2935 loss 0.0015 lr 2.33e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:23:37] ep 27 step 2600/2935 loss 0.0106 lr 2.31e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:24:37] ep 27 step 2800/2935 loss 0.0029 lr 2.28e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:25:45] val iiit_hw_val      CER   1.30%  WER   9.66%  len-ratio 1.00
+[2026-09-24 05:25:59] val synth_val_modern CER   0.08%  WER   0.53%  len-ratio 1.00
+[2026-09-24 05:26:11] val synth_val_old    CER   0.36%  WER   2.57%  len-ratio 1.00
+[2026-09-24 05:26:11] epoch 27 done in 15.2 min  train_loss 0.0128
+[2026-09-24 05:26:23] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-24 05:26:24] first step done in 10.0 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 05:27:25] ep 28 step 200/2934 loss 0.0013 lr 2.24e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:28:39] ep 28 step 400/2934 loss 0.0006 lr 2.22e-04 139 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:29:40] ep 28 step 600/2934 loss 0.0030 lr 2.20e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:30:43] ep 28 step 800/2934 loss 0.0063 lr 2.17e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:31:46] ep 28 step 1000/2934 loss 0.0021 lr 2.15e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:32:46] ep 28 step 1200/2934 loss 0.0389 lr 2.13e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:33:46] ep 28 step 1400/2934 loss 0.0008 lr 2.10e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:34:47] ep 28 step 1600/2934 loss 0.0425 lr 2.08e-04 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:35:49] ep 28 step 1800/2934 loss 0.0051 lr 2.06e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:36:52] ep 28 step 2000/2934 loss 0.0079 lr 2.03e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:37:55] ep 28 step 2200/2934 loss 0.0112 lr 2.01e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:38:57] ep 28 step 2400/2934 loss 0.0037 lr 1.99e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:39:55] ep 28 step 2600/2934 loss 0.0004 lr 1.97e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:40:52] ep 28 step 2800/2934 loss 0.0183 lr 1.94e-04 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:42:10] val iiit_hw_val      CER   0.86%  WER   6.25%  len-ratio 1.00
+[2026-09-24 05:42:24] val synth_val_modern CER   0.09%  WER   0.67%  len-ratio 1.00
+[2026-09-24 05:42:37] val synth_val_old    CER   0.36%  WER   2.40%  len-ratio 1.00
+[2026-09-24 05:42:37] epoch 28 done in 15.5 min  train_loss 0.0125
+[2026-09-24 05:42:48] first batch ready after 9.2 s (DataLoader worker start-up)
+[2026-09-24 05:42:49] first step done in 10.0 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 05:43:50] ep 29 step 200/2936 loss 0.0232 lr 1.91e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:44:49] ep 29 step 400/2936 loss 0.0209 lr 1.89e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:45:49] ep 29 step 600/2936 loss 0.0041 lr 1.86e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:46:46] ep 29 step 800/2936 loss 0.0118 lr 1.84e-04 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:47:49] ep 29 step 1000/2936 loss 0.0014 lr 1.82e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:48:51] ep 29 step 1200/2936 loss 0.0059 lr 1.80e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:49:56] ep 29 step 1400/2936 loss 0.0048 lr 1.78e-04 156 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:51:02] ep 29 step 1600/2936 loss 0.0008 lr 1.75e-04 159 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:52:01] ep 29 step 1800/2936 loss 0.0048 lr 1.73e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:53:01] ep 29 step 2000/2936 loss 0.0063 lr 1.71e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:54:04] ep 29 step 2200/2936 loss 0.0012 lr 1.69e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:55:03] ep 29 step 2400/2936 loss 0.0051 lr 1.67e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:56:00] ep 29 step 2600/2936 loss 0.0119 lr 1.65e-04 179 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:57:01] ep 29 step 2800/2936 loss 0.0046 lr 1.63e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 05:58:14] val iiit_hw_val      CER   0.74%  WER   5.42%  len-ratio 1.00
+[2026-09-24 05:58:28] val synth_val_modern CER   0.12%  WER   0.80%  len-ratio 1.00
+[2026-09-24 05:58:40] val synth_val_old    CER   0.41%  WER   2.53%  len-ratio 1.00
+[2026-09-24 05:58:40] new best (mean primary CER 0.74%) -> best.pth
+[2026-09-24 05:58:41] epoch 29 done in 15.1 min  train_loss 0.0121
+[2026-09-24 05:58:52] first batch ready after 9.5 s (DataLoader worker start-up)
+[2026-09-24 05:58:53] first step done in 10.0 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 05:59:55] ep 30 step 200/2935 loss 0.0012 lr 1.59e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:01:03] ep 30 step 400/2935 loss 0.0012 lr 1.57e-04 150 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:02:05] ep 30 step 600/2935 loss 0.0149 lr 1.55e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:03:07] ep 30 step 800/2935 loss 0.0063 lr 1.53e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:04:06] ep 30 step 1000/2935 loss 0.0078 lr 1.51e-04 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:05:09] ep 30 step 1200/2935 loss 0.0032 lr 1.49e-04 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:06:08] ep 30 step 1400/2935 loss 0.0521 lr 1.47e-04 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:07:09] ep 30 step 1600/2935 loss 0.0022 lr 1.45e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:08:08] ep 30 step 1800/2935 loss 0.0033 lr 1.43e-04 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:09:09] ep 30 step 2000/2935 loss 0.0027 lr 1.41e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:10:07] ep 30 step 2200/2935 loss 0.0250 lr 1.39e-04 179 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:11:06] ep 30 step 2400/2935 loss 0.0123 lr 1.37e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:12:21] ep 30 step 2600/2935 loss 0.0011 lr 1.35e-04 139 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:13:24] ep 30 step 2800/2935 loss 0.0034 lr 1.33e-04 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:14:34] val iiit_hw_val      CER   0.79%  WER   5.73%  len-ratio 1.00
+[2026-09-24 06:14:48] val synth_val_modern CER   0.10%  WER   0.73%  len-ratio 1.00
+[2026-09-24 06:15:00] val synth_val_old    CER   0.38%  WER   2.53%  len-ratio 1.00
+[2026-09-24 06:15:00] epoch 30 done in 15.4 min  train_loss 0.0108
+[2026-09-24 06:15:12] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-24 06:15:12] first step done in 9.9 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 06:16:11] ep 31 step 200/2937 loss 0.0073 lr 1.30e-04 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:17:15] ep 31 step 400/2937 loss 0.0168 lr 1.28e-04 159 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:18:16] ep 31 step 600/2937 loss 0.0101 lr 1.27e-04 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:19:25] ep 31 step 800/2937 loss 0.0223 lr 1.25e-04 152 img/s  (waiting for data 1% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:20:22] ep 31 step 1000/2937 loss 0.0013 lr 1.23e-04 181 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:21:19] ep 31 step 1200/2937 loss 0.0092 lr 1.21e-04 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:22:18] ep 31 step 1400/2937 loss 0.0002 lr 1.19e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:23:17] ep 31 step 1600/2937 loss 0.0018 lr 1.17e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:24:14] ep 31 step 1800/2937 loss 0.0385 lr 1.15e-04 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:25:18] ep 31 step 2000/2937 loss 0.0101 lr 1.14e-04 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:26:18] ep 31 step 2200/2937 loss 0.0006 lr 1.12e-04 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:27:18] ep 31 step 2400/2937 loss 0.0010 lr 1.10e-04 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:28:21] ep 31 step 2600/2937 loss 0.0018 lr 1.08e-04 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:29:23] ep 31 step 2800/2937 loss 0.0027 lr 1.07e-04 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:30:34] val iiit_hw_val      CER   0.72%  WER   5.31%  len-ratio 1.00
+[2026-09-24 06:30:48] val synth_val_modern CER   0.11%  WER   0.77%  len-ratio 1.00
+[2026-09-24 06:31:00] val synth_val_old    CER   0.44%  WER   2.93%  len-ratio 1.00
+[2026-09-24 06:31:00] new best (mean primary CER 0.72%) -> best.pth
+[2026-09-24 06:31:00] epoch 31 done in 15.0 min  train_loss 0.0107
+[2026-09-24 06:31:12] first batch ready after 9.5 s (DataLoader worker start-up)
+[2026-09-24 06:31:13] first step done in 10.1 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 06:32:13] ep 32 step 200/2935 loss 0.0016 lr 1.04e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:33:16] ep 32 step 400/2935 loss 0.0088 lr 1.02e-04 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:34:17] ep 32 step 600/2935 loss 0.0009 lr 1.00e-04 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:35:17] ep 32 step 800/2935 loss 0.0016 lr 9.86e-05 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:36:20] ep 32 step 1000/2935 loss 0.0135 lr 9.70e-05 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:37:21] ep 32 step 1200/2935 loss 0.0093 lr 9.53e-05 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:38:20] ep 32 step 1400/2935 loss 0.0071 lr 9.36e-05 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:39:21] ep 32 step 1600/2935 loss 0.0118 lr 9.20e-05 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:40:32] ep 32 step 1800/2935 loss 0.0023 lr 9.04e-05 144 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:41:35] ep 32 step 2000/2935 loss 0.0404 lr 8.88e-05 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:42:35] ep 32 step 2200/2935 loss 0.0003 lr 8.72e-05 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:43:36] ep 32 step 2400/2935 loss 0.0302 lr 8.56e-05 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:44:38] ep 32 step 2600/2935 loss 0.0003 lr 8.40e-05 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:45:39] ep 32 step 2800/2935 loss 0.0094 lr 8.25e-05 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:46:52] val iiit_hw_val      CER   1.05%  WER   7.77%  len-ratio 1.00
+[2026-09-24 06:47:05] val synth_val_modern CER   0.08%  WER   0.63%  len-ratio 1.00
+[2026-09-24 06:47:18] val synth_val_old    CER   0.32%  WER   2.03%  len-ratio 1.00
+[2026-09-24 06:47:18] epoch 32 done in 15.3 min  train_loss 0.0096
+[2026-09-24 06:47:32] first batch ready after 11.1 s (DataLoader worker start-up)
+[2026-09-24 06:47:32] first step done in 11.7 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 06:48:34] ep 33 step 200/2935 loss 0.0154 lr 7.99e-05 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:49:38] ep 33 step 400/2935 loss 0.0005 lr 7.84e-05 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:50:38] ep 33 step 600/2935 loss 0.0002 lr 7.69e-05 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:51:40] ep 33 step 800/2935 loss 0.0074 lr 7.54e-05 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:52:51] ep 33 step 1000/2935 loss 0.0079 lr 7.39e-05 145 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:53:52] ep 33 step 1200/2935 loss 0.0015 lr 7.24e-05 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:54:53] ep 33 step 1400/2935 loss 0.0010 lr 7.10e-05 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:55:53] ep 33 step 1600/2935 loss 0.0016 lr 6.95e-05 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:56:55] ep 33 step 1800/2935 loss 0.0072 lr 6.81e-05 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:57:55] ep 33 step 2000/2935 loss 0.0052 lr 6.67e-05 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:58:57] ep 33 step 2200/2935 loss 0.0051 lr 6.53e-05 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 06:59:56] ep 33 step 2400/2935 loss 0.0252 lr 6.39e-05 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:00:58] ep 33 step 2600/2935 loss 0.0172 lr 6.26e-05 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:02:01] ep 33 step 2800/2935 loss 0.0021 lr 6.12e-05 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:03:10] val iiit_hw_val      CER   0.78%  WER   5.76%  len-ratio 1.00
+[2026-09-24 07:03:24] val synth_val_modern CER   0.08%  WER   0.60%  len-ratio 1.00
+[2026-09-24 07:03:36] val synth_val_old    CER   0.32%  WER   2.20%  len-ratio 1.00
+[2026-09-24 07:03:36] epoch 33 done in 15.3 min  train_loss 0.0089
+[2026-09-24 07:03:48] first batch ready after 9.4 s (DataLoader worker start-up)
+[2026-09-24 07:03:48] first step done in 10.0 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 07:04:48] ep 34 step 200/2935 loss 0.0088 lr 5.90e-05 173 img/s  (waiting for data 1% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:05:48] ep 34 step 400/2935 loss 0.0012 lr 5.76e-05 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:06:52] ep 34 step 600/2935 loss 0.0038 lr 5.63e-05 163 img/s  (waiting for data 1% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:07:53] ep 34 step 800/2935 loss 0.0002 lr 5.50e-05 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:08:56] ep 34 step 1000/2935 loss 0.0420 lr 5.38e-05 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:10:00] ep 34 step 1200/2935 loss 0.0123 lr 5.25e-05 160 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:10:59] ep 34 step 1400/2935 loss 0.0007 lr 5.12e-05 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:12:01] ep 34 step 1600/2935 loss 0.0006 lr 5.00e-05 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:13:03] ep 34 step 1800/2935 loss 0.0098 lr 4.88e-05 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:14:02] ep 34 step 2000/2935 loss 0.0020 lr 4.76e-05 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:15:00] ep 34 step 2200/2935 loss 0.0029 lr 4.64e-05 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:16:00] ep 34 step 2400/2935 loss 0.0114 lr 4.52e-05 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:17:02] ep 34 step 2600/2935 loss 0.0055 lr 4.41e-05 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:18:03] ep 34 step 2800/2935 loss 0.0528 lr 4.29e-05 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:19:11] val iiit_hw_val      CER   0.81%  WER   5.96%  len-ratio 1.00
+[2026-09-24 07:19:25] val synth_val_modern CER   0.09%  WER   0.70%  len-ratio 1.00
+[2026-09-24 07:19:37] val synth_val_old    CER   0.31%  WER   2.13%  len-ratio 1.00
+[2026-09-24 07:19:38] epoch 34 done in 15.1 min  train_loss 0.0089
+[2026-09-24 07:19:49] first batch ready after 9.6 s (DataLoader worker start-up)
+[2026-09-24 07:19:50] first step done in 10.3 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 07:20:50] ep 35 step 200/2935 loss 0.0215 lr 4.10e-05 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:22:04] ep 35 step 400/2935 loss 0.0030 lr 3.99e-05 139 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:23:08] ep 35 step 600/2935 loss 0.0002 lr 3.88e-05 160 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:24:09] ep 35 step 800/2935 loss 0.0399 lr 3.77e-05 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:25:13] ep 35 step 1000/2935 loss 0.0190 lr 3.67e-05 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:26:13] ep 35 step 1200/2935 loss 0.0102 lr 3.56e-05 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:27:17] ep 35 step 1400/2935 loss 0.0028 lr 3.46e-05 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:28:28] ep 35 step 1600/2935 loss 0.0246 lr 3.36e-05 142 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:29:31] ep 35 step 1800/2935 loss 0.0013 lr 3.26e-05 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:30:33] ep 35 step 2000/2935 loss 0.0049 lr 3.16e-05 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:31:33] ep 35 step 2200/2935 loss 0.0045 lr 3.06e-05 176 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:32:32] ep 35 step 2400/2935 loss 0.0027 lr 2.96e-05 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:33:35] ep 35 step 2600/2935 loss 0.0006 lr 2.87e-05 163 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:34:41] ep 35 step 2800/2935 loss 0.0042 lr 2.77e-05 159 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:35:59] val iiit_hw_val      CER   0.85%  WER   6.23%  len-ratio 1.00
+[2026-09-24 07:36:13] val synth_val_modern CER   0.08%  WER   0.63%  len-ratio 1.00
+[2026-09-24 07:36:25] val synth_val_old    CER   0.28%  WER   1.90%  len-ratio 1.00
+[2026-09-24 07:36:25] epoch 35 done in 15.7 min  train_loss 0.0088
+[2026-09-24 07:36:38] first batch ready after 9.9 s (DataLoader worker start-up)
+[2026-09-24 07:36:38] first step done in 10.6 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 07:37:35] ep 36 step 200/2934 loss 0.0118 lr 2.62e-05 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:38:35] ep 36 step 400/2934 loss 0.0103 lr 2.53e-05 174 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:39:35] ep 36 step 600/2934 loss 0.0116 lr 2.44e-05 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:40:38] ep 36 step 800/2934 loss 0.0016 lr 2.36e-05 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:41:37] ep 36 step 1000/2934 loss 0.0122 lr 2.27e-05 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:42:40] ep 36 step 1200/2934 loss 0.0002 lr 2.19e-05 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:43:40] ep 36 step 1400/2934 loss 0.0003 lr 2.11e-05 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:44:41] ep 36 step 1600/2934 loss 0.0568 lr 2.03e-05 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:45:43] ep 36 step 1800/2934 loss 0.0009 lr 1.95e-05 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:46:48] ep 36 step 2000/2934 loss 0.0050 lr 1.87e-05 159 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:47:56] ep 36 step 2200/2934 loss 0.0028 lr 1.80e-05 153 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:48:57] ep 36 step 2400/2934 loss 0.0301 lr 1.72e-05 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:49:58] ep 36 step 2600/2934 loss 0.0016 lr 1.65e-05 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:51:00] ep 36 step 2800/2934 loss 0.0010 lr 1.58e-05 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:52:09] val iiit_hw_val      CER   0.85%  WER   6.30%  len-ratio 1.00
+[2026-09-24 07:52:22] val synth_val_modern CER   0.07%  WER   0.53%  len-ratio 1.00
+[2026-09-24 07:52:34] val synth_val_old    CER   0.28%  WER   1.83%  len-ratio 1.00
+[2026-09-24 07:52:35] epoch 36 done in 15.2 min  train_loss 0.0090
+[2026-09-24 07:52:46] first batch ready after 9.3 s (DataLoader worker start-up)
+[2026-09-24 07:52:47] first step done in 9.9 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 07:53:49] ep 37 step 200/2935 loss 0.0004 lr 1.47e-05 162 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:54:47] ep 37 step 400/2935 loss 0.0138 lr 1.40e-05 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:55:48] ep 37 step 600/2935 loss 0.0006 lr 1.33e-05 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:56:47] ep 37 step 800/2935 loss 0.0246 lr 1.27e-05 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:57:46] ep 37 step 1000/2935 loss 0.0037 lr 1.21e-05 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:58:47] ep 37 step 1200/2935 loss 0.0011 lr 1.15e-05 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 07:59:48] ep 37 step 1400/2935 loss 0.0221 lr 1.09e-05 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:00:50] ep 37 step 1600/2935 loss 0.0029 lr 1.03e-05 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:02:07] ep 37 step 1800/2935 loss 0.0024 lr 9.74e-06 135 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:03:05] ep 37 step 2000/2935 loss 0.0026 lr 9.19e-06 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:04:08] ep 37 step 2200/2935 loss 0.0002 lr 8.67e-06 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:05:07] ep 37 step 2400/2935 loss 0.0214 lr 8.15e-06 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:06:21] ep 37 step 2600/2935 loss 0.0020 lr 7.66e-06 140 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:07:23] ep 37 step 2800/2935 loss 0.0022 lr 7.17e-06 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:08:31] val iiit_hw_val      CER   0.96%  WER   7.13%  len-ratio 1.00
+[2026-09-24 08:08:44] val synth_val_modern CER   0.07%  WER   0.53%  len-ratio 1.00
+[2026-09-24 08:08:56] val synth_val_old    CER   0.25%  WER   1.63%  len-ratio 1.00
+[2026-09-24 08:08:57] epoch 37 done in 15.4 min  train_loss 0.0084
+[2026-09-24 08:09:08] first batch ready after 9.3 s (DataLoader worker start-up)
+[2026-09-24 08:09:09] first step done in 9.9 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 08:10:07] ep 38 step 200/2936 loss 0.0018 lr 6.40e-06 176 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:11:10] ep 38 step 400/2936 loss 0.0013 lr 5.96e-06 161 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:12:14] ep 38 step 600/2936 loss 0.0002 lr 5.54e-06 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:13:32] ep 38 step 800/2936 loss 0.0054 lr 5.13e-06 133 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:14:34] ep 38 step 1000/2936 loss 0.0006 lr 4.74e-06 165 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:15:33] ep 38 step 1200/2936 loss 0.0019 lr 4.36e-06 175 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:16:34] ep 38 step 1400/2936 loss 0.0034 lr 4.00e-06 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:17:35] ep 38 step 1600/2936 loss 0.0035 lr 3.65e-06 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:18:47] ep 38 step 1800/2936 loss 0.0041 lr 3.32e-06 145 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:19:44] ep 38 step 2000/2936 loss 0.0430 lr 3.01e-06 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:20:45] ep 38 step 2200/2936 loss 0.0049 lr 2.71e-06 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:21:45] ep 38 step 2400/2936 loss 0.0001 lr 2.43e-06 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:22:44] ep 38 step 2600/2936 loss 0.0004 lr 2.16e-06 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:23:45] ep 38 step 2800/2936 loss 0.0047 lr 1.91e-06 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:25:04] val iiit_hw_val      CER   1.16%  WER   8.65%  len-ratio 1.00
+[2026-09-24 08:25:18] val synth_val_modern CER   0.07%  WER   0.47%  len-ratio 1.00
+[2026-09-24 08:25:30] val synth_val_old    CER   0.25%  WER   1.70%  len-ratio 1.00
+[2026-09-24 08:25:30] epoch 38 done in 15.5 min  train_loss 0.0082
+[2026-09-24 08:25:42] first batch ready after 9.7 s (DataLoader worker start-up)
+[2026-09-24 08:25:43] first step done in 10.6 s total (includes CUDA/cuDNN initialisation)
+[2026-09-24 08:26:42] ep 39 step 200/2935 loss 0.0142 lr 1.52e-06 169 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:27:45] ep 39 step 400/2935 loss 0.0208 lr 1.31e-06 164 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:28:46] ep 39 step 600/2935 loss 0.0122 lr 1.12e-06 171 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:29:48] ep 39 step 800/2935 loss 0.0078 lr 9.42e-07 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:30:49] ep 39 step 1000/2935 loss 0.0004 lr 7.81e-07 166 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:31:48] ep 39 step 1200/2935 loss 0.0074 lr 6.36e-07 177 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:32:47] ep 39 step 1400/2935 loss 0.0065 lr 5.06e-07 179 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:33:45] ep 39 step 1600/2935 loss 0.0189 lr 3.92e-07 180 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:34:46] ep 39 step 1800/2935 loss 0.0139 lr 2.95e-07 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:35:46] ep 39 step 2000/2935 loss 0.0037 lr 2.13e-07 170 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:36:45] ep 39 step 2200/2935 loss 0.0027 lr 1.47e-07 172 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:37:47] ep 39 step 2400/2935 loss 0.0229 lr 9.63e-08 167 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:38:48] ep 39 step 2600/2935 loss 0.0020 lr 6.20e-08 168 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:39:48] ep 39 step 2800/2935 loss 0.0019 lr 4.35e-08 173 img/s  (waiting for data 0% of the time)  GPU mem peak 10.5 GB, alloc retries 0
+[2026-09-24 08:40:59] val iiit_hw_val      CER   0.79%  WER   5.80%  len-ratio 1.00
+[2026-09-24 08:41:13] val synth_val_modern CER   0.08%  WER   0.57%  len-ratio 1.00
+[2026-09-24 08:41:26] val synth_val_old    CER   0.28%  WER   1.90%  len-ratio 1.00
+[2026-09-24 08:41:26] epoch 39 done in 15.0 min  train_loss 0.0080
+[2026-09-24 08:41:26] training finished

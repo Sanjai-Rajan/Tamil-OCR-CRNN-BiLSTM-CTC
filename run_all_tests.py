@@ -10,10 +10,6 @@ Run every test suite of this release, one after another, and print one summary t
 Use the Python of the environment described in docs/INSTALLATION.md (the one this script is started with runs the tests;
 if a .venv folder exists next to this file, that one is used).
 
-Trained weights are not distributed with this repository. If the registered default checkpoint (wordocr/checkpoints.py)
-is missing, the test modules that load it (NEEDS_CHECKPOINT below) and the three browser suites are reported as NOT RUN,
-naming the file, and every other module runs as usual. With the checkpoint in place, everything runs.
-
 All inputs are generated in memory by the test fixtures. Nothing is downloaded, no dataset is needed, and every suite
 writes only to temporary folders. The three browser suites start their own local Streamlit server on ports 8765, 8781
 and 8793 (127.0.0.1) and stop it again; they do not touch a server you started yourself on another port.
@@ -21,7 +17,12 @@ and 8793 (127.0.0.1) and stop it again; they do not touch a server you started y
 Nothing here edits a test, skips a failing test, or changes an assertion. A suite that cannot be started is reported
 as NOT RUN, never as passed.
 
-Exit code: 0 if every suite ran and passed, 1 if any failed, 2 if any could not be run.
+Trained weights are not stored in Git. If the registered default checkpoint (wordocr/checkpoints.py) is missing, the
+test modules that load it (NEEDS_CHECKPOINT below) and the browser suites are reported as NOT RUN, naming the file,
+and every other module runs as usual. With the checkpoint in place, everything runs.
+
+Exit code: 0 if every suite ran and passed, 1 if any failed, 2 if any could not be run. With --allow-missing-checkpoint
+(continuous integration without weights) a run whose only NOT RUN suites are the checkpoint-dependent ones exits 0.
 """
 import argparse
 import os
@@ -66,8 +67,9 @@ def suites(browser: bool = True) -> list[tuple[str, str, list[str] | None, str]]
         ("fullpage", "full-page OCR service and app.py (Full-page OCR)", [py] + UNIT + ["-v"] + files("test_fullpage_*.py"), ""),
         ("diagnostics", "diagnostic mode, evidence export, manual-vs-pipeline crops, experimental options, angle-aware lines (workspace additions)",
          [py] + UNIT + ["-v", "tests/test_diagnostics.py", "tests/test_line_geometry.py", "tests/test_slant_lines.py"], ""),
-        ("training_code", "model, loss, metrics, synthetic generator (minimal smoke test); split audit; metric recomputation; pre-training check",
-         [py] + UNIT + ["-v", "tests/test_minimal.py", "tests/test_check_split.py", "tests/test_recompute_eval_metrics.py", "tests/test_pretrain_check.py"], ""),
+        ("training_code", "model, loss, metrics, synthetic generator (minimal smoke test); split audit; metric recomputation; pre-training check; training-step smoke test",
+         [py] + UNIT + ["-v", "tests/test_minimal.py", "tests/test_check_split.py", "tests/test_recompute_eval_metrics.py", "tests/test_pretrain_check.py",
+                                 "tests/test_training_smoke.py"], ""),
     ]
     if browser:
         why = browser_tools()
@@ -80,13 +82,14 @@ def suites(browser: bool = True) -> list[tuple[str, str, list[str] | None, str]]
     return without_checkpoint(out) if not checkpoint_present() else out
 
 
-# --- repository export: trained weights are not distributed --------------------------------------------------------------
+# --- trained weights are not stored in Git (MODEL_CARD.md) ----------------------------------------------------------------
 # The test modules below load the registered default checkpoint (measured: run without it, each has tests that error or
 # fail because the file is missing). When the file is absent they are reported as NOT RUN, naming the file; every other
 # module still runs, unchanged. With the checkpoint in place, all suites run exactly as listed above. No test is edited.
 NEEDS_CHECKPOINT = ("test_diagnostics.py", "test_fullpage_app.py", "test_fullpage_ocr.py", "test_line_geometry.py", "test_pageocr_engine.py",
                     "test_pageocr_v3_segmentation.py", "test_wordocr_app.py", "test_wordocr_service.py")
 BROWSER_SUITES = ("word_browser", "fullpage_browser", "diag_browser")
+CHECKPOINT_REASON = "needs the registered checkpoint"
 
 
 def checkpoint_present() -> bool:
@@ -98,7 +101,7 @@ def checkpoint_present() -> bool:
 def without_checkpoint(out: list) -> list:
     from wordocr import checkpoints
     path = checkpoints.get(checkpoints.DEFAULT_ID).path
-    why = f"needs the registered checkpoint {path}, which is not distributed (docs/MODEL_CHECKPOINTS.md)"
+    why = f"{CHECKPOINT_REASON} {path}, which is not in this checkout (MODEL_CARD.md, tools/verify_checkpoints.py)"
     res = []
     for name, desc, cmd, reason in out:
         if cmd is None:
@@ -135,6 +138,8 @@ def main():
     ap.add_argument("--only", nargs="+")
     ap.add_argument("--no-browser", action="store_true")
     ap.add_argument("--log")
+    ap.add_argument("--allow-missing-checkpoint", action="store_true",
+                    help="exit 0 when the only suites NOT RUN are those that need the checkpoint (for CI without weights)")
     a = ap.parse_args()
     todo = [s for s in suites(not a.no_browser) if not a.only or s[0] in a.only]
     if a.list:
@@ -161,7 +166,11 @@ def main():
         Path(a.log).write_text("".join(log) + "\n", encoding="utf-8")
     if any(r[1] == "FAIL" for r in rows):
         return 1
-    return 2 if any(r[1] == "NOT RUN" for r in rows) else 0
+    not_run = [r for r in rows if r[1] == "NOT RUN"]
+    if not_run and a.allow_missing_checkpoint and all(r[3].startswith(CHECKPOINT_REASON) for r in not_run):
+        print(f"\n{len(not_run)} suite(s) NOT RUN only because the checkpoint is absent (--allow-missing-checkpoint): exit 0")
+        return 0
+    return 2 if not_run else 0
 
 
 if __name__ == "__main__":

@@ -69,6 +69,8 @@ python -m streamlit run app.py
 
 Open `http://localhost:8501`. The server listens on this computer only, and usage statistics are off (`.streamlit/config.toml`).
 
+To publish the app on Streamlit Community Cloud (CPU only, no API keys), follow `DEPLOYMENT.md`.
+
 For the diagnostic view: *Full-page OCR* tab → tick **Diagnostic mode** → *Read page*. The "Line boxes" control switches between angle-aware line boxes and the horizontal bands the segmentation actually used.
 
 `app_page.py` (you supply the word boxes) and `app_page_auto.py` (automatic segmentation with more settings) are earlier interfaces; `app.py` is the supported one.
@@ -83,7 +85,9 @@ python -B run_all_tests.py --list            # show the suites
 
 All test inputs are generated in memory; no dataset is needed and nothing is downloaded.
 
-**Without a checkpoint**, the runner runs the suites that do not need one and reports the model-dependent suites as **NOT RUN** (exit code 2), naming the missing file. It does not report them as passed. With the registered checkpoint in place, every suite runs. The results recorded for this export are in `REPOSITORY_AUDIT.md`.
+**Without a checkpoint**, the runner runs the suites that do not need one and reports the model-dependent suites as **NOT RUN** (exit code 2), naming the missing file. It does not report them as passed. `--allow-missing-checkpoint` (used by the CI workflow in `.github/workflows/tests.yml`) exits 0 when those are the only suites not run. With the registered checkpoint in place, every suite runs. The results recorded for this export are in `REPOSITORY_AUDIT.md`.
+
+`python tools/check_repository.py` scans what Git would publish for secrets, weights, large files and personal paths; `python tools/verify_checkpoints.py` checks local checkpoints against the registry; `python tools/check_datasets.py --root <folder>` checks prepared datasets against `data/manifests/datasets.json`.
 
 ## Training (optional)
 
@@ -92,7 +96,9 @@ All test inputs are generated in memory; no dataset is needed and nothing is dow
 - the IIIT-INDIC-HW-WORDS Tamil handwriting dataset, a third-party dataset you must obtain under its own terms (`tools/import_hf_parquet.py` converts a local parquet copy; nothing is downloaded);
 - the word list the synthetic generator samples from (`data/text_corpus/…`).
 
-`docs/TRAINING_GUIDE.md` lists exactly what is needed. A model you train is yours to register; do not overwrite the registered files.
+`docs/TRAINING_GUIDE.md` lists exactly what is needed, `DATASETS.md` describes each dataset (source, terms, expected layout), and `docs/SYNTH_README.md` the synthetic word generator. A model you train is yours to register; do not overwrite the registered files.
+
+**Records of the documented runs:** `runs/<experiment>/config.yaml` (frozen configuration), `history.json` / `history.csv` (per-epoch losses and validation metrics) and `train.log`. `reports/` holds the experiment records: the Experiment 001 design review and pre-registration addendum, the setup freeze and final evaluation of Experiment 002-A, the baseline analysis, the paired comparisons between the baseline, 001, 002-A and 002-B on the IIIT test split, the split investigation and the synthetic-style diagnostic. Training diagnostics: `tools/bn_recalibrate.py` (batch-norm recalibration, no weight updates) and `tools/check_d0_integrity.py`. The development-page experiments E1/E2/E3 (`tools/development_*.py`, `tools/run_development_evaluation.py`) need the protected development pages, which are not published: without them the runner stops with a missing-file error before any recognition, and with them it runs only after the human-verified reference set is frozen (`pageocr/devguard.py`).
 
 ## Segmentation experiments: what they show and what they do not
 
@@ -116,7 +122,9 @@ They do **not** show accuracy on real documents or real handwriting. The fonts a
 |---|---|
 | Model weights (`*.pth` and any other weight format) | not distributed; supply an authorised local copy |
 | Datasets, word lists, real or protected research pages and their annotations | third-party terms or protected material |
-| Experiment outputs, logs, evidence bundles, diagnostic runs | generated; reproducible with the scripts |
+| Experiment outputs, per-epoch prediction samples, evidence bundles, diagnostic runs (the experiment records in `reports/` and the run histories in `runs/` are included) | generated, or quote dataset labels; reproducible with the scripts |
+| Records of the real-document pilot (R1) and of the development-page review, and their tools | depend on protected material; publication is an owner decision |
+| The earlier V1 system (`legacy/`) | superseded; not part of the CRNNv2 pipeline |
 | Release and workspace tooling of the private project history | not needed to use or develop the code |
 | Credentials, environments, caches | never part of the project |
 
@@ -132,4 +140,6 @@ The fonts in `assets/fonts/` are third-party, under the SIL Open Font License 1.
 
 - `docs/INSTALLATION.md`, `docs/TRAINING_GUIDE.md`, `docs/MODEL_PROVENANCE.md`, `docs/EVALUATION_AND_LIMITATIONS.md`, `docs/DEPENDENCIES.md`, `docs/SECURITY_AND_PRIVACY.md`: written for the project's 2026-10-10 review release, each with a note on what differs here.
 - `docs/MODEL_CHECKPOINTS.md`, `docs/EXPERIMENTS.md`.
+- `docs/ARCHITECTURE.md` (code map), `docs/README_FRONTEND.md` (the app), `docs/README_PAGE_OCR.md` (operator-assisted region OCR, `app_page.py`), `docs/SYNTH_README.md` (synthetic data).
+- `DATASETS.md`, `MODEL_CARD.md`, `THIRD_PARTY_NOTICES.md`, `DEPLOYMENT.md`.
 - `CONTRIBUTING.md`, `SECURITY.md`, `CHANGELOG.md`.

@@ -1,5 +1,14 @@
 # Changelog
 
+## Complete research project and deployment (proposed, 2026-10-11)
+
+- **Byte-exact files:** `.gitattributes` (`* -text`). The first commit had stored line-ending-normalised copies, so a Linux or byte-exact clone failed `tests/test_pretrain_check.py` (frozen configuration hashes). The verified original bytes are restored; no content changed.
+- **Research records added:** training histories of the four documented runs (`runs/*/history.json`, `history.csv`, `train.log`); 17 experiment records in `reports/` (Experiment 001 design and pre-registration, 002-A setup freeze, baseline analysis, paired comparisons, split investigation, synthetic-style diagnostic).
+- **Tools added:** training diagnostics (`tools/bn_recalibrate.py`, `tools/check_d0_integrity.py`); development-page experiments E1/E2/E3 (`tools/development_*.py`, `tools/run_development_evaluation.py`); repository, dataset and checkpoint checks (`tools/check_repository.py`, `tools/check_datasets.py`, `tools/verify_checkpoints.py`); a training-step smoke test (`tests/test_training_smoke.py`); CI (`.github/workflows/tests.yml`); `run_all_tests.py --allow-missing-checkpoint`.
+- **Documents added:** `DATASETS.md`, `MODEL_CARD.md`, `THIRD_PARTY_NOTICES.md`, `DEPLOYMENT.md`, `data/README.md` with the dataset hash manifest `data/manifests/datasets.json`, `docs/ARCHITECTURE.md`, `docs/README_FRONTEND.md`, `docs/README_PAGE_OCR.md`, `docs/SYNTH_README.md`.
+- **Deployment:** `requirements.txt` for Streamlit Community Cloud (CPU-only PyTorch, headless OpenCV); bounded upload cache; the diagnostic "save to disk" button only for a browser on the same computer; privacy wording for a hosted app.
+- Still not included: trained weights, datasets, the R1 pilot and development-page records and tools that depend on protected material, the V1 `legacy/` code.
+
 ## Repository export (2026-10-11)
 
 First public-repository form of Tamil OCR V2, exported from the project's diagnostic development workspace of 2026-10-10 (the latest verified state). There is no earlier Git history; the private history is not included.

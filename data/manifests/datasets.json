@@ -1,0 +1,144 @@
+{
+ "schema": "tamil-ocr-dataset-manifest-1",
+ "note": "Expected files of the datasets the project used, recorded 2026-10-11 from the owner's local copies. Sizes, SHA-256 and line counts only: no images, labels or text. Paths are relative to the repository root, where the preparation steps of DATASETS.md place the files. Check with: python tools/check_datasets.py",
+ "datasets": {
+  "iiit_hw_parquet": {
+   "required_for": "training (all four experiments), handwriting evaluation",
+   "source": "IIIT-INDIC-HW-WORDS (Tamil), CVIT IIIT Hyderabad; Parquet copy c3rl/IIIT-INDIC-HW-WORDS-Tamil on the Hugging Face Hub",
+   "files": [
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/test-00000-of-00002.parquet",
+     "bytes": 401614577,
+     "sha256": "953e1a6efa63407b751912f0862e529899d3c44cc593347f9eca0d9f2025374b"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/test-00001-of-00002.parquet",
+     "bytes": 406149138,
+     "sha256": "1e76b4759592bc6688831683b2ccd0f723c5053f33ecfbd5a6e1d52c711417e6"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/train-00000-of-00008.parquet",
+     "bytes": 472018669,
+     "sha256": "ac0e0663fcd0f7fb371ae1b003b154a378013478d496d65d88206e4c74abeec2"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/train-00001-of-00008.parquet",
+     "bytes": 472395046,
+     "sha256": "d624f610b0ad55b480014c5768cc77b23516da5278f7fec6d62f121a448d92e3"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/train-00002-of-00008.parquet",
+     "bytes": 471007936,
+     "sha256": "554f6fa11087d9f314e6b894535aed8d89e453aceba8044fa062599f45163a5e"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/train-00003-of-00008.parquet",
+     "bytes": 471529534,
+     "sha256": "6209f23747b9c8020503422ec8a8612dcc26d5a3576a68e7ffd651ae0df0f28b"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/train-00004-of-00008.parquet",
+     "bytes": 469819975,
+     "sha256": "942687d0cfb80f111e67c4d8c06cbdfd8dd57164c30c943828b38c8f38e4b223"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/train-00005-of-00008.parquet",
+     "bytes": 469253882,
+     "sha256": "65f15e7177f74a0015c5a21306ed1115b007e90924122d9dd2f7249d004c5e42"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/train-00006-of-00008.parquet",
+     "bytes": 471026309,
+     "sha256": "4cdc97d4f6d2519eb5b97b6844723687ca074708b90b3b08a93aaa1752e14ae3"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/train-00007-of-00008.parquet",
+     "bytes": 480732178,
+     "sha256": "8e7542950bd8f7f79b575fc657e542a8cff63aeb1ed8c37006815891cff76884"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/validation-00000-of-00002.parquet",
+     "bytes": 288179818,
+     "sha256": "bfca85963e9bc1fa406c101d7aa063a7edfb7011a4fb5a73163e9a619ae8a8a9"
+    },
+    {
+     "file": "external/IIIT-INDIC-HW-WORDS-Tamil/data/validation-00001-of-00002.parquet",
+     "bytes": 288265841,
+     "sha256": "e2dc4b0e888a45371f1c1f6297d70b6151c1ec605f225b1e77c99595a0cca617"
+    }
+   ]
+  },
+  "iiit_hw_converted": {
+   "required_for": "training and evaluation (the manifests src/train.py and tools/evaluate.py read)",
+   "made_by": "tools/import_hf_parquet.py --src external/IIIT-INDIC-HW-WORDS-Tamil --out data/real/iiit_hw --name iiit_hw",
+   "files": [
+    {
+     "file": "data/real/iiit_hw/manifest_test.jsonl",
+     "bytes": 1840933,
+     "sha256": "907cc14448fac442bb4ccfd1656f51dbbaff78b3b36df6caffad7b8f599292b3",
+     "lines": 16184
+    },
+    {
+     "file": "data/real/iiit_hw/manifest_train.jsonl",
+     "bytes": 8726411,
+     "sha256": "f13e55380548ef5d1480d235ca20b8c8a3732c374d5051b30a672b1b92387a0f",
+     "lines": 75736
+    },
+    {
+     "file": "data/real/iiit_hw/manifest_val.jsonl",
+     "bytes": 1303007,
+     "sha256": "47cbe15b22b1d7dec621882f2a9f185894f3c6fb82b596b5aa87f7046fd36aab",
+     "lines": 11598
+    },
+    {
+     "file": "data/real/iiit_hw/import_report.txt",
+     "bytes": 512,
+     "sha256": "e29b8b1d91b41f78be01b36f3f15ca0b638bfceea8a5cd0cd0cec9e7e56b0758"
+    }
+   ],
+   "images": {
+    "train": 75736,
+    "val": 11598,
+    "test": 16184
+   }
+  },
+  "word_list": {
+   "required_for": "synthetic printed words in experiments 001, 002-A, 002-B; tools/pretrain_check.py",
+   "files": [
+    {
+     "file": "data/text_corpus/tamil_correction_vocabulary.json",
+     "bytes": 19930025,
+     "sha256": "3f19ac2db418d3061162acfd978463b3f3a0c21652e4968c8383fa2e24a2241a"
+    }
+   ]
+  },
+  "synth_val": {
+   "required_for": "the synthetic-print evaluation of the checkpoint reports",
+   "made_by": "tools/synth_export.py --vocab data/text_corpus/tamil_correction_vocabulary.json --out data/synth_val --n-modern 3000 --n-old 3000 --seed-base 900000000",
+   "files": [
+    {
+     "file": "data/synth_val/manifest.jsonl",
+     "bytes": 706607,
+     "sha256": "e9203dff3b9e7ea6adbdf445209263b7672fc23cebaf86f5536b14dc578e575c",
+     "lines": 6000
+    }
+   ],
+   "images": {
+    "dir": "data/synth_val/images",
+    "count": 6000,
+    "bytes": 84535154
+   }
+  },
+  "tawiki_dump": {
+   "required_for": "optional: one input of tools/build_wordlist.py",
+   "files": [
+    {
+     "file": "external/tawiki/tawiki-latest-pages-articles.xml.bz2",
+     "bytes": 276783110,
+     "sha256": "bf044b7b5378a5718b142764fe90a042c72222dd434cafd5671a6b905aa64cb7"
+    }
+   ],
+   "note": "the 'latest' dump changes over time; another date gives another hash and another word list"
+  }
+ }
+}

@@ -1,4 +1,15 @@
 > **Note for this repository.** This document was written for the project's private 2026-10-10 review release and is kept unchanged below this note. Differences here: trained weights (`runs/*/best.pth`) are **not included** (see `docs/MODEL_CHECKPOINTS.md`); the release evidence files (`RELEASE_*`, `RELEASE_SHA256SUMS.txt`), `release_tools/`, `release_evidence/`, `GLOBAL_CLEANUP_PLAN.md` and `CHANGELOG_CLEAN_RELEASE.md` are not part of this repository; the other release documents now live in `docs/`. The repository's own record is `EXPORT_MANIFEST.csv` and `REPOSITORY_AUDIT.md`.
+>
+> **Requirement files in this repository** (each has one purpose; none is a package listing of a development machine):
+>
+> | File | Purpose |
+> |---|---|
+> | `requirements-runtime.txt` | local app and inference; install the PyTorch build for your machine first (CUDA or CPU), as its header says |
+> | `requirements-training.txt` | adds training, evaluation and the synthetic generator (includes the runtime file) |
+> | `requirements-test.txt` | the test suites (includes the training file) |
+> | `requirements.txt` | hosted deployment only (Streamlit Community Cloud, Linux, CPU): the same runtime versions with the CPU-only PyTorch build, headless OpenCV, and `editdistance` for the diagnostic view (`DEPLOYMENT.md`) |
+>
+> None of them installs a pretrained model, an inference API client or a cloud OCR service.
 
 # Dependencies
 

@@ -1,4 +1,5 @@
-# Streamlit settings for the local Tamil OCR demo (app.py). Local only.
+# Streamlit settings for the Tamil OCR app (app.py), used both locally and on Streamlit Community Cloud
+# (see DEPLOYMENT.md). Do not set server.port here: Community Cloud expects the default port 8501.
 
 [browser]
 gatherUsageStats = false      # no usage statistics are sent anywhere

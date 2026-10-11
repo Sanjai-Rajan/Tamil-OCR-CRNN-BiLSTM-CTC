@@ -1,0 +1,14 @@
+# Tamil OCR V2 - hosted deployment (Streamlit Community Cloud: Debian Linux, CPU only, no GPU).
+# Same versions as requirements-runtime.txt, except:
+#   * torch is the CPU-only build (the default Linux wheel on PyPI bundles several GB of CUDA libraries);
+#   * OpenCV is the "headless" build of the same version (no GUI libraries, so no libGL system package is needed);
+#   * editdistance is added: the diagnostic view's manual crop comparison imports it.
+# For a local install on your own computer use requirements-runtime.txt (see docs/INSTALLATION.md).
+# The extra index below is PyTorch's own package index; it is used to install packages only. The app downloads nothing.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.11.0+cpu
+numpy==2.3.5
+opencv-contrib-python-headless==4.10.0.84
+pillow==12.3.0
+streamlit==1.65.0
+editdistance==0.8.1

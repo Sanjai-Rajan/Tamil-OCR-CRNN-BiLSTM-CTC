@@ -32,7 +32,8 @@ def get_model(checkpoint_id: str, device_choice: str) -> service.LoadedModel:
     return service.load_model(checkpoint_id, device_choice)     # a failure is not cached: the next run tries again
 
 
-@st.cache_data(max_entries=200, show_spinner=False)         # reruns do not decode the same upload again
+@st.cache_data(max_entries=60, ttl=900, show_spinner=False)  # reruns do not decode the same upload again; a batch is at
+                                                             # most 50 files; uploads leave the cache after 15 minutes
 def decode(name: str, data: bytes):
     """DecodedImage, or a failed ItemResult with the user-facing reason. Never raises."""
     try:
@@ -44,7 +45,7 @@ def decode(name: str, data: bytes):
         return service.failed(0, name, "The file could not be opened. Details are in the terminal running the app.")
 
 
-@st.cache_resource(max_entries=4, show_spinner=False)            # the Segmentation of one page and one setting
+@st.cache_resource(max_entries=4, ttl=900, show_spinner=False)   # the Segmentation of one page and one setting
 def get_segmentation(sha256: str, k: float, gap: float, deskew: bool, _decoded, rule_removal: bool = False, clahe: bool = False):
     return fullpage.segment_page(_decoded, fullpage.PageSettings(sauvola_k=k, gap_floor_h=gap, deskew=deskew,
                                                                  exp_rule_removal=rule_removal, exp_contrast_clahe=clahe))
@@ -164,8 +165,8 @@ model_info = model.info() if model else None
 
 st.title(TITLE)
 st.markdown('<p class="ocr-sub">Word OCR reads one cropped Tamil word per image; Full-page OCR finds the words on a '
-            'printed page and reads them one by one. The project\'s locally trained CRNN model; runs entirely on this '
-            'computer.</p>', unsafe_allow_html=True)
+            'printed page and reads them one by one. The project\'s own trained CRNN model; it runs inside this app, with no '
+            'external OCR service or API.</p>', unsafe_allow_html=True)
 with st.container(border=True):
     c1, c2 = st.columns([3, 2])
     with c1:
@@ -498,8 +499,10 @@ printed words). Recorded test results of the checkpoints describe their test set
 **The score** shown under Technical details and in the exports is not a confidence or an accuracy:
 {export.SCORE_NOTE}
 
-**Privacy.** Uploaded images and results stay in this computer's memory for the browser session; nothing is written to
-disk or sent anywhere. Downloads are saved by your browser.
+**Privacy.** Uploaded images and results are held in the memory of the computer or server that runs this app, for the
+browser session (decoded uploads stay in its cache for at most 15 minutes). They are not written to its disk and are
+not sent to any other service. When the app is hosted publicly, your image is uploaded to that server: do not upload
+private or confidential documents. Downloads are saved by your browser.
 
 **Version.** {VERSION}; checkpoints are opened read-only and verified by SHA-256 before loading.
 """)

@@ -13,6 +13,27 @@ from wordocr import crop_compare
 from wordocr import diagnostics as dg
 
 RUNS_DIR = ROOT / "diagnostic_runs"          # local evidence folder of this workspace; not a training or evaluation set
+LOOPBACK_HOSTS = frozenset({"localhost", "127.0.0.1", "::1"})
+
+
+def _host_of(value: str) -> str:
+    """'localhost:8501' / 'http://[::1]:8501' -> 'localhost' / '::1'."""
+    value = value.split("://", 1)[-1].split("/", 1)[0]
+    if value.startswith("["):
+        return value[1:].split("]", 1)[0]
+    return value.rsplit(":", 1)[0] if value.count(":") == 1 else value
+
+
+def opened_on_this_computer() -> bool:
+    """True only when the browser reached the app through a loopback address (both the Host and the Origin header).
+    Saving a bundle writes the upload to the disk of the machine running the app, so on a hosted deployment, or when
+    the headers cannot be read, the save button is not offered; the ZIP download is always available."""
+    try:
+        headers = st.context.headers
+        host, origin = headers.get("Host", ""), headers.get("Origin", "")
+    except Exception:
+        return False
+    return bool(host and origin) and {_host_of(host), _host_of(origin)} <= LOOPBACK_HOSTS
 
 
 def render(model, decoded, input_bytes: bytes, seg, result, settings) -> None:
@@ -86,7 +107,9 @@ def render(model, decoded, input_bytes: bytes, seg, result, settings) -> None:
     b1, b2 = st.columns(2)
     b1.download_button("Download diagnostic bundle (ZIP)", dg.bundle_zip(decoded, seg, result, settings, diag, inc, input_bytes),
                        file_name=f"diagnostic_{decoded.sha256[:12]}.zip", mime="application/zip", on_click="ignore", key="diag_zip", width="stretch")
-    if b2.button("Save bundle to diagnostic_runs/", key="diag_save", width="stretch"):
+    if not opened_on_this_computer():
+        b2.caption("Saving to the app's disk is offered only when the app is opened on the computer that runs it.")
+    elif b2.button("Save bundle to diagnostic_runs/", key="diag_save", width="stretch"):
         folder = RUNS_DIR / f"{time.strftime('%Y%m%d_%H%M%S')}_{decoded.sha256[:12]}"
         try:
             dg.save_bundle(folder, decoded, seg, result, settings, diag, inc, input_bytes)

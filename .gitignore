@@ -1,4 +1,5 @@
-# ---- model weights and checkpoints: never committed (see docs/MODEL_CHECKPOINTS.md)
+# ---- model weights and checkpoints: never committed by accident (see docs/MODEL_CHECKPOINTS.md, MODEL_CARD.md).
+#      Publishing the trained checkpoint is an owner decision (DEPLOYMENT.md, step 1); it would be added explicitly.
 *.pth
 *.pt
 *.ckpt
@@ -12,7 +13,8 @@
 *.pkl
 *.pickle
 *.joblib
-# training run folders: keep only the frozen configuration of each documented run
+# training run folders: keep the frozen configuration and the training history of each documented run
+# (history.json / history.csv / train.log are re-included at the end of this file, after the *.log rule)
 runs/**
 !runs/
 !runs/*/
@@ -20,7 +22,10 @@ runs/**
 !runs/README.md
 
 # ---- datasets, word lists, real or protected pages and annotations (anchored to the root: src/data/ is source code)
-/data/
+#      Only the dataset policy and the SHA-256 manifest are tracked (DATASETS.md).
+/data/*
+!/data/README.md
+!/data/manifests/
 /external/
 /real_docs/
 /development_pages/
@@ -58,9 +63,28 @@ __pycache__/
 node_modules/
 
 # ---- generated outputs: experiments, logs, evidence bundles, diagnostic runs, uploads
+# reports/: only the reviewed experiment records listed here are published; everything else in reports/ stays local
+# (session records, evidence folders with screenshots or absolute paths, the R1 pilot and development-page records).
 reports/**
 !reports/
 !reports/experiment_002a_final_evaluation.md
+!reports/experiment_002a_setup_freeze.md
+!reports/experiment_001_config_mapping.md
+!reports/experiment_001_design_review.md
+!reports/experiment_001_preregistration_addendum.md
+!reports/experiment_001_prerequisites.md
+!reports/experiment_001_safety_fixes.md
+!reports/exp001_comparison.md
+!reports/exp001_selftest_control_vs_control.md
+!reports/baseline_e1_e4_analysis.md
+!reports/compare_002a_vs_001.md
+!reports/compare_002a_vs_baseline.md
+!reports/compare_002b_h003_002a_vs_002b.md
+!reports/compare_002b_vs_001.md
+!reports/compare_002b_vs_baseline.md
+!reports/split_investigation.md
+!reports/synthetic_style_diagnostic_plan.md
+!reports/synthetic_style_diagnostic_results.md
 /diagnostic_runs/
 /diagnostic_fixtures/
 *.log
@@ -70,10 +94,18 @@ reports/**
 /outputs/
 /tmp/
 /temp/
+# preview images written to the current folder by tools/check_synth.py
+/check_*.png
+# training histories of the documented runs (no absolute paths; per-epoch prediction samples preds_e*.txt stay local
+# because they quote dataset labels)
+!runs/*/history.json
+!runs/*/history.csv
+!runs/*/train.log
 
-# ---- editors and operating systems
+# ---- editors, assistants and operating systems
 .vscode/
 .idea/
+.claude/
 *.swp
 .DS_Store
 Thumbs.db
