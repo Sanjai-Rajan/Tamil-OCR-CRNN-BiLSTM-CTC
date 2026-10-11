@@ -1,0 +1,80 @@
+# ---- model weights and checkpoints: never committed (see docs/MODEL_CHECKPOINTS.md)
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+*.bin
+*.h5
+*.pb
+*.tflite
+*.gguf
+*.pkl
+*.pickle
+*.joblib
+# training run folders: keep only the frozen configuration of each documented run
+runs/**
+!runs/
+!runs/*/
+!runs/*/config.yaml
+!runs/README.md
+
+# ---- datasets, word lists, real or protected pages and annotations (anchored to the root: src/data/ is source code)
+/data/
+/external/
+/real_docs/
+/development_pages/
+*.parquet
+*.jsonl
+
+# ---- credentials and local environment files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.git-credentials
+.netrc
+.pypirc
+.huggingface/
+secrets.toml
+.streamlit/secrets.toml
+
+# ---- Python environments, bytecode, caches, builds
+.venv/
+venv/
+/env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+/build/
+/dist/
+*.egg-info/
+.cache/
+node_modules/
+
+# ---- generated outputs: experiments, logs, evidence bundles, diagnostic runs, uploads
+reports/**
+!reports/
+!reports/experiment_002a_final_evaluation.md
+/diagnostic_runs/
+/diagnostic_fixtures/
+*.log
+*_log.txt
+*.zip
+/predictions/
+/outputs/
+/tmp/
+/temp/
+
+# ---- editors and operating systems
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

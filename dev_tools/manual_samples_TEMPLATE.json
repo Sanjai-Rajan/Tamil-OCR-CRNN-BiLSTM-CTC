@@ -1,0 +1,4 @@
+[
+ {"id": "S01", "box": [0, 0, 0, 0], "reference": "", "reference_confirmed": false, "note": "replace the box with the word's pixel box; type the Tamil text you read; set reference_confirmed to true only after checking it"},
+ {"id": "S02", "box": [0, 0, 0, 0], "reference": "", "reference_confirmed": false, "note": ""}
+]

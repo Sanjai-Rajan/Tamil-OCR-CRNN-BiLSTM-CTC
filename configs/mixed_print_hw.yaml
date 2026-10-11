@@ -1,0 +1,49 @@
+experiment: mixed_print_hw
+seed: 42
+
+model:
+  in_h: 48
+  channels: [64, 128, 256, 384]
+  lstm_hidden: 256
+  lstm_layers: 2
+  dropout: 0.25
+
+train:
+  epochs: TBD_FROM_BENCHMARK
+  epoch_size: TBD_FROM_BENCHMARK
+  batch_size: TBD_FROM_BENCHMARK
+  lr: 0.001
+  weight_decay: 0.01
+  warmup_pct: 0.05
+  num_workers: TBD_FROM_BENCHMARK
+  amp: true
+  cudnn_benchmark: false
+  grad_clip: 5.0
+  max_hours: TBD_FROM_BENCHMARK
+  log_every: 200
+
+sources:
+  - name: iiit_hw
+    type: manifest
+    path: data/real/iiit_hw/manifest_train.jsonl
+    augment: hw
+    weight: 0.5  # 50% real HW
+  - name: synth_modern
+    type: synth
+    generator: modern
+    weight: 0.25 # 25% modern print
+  - name: synth_old
+    type: synth
+    generator: old
+    weight: 0.25 # 25% old print
+
+val:
+  - name: iiit_hw_val
+    path: data/real/iiit_hw/manifest_val.jsonl
+    primary: true
+  - name: synth_modern_val
+    path: data/synth_val/modern/manifest.jsonl
+    primary: false
+  - name: synth_old_val
+    path: data/synth_val/old/manifest.jsonl
+    primary: false

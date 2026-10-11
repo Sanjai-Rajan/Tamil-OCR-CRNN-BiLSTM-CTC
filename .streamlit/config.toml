@@ -1,0 +1,14 @@
+# Streamlit settings for the local Tamil OCR demo (app.py). Local only.
+
+[browser]
+gatherUsageStats = false      # no usage statistics are sent anywhere
+
+[server]
+address = "localhost"         # reachable from this computer only
+headless = true               # no e-mail prompt on first start; open http://localhost:8501 yourself
+maxUploadSize = 20            # MB; one word image is far smaller
+fileWatcherType = "none"
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = "type"     # an unexpected error shows its type only; the traceback goes to the terminal

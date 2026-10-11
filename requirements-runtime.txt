@@ -1,0 +1,11 @@
+# Tamil OCR V2 - runtime: the application (app.py), word OCR and full-page OCR.
+# Versions are the ones the release was tested with (Python 3.12.10, Windows 11).
+#
+# PyTorch: install the build that fits your machine FIRST, from the PyTorch index, e.g.
+#   CUDA 12.8 build (the tested one):  pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+#   CPU only:                          pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.11.0
+numpy==2.3.5
+opencv-contrib-python==4.10.0.84
+pillow==12.3.0
+streamlit==1.65.0

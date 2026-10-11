@@ -1,0 +1,4 @@
+# Tamil OCR V2 - the test suites (run_all_tests.py). The tests use the standard library's unittest; no pytest needed.
+# The synthetic test images are rendered with the generator, so the training libraries are required too.
+-r requirements-training.txt
+# Not Python packages, needed only for the two browser suites: Node.js and Microsoft Edge.

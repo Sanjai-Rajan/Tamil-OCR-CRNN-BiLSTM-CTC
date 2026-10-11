@@ -1,0 +1,56 @@
+experiment: experiment_001
+seed: 42
+model:
+  in_h: 48
+  channels:
+    - 64
+    - 128
+    - 256
+    - 384
+  lstm_hidden: 256
+  lstm_layers: 2
+  dropout: 0.25
+train:
+  epochs: 40
+  epoch_size: 151472
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.01
+  warmup_pct: 0.05
+  num_workers: 4
+  amp: true
+  cudnn_benchmark: false
+  fused_adamw: true
+  channels_last: false
+  bucket_by_width: true
+  bucket_pool: 50
+  max_batch_columns: 32768
+  unknown_width_estimate: 736
+  grad_clip: 5.0
+  max_hours: 24
+  log_every: 200
+sources:
+  - name: iiit_hw
+    type: manifest
+    path: data/real/iiit_hw/manifest_train.jsonl
+    augment: hw
+    weight: 0.5
+  - name: synth_print
+    type: synth
+    vocab: data/text_corpus/tamil_correction_vocabulary.json
+    old_print_prob: 0.5
+    weight: 0.5
+val:
+  - name: iiit_hw_val
+    path: data/real/iiit_hw/manifest_val.jsonl
+    primary: true
+  - name: synth_val_modern
+    path: data/synth_val/manifest.jsonl
+    where:
+      style: modern
+    primary: false
+  - name: synth_val_old
+    path: data/synth_val/manifest.jsonl
+    where:
+      style: old
+    primary: false

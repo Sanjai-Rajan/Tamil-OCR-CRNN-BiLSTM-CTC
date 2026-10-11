@@ -1,0 +1,237 @@
+path,category,size,sha256,status,reason
+.streamlit/config.toml,configuration / data record,563,42ef95bce01d96274912daee14e3d928a4947f485dd983177f513e7fdab95da9,included,"source, test, configuration, font or document"
+app.py,source,33994,f455edac9b474c89c4162842f6a4bd1431e5cf0e835499298715ef3d3d8edc6c,included,"source, test, configuration, font or document"
+app_page.py,source,14845,d1caa29e30a4bda8355d0f5a0462eedf89db8de9fad4f7a2652320046527d394,included,"source, test, configuration, font or document"
+app_page_auto.py,source,7175,4689817d3f5ad0918a2f1d1f6aa23d6e7e7ffe07f99e4adb59fb66cdbbac653b,included,"source, test, configuration, font or document"
+"assets/fonts/AnekTamil[wdth,wght].ttf",font / licence,899668,4b2bb7d91a001180b88862177ef2901e027e6428dec7f8e269413db51f550013,included,"source, test, configuration, font or document"
+assets/fonts/Arima[wght].ttf,font / licence,348480,c6b0db0d4343e9d08b8e79f9c6f868576c94bc0c839d349535f030b011884e45,included,"source, test, configuration, font or document"
+assets/fonts/BalooThambi2[wght].ttf,font / licence,307136,6739a11d3557b7426f0f43ce3a22ff6fbfee2d3be56ffb4df093d35d3460bf73,included,"source, test, configuration, font or document"
+assets/fonts/Catamaran[wght].ttf,font / licence,184276,f6ee331c381f441454225196d7930d4d0a31554d7f1f9c8c58149ca9e122b294,included,"source, test, configuration, font or document"
+assets/fonts/Coiny-Regular.ttf,font / licence,156520,ef02d723a54abe4819bea54ea8b2ecf72d77d258010bb336cd4862a37705eac7,included,"source, test, configuration, font or document"
+assets/fonts/HindMadurai-Bold.ttf,font / licence,142576,842086c4312100a032494dcb43fa7afc69ad5772fe004865e0761f92165910a1,included,"source, test, configuration, font or document"
+assets/fonts/HindMadurai-Light.ttf,font / licence,127664,dbe7a2234d341e80b345d4ffc2002e3089492cd07cd4ff5c38fe2dcbbfea54cc,included,"source, test, configuration, font or document"
+assets/fonts/HindMadurai-Medium.ttf,font / licence,137784,522aae6dea7fb9a9dfbf2ea25bf2ebf5d6f05c4ecba30fd2a56d22a690f4c072,included,"source, test, configuration, font or document"
+assets/fonts/HindMadurai-Regular.ttf,font / licence,136868,8bd56d6002d4fe4f5f378dd29f9ad382dbbd03a2bf16da24599aabe33f9b55b3,included,"source, test, configuration, font or document"
+assets/fonts/HindMadurai-SemiBold.ttf,font / licence,139348,fce32cd155130741e8dbae7256ddc2cb195eb07f7816746e7bc828e03c7b0ce5,included,"source, test, configuration, font or document"
+assets/fonts/KarlaTamilInclined-Bold.ttf,font / licence,108804,57788fe46fa9b701cf284104c0946c6f2ef669cb7e39fbca404a41e315eed0e5,included,"source, test, configuration, font or document"
+assets/fonts/KarlaTamilInclined-Regular.ttf,font / licence,109700,d563ace3a74ca1ce9c02cd32fb6dca5de7974f53de3304ac734980e02ba4f1c9,included,"source, test, configuration, font or document"
+assets/fonts/KarlaTamilUpright-Bold.ttf,font / licence,143224,0121d30ef4d7b3b8f8bdd62f3ed2108d37135da8021a737d5fc4976c33f11396,included,"source, test, configuration, font or document"
+assets/fonts/KarlaTamilUpright-Regular.ttf,font / licence,144440,7d79ee26d351ecf03cbeb129ef0a1c29779b58dec45a153291f1a3c6c926e50f,included,"source, test, configuration, font or document"
+assets/fonts/Kavivanar-Regular.ttf,font / licence,66324,ab373a218ee8464fee6ed14ee864d5a6c5146ca0458f0a61678a1889fe44b710,included,"source, test, configuration, font or document"
+assets/fonts/MeeraInimai-Regular.ttf,font / licence,72260,3dffa9501ac790b5e1c3ebecdba4f2c90a617a7d3131fad129893929bc56708e,included,"source, test, configuration, font or document"
+assets/fonts/MuktaMalar-Bold.ttf,font / licence,253112,d9b89b888d5e8c2e5e178118faffede3513ed74963cb2327a6381ebe6cc49c4c,included,"source, test, configuration, font or document"
+assets/fonts/MuktaMalar-ExtraBold.ttf,font / licence,261092,111b0e1ec07834b6e3a4589e811affcf521740589bd40bd2c279ae111a071aca,included,"source, test, configuration, font or document"
+assets/fonts/MuktaMalar-ExtraLight.ttf,font / licence,245020,b3509f55536f5ae6778b05f419b699ff315bed47218a4b7bbc848909a447a30e,included,"source, test, configuration, font or document"
+assets/fonts/MuktaMalar-Light.ttf,font / licence,239168,c29de0bc65be9ac013d9d3add8fa9a90b084ad2c241c8991c1cf9b63966fb566,included,"source, test, configuration, font or document"
+assets/fonts/MuktaMalar-Medium.ttf,font / licence,241356,24a63c81bf17a90a6593190bf9c7b676183f5943b4a529db1a4ef2eb0c71805f,included,"source, test, configuration, font or document"
+assets/fonts/MuktaMalar-Regular.ttf,font / licence,243008,51904041260855ef4ba2bf845c9bc6511ea330157b704a44c85b029195d32a73,included,"source, test, configuration, font or document"
+assets/fonts/MuktaMalar-SemiBold.ttf,font / licence,241480,da06e2bef0ed1298499804c3c53f8be0d6c138177c4eb9ff7e8bbab5c9f53e5e,included,"source, test, configuration, font or document"
+"assets/fonts/NotoSansTamil[wdth,wght].ttf",font / licence,340668,aa3a9b321f4b0bb2c40203ffbde9af89713227866e0e13f76e5b9eeea727cf88,included,"source, test, configuration, font or document"
+"assets/fonts/NotoSerifTamil-Italic[wdth,wght].ttf",font / licence,422328,fd83887a38aa103aade5e6f73437386bf010bec2afac5b5973e4996c1a98193b,included,"source, test, configuration, font or document"
+"assets/fonts/NotoSerifTamil[wdth,wght].ttf",font / licence,420124,4b10fe56ee22907a80136c16dbe386ee20f3bf116332b35128bb35eeb775d91e,included,"source, test, configuration, font or document"
+assets/fonts/OFL_anektamil.txt,font / licence,4379,de62be758bba267e653a5f457dfebb4680957e2c343eb3e7de15aff4746bed05,included,"source, test, configuration, font or document"
+assets/fonts/OFL_arima.txt,font / licence,4386,aae6749568fe746a578b16cb6ca8ca9a22729b0c738254e17c21b23a61972bd0,included,"source, test, configuration, font or document"
+assets/fonts/OFL_baloothambi2.txt,font / licence,4384,ad09b05dc8bc678c9daf7c4c5f7ef1f55e5726127f4330b2e98e40b9dffcb860,included,"source, test, configuration, font or document"
+assets/fonts/OFL_catamaran.txt,font / licence,4370,c88333734ad7cd30540ec6614d12aa829a0395715de30e336d22ddfa3005db42,included,"source, test, configuration, font or document"
+assets/fonts/OFL_coiny.txt,font / licence,4464,5c289da4a19f054ace8e31a144a6a254601898cd7faf9eaa301141afda0adbbe,included,"source, test, configuration, font or document"
+assets/fonts/OFL_hindmadurai.txt,font / licence,4371,4b255eb44f613a8e426e195f0d0b7e10fcba1af7eb6047d9a7f4f3c449940e19,included,"source, test, configuration, font or document"
+assets/fonts/OFL_karlatamilinclined.txt,font / licence,4506,fdecdad755f4e5e95bee491c7521f31625dc08283562ea8579543c90430eb269,included,"source, test, configuration, font or document"
+assets/fonts/OFL_karlatamilupright.txt,font / licence,4413,cc31fe974951d56d542f33782d07b2d5577a4afdddba89744e6bd69bcbf3a853,included,"source, test, configuration, font or document"
+assets/fonts/OFL_kavivanar.txt,font / licence,4475,0acef93ca37cf19eeb83a1c6a29b78b08377a211c8d80cd27626e210176828da,included,"source, test, configuration, font or document"
+assets/fonts/OFL_meerainimai.txt,font / licence,4524,d530c14e9cc263c567b47742ef20df2a41374f00732ba4f290f52adad428b1a2,included,"source, test, configuration, font or document"
+assets/fonts/OFL_muktamalar.txt,font / licence,4353,d24ff874133ecd133e55d7c4070d2edab14d3933477c2bccb3a0d8d1cc9c33bf,included,"source, test, configuration, font or document"
+assets/fonts/OFL_notosanstamil.txt,font / licence,4381,f8ff8ce7d0a81bf8d5e121c635ef027250c531f2fd37d5988b8dd6e45f19d7f1,included,"source, test, configuration, font or document"
+assets/fonts/OFL_notoseriftamil.txt,font / licence,4381,f8ff8ce7d0a81bf8d5e121c635ef027250c531f2fd37d5988b8dd6e45f19d7f1,included,"source, test, configuration, font or document"
+assets/fonts/OFL_pavanam.txt,font / licence,4538,75a77451968e55a1ab404bd953bd8778983e21116d507b890fbcf838e58c8e8b,included,"source, test, configuration, font or document"
+assets/fonts/OFL_tirotamil.txt,font / licence,4387,2ed6051706542c5d6d96480318152b17900bb6d4dbadb11d7d5d6464d8b3e0dd,included,"source, test, configuration, font or document"
+assets/fonts/Pavanam-Regular.ttf,font / licence,63100,d2805bfdca57f7d7a0c69edf35a5f98d4605af6603dcca943db5d11ea531c2f3,included,"source, test, configuration, font or document"
+assets/fonts/TiroTamil-Italic.ttf,font / licence,198584,9571f0048b9f25411ff020ec037d2c7e257c5fc2b043c18533e305ea4aa193e6,included,"source, test, configuration, font or document"
+assets/fonts/TiroTamil-Regular.ttf,font / licence,197432,f4ad26a93893a45fcb44bf117940d462c5aef1887543e9b8bf150767e597a76f,included,"source, test, configuration, font or document"
+configs/baseline_hw.yaml,configuration / data record,1566,11f4570724411bbb770f96856bbe2754375dddb52a4e513cf3f6f5b8fdc77724,included,"source, test, configuration, font or document"
+configs/experiment_001.yaml,configuration / data record,1155,311d2d142ea45db39cfe8d5f1120dfb098bdaddd8207e0c4f1f41a8d750b3b3d,included,"source, test, configuration, font or document"
+configs/experiment_002a.yaml,configuration / data record,1177,4588dff5ab90aecada8aa4fe4b8bc723832be11d036163788e8a5ed8af3f0f32,included,"source, test, configuration, font or document"
+configs/experiment_002b.yaml,configuration / data record,1156,746aca98102e8e318d6104d196b281c30c3bddc8a18bed041f2493568b6fec9c,included,"source, test, configuration, font or document"
+configs/mixed_print_hw.yaml,configuration / data record,1081,174174aac5a92bef6451f25165b133b5f44defe189366f6fe1fd38fac2f0c693,included,"source, test, configuration, font or document"
+dev_tools/compare_manual_crops.py,source,4352,9096b7ff85f7ec7f4e323eb9a70179fb9d4bbe43cd1419f56a7d5d89bb1ef65d,included,"source, test, configuration, font or document"
+dev_tools/experiment_record.py,source,6835,be74bb67d083f7e2b96a33d1cf6c6a34b8f5ccb1cfef3ae689778d73705ba181,included,"source, test, configuration, font or document"
+dev_tools/manual_samples_TEMPLATE.json,configuration / data record,322,ac1b03835683fed9687edf491ffd7cc71c1460f00f3d1efb732c0ed8c959495e,included,"source, test, configuration, font or document"
+dev_tools/segmentation_experiments.py,source,14758,56bd5ffbd0fec49e5aef5745ff53a182b1b7a580aa8ab0536213a292c73652d6,included,"source, test, configuration, font or document"
+dev_tools/slant_experiments.py,source,10169,9b4312af642bea546e5691fa68f8363ee79cf1439f030a415e49dc08cab3c834,included,"source, test, configuration, font or document"
+dev_tools/synthetic_conditions.py,source,4892,eb43665560e6dec6b8da4bf0aac44766dd6777e719d6b6b7f1ba81af08a4082a,included,"source, test, configuration, font or document"
+pageocr/__init__.py,source,2933,0a720ed6780de1ad15290f162b77e51fb5b4f6c0137be0daf058b50e5c3f5f3b,included,"source, test, configuration, font or document"
+pageocr/boxes.py,source,11187,eb0fe1f929a9e7a46dd7ade655c9f2d6f55cf47a7e9d6726c594afeb58f9e80e,included,"source, test, configuration, font or document"
+pageocr/columns.py,source,6375,7ab4015aad66387fcec05b075a158e2e1f41be33eddecb34de235d55d69c6b79,included,"source, test, configuration, font or document"
+pageocr/deskew.py,source,2237,5d13ef9109f7a2797e07695ce8400932fc6c0ca20957692864daf9496654e739,included,"source, test, configuration, font or document"
+pageocr/devguard.py,source,8425,54c8be992a87e07fdaeaf8d914878bbb1af985a0b4e9b335ade74dc17bf40277,included,"source, test, configuration, font or document"
+pageocr/engine.py,source,9491,dcec51c76226c00aec1100403f39347d646861e9782632968ef6df92b0c4e88f,included,"source, test, configuration, font or document"
+pageocr/export.py,source,3378,e24b07c58da6f3f10a9fc65f2f9a68496c60d64b4f8625fc15994d1e9f5d9906,included,"source, test, configuration, font or document"
+pageocr/geometry.py,source,10478,4e4695a7cf66971fcef6f0677b5132ef92992ec47698bef580bc14048862cfce,included,"source, test, configuration, font or document"
+pageocr/imageio.py,source,11130,2687f0505dae811320e7b86d7fc85a5a7133a2efa887445a59fa59915651b408,included,"source, test, configuration, font or document"
+pageocr/layout.py,source,15379,6eac5be10c62d1c276d1cd2248c0aeaf0a0838085f6047d216b656e6fdf0f471,included,"source, test, configuration, font or document"
+pageocr/line_geometry.py,source,17974,25feb7d611157358c8f1791ce9485b6675a1adccdfdf9c5833c4db83e3fb35d5,included,"source, test, configuration, font or document"
+pageocr/lines.py,source,3923,54868a80521a6e8945a741e6add20b9ff4f338f15aba377bdee6728ff91c3f72,included,"source, test, configuration, font or document"
+pageocr/pipeline.py,source,13653,f91e34c81c42f33fac8cce909a2d8472d9e59844930bf08272afc1f8fab74f85,included,"source, test, configuration, font or document"
+pageocr/protected.py,source,6497,8d268549e799188f513e2c31c0c5dde1bb0144b10561926e1436cc7984eeb910,included,"source, test, configuration, font or document"
+pageocr/protected_manifest.json,configuration / data record,283599,df43aab6590a6df4cfe65e2f645fac3e71c2a6c3d7644f1424a7a5b1b41fe2ff,included,"source, test, configuration, font or document"
+pageocr/reading_order.py,source,3153,f9498a49c28c65d618249751db3017eb8f6f4eeb2d2bc5d48babf2b974a4adc8,included,"source, test, configuration, font or document"
+pageocr/rights.py,source,4666,a737243be0808afe70b15d27cb452227a9e2849e8d2692290c4dabeab96cef40,included,"source, test, configuration, font or document"
+pageocr/rules.py,source,3768,4f523c96fe9a588c52ce1264c62b1c4260b4d4880f7d70e64bf01bd6126e7d3e,included,"source, test, configuration, font or document"
+pageocr/slant_lines.py,source,11813,e090a1588f1628fe72d738d35f3f79b8d681db39b5a2062c43a7c913c1c69a2b,included,"source, test, configuration, font or document"
+pageocr/words.py,source,7175,aabf0e0af50cd72c7399f49b0d3c32dcb575df410a0402dc5f76e8d93ed16ef6,included,"source, test, configuration, font or document"
+reports/experiment_002a_final_evaluation.md,documentation,4653,3224a5a9dd33e4070ee06b63433ee92c33f011e67cbdaec580492455de505988,included,"source, test, configuration, font or document"
+requirements-runtime.txt,documentation,575,17619a3e5f427578087552211cc569b89a6eb2fe1c2b1a9953ccea077467d841,included,"source, test, configuration, font or document"
+requirements-test.txt,documentation,343,9b4a6762cce4ab3503e299d4f14c239a3ab55cbb1fe3f7c84b09e3edcf5fcbba,included,"source, test, configuration, font or document"
+requirements-training.txt,documentation,240,c6af363193639b9a1a7acd3a6aacd4fdffa306ff8d51d86279c4619e98377a17,included,"source, test, configuration, font or document"
+runs/baseline_hw/config.yaml,configuration / data record,1566,11f4570724411bbb770f96856bbe2754375dddb52a4e513cf3f6f5b8fdc77724,included,frozen training configuration of a documented run (pinned against configs/ by tests/test_pretrain_check.py)
+runs/experiment_001/config.yaml,configuration / data record,1155,311d2d142ea45db39cfe8d5f1120dfb098bdaddd8207e0c4f1f41a8d750b3b3d,included,frozen training configuration of a documented run (pinned against configs/ by tests/test_pretrain_check.py)
+runs/experiment_002a/config.yaml,configuration / data record,1177,4588dff5ab90aecada8aa4fe4b8bc723832be11d036163788e8a5ed8af3f0f32,included,frozen training configuration of a documented run (pinned against configs/ by tests/test_pretrain_check.py)
+runs/experiment_002b/config.yaml,configuration / data record,1156,746aca98102e8e318d6104d196b281c30c3bddc8a18bed041f2493568b6fec9c,included,frozen training configuration of a documented run (pinned against configs/ by tests/test_pretrain_check.py)
+src/__init__.py,source,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,included,"source, test, configuration, font or document"
+src/augment.py,source,5851,d66093dad1eb3e9b91cc264f33fc8ace061680bd4007ced8ee69549c0fcb2e0e,included,"source, test, configuration, font or document"
+src/charset.py,source,2339,1a9ce37124a2894654b190f2fc8f719c3152ab6c0c6e375504de88e4d73dab14,included,"source, test, configuration, font or document"
+src/data/__init__.py,source,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,included,"source, test, configuration, font or document"
+src/data/datasets.py,source,17389,1989b8776eba470d9eafab818f7f3f0e8c37386bff3064fac9ae5bd5e46dc488,included,"source, test, configuration, font or document"
+src/metrics.py,source,1700,880c4a07ae51f48fc43c4b80e8d114f8f7ec247e7a2c3d6537e441f94160aad1,included,"source, test, configuration, font or document"
+src/model/__init__.py,source,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,included,"source, test, configuration, font or document"
+src/model/crnn_v2.py,source,3708,1f2da2c820dd79a0eb4d2b97ee5a8f89d1fa0f22b92973738b9955b364429f9a,included,"source, test, configuration, font or document"
+src/preprocess.py,source,2090,975893f9cf2e0b6f0ac336d8d937113dbe2cc078a0f9849900061439cc415467,included,"source, test, configuration, font or document"
+src/synth/__init__.py,source,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,included,"source, test, configuration, font or document"
+src/synth/degrade.py,source,15777,26175ff7d1cfde813cecb97d1871eb0796dcf7e60372f5899001c9b097b5c6bc,included,"source, test, configuration, font or document"
+src/synth/fonts.py,source,4701,3a0696313c5391b49866f63a40b3ccd4b8d867424c7fa424b04c753c21d28f8e,included,"source, test, configuration, font or document"
+src/synth/generator.py,source,6168,024c04db3a032fc501b6a968b328c44c4a30c131311a85db91739a4f99991b6f,included,"source, test, configuration, font or document"
+src/synth/render.py,source,7588,04b28bc5e9e26cf86f7a96452e50f7a3b5a82224d58420e504043e4929863f5b,included,"source, test, configuration, font or document"
+src/synth/text_sampler.py,source,5712,f7f27c0193765adb281d9c946ead8589383314dd1bf1880c18ee9801c182c090,included,"source, test, configuration, font or document"
+src/train.py,source,20392,8ca3ae6bd59d95131b46c30776f4ed62df299befb135ab0bcc11c1d954343fac,included,"source, test, configuration, font or document"
+tests/diagnostics_browser_smoke.js,test,24415,f0ce1c101399b5667b574fde309947263a451bd4508cd707490fd46938eb16f8,included,"source, test, configuration, font or document"
+tests/diagnostics_browser_smoke.py,test,9749,55b88a4d40c2530647d1e3cae74f99e4ae704c7f32b41180361d50a14c71c881,included,"source, test, configuration, font or document"
+tests/fullpage_browser_smoke.js,test,12689,fbc5561a32d3d7aa0a66ab4dfa9b3c1ac8a552c0961cfddb7bf0d565f8905796,included,"source, test, configuration, font or document"
+tests/fullpage_browser_smoke.py,test,5410,a25d26b7519ec4e489d786913e6090d4c1b616fbadd7fe13d96cf300b0256504,included,"source, test, configuration, font or document"
+tests/fullpage_fixtures.py,test,8913,b2cc22ab434808bd817dc9f024c5b1b8d9715a3a538c59a12d78a12e9aee518e,included,"source, test, configuration, font or document"
+tests/pageocr_synth_pages.py,test,9537,7db27b71dd7ab9f53a3d83a49fe75d457d63ee365db1b5ad246e78254c3dfbbe,included,"source, test, configuration, font or document"
+tests/slant_fixtures.py,test,6928,330d23e81e23219385e0f81530ccdd991b5a19ec5fca24f14271b03d9f850820,included,"source, test, configuration, font or document"
+tests/test_check_split.py,test,2724,228f6f8765002118ebd93c17ff97dab55f266053adb2f29faa74862bc31f7cb1,included,"source, test, configuration, font or document"
+tests/test_diagnostics.py,test,14045,9b99dd5266233fe459ec4fc445755f8e1258e7caaea00cb73a353f232880ef1d,included,"source, test, configuration, font or document"
+tests/test_fullpage_app.py,test,11889,04267e41223101a4aa8f2232cd9995a1933deed1510d7aa27ccb6065e667485d,included,"source, test, configuration, font or document"
+tests/test_fullpage_ocr.py,test,24726,0c00abd76f5f3bcd03813992951c3597b9c0376303a3a26ec59a01c8f979797e,included,"source, test, configuration, font or document"
+tests/test_line_geometry.py,test,15005,24bc6a736e2ad96d9e640c47e6277544381770c2e468b851af002bd1cf8cc907,included,"source, test, configuration, font or document"
+tests/test_minimal.py,test,3704,1a51bdda96609766c04a18104bc68173f0e1ec47bdf54aa0ae23bd53dfab5b9b,included,"source, test, configuration, font or document"
+tests/test_pageocr_boxes.py,test,14819,39fe8618f1c81b4ba98e4a23c1a0588236ac95d01b625206c6a584a46b0e20be,included,"source, test, configuration, font or document"
+tests/test_pageocr_engine.py,test,22152,5bb7ea79faa509c2f785f48838166a5e697b42cc2bd3ec543688871ad2c004d0,included,"source, test, configuration, font or document"
+tests/test_pageocr_v3_geometry.py,test,9387,4d21cf4fc1e14b920a325efc635ccdbbc3eddb6a910dbfa85da7f5db250c356a,included,"source, test, configuration, font or document"
+tests/test_pageocr_v3_segmentation.py,test,23859,c692b9797663c3e32ee0e06e3085be978ffba848a9f61bba495171143f54822d,included,"source, test, configuration, font or document"
+tests/test_pretrain_check.py,test,9851,99721a852655f6512a0bb07c87bef3df9864c56d24ba6206b26616b5c3f91577,included,"source, test, configuration, font or document"
+tests/test_protected_guard.py,test,14694,0250f81b544ce625e2dcb35d3b0135822d34f469ce6f7ab9dfd74eb59be35cd3,included,"source, test, configuration, font or document"
+tests/test_recompute_eval_metrics.py,test,4980,fee9ea88647d366fe4b84158a6078510095b97335db66b9074e93d02f6c363bc,included,"source, test, configuration, font or document"
+tests/test_slant_lines.py,test,8373,4c58435f54dbdf16810698d2f51790b6c56f1143f7319d3b7b6b7771f2a33c0e,included,"source, test, configuration, font or document"
+tests/test_wordocr_app.py,test,11472,cfe3b59fb7149c0cc0509c2c7d78d9b51ce4418a0d0730b8451f5e9bcbdd68f8,included,"source, test, configuration, font or document"
+tests/test_wordocr_service.py,test,25920,6faac8da2f8e56367cfe65da650f9455280479555991db92e3d090555e7d01ac,included,"source, test, configuration, font or document"
+tests/wordocr_browser_smoke.js,test,11745,7643532234aa082fcbf721d39e0a47ee7983e3cd703e3d777e45612214e7bcc1,included,"source, test, configuration, font or document"
+tests/wordocr_browser_smoke.py,test,5477,3ee32d16c7ecb2a8567f7bf16a068b6039a987c8e5701a3c7b91a2f03222f361,included,"source, test, configuration, font or document"
+tests/wordocr_fixtures.py,test,2126,984e111fa3d35f1fecf4d1a64728a13024eda2f9ad655fc46c7c29fe39faa2a0,included,"source, test, configuration, font or document"
+tools/bench_synth.py,source,28692,651e1176c3c11952a25f0cbb8dc96a188b1fe7d2a3da990103857d00e350c6ad,included,"source, test, configuration, font or document"
+tools/bench_train.py,source,15816,2d1070db73e1d7b5fa56eadbb647a499b41574afe346adb02f13de34d0eed113,included,"source, test, configuration, font or document"
+tools/build_wordlist.py,source,4440,28c17e587131e2d5346e55de08039750897c12c6f26599cdc8fb047fdff8b541,included,"source, test, configuration, font or document"
+tools/check_split.py,source,3709,b3194da07af3040dd4769a3f70b50b41a3bf08573884a8fd12944b2d1d06b186,included,"source, test, configuration, font or document"
+tools/check_synth.py,source,3112,9d0b80deddc9669d645144fedc81e543ee1f28507460313a3a46c70781552969,included,"source, test, configuration, font or document"
+tools/compare_eval.py,source,12225,d629b4b4a298dfed1c59b51fc1a6a7f7b3f794f297162ab84bd99a376318bb77,included,"source, test, configuration, font or document"
+tools/evaluate.py,source,7594,5368d1175ebe8929c27a9ebe4683d077a659e2266a053d4fd7715b73dc83d70c,included,"source, test, configuration, font or document"
+tools/import_hf_parquet.py,source,8455,2b57062cfbe73ff6ca0cc9c0b772765dd85b0765c4cfd07ba1d88d76d187e41e,included,"source, test, configuration, font or document"
+tools/pretrain_check.py,source,6260,e3668da369362e9cf61e8054d541bdd50051bff7ffed5353cd9e325380624cf9,included,"source, test, configuration, font or document"
+tools/recompute_eval_metrics.py,source,6865,6d55e4c555138f75542a347723f26d525e99c8ccef78c9026867362464df7cd8,included,"source, test, configuration, font or document"
+tools/synth_export.py,source,2032,0b8efddad6eb4c402855c645acb4d5571305d960b2d43561a6852fd8d92550fc,included,"source, test, configuration, font or document"
+tools/synth_preview.py,source,3374,c929291ae7acb016700fd126b7a71699645130c8afb7b3c7997aabbbcedf1484,included,"source, test, configuration, font or document"
+wordocr/__init__.py,source,1986,781f9026ccf31838da254c421c1e02ef5693044397a79f4bf07375f72fb5c576,included,"source, test, configuration, font or document"
+wordocr/checkpoints.py,source,3142,c7fa065190b82c178c8cbed866925377380402fd1c0d9e804b9b0fdd5c2dd9f6,included,"source, test, configuration, font or document"
+wordocr/crop_compare.py,source,8615,cb4ec143620bc928ce6d23076129cff5c95447540f9582356207af4ff39bd847,included,"source, test, configuration, font or document"
+wordocr/diagnostics.py,source,19302,e00094ccbf0dffe3164b377981e2bab5810a5fd1866081074091a51154ff11e7,included,"source, test, configuration, font or document"
+wordocr/diagnostics_view.py,source,8318,9633985d5ea4634566c6e02e41977b0476d8404a360e512043edd60d215354a8,included,"source, test, configuration, font or document"
+wordocr/export.py,source,4041,2217ab9a791f9e6c8862447eab2797b3eaaf0a901731fc36fac226988d7cb7c2,included,"source, test, configuration, font or document"
+wordocr/fullpage.py,source,14969,ccf44dde3c4a2b7ba04f9751b0614dff366ee51d659862eef235ac71a48eee10,included,"source, test, configuration, font or document"
+wordocr/guard.py,source,3611,767457fd7ddf398fcb90541ce6716d861bece071d282e97c4daa8cebfe1cd5e3,included,"source, test, configuration, font or document"
+wordocr/inputs.py,source,10083,a1ffe96bb5dc7b6a570b1cdff441608a14d6149af22faf2c902b94f2df22bd2e,included,"source, test, configuration, font or document"
+wordocr/page_export.py,source,3652,b69fe70de4d68bfeb30ee1b3e8dfd724b6610943c81a89b0beb1293cf857d1ab,included,"source, test, configuration, font or document"
+wordocr/pagedetect.py,source,9555,de98bbb320f294fd334ad2adccd2967c689754c3d37c4c938bca6d6ecd7c9d6c,included,"source, test, configuration, font or document"
+wordocr/service.py,source,8505,6d1d082f9eeaaface5c2d5ccbaadcfa1f2d83f755c746d74faf1d76380828038,included,"source, test, configuration, font or document"
+.gitignore,other,1229,b45f61f657ed920687e247a1ae3ae204dc4bedf069d62d93dc2b49700923c56f,added for the export,written for this export
+CHANGELOG.md,documentation,1742,702095cc94eab12796747327f438481e556640dfbe742c5d12b600f75272d28a,added for the export,written for this export
+CHANGELOG_CLEAN_RELEASE.md,documentation,5707,9284c7fde3d7abf36374199648c8f9e0030616e1b6c739b47a781c1203108e0c,excluded,history of the 2026-10-10 review release (kept in the source-code archive)
+CONTRIBUTING.md,documentation,1922,916f0fbb50dd799ff8db413a7a5d85e11134bff211a56e96ebfa413495c828c4,added for the export,written for this export
+DEPENDENCIES.md,documentation,5484,fa54a99063fca3c456798774a23684adc71265657ae5fe8d92590225cfc2ecaa,moved,moved to docs/DEPENDENCIES.md with a note prepended (text otherwise unchanged)
+EVALUATION_AND_LIMITATIONS.md,documentation,6104,749d0d78155b8ed678b9d5d87632626cbca299f35c4df3fdaa4bb8cb9b951606,moved,moved to docs/EVALUATION_AND_LIMITATIONS.md with a note prepended (text otherwise unchanged)
+INSTALLATION.md,documentation,5068,d8b96ec660ff0d3c07c18088d97d4c38303c9134ffbe51aa2711474594154ff5,moved,moved to docs/INSTALLATION.md with a note prepended (text otherwise unchanged)
+LICENSE_SELECTION_REQUIRED.md,documentation,1847,0a40222e26e52ed257711e695f99188ac1187f5f69668ff10cf66bc84a481a43,added for the export,written for this export
+MODEL_PROVENANCE.md,documentation,6601,64a6c65a52d1824ceb544b090d825596ed3454957bf5095f2103ae69d8f6bd9a,moved,moved to docs/MODEL_PROVENANCE.md with a note prepended (text otherwise unchanged)
+README.md,documentation,6039,e68a78f7442dacee4a8c8e5c3662fabc58692bbd8a2d56c66e64c9035ef6f2fa,excluded,replaced by the repository README
+README.md,documentation,9816,76339c0ff352464f62334b955b4bd67d3fe46ca0e90d4de435c3d25adbf71adb,added for the export,written for this export
+RELEASE_AUDIT_SUMMARY.md,documentation,5166,57e769ec6c2a95f49e9ffe0ba3fe9c4c90c6d3bbb18f82d88a6fd9afb6ee4b39,excluded,evidence of the private 2026-10-10 review release (kept in the source-code archive)
+RELEASE_CHECKPOINT_VERIFICATION.md,documentation,3006,c1695294098ccd354d05402c095cefc47c71f4dfaefbc6a40665451511dccea1,excluded,evidence of the private 2026-10-10 review release (kept in the source-code archive)
+RELEASE_DEPENDENCY_INVENTORY.csv,configuration / data record,6838,1cddb1c7493a084aef1c9d423898ddbae38613b84e4b9847e4bdc05d1d4c7a52,excluded,evidence of the private 2026-10-10 review release (kept in the source-code archive)
+RELEASE_FILE_MANIFEST.csv,configuration / data record,31379,9bd782fda9ef1b8fa6ae96d7592a28d4855440c0fece671cc651b040ac3c875b,excluded,evidence of the private 2026-10-10 review release (kept in the source-code archive)
+RELEASE_PROVENANCE_SUMMARY.md,documentation,3332,feff9033b0f5cde4e1963c37d078dce26237cb4c295a3051747595843342d215,excluded,evidence of the private 2026-10-10 review release (kept in the source-code archive)
+RELEASE_TEST_RESULTS.md,documentation,6618,948a1458454a52d363989bde6a06d3410fd1453c5d1152f5aaaa8685cedf6c7f,excluded,evidence of the private 2026-10-10 review release (kept in the source-code archive)
+REPOSITORY_AUDIT.md,documentation,11921,677cb287efa19aa250162db97b0b3c87725e10b016dd3e7f1526718106b4f02a,added for the export,written for this export
+SECURITY.md,documentation,1984,d3a6dbb1a1f231205ea0b9e09a40298c03465b163a0f4d384eeae7ddc75e66c7,added for the export,written for this export
+SECURITY_AND_PRIVACY.md,documentation,6072,b5a220493ba52040c1a467a3643127b9a0ccdfd1c0a89571558028d3a8dfd912,moved,moved to docs/SECURITY_AND_PRIVACY.md with a note prepended (text otherwise unchanged)
+TRAINING_GUIDE.md,documentation,7670,2029d778c063f89a0717aedaaf965bc810b161e70a4739391a5491c0a33e0fec,moved,moved to docs/TRAINING_GUIDE.md with a note prepended (text otherwise unchanged)
+dev_tools/create_workspace.py,source,4812,28772f0037c1b8fa7f99de8888b345b15a285c35c4fca2ef02d05844458a1b2a,excluded,builds the private diagnostic workspace from the review copy (machine-specific source paths)
+dev_tools/default_output_compare.py,source,4800,727d24253b824403b63e122db3290ef89f2d6909813c65ff018d9223bef2f202,excluded,"compares against a private baseline record (reports/), not part of the repository"
+dev_tools/final_integrity.py,source,3748,66fd4159c54fee2596a02859cfb29d502a0c81806874a2a18689c53e185df948,excluded,checks the workspace against the private original project and review copy
+dev_tools/patch_app_diagnostics.py,source,4388,7f083734de1830d00d0319fb14801af2e89ee87fdae9a5ed9da3105980275c10,excluded,one-off scripted edit used while developing in the workspace
+dev_tools/patch_experimental_options.py,source,7421,d8c79ba019c2943b3ad65c2a5e77bcc54eb69604154e6c6ff47fd5897a0191dd,excluded,one-off scripted edit used while developing in the workspace
+dev_tools/verify_experiments.py,source,15299,7d0d8be5d4b2a04cebb61c1ed182fdc8b1ee5b8b7131934168a9b1dc9c5eb6ad,excluded,"re-verifies the saved experiment folders, which are not part of the repository"
+docs/DEPENDENCIES.md,documentation,6071,533d98fa4fd2226eb9805dff95363cd14c8e26428492cd4dc5f081e586493c89,moved here,from DEPENDENCIES.md; a note on what differs in this repository was prepended
+docs/EVALUATION_AND_LIMITATIONS.md,documentation,6691,9e6be5e99bccebefcc3d608e972da9d49a5422c7e3c51b20a30473df0fb8c231,moved here,from EVALUATION_AND_LIMITATIONS.md; a note on what differs in this repository was prepended
+docs/EXPERIMENTS.md,documentation,4530,bb5a7792a7ba7c2eb6488dc08c9b73b5f14ebc43ce87901c54dac187d3986f43,added for the export,written for this export
+docs/INSTALLATION.md,documentation,5655,b31db34cfa209e1aa753737ad89adfca6fe43f19cf16698e4ca900ce938cb1b2,moved here,from INSTALLATION.md; a note on what differs in this repository was prepended
+docs/MODEL_CHECKPOINTS.md,documentation,2881,3f1a661010cb2933c27228fa5147c046bd4aeefa60c2190136388f8be59aeef1,added for the export,written for this export
+docs/MODEL_PROVENANCE.md,documentation,7188,62c13c07277007fe58e6ef3aafa1558596880f0cd962b8fe1fc2901cf6d03701,moved here,from MODEL_PROVENANCE.md; a note on what differs in this repository was prepended
+docs/SECURITY_AND_PRIVACY.md,documentation,6659,df413a955ad74c9860dff7289c423c726f24a42ff10fff1c3cebee0236808887,moved here,from SECURITY_AND_PRIVACY.md; a note on what differs in this repository was prepended
+docs/TRAINING_GUIDE.md,documentation,8257,8dc6a906b95d8a9cee5baadfb799d12ea31b375b74761b97f4c46a18ba95aa25,moved here,from TRAINING_GUIDE.md; a note on what differs in this repository was prepended
+release_tools/build_protected_manifest.py,source,7018,1d8a8c4e98c68ef473eee2ac3c94ee1a54b666c117f7dd7bbe7751ef571a3e98,excluded,tooling that built and checked the private 2026-10-10 review release (kept in the source-code archive)
+release_tools/build_release_copy.py,source,8097,33d4f957815c022a36cdc4adfce23ae894f594d9481f1b44776c7c03c0548aa2,excluded,tooling that built and checked the private 2026-10-10 review release (kept in the source-code archive)
+release_tools/compare_with_original.py,source,5541,653cac0045db3f3a2505e28a155b08b5268947b2045a6b616b0414c16ebddf54,excluded,tooling that built and checked the private 2026-10-10 review release (kept in the source-code archive)
+release_tools/dependency_inventory.py,source,8565,fe0394d47ee95dd771eac417744a267e21a2339286ce0edebc91cb6de81a6561,excluded,tooling that built and checked the private 2026-10-10 review release (kept in the source-code archive)
+release_tools/finalize_release.py,source,4566,3d728812bcf253732a30bcf5bc4b94652ce1b150d62c477b82f0fc4c726613f8,excluded,tooling that built and checked the private 2026-10-10 review release (kept in the source-code archive)
+release_tools/patch_checkpoint_evidence.py,source,2393,19faf2ccaf2b610210f88cdd591c701c76a08df5222696a799784fc9aa1940e3,excluded,tooling that built and checked the private 2026-10-10 review release (kept in the source-code archive)
+release_tools/patch_guard.py,source,8291,17b7a2be2eda376eac521b7a1600e90820153172a379510731ccf89aff50cdf3,excluded,tooling that built and checked the private 2026-10-10 review release (kept in the source-code archive)
+release_tools/release_checks.py,source,3465,e68bde39d22602f7bac77f7a826ad112bc5d9153f84f58aa7d46270dab45be79,excluded,tooling that built and checked the private 2026-10-10 review release (kept in the source-code archive)
+release_tools/run_inference_set.py,source,7420,c32c374327e3976057ca37b2a20183a9cdcdba42d0bd8313999bc411106081b6,excluded,tooling that built and checked the private 2026-10-10 review release (kept in the source-code archive)
+reports/diagnostic_implementation/CHANGELOG.md,documentation,12353,f12a123e7fa4216b91aae4ecbed0b17314eadf67480cb58f2485d938913a883e,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/EXPERIMENT_RECORD.md,documentation,38801,766bdd34b8b8fae41a26e22876ce6a45899d8d389665c9a85dbc5c98a443bc75,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/IMPLEMENTATION_REPORT.md,documentation,26496,4f3ffc4991aa5a75fccfa611db02f0e76ab348951cc4630ba7da3f4952c2b2fc,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/RESUME_PROMPT.md,documentation,3824,6607e4b75f4b4f25932d660a8da016aa624f38ddca508586bfe1ce854caefe52,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/RESUME_PROMPT_before_slant_pause.md,documentation,2891,6d757fd078a5e4a658b0769490ece14671ee806b4f1d8f21b0d94c839a69feb2,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/SESSION_CHECKPOINT.md,documentation,4515,6bf3c9eefd71d4670fed7ae03b8c11355eebd72e69b69cf869904d90371b700f,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/SESSION_CHECKPOINT_before_slant_pause.md,documentation,5175,b7d880f3dde9fe5f95e1867b46ff77872260f8204d0bb92663e47f0bdefdcd9d,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/SESSION_CHECKPOINT_slant_pause_1935.md,documentation,8929,404e0c06a25aa578c4f8f65bf90f93c028711906a8bc4e2c452766f536ab9879,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments/a_vs_b.json,configuration / data record,4347,081bfc5952c7c3f7bd7fefe19bf04b662992baa6a9b2aa491edaa3774058a1fd,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments/decision.json,configuration / data record,1865,c6417d7349b8ddf35149e3e0fc7692f97cdb7c6419b4cb787e2b40ed7e31f838,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments/results_by_condition.csv,configuration / data record,9304,14746d02511969b5b776c1cc97cd004950648facab4f4710187ae35920473e1b,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments_dryrun/a_vs_b.json,configuration / data record,4283,c63b534fbff65d7f766e763993428f8a1216d5a73dbb86aaa87e43745c0862a3,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments_dryrun/decision.json,configuration / data record,1926,0900ab2c7327b9651573895a9dc82df0aea2cae878900c5215354fa87167e27c,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments_dryrun/results_by_condition.csv,configuration / data record,9064,9b3e2882135ca61f5aa282e7c3ecd96b836e221be48278def30abfc71fe75e3f,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments_slant_lines/decision.json,configuration / data record,675,697f2780a1e0a772fefb25f556f12e02369ab67aa0f6ae2c076e628de2ab93e6,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments_slant_lines/results_by_condition.csv,configuration / data record,6195,83f9e1e6c4f85a1d7c85b691d1a92281f64580b8c7f34c81822ad7e3c518c201,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments_v2_rules11_run2/a_vs_b.json,configuration / data record,4350,9cb40462231e77413c40d8ab12f28dbd70c145051bbac88377f4b369be8ac336,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments_v2_rules11_run2/decision.json,configuration / data record,1796,3e75435c5673900da447f8aeb75e0eecb86a061be6d6c2c06b9258768183d7e6,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/experiments_v2_rules11_run2/results_by_condition.csv,configuration / data record,9347,d42d4387b5ba41bdb8658105616205408afd1db7ba35bf3b8fafa929fd5843de,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/final_integrity.json,configuration / data record,3006,805840a416fed106e7e0980c3cf05ce52514ef5adc6a6693eaed0223cc8d02b7,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/final_integrity_previous_1727.json,configuration / data record,1753,c165f3b90304b1ab7826c8ef429a00df65a439d508fe3ddffcbd68c4dedff636,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/final_integrity_previous_1900.json,configuration / data record,2713,86ca0327c127b5c561d1831d5ef67d1089675f882b012a566ce84ea54686ee9a,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/source_changes.csv,configuration / data record,2891,c85e2eff7764611e8642ce767d47b9d315f159f4ac952047bbcc3ef92dfeee41,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/verification_2026-10-10/verify_experiments.json,configuration / data record,6732,a049e9ce71cd1f4d3ab29e383ff06b4c7571170df9260e3153e3bfa468160baa,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+reports/diagnostic_implementation/verification_2026-10-10/verify_experiments_2.json,configuration / data record,6891,627f0358c8195acf9880bdb2411b9fee07d1df359e9c9777b722088f7deb4c46,excluded,workspace session records and result files; summarised in docs/EXPERIMENTS.md (kept in the source-code archive)
+run_all_tests.py,source,9014,ceca330b5a0a22999f10c069658a2a3d6c6f6b9faadbbfc9823aec1b2b522607,"included, modified for the export",export-specific change; see EXPORT_NOTES.md / REPOSITORY_AUDIT.md
+runs/README.md,other,396,4c1651190995e74a2b320d642b6d9202a75f77a3560916b91a5e5894004119c1,added for the export,written for this export
+runs/baseline_hw/history.csv,configuration / data record,9785,16b4f0f02dad0cfb6ac26ac9d9706f0b143c227d6afb48b035522eb8fd21f1a3,excluded,training history and console log of the private experiments (weights are never exported)
+runs/baseline_hw/history.json,configuration / data record,22528,f223f619379df11dc63822b2cd33b7fbd0d99b411dd387b42586845acfc7f045,excluded,training history and console log of the private experiments (weights are never exported)
+runs/baseline_hw/train.log,log,51294,1eb2c9bd27cb185e42b0d93e2d671bfc466954b810d47d91f6495672427efc8e,excluded,training history and console log of the private experiments (weights are never exported)
+runs/experiment_001/history.csv,configuration / data record,21171,7d687d310f983c559aa2bb530d71071007f6586757e225b98b0f3cae9894e470,excluded,training history and console log of the private experiments (weights are never exported)
+runs/experiment_001/history.json,configuration / data record,51289,24bc7d1507f73492227089bd54f2df4e6daa498fb7292e20468717acfbe29fc2,excluded,training history and console log of the private experiments (weights are never exported)
+runs/experiment_001/train.log,log,105955,c042728202d4527f5068558627469748f9542f08c328439417df93969e68f651,excluded,training history and console log of the private experiments (weights are never exported)
+runs/experiment_002a/history.csv,configuration / data record,24100,cb196c228e0d94f9708431342007157870a33e03e167cbd5df1a14a8ed2ce92c,excluded,training history and console log of the private experiments (weights are never exported)
+runs/experiment_002a/history.json,configuration / data record,59316,36a0d17c6c54cb3fc1cc1ac968626dbe412a60be719e9af554b53198e44a3cbb,excluded,training history and console log of the private experiments (weights are never exported)
+runs/experiment_002a/train.log,log,137806,ca64ba6cd7e71cb8b90419aeae0e55f8f714b04ec9ef41c9e4c775863091f979,excluded,training history and console log of the private experiments (weights are never exported)
+runs/experiment_002b/history.csv,configuration / data record,24000,cf7f2081c1542b0c4168ec2d03c87b6f0773c65062969b6874d7acbb10728f98,excluded,training history and console log of the private experiments (weights are never exported)
+runs/experiment_002b/history.json,configuration / data record,59216,7d0f49b70c4e4388ac581a5489ab48e98a85e7350870cb3c03ac483ea065410a,excluded,training history and console log of the private experiments (weights are never exported)
+runs/experiment_002b/train.log,log,130019,dfda43bc678bc86cdac22b35bcc66be2ff6194d28a5082dba7905e270395be3a,excluded,training history and console log of the private experiments (weights are never exported)

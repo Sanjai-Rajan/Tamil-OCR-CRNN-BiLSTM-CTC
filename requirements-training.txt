@@ -1,0 +1,8 @@
+# Tamil OCR V2 - training, evaluation and the synthetic-data generator (src/train.py, src/synth/, tools/).
+-r requirements-runtime.txt
+PyYAML==6.0.3
+editdistance==0.8.1
+fonttools==4.65.0
+uharfbuzz==0.56.2
+freetype-py==2.5.1
+pyarrow==25.0.1

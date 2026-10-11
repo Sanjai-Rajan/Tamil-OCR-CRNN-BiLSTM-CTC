@@ -1,0 +1,43 @@
+# Day-1 honest baseline: IIIT handwritten words only (correct labels), new model, from scratch.
+# Run:  .venv\Scripts\python -m src.train --config configs\baseline_hw.yaml
+experiment: baseline_hw
+seed: 42
+
+model:
+  in_h: 48
+  channels: [64, 128, 256, 384]
+  lstm_hidden: 256
+  lstm_layers: 2
+  dropout: 0.25
+
+train:
+  epochs: 40
+  epoch_size: 75736        # samples drawn per epoch (with replacement) from the IIIT train split
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.01
+  warmup_pct: 0.05
+  num_workers: 4           # benchmark: 2/4/8 workers gave the same speed
+  amp: true
+  cudnn_benchmark: false   # variable-width batches: true re-tunes cuDNN for every new width
+  fused_adamw: true        # benchmark: 148 -> 156 img/s GPU-side
+  channels_last: false     # benchmark: 40 img/s (severe regression)
+  bucket_by_width: true    # batches of similar-width words: far less padding (compute + memory)
+  bucket_pool: 50          # sort within pools of 50 random batches, then shuffle batch order
+  max_batch_columns: 32768 # images x padded width per batch (= 64 x 512 px): caps GPU memory for very long words
+  grad_clip: 5.0
+  max_hours: 24            # safety stop only; set so the 40-epoch schedule can finish
+  log_every: 200
+
+sources:
+  - name: iiit_hw
+    type: manifest
+    path: data/real/iiit_hw/manifest_train.jsonl
+    augment: hw
+    weight: 1.0
+
+val:
+  - name: iiit_hw_val
+    path: data/real/iiit_hw/manifest_val.jsonl
+    primary: true
+# the test split (manifest_test.jsonl) is NOT used here; it is scored once at the end with tools/evaluate.py
